@@ -1,0 +1,27 @@
+{
+  "asi": true,
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "nonew": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+
+  "esnext": true,
+  "sub": true,
+
+  "browser": true,
+  "devel": true,
+  "jquery": true,
+  "node": true,
+  "strict": false,
+  "evil": true,
+  "sub":true
+}

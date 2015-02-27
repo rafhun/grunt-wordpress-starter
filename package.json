@@ -1,0 +1,44 @@
+{
+  "name": "Automated-WP-Theme-Development-Environment",
+  "version": "0.1.0",
+  "description": "An automated Wordpress theme development environment, based on Grunt. It is preconfigured to use Sass with  Susy for styles, Hologram with  Cortana for automatic styleguide creation, JS and SCSS linters to ensure code consistency, BrowserSync because it just rocks and many more important tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbd"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "sass",
+    "grunt",
+    "susy",
+    "BrowserSync"
+  ],
+  "author": "rafhun",
+  "license": "MIT",
+
+  "themeName": "rafhun",
+  "localUrl": "http://wpbp.dev",
+
+  "buildFolders": {
+    "theme": "wwwroot/wp-content/themes"
+  },
+
+  "srcFolders": {
+    "bower": "src/bower_components/",
+    "config": "src/config/",
+    "css": "src/css/",
+    "images": "src/images/",
+    "js": "src/js/",
+    "jsBuild": "src/js/build/",
+    "scss": "src/scss/",
+    "secrets": "src/secrets/",
+    "svg": "src/images/svg/",
+  },
+
+  "dbDump": "db/"
+}
