@@ -26,8 +26,9 @@
 
   "buildFolders": {
     "config": "wwwroot/",
-    "theme": "wwwroot/wp-content/themes",
-    "js": "js/"
+    "fonts": "fonts/",
+    "js": "js/",
+    "theme": "wwwroot/wp-content/themes"
   },
 
   "srcFolders": {
@@ -36,7 +37,7 @@
     "css": "src/css/",
     "images": "src/images/",
     "js": "src/js/",
-    "jsBuild": "src/js/build/",
+    "php": "src/php",
     "scss": "src/scss/",
     "secrets": "src/secrets/",
     "svg": "src/images/svg/",
