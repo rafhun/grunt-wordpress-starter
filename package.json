@@ -23,6 +23,7 @@
 
   "themeName": "rafhun",
   "localUrl": "http://wpbp.dev",
+  "rootFolder": "wwwroot/",
 
   "buildFolders": {
     "config": "wwwroot/",

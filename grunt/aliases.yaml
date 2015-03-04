@@ -58,6 +58,7 @@ ship:
   - 'hologram'
 
 setup:
+ - 'shell:getWP'
  - 'shell:bundler'
  - 'shell:bower'
  - 'bower_concat'
