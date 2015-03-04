@@ -19,7 +19,7 @@
     "BrowserSync"
   ],
   "author": "rafhun",
-  "license": "MIT",
+  "license": "GNU General Public License v2 or later",
 
   "themeName": "rafhun",
   "localUrl": "http://wpbp.dev",
@@ -27,6 +27,8 @@
 
   "buildFolders": {
     "config": "wwwroot/",
+    "fonts": "fonts/",
+    "js": "js/",
     "theme": "wwwroot/wp-content/themes"
   },
 
@@ -36,7 +38,7 @@
     "css": "src/css/",
     "images": "src/images/",
     "js": "src/js/",
-    "jsBuild": "src/js/build/",
+    "php": "src/php",
     "scss": "src/scss/",
     "secrets": "src/secrets/",
     "svg": "src/images/svg/",

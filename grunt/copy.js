@@ -8,5 +8,15 @@ module.exports = {
         filter: 'isFile'
       }
     ]
+  },
+  php: {
+    files: [
+      {
+        expand: true,
+        cwd: '<%= pkg.srcFolders.php %>',
+        src: ['**'],
+        dest: '<%= destFolder %>',
+      }
+    ]
   }
 }

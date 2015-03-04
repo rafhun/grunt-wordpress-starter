@@ -4,6 +4,6 @@ module.exports = {
   },
   single_files: {
     src: '<%= sass.dist.dest %>',
-    dest: '<%= pkg.srcFolders.css %>style-prefixed.css'
+    dest: '<%= destFolder %>style.css'
   }
 }
