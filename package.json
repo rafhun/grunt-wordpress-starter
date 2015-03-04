@@ -19,7 +19,7 @@
     "BrowserSync"
   ],
   "author": "rafhun",
-  "license": "MIT",
+  "license": "GNU General Public License v2 or later",
 
   "themeName": "rafhun",
   "localUrl": "http://wpbp.dev",
