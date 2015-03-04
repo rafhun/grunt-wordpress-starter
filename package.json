@@ -26,7 +26,8 @@
 
   "buildFolders": {
     "config": "wwwroot/",
-    "theme": "wwwroot/wp-content/themes"
+    "theme": "wwwroot/wp-content/themes",
+    "js": "js/"
   },
 
   "srcFolders": {
