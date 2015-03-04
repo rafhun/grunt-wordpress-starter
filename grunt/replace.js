@@ -20,5 +20,17 @@ module.exports = {
     },
     src: '<%= pkg.srcFolders.config %>wp-config-sample.php',
     dest: '<%= pkg.buildFolders.config %>wp-config.php'
+  },
+  favicon: {
+    options: {
+      patterns: [
+        {
+          match: 'include',
+          replacement: '<%= grunt.file.read("<%= pkg.srcFolders.php %>favicons.html") %>'
+        }
+      ]
+    },
+    src: '<%= pkg.srcFolders.php %>index.php',
+    dest: '<%= destFolder %>'
   }
 }
