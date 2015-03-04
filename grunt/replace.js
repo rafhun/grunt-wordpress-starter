@@ -7,8 +7,8 @@ module.exports = {
         }
       ]
     },
-    src: '<%= pkg.srcFolders.config %>configuration.php',
-    dest: '<%= pkg.buildFolders.config %>configuration.php'
+    src: '<%= pkg.srcFolders.config %>wp-config-sample.php',
+    dest: '<%= pkg.buildFolders.config %>wp-config.php'
   },
   server: {
     options: {
@@ -18,7 +18,7 @@ module.exports = {
         }
       ]
     },
-    src: '<%= pkg.srcFolders.config %>configuration.php',
-    dest: '<%= pkg.buildFolders.config %>configuration.php'
+    src: '<%= pkg.srcFolders.config %>wp-config-sample.php',
+    dest: '<%= pkg.buildFolders.config %>wp-config.php'
   }
 }

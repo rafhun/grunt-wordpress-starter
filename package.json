@@ -25,6 +25,7 @@
   "localUrl": "http://wpbp.dev",
 
   "buildFolders": {
+    "config": "wwwroot/",
     "theme": "wwwroot/wp-content/themes"
   },
 
