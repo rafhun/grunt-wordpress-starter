@@ -19,7 +19,7 @@
 $EDITOR-STYLES: false;
 
 // we use susy to create flexible grid layouts
-@import 'susy';
+@import '../../bower_components/susy/sass/susy';
 
 // import dependencies (nothing compiles here yet!!)
 @import 'dependencies/functions'; // contains only global functions (like rem-calc)

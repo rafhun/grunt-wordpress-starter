@@ -3,7 +3,7 @@ module.exports = {
     browsers: ['last 2 versions']
   },
   main: {
-    src: '<%= sass.dist.dest %>',
+    src: '<%= sass.main.dest %>',
     dest: '<%= destFolder %>style.css'
   },
   editorStyles: {

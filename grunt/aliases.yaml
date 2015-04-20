@@ -12,6 +12,7 @@ default:
  - 'sass:main'
  - 'autoprefixer:main'
  - 'cssmin'
+ - 'usebanner'
  - 'imagemin'
  - 'svgmin'
  - 'grunticon'
@@ -92,8 +93,10 @@ production:
  - 'hashres'
  - 'hologram'
 
+getWordpress:
+  - 'shell:getWP'
+
 setup:
- - 'shell:getWP'
  - 'shell:bundler'
  - 'shell:bower'
  - 'bower_concat'
@@ -104,6 +107,8 @@ setupUpdate:
   - 'bower_concat'
   - 'concat'
   - 'uglify'
+  - 'cssmin'
+  - 'copy:php'
   - 'hashres'
 
 bsWatch:
