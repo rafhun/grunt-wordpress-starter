@@ -7,18 +7,29 @@ module.exports = {
         }
       ]
     },
-    src: '<%= pkg.srcFolders.config %>wp-config-sample.php',
+    src: '<%= pkg.srcFolders.config %>wp-config.php',
     dest: '<%= pkg.buildFolders.config %>wp-config.php'
   },
-  server: {
+  staging: {
     options: {
       patterns: [
         {
-          json: '<%= secrets.server %>'
+          json: '<%= secrets.staging %>'
         }
       ]
     },
-    src: '<%= pkg.srcFolders.config %>wp-config-sample.php',
+    src: '<%= pkg.srcFolders.config %>wp-config.php',
+    dest: '<%= pkg.buildFolders.config %>wp-config.php'
+  },
+  production: {
+    options: {
+      patterns: [
+        {
+          json: '<%= secrets.production %>'
+        }
+      ]
+    },
+    src: '<%= pkg.srcFolders.config %>wp-config.php',
     dest: '<%= pkg.buildFolders.config %>wp-config.php'
   },
   favicon: {

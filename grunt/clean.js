@@ -1,8 +1,12 @@
 module.exports = {
+  dest: ['<%= destFolder %>'],
+  editorStyles: ['<%= destFolder %>editor-styles.css'],
+  favicon: ['<%= pkg.srcFolders.jade %>favicons.html'],
   hashes: ['<%= destFolder %>{style.min.*.css,script.min.*.js}'],
+  hashedCss: ['<%= destFolder %>style.min.*.css'],
+  hashedJs: ['<%= destFolder %>script.min.*.js'],
   html: ['<%= destFolder %>*.html'],
   images: ['<%= destFolder %><%= pkg.buildFolders.img %>'],
-  dest: ['<%= destFolder %>'],
-  unhashed: ['<%= destFolder %>{style.min.css,script.min.js}'],
-  contrexx: ['wwwroot/images/**/*.{jpg,jpeg,gif,png,thumb,pdf,ico,db,html}', 'wwwroot/themes/skeleton_3_0']
+  minSvg: ['<%= pkg.srcFolders.iconsMin %>**/*.svg'],
+  unhashed: ['<%= destFolder %>{style.min.css,script.min.js}']
 }

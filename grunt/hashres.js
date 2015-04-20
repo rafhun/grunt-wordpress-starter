@@ -8,6 +8,6 @@ module.exports = {
       '<%= destFolder %>style.min.css',
       '<%= destFolder %>script.min.js'
     ],
-    dest: '<%=destFolder %>index.html'
+    dest: '<%=destFolder %>index.php'
   }
 }

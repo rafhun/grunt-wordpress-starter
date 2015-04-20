@@ -1,61 +1,38 @@
 module.exports = {
   options: {
     livereload: true,
+    spawn: false
   },
   jsHint: {
-    files: ['<%= pkg.srcFolders.js %>main.js', 'grunt/*.js', 'Gruntfile.js'],
-    tasks: ['jshint'],
-    options: {
-      spawn: false,
-    }
+    files: ['<%= pkg.srcFolders.js %>script.js', '<%= pkg.srcFolders.componentsJs %>**/*.js', 'grunt/*.js', 'Gruntfile.js'],
+    tasks: ['jshint']
   },
   scripts: {
     files: ['<%= pkg.srcFolders.js %>**/*.js'],
-    tasks: ['clean:hashes', 'concat', 'uglify', 'hashres'],
-    options: {
-      spawn: false,
-    }
+    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:index', 'hashres', 'hologram']
   },
   styles: {
     files: ['<%= pkg.srcFolders.scss %>**/*.scss'],
-    tasks: ['clean:hashes', 'sass', 'autoprefixer', 'cssmin', 'hashres', 'hologram'],
-    options: {
-      spawn: false,
-    }
+    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'hologram']
   },
   images: {
     files: ['<%= pkg.srcFolders.images %>**/*.{png,jpg,gif}'],
-    tasks: ['imagemin'],
-    options: {
-      spawn: false,
-    }
+    tasks: ['imagemin']
   },
-  svg: {
-    files: ['<%= pkg.srcFolders.svg %>*.svg'],
-    tasks: ['svgstore', 'jade', 'hashres'],
-    options: {
-      spawn: false,
-    }
+  grunticon: {
+    files: ['<%= pkg.srcFolders.icons %>*.svg'],
+    tasks: ['svgmin', 'grunticon']
   },
   favicons: {
     files: ['<%= pkg.srcFolders.images %>favicon.png'],
-    tasks: ['clean:hashes','favicons', 'htmlmin', 'jade', 'hashres'],
-    options: {
-      spawn: false,
-    }
+    tasks: ['clean:hashes', 'clean:favicon', 'favicons', 'htmlmin', 'replace:favicon', 'copy:index', 'hashres']
   },
-  jade: {
-    files: ['<%= pkg.srcFolders.jade %>*.{jade,html}'],
-    tasks: ['clean:hashes', 'jade', 'hashres'],
-    options: {
-      spawn: false,
-    }
+  php: {
+    files: ['<%= pkg.srcFolders.php %>*.{php}'],
+    tasks: ['clean:hashes', 'copy:php', 'hashres']
   },
   hologram: {
     files: ['<%= pkg.srcFolders.scss %>README.md'],
-    tasks: ['hologram'],
-    options: {
-      spawn: false,
-    }
+    tasks: ['hologram']
   }
 }

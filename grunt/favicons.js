@@ -1,6 +1,6 @@
 module.exports = {
   options: {
-    html: '<%= pkg.srcFolders.jade %>favicons.html',
+    html: '<%= pkg.srcFolders.php %>favicons.html',
     coast: true,
     firefox: true,
     androidHomescreen: true,
@@ -10,6 +10,6 @@ module.exports = {
   },
   icons: {
     src: '<%= pkg.srcFolders.images %>favicon.png',
-    dest: 'wwwroot/'
+    dest: '<%= pkg.buildFolders.root %>'
   }
 }

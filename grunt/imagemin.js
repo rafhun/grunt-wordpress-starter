@@ -3,7 +3,7 @@ module.exports = {
     files: [{
       expand: true,
       cwd: '<%=pkg.srcFolders.contentImg%>',
-      src: ['**/*.{png,jpg,gif,svg}', '!**/pixel.gif'],
+      src: ['**/*.{png,jpg,gif,svg}'],
       dest: '<%= pkg.buildFolders.contentImg %>'
     }]
   },
