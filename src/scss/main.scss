@@ -1,0 +1,64 @@
+// our CSS follows roughly the principles of atomic design described by Brad Frost.
+// find more info here: http://bradfrost.com/blog/post/atomic-web-design/
+// 
+// For larger projects it might be advisable to include Pattern Lab as styleguide
+// generator instead of Hologram but for smaller projects this is perfect.
+// 
+
+// this variable turns on the editor style mode, you can use this throughout
+// the stylesheet to define different style rules for the editor style sheet.
+// This might be especially important when it comes to stuff that is hidden on
+// the main website but of course should be visible in the backend. Use it as
+// follows:
+// @if $EDITOR-STYLES {
+//  // rules that should be true for the editor
+// } @ else {
+//  // the front end styles
+// }
+// 
+$EDITOR-STYLES: false;
+
+// we use susy to create flexible grid layouts
+@import 'susy';
+
+// import dependencies (nothing compiles here yet!!)
+@import 'dependencies/functions'; // contains only global functions (like rem-calc)
+@import 'dependencies/mixins'; // globally accessible mixins that might be used for several components
+
+// from here on out we define variables that configure our styles globally
+@import 'dependencies/color';
+@import 'dependencies/typography';
+@import 'dependencies/layout';
+
+// next up is a global normalize or reset that can be imported directly from the source
+// we start compiling CSS here
+@import 'helpers/normalize';
+
+// here come the atoms, they only include semantic HTML elements
+@import 'atoms/font';
+@import 'atoms/site';
+@import 'atoms/text-inline';
+@import 'atoms/text-block';
+@import 'atoms/lists';
+@import 'atoms/tables';
+@import 'atoms/forms';
+@import 'atoms/media';
+@import 'atoms/code';
+
+// the next level are molecules, which basically are several atoms put together
+// stuff like a label, form input and submit button that make a search box
+// 
+
+
+// further on we have organisms which usually describe more advanced UI patterns
+// such as a whole headerbar. Organisms always consist of several molecules put
+// together
+// 
+
+
+// now organisms are being put together into templates, the header connects with
+// the main container and footer...
+// 
+
+
+// if we have page specific styles these come here
