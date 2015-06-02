@@ -9,11 +9,11 @@ module.exports = {
   },
   scripts: {
     files: ['<%= pkg.srcFolders.js %>**/*.js'],
-    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:index', 'hashres', 'hologram']
+    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:index', 'hashres', 'shell:hologram']
   },
   styles: {
     files: ['<%= pkg.srcFolders.scss %>**/*.scss'],
-    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'hologram']
+    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'shell:hologram']
   },
   images: {
     files: ['<%= pkg.srcFolders.images %>**/*.{png,jpg,gif}'],
@@ -28,11 +28,11 @@ module.exports = {
     tasks: ['clean:hashes', 'clean:favicon', 'favicons', 'htmlmin', 'replace:favicon', 'copy:index', 'hashres']
   },
   php: {
-    files: ['<%= pkg.srcFolders.php %>*.{php}'],
+    files: ['<%= pkg.srcFolders.php %>**/*.php'],
     tasks: ['clean:hashes', 'copy:php', 'hashres']
   },
   hologram: {
     files: ['<%= pkg.srcFolders.scss %>README.md'],
-    tasks: ['hologram']
+    tasks: ['shell:hologram']
   }
 }

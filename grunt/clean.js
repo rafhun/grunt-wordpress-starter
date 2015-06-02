@@ -7,6 +7,6 @@ module.exports = {
   hashedJs: ['<%= destFolder %>script.min.*.js'],
   html: ['<%= destFolder %>*.html'],
   images: ['<%= destFolder %><%= pkg.buildFolders.img %>'],
-  minSvg: ['<%= pkg.srcFolders.iconsMin %>**/*.svg'],
+  minSvg: ['<%= pkg.srcFolders.iconsMin %>*.svg'],
   unhashed: ['<%= destFolder %>{style.min.css,script.min.js}']
 }

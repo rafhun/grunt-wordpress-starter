@@ -43,5 +43,18 @@ module.exports = {
     },
     src: '<%= pkg.srcFolders.php %>index.php',
     dest: '<%= destFolder %>'
+  },
+  // replace the keys with ones that can be downloaded directly through the wp api
+  keys: {
+    options: {
+      patterns: [
+        {
+          match: 'include',
+          replacement: '<%= grunt.file.read("keys.php") %>'
+        }
+      ]
+    },
+    src: '<%= pkg.srcFolders.config %>wp-config-sample.php',
+    dest: '<%= pkg.srcFolders.config %>wp-config.php'
   }
 }

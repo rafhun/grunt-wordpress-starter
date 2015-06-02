@@ -18,7 +18,9 @@ module.exports = {
   },
   index: {
     files: [{
-      src: '<%= pkg.srcFolder.php %>index.php',
+      expand: true,
+      cwd: '<%= pkg.srcFolders.php %>',
+      src: 'index.php',
       dest: '<%= destFolder %>',
     }]
   },

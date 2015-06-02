@@ -6,6 +6,7 @@ default:
  - 'copy:fonts'
  - 'jshint:grunt'
  - 'jshint:src'
+ - 'replace:keys'
  - 'replace:local'
  - 'concat'
  - 'uglify'
@@ -20,7 +21,7 @@ default:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'hologram'
+ - 'shell:hologram'
  - 'browserSync'
  - 'watch'
 
@@ -32,6 +33,7 @@ local:
  - 'copy:fonts'
  - 'jshint:grunt'
  - 'jshint:src'
+ - 'replace:keys'
  - 'replace:local'
  - 'concat'
  - 'uglify'
@@ -45,7 +47,7 @@ local:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'hologram'
+ - 'shell:hologram'
 
 staging:
  - 'clean:dest'
@@ -55,6 +57,7 @@ staging:
  - 'copy:fonts'
  - 'jshint:grunt'
  - 'jshint:shipping'
+ - 'replace:keys'
  - 'replace:staging'
  - 'concat'
  - 'uglify'
@@ -68,7 +71,7 @@ staging:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'hologram'
+ - 'shell:hologram'
 
 production:
  - 'clean:dest'
@@ -78,6 +81,7 @@ production:
  - 'copy:fonts'
  - 'jshint:grunt'
  - 'jshint:shipping'
+ - 'replace:keys'
  - 'replace:production'
  - 'concat'
  - 'uglify'
@@ -91,15 +95,17 @@ production:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'hologram'
+ - 'shell:hologram'
 
-getWordpress:
+getWP:
   - 'shell:getWP'
 
 setup:
- - 'shell:bundler'
- - 'shell:bower'
- - 'bower_concat'
+  - 'shell:getKeys'
+  - 'replace:keys'
+  - 'shell:bundler'
+  - 'shell:bower'
+  - 'bower_concat'
 
 setupUpdate:
   - 'shell:bundlerUpdate'
@@ -111,16 +117,17 @@ setupUpdate:
   - 'copy:php'
   - 'hashres'
 
-bsWatch:
-  - 'browserSync'
-  - 'watch'
-
 icons:
   - 'svgmin'
   - 'grunticon'
-  
+
 editorStyles:
   - 'clean:editorStyles'
   - 'sass:editorStyles'
   - 'autoprefixer:editorStyles'
   - 'copy:editorStyles'
+
+newKeys:
+  - 'shell:getKeys'
+  - 'replace:keys'
+  - 'replace:local'

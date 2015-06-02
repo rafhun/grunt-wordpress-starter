@@ -8,7 +8,13 @@ module.exports = {
     }],
     options: {
       'compressPNG': true,
-
+      'dynamicColorOnly': true,
+      'colors': {
+        primary: '#000',
+      },
+      'customselectors': {
+        'home-primary': ['.icon-home:hover'],
+      }
     }
   }
 }
