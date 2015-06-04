@@ -11,7 +11,7 @@ module.exports = function(grunt) {
               ' * Theme Name: <%= pkg.themeName %>\n' +
               ' * Theme URI: \n' +
               ' * Author: <%= pkg.author %>\n' +
-              ' * Author URI: \n' +
+              ' * Author URI: https://github.com/rafhun\n' +
               ' * Description: Theme developed by rafhun from Werbelinie AG for ...\n' +
               ' * Version: <%= pkg.version %>\n' +
               ' * License: <%= pkg.license %>\n' +
