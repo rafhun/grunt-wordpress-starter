@@ -1,0 +1,30 @@
+themeName: rafhun
+devUrl: http://wpbp.dev
+dbDump: db/
+
+rootFolder: wwwroot/
+buildFolders:
+  config: wwwroot/
+  fonts: fonts/
+  icons: icons/
+  images: images/
+  js: js/
+  root: wwwroot/
+  theme: wwwroot/wp-content/themes/
+
+srcFolders:
+  bower: src/bower_components/
+  config: src/config/
+  css: src/css
+  fonts: src/fonts/
+  icons: src/icons/
+  iconsMin: src/icons/min/
+  images: src/images/
+  imagesContent: src/images/content/
+  imagesTheme: src/images/theme/
+  js: src/js/
+  jsBuild: src/js/build/
+  jsMolecules: src/js/molecules/
+  php: src/php/
+  scss: src/scss/
+  secrets: src/secrets/

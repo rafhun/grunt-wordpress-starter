@@ -1,10 +1,10 @@
 module.exports = {
   main: {
-    src: '<%= pkg.srcFolders.scss %>main.scss',
-    dest: '<%= pkg.srcFolders.css %>style.css',
+    src: '<%= config.srcFolders.scss %>style.scss',
+    dest: '<%= config.srcFolders.css %>style.css',
   },
   editorStyles: {
-    src: '<%= pkg.srcFolders.scss %>main.scss',
-    dest: '<%= pkg.srcFolders.css %>editor-styles-unprefixed.css'
+    src: '<%= config.srcFolders.scss %>style.scss',
+    dest: '<%= config.srcFolders.css %>editor-styles-unprefixed.css'
   }
 }

@@ -2,9 +2,9 @@ module.exports = {
   icons: {
     files: [{
       expand: true,
-      cwd: '<%= pkg.srcFolders.iconsMin %>',
+      cwd: '<%= config.srcFolders.iconsMin %>',
       src: ['*.svg', '*.png'],
-      dest: '<%= destFolder %><%= pkg.buildFolders.icons %>'
+      dest: '<%= destFolder %><%= config.buildFolders.icons %>'
     }],
     options: {
       'compressPNG': true,

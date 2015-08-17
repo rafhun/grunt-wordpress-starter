@@ -8,6 +8,6 @@ module.exports = {
   },
   editorStyles: {
     src: '<%=sass.editorStyles.dest %>',
-    dest: '<%= pkg.srcFolders.css %>editor-styles.css'
+    dest: '<%= config.srcFolders.css %>editor-styles.css'
   }
 }

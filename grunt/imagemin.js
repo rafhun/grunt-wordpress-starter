@@ -1,18 +1,18 @@
 module.exports = {
-  contentImg: {
+  imagesContent: {
     files: [{
       expand: true,
-      cwd: '<%=pkg.srcFolders.contentImg%>',
+      cwd: '<%=config.srcFolders.imagesContent%>',
       src: ['**/*.{png,jpg,gif,svg}'],
-      dest: '<%= pkg.buildFolders.contentImg %>'
+      dest: '<%= config.buildFolders.imagesContent %>'
     }]
   },
-  themeImg: {
+  imagesTheme: {
     files: [{
       expand: true,
-      cwd: '<%=pkg.srcFolders.themeImg %>',
+      cwd: '<%=config.srcFolders.imagesTheme %>',
       src: ['**/*.{png,jpg,gif,svg}'],
-      dest: '<%= destFolder %><%= pkg.buildFolders.img %>'
+      dest: '<%= destFolder %><%= config.buildFolders.img %>'
     }]
   }
 }

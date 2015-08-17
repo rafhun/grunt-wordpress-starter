@@ -5,7 +5,7 @@ module.exports = {
       collapseWhitespace: true
     },
     files: {
-      '<%= pkg.srcFolders.php %>favicons.hmtl' : '<%= pkg.srcFolders.php %>favicons.hmtl'
+      '<%= config.srcFolders.php %>favicons.hmtl' : '<%= config.srcFolders.php %>favicons.hmtl'
     }
   }
 }

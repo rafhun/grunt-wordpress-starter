@@ -1,9 +1,9 @@
 module.exports = {
   all: {
-    dest: '<%= pkg.srcFolders.js %>bower.js',
+    dest: '<%= config.srcFolders.js %>bower.js',
     exclude: [
-      'Cortana',
-      'susy'
+      'susy',
+      'normalize-scss'
     ],
   }
 }
