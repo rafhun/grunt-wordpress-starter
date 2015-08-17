@@ -4,8 +4,8 @@ module.exports = {
   },
   grunt: ['Gruntfile.js', 'grunt/*.js'],
   src: [
-    '<%= pkg.srcFolders.componentsJs %>**',
-    '<%= pkg.srcFolders.js %>script.js'
+    '<%= config.srcFolders.jsMolecules %>**',
+    '<%= config.srcFolders.js %>script.js'
   ],
   shipping: {
     options: {
@@ -13,8 +13,8 @@ module.exports = {
     },
     files: {
       src: [
-        '<%= pkg.srcFolders.componentsJs %>**',
-        '<%= pkg.srcFolders.js %>script.js',
+        '<%= config.srcFolders.jsMolecules %>**',
+        '<%= config.srcFolders.js %>script.js',
       ],
     }
   }

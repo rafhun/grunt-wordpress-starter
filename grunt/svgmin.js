@@ -2,9 +2,9 @@ module.exports = {
   dist: {
         files: [{
             expand: true,
-            cwd: '<%= pkg.srcFolders.icons %>',
+            cwd: '<%= config.srcFolders.icons %>',
             src: ['*.svg'],
-            dest: '<%= pkg.srcFolders.iconsMin %>'
+            dest: '<%= config.srcFolders.iconsMin %>'
         }]
     }
 }

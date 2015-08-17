@@ -21,7 +21,7 @@ default:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'shell:hologram'
+ - 'sassdown'
  - 'browserSync'
  - 'watch'
 
@@ -47,7 +47,7 @@ local:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'shell:hologram'
+ - 'sassdown'
 
 staging:
  - 'clean:dest'
@@ -71,7 +71,7 @@ staging:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'shell:hologram'
+ - 'sassdown'
 
 production:
  - 'clean:dest'
@@ -95,7 +95,15 @@ production:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'shell:hologram'
+ - 'sassdown'
+
+pushStaging:
+  - 'staging'
+  - 'rsync:staging'
+
+pushProduction:
+  - 'production'
+  - 'rsync:production'
 
 getWP:
   - 'shell:getWP'
@@ -103,12 +111,10 @@ getWP:
 setup:
   - 'shell:getKeys'
   - 'replace:keys'
-  - 'shell:bundler'
   - 'shell:bower'
   - 'bower_concat'
 
 setupUpdate:
-  - 'shell:bundlerUpdate'
   - 'shell:bowerUpdate'
   - 'bower_concat'
   - 'concat'
@@ -131,3 +137,18 @@ newKeys:
   - 'shell:getKeys'
   - 'replace:keys'
   - 'replace:local'
+
+patchBump:
+  - 'bump:patch'
+  - 'conventionalChangelog'
+  - 'shell:addChangelog'
+
+minorBump:
+  - 'bump:minor'
+  - 'conventionalChangelog'
+  - 'shell:addChangelog'
+
+majorBump:
+  - 'bump:major'
+  - 'conventionalChangelog'
+  - 'shell:addChangelog'

@@ -1,7 +1,7 @@
 module.exports = {
   editorStyles: {
     files: [{
-      src: '<%= pkg.srcFolders.css %>editor-styles.css',
+      src: '<%= config.srcFolders.css %>editor-styles.css',
       dest: '<%= destFolder %>editor-styles.css'
     }]
   },
@@ -9,9 +9,9 @@ module.exports = {
     files: [
       {
         expand: true,
-        cwd: '<%= pkg.srcFolders.fonts %>',
+        cwd: '<%= config.srcFolders.fonts %>',
         src: ['*'],
-        dest: '<%= destFolder %><%= pkg.buildFolders.fonts %>',
+        dest: '<%= destFolder %><%= config.buildFolders.fonts %>',
         filter: 'isFile'
       }
     ]
@@ -19,7 +19,7 @@ module.exports = {
   index: {
     files: [{
       expand: true,
-      cwd: '<%= pkg.srcFolders.php %>',
+      cwd: '<%= config.srcFolders.php %>',
       src: 'index.php',
       dest: '<%= destFolder %>',
     }]
@@ -28,7 +28,7 @@ module.exports = {
     files: [
       {
         expand: true,
-        cwd: '<%= pkg.srcFolders.php %>',
+        cwd: '<%= config.srcFolders.php %>',
         src: ['**'],
         dest: '<%= destFolder %>',
       }

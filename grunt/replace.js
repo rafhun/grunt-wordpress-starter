@@ -7,8 +7,8 @@ module.exports = {
         }
       ]
     },
-    src: '<%= pkg.srcFolders.config %>wp-config.php',
-    dest: '<%= pkg.buildFolders.config %>wp-config.php'
+    src: '<%= config.srcFolders.config %>wp-config.php',
+    dest: '<%= config.buildFolders.config %>wp-config.php'
   },
   staging: {
     options: {
@@ -18,8 +18,8 @@ module.exports = {
         }
       ]
     },
-    src: '<%= pkg.srcFolders.config %>wp-config.php',
-    dest: '<%= pkg.buildFolders.config %>wp-config.php'
+    src: '<%= config.srcFolders.config %>wp-config.php',
+    dest: '<%= config.buildFolders.config %>wp-config.php'
   },
   production: {
     options: {
@@ -29,19 +29,19 @@ module.exports = {
         }
       ]
     },
-    src: '<%= pkg.srcFolders.config %>wp-config.php',
-    dest: '<%= pkg.buildFolders.config %>wp-config.php'
+    src: '<%= config.srcFolders.config %>wp-config.php',
+    dest: '<%= config.buildFolders.config %>wp-config.php'
   },
   favicon: {
     options: {
       patterns: [
         {
           match: 'include',
-          replacement: '<%= grunt.file.read("<%= pkg.srcFolders.php %>favicons.html") %>'
+          replacement: '<%= grunt.file.read("<%= config.srcFolders.php %>favicons.html") %>'
         }
       ]
     },
-    src: '<%= pkg.srcFolders.php %>index.php',
+    src: '<%= config.srcFolders.php %>index.php',
     dest: '<%= destFolder %>'
   },
   // replace the keys with ones that can be downloaded directly through the wp api
@@ -50,11 +50,11 @@ module.exports = {
       patterns: [
         {
           match: 'include',
-          replacement: '<%= grunt.file.read("keys.php") %>'
+          replacement: '<%= grunt.file.read("<%= config.srcFolders.secrets %>keys.php") %>'
         }
       ]
     },
-    src: '<%= pkg.srcFolders.config %>wp-config-sample.php',
-    dest: '<%= pkg.srcFolders.config %>wp-config.php'
+    src: '<%= config.srcFolders.config %>wp-config-sample.php',
+    dest: '<%= config.srcFolders.config %>wp-config.php'
   }
 }

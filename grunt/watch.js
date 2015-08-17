@@ -4,35 +4,35 @@ module.exports = {
     spawn: false
   },
   jsHint: {
-    files: ['<%= pkg.srcFolders.js %>script.js', '<%= pkg.srcFolders.componentsJs %>**/*.js', 'grunt/*.js', 'Gruntfile.js'],
+    files: ['<%= config.srcFolders.js %>script.js', '<%= config.srcFolders.jsMolecules %>**/*.js', 'grunt/*.js', 'Gruntfile.js'],
     tasks: ['jshint']
   },
   scripts: {
-    files: ['<%= pkg.srcFolders.js %>**/*.js'],
-    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:index', 'hashres', 'shell:hologram']
+    files: ['<%= config.srcFolders.js %>**/*.js'],
+    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:index', 'hashres', 'sassdown']
   },
   styles: {
-    files: ['<%= pkg.srcFolders.scss %>**/*.scss'],
-    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'shell:hologram']
+    files: ['<%= config.srcFolders.scss %>**/*.scss'],
+    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'sassdown']
   },
   images: {
-    files: ['<%= pkg.srcFolders.images %>**/*.{png,jpg,gif}'],
+    files: ['<%= config.srcFolders.images %>**/*.{png,jpg,gif}'],
     tasks: ['imagemin']
   },
   grunticon: {
-    files: ['<%= pkg.srcFolders.icons %>*.svg'],
+    files: ['<%= config.srcFolders.icons %>*.svg'],
     tasks: ['svgmin', 'grunticon']
   },
   favicons: {
-    files: ['<%= pkg.srcFolders.images %>favicon.png'],
+    files: ['<%= config.srcFolders.images %>favicon.png'],
     tasks: ['clean:hashes', 'clean:favicon', 'favicons', 'htmlmin', 'replace:favicon', 'copy:index', 'hashres']
   },
   php: {
-    files: ['<%= pkg.srcFolders.php %>**/*.php'],
+    files: ['<%= config.srcFolders.php %>**/*.php'],
     tasks: ['clean:hashes', 'copy:php', 'hashres']
   },
-  hologram: {
-    files: ['<%= pkg.srcFolders.scss %>README.md'],
-    tasks: ['shell:hologram']
+  sassdown: {
+    files: ['<%= config.srcFolders.scss %>README.md'],
+    tasks: ['sassdown']
   }
 }
