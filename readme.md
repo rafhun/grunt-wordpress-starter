@@ -1,3 +1,5 @@
+Version: 0.1.0
+
 This project is still under heavy development, so basically almost nothing is working yet.
 
 
