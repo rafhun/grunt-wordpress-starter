@@ -11,6 +11,9 @@ module.exports = {
   getWP: {
     command: 'wget https://wordpress.org/latest.tar.gz && tar zxvf latest.tar.gz && mv wordpress <%= config.rootFolder %> && rm latest.tar.gz'
   },
+  getWPshell: {
+    command: 'sh getWP.sh'
+  },
   getKeys: {
     command: 'curl https://api.wordpress.org/secret-key/1.1/salt/ > <%= config.srcFolders.secrets %>keys.php'
   }

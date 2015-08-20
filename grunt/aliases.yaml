@@ -106,7 +106,7 @@ pushProduction:
   - 'rsync:production'
 
 getWP:
-  - 'shell:getWP'
+  - 'shell:getWPshell'
 
 setup:
   - 'shell:getKeys'
