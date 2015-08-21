@@ -1,12 +1,12 @@
 #!/bin/bash
 wget https://wordpress.org/latest.tar.gz && tar zxvf latest.tar.gz
 
-if [ -d wwwroot ]
+if [ -d $1 ]
 then
-  cp -R wordpress/. wwwroot/
+  cp -R wordpress/. $1
   rm -r wordpress
 else
-  mv wordpress wwwroot
+  mv wordpress $1
 fi
 
 rm latest.tar.gz
