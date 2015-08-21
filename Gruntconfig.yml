@@ -10,12 +10,13 @@ buildFolders:
   images: images/
   js: js/
   root: wwwroot/
+  styleguide: wwwroot/styleguide/
   theme: wwwroot/wp-content/themes/
 
 srcFolders:
   bower: src/bower_components/
   config: src/config/
-  css: src/css
+  css: src/css/
   fonts: src/fonts/
   icons: src/icons/
   iconsMin: src/icons/min/
