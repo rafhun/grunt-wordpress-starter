@@ -77,4 +77,6 @@ favicons.html
 
 # secrets (config files, db passwords, etc)
 secrets.json
+keys.php
+src/config/wp-config.php
 wwwroot/wp-config.php

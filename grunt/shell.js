@@ -15,6 +15,6 @@ module.exports = {
     command: 'sh getWP.sh <%= config.rootFolder %>'
   },
   getKeys: {
-    command: 'curl https://api.wordpress.org/secret-key/1.1/salt/ > <%= config.srcFolders.secrets %>keys.php'
+    command: 'sh getKeys.sh keys.php'
   }
 }

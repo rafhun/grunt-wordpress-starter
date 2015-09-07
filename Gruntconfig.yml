@@ -28,4 +28,3 @@ srcFolders:
   jsMolecules: src/js/molecules/
   php: src/php/
   scss: src/scss/
-  secrets: src/secrets/

@@ -50,7 +50,7 @@ module.exports = {
       patterns: [
         {
           match: 'include',
-          replacement: '<%= grunt.file.read("<%= config.srcFolders.secrets %>keys.php") %>'
+          replacement: '<%= grunt.file.read("keys.php") %>'
         }
       ]
     },
