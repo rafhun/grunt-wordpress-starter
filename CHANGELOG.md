@@ -1,3 +1,17 @@
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/rafhun/wpbp/compare/v0.1.2...v0.1.3) (2015-09-09)
+
+
+### Bug Fixes
+
+* set better db prefix in secrets-template ([539d841](https://github.com/rafhun/wpbp/commit/539d841))
+* **grunt:** add placeholder favicon ([56c23da](https://github.com/rafhun/wpbp/commit/56c23da))
+* **grunt:** correct hashres ([fb91908](https://github.com/rafhun/wpbp/commit/fb91908))
+* **grunt:** correctly set dest folder for imagemin task ([f37976a](https://github.com/rafhun/wpbp/commit/f37976a))
+* **grunt:** reference correct getWP task ([46b5ecb](https://github.com/rafhun/wpbp/commit/46b5ecb))
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/rafhun/wpbp/compare/v0.1.1...v0.1.2) (2015-09-07)
 
