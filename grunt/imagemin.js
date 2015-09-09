@@ -12,7 +12,7 @@ module.exports = {
       expand: true,
       cwd: '<%=config.srcFolders.imagesTheme %>',
       src: ['**/*.{png,jpg,gif,svg}'],
-      dest: '<%= destFolder %><%= config.buildFolders.img %>'
+      dest: '<%= destFolder %><%= config.buildFolders.images %>'
     }]
   }
 }
