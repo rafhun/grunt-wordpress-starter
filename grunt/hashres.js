@@ -1,6 +1,6 @@
 module.exports = {
   options: {
-    renameFiles: false,
+    renameFiles: true,
     fileNameFormat: '${name}.${hash}.${ext}'
   },
   prod: {
@@ -8,6 +8,6 @@ module.exports = {
       '<%= destFolder %>style.min.css',
       '<%= destFolder %>script.min.js'
     ],
-    dest: '<%=destFolder %>index.php'
+    dest: '<%=destFolder %>functions.php'
   }
 }

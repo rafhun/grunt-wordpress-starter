@@ -29,7 +29,7 @@ module.exports = {
   },
   php: {
     files: ['<%= config.srcFolders.php %>**/*.php'],
-    tasks: ['clean:hashes', 'copy:php', 'hashres']
+    tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres']
   },
   sassdown: {
     files: ['<%= config.srcFolders.scss %>README.md'],
