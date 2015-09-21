@@ -68,6 +68,13 @@ $table_prefix  = '@@db_prefix';
  */
 define('WP_DEBUG', false);
 
+/**
+ * Disallow File Mods
+ * Since plugins and themes are managed through composer we can and should disable this in the backend.
+ * This additionally serves to harden WordPress by making life harder for hackers. However security has to be managed manually!?
+ */
+define( 'DISALLOW_FILE_MODS', true );
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

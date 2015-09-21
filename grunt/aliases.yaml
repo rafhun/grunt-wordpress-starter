@@ -66,10 +66,12 @@ getWP:
 setup:
   - 'shell:getKeys'
   - 'replace:keys'
+  - 'shell:installPlugins'
   - 'shell:bower'
   - 'bower_concat'
 
 setupUpdate:
+  - 'shell:updatePlugins'
   - 'shell:bowerUpdate'
   - 'bower_concat'
   - 'concat'

@@ -34,5 +34,9 @@ module.exports = {
   sassdown: {
     files: ['<%= config.srcFolders.scss %>README.md'],
     tasks: ['sassdown']
+  },
+  composer: {
+    files: ['composer.json', 'composer.lock'],
+    tasks: ['shell:installPlugins']
   }
 }

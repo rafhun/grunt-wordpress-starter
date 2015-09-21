@@ -79,3 +79,6 @@ wwwroot/wp-config.php
 # wordpress files
 wwwroot/*
 !wwwroot/wp-content
+
+# Composer Files
+vendor/

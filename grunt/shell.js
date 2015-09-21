@@ -16,5 +16,11 @@ module.exports = {
   },
   getKeys: {
     command: 'sh getKeys.sh keys.php'
+  },
+  installPlugins: {
+    command: 'composer self-update && composer install --no-dev'
+  },
+  updatePlugins: {
+    command: 'composer self-update && composer update --no-dev'
   }
 }
