@@ -134,4 +134,4 @@ fileMgm:
   - 'clean:minSvg'
   - 'clean:favicon'
   - 'copy:editorStyles'
-  - 'copy:fonts.'
+  - 'copy:fonts'
