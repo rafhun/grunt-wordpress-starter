@@ -1,3 +1,17 @@
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/rafhun/wpbp/compare/v0.1.3...v0.1.4) (2015-09-21)
+
+
+### Bug Fixes
+
+* **grunt:** optimize grunt tasks ([c6a5262](https://github.com/rafhun/wpbp/commit/c6a5262))
+
+### Features
+
+* **docs:** add sassdoc and kss-node ([77c70e5](https://github.com/rafhun/wpbp/commit/77c70e5))
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/rafhun/wpbp/compare/v0.1.2...v0.1.3) (2015-09-09)
 
