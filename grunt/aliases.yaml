@@ -127,7 +127,7 @@ images:
   - 'svgmin'
   - 'grunticon'
   - 'favicons'
-  - 'htmlmin.'
+  - 'htmlmin'
 
 fileMgm:
   - 'clean:dest'
