@@ -21,7 +21,7 @@ default:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'sassdown'
+ - 'docs'
  - 'browserSync'
  - 'watch'
 
@@ -47,7 +47,7 @@ local:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'sassdown'
+ - 'docs'
 
 staging:
  - 'clean:dest'
@@ -71,7 +71,7 @@ staging:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'sassdown'
+ - 'docs'
 
 production:
  - 'clean:dest'
@@ -95,7 +95,7 @@ production:
  - 'htmlmin'
  - 'copy:php'
  - 'hashres'
- - 'sassdown'
+ - 'docs'
 
 pushStaging:
   - 'staging'
@@ -152,3 +152,7 @@ majorBump:
   - 'bump:major'
   - 'conventionalChangelog'
   - 'shell:addChangelog'
+
+docs:
+  - 'kss'
+  - 'sassdoc'

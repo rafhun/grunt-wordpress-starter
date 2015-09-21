@@ -28,7 +28,7 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-copy": "^0.8.1",
-    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-htmlmin": "^0.4.0",
     "grunt-contrib-imagemin": "^0.9.4",
     "grunt-contrib-jshint": "^0.11.3",
@@ -37,15 +37,16 @@
     "grunt-conventional-changelog": "^4.1.0",
     "grunt-favicons": "^0.7.0",
     "grunt-grunticon": "^2.2.2",
+    "grunt-kss": "git://github.com/rafhun/grunt-kss.git",
     "grunt-hashres": "^0.4.1",
-    "grunt-replace": "^0.10.2",
+    "grunt-replace": "^0.11.0",
     "grunt-rsync": "^0.6.2",
     "grunt-sass": "^1.0.0",
+    "grunt-sassdoc": "^2.0.1",
     "grunt-shell": "^1.1.2",
     "grunt-svgmin": "^2.0.1",
     "jshint": "^2.8.0",
     "load-grunt-config": "^0.17.2",
-    "sassdown": "^0.2.7",
     "time-grunt": "^1.2.1"
   }
 }
