@@ -2,9 +2,10 @@ themeName: rafhun
 devUrl: http://wpbp.dev
 dbDump: db/
 rootFolder: wwwroot/
-          
+
 buildFolders:
   config: wwwroot/
+  documentation: documentation/
   fonts: fonts/
   icons: icons/
   images: images/
