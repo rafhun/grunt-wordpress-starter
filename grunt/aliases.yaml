@@ -64,6 +64,7 @@ getWP:
   - 'shell:getWP'
 
 setup:
+  - 'shell:getWP'
   - 'shell:getKeys'
   - 'replace:keys'
   - 'shell:installPlugins'
