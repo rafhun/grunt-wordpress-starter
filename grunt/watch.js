@@ -9,11 +9,11 @@ module.exports = {
   },
   scripts: {
     files: ['<%= config.srcFolders.js %>**/*.js'],
-    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:index', 'hashres', 'sassdown']
+    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:index', 'hashres', 'kss']
   },
   styles: {
     files: ['<%= config.srcFolders.scss %>**/*.scss'],
-    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'sassdown']
+    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'kss']
   },
   images: {
     files: ['<%= config.srcFolders.images %>**/*.{png,jpg,gif}'],
@@ -31,9 +31,9 @@ module.exports = {
     files: ['<%= config.srcFolders.php %>**/*.php'],
     tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres']
   },
-  sassdown: {
+  kss: {
     files: ['<%= config.srcFolders.scss %>README.md'],
-    tasks: ['sassdown']
+    tasks: ['kss']
   },
   composer: {
     files: ['composer.json', 'composer.lock'],
