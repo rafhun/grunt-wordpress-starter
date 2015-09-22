@@ -8,7 +8,7 @@ module.exports = {
       ]
     },
     src: '<%= config.srcFolders.config %>wp-config.php',
-    dest: '<%= config.buildFolders.config %>wp-config.php'
+    dest: '<%= config.rootFolder %>wp-config.php'
   },
   staging: {
     options: {
@@ -19,7 +19,7 @@ module.exports = {
       ]
     },
     src: '<%= config.srcFolders.config %>wp-config.php',
-    dest: '<%= config.buildFolders.config %>wp-config.php'
+    dest: '<%= config.rootFolder %>wp-config.php'
   },
   production: {
     options: {
@@ -30,7 +30,7 @@ module.exports = {
       ]
     },
     src: '<%= config.srcFolders.config %>wp-config.php',
-    dest: '<%= config.buildFolders.config %>wp-config.php'
+    dest: '<%= config.rootFolder %>wp-config.php'
   },
   favicon: {
     options: {

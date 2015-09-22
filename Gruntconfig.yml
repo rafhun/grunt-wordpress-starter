@@ -4,15 +4,13 @@ dbDump: db/
 rootFolder: wwwroot/
 
 buildFolders:
-  config: wwwroot/
   documentation: documentation/
   fonts: fonts/
   icons: icons/
   images: images/
   js: js/
-  root: wwwroot/
-  styleguide: wwwroot/styleguide/
-  theme: wwwroot/wp-content/themes/
+  styleguide: styleguide/
+  theme: wp-content/themes/
 
 srcFolders:
   bower: src/bower_components/

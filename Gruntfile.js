@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     data: {
       pkg: grunt.file.readJSON('package.json'),
       config: grunt.file.readYAML('Gruntconfig.yml'),
-      destFolder: '<%= config.buildFolders.theme %><%= config.themeName %>/',
+      destFolder: '<%= config.rootFolder %><%= config.buildFolders.theme %><%= config.themeName %>/',
       secrets: grunt.file.readJSON('secrets.json'),
       banner: '/*\n' +
               ' * Theme Name: <%= config.themeName %>\n' +
