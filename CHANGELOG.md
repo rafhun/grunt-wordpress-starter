@@ -1,3 +1,15 @@
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/rafhun/wpbp/compare/v0.1.5...v0.1.6) (2015-09-22)
+
+
+### Bug Fixes
+
+* **git:** ignore whole wwwroot ([023510a](https://github.com/rafhun/wpbp/commit/023510a))
+* **grunt:** add getWP to setup task ([ecdb85c](https://github.com/rafhun/wpbp/commit/ecdb85c))
+* **grunt:** call kss instead of sassdown in watch task ([c74fa3c](https://github.com/rafhun/wpbp/commit/c74fa3c))
+
+
+
 <a name="0.1.5"></a>
 ## [0.1.5](https://github.com/rafhun/wpbp/compare/v0.1.4...v0.1.5) (2015-09-22)
 
