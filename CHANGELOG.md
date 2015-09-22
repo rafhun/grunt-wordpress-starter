@@ -1,3 +1,21 @@
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/rafhun/wpbp/compare/v0.1.4...v0.1.5) (2015-09-22)
+
+
+### Bug Fixes
+
+* **grunt:** adjust sassdoc configuration build folder ([f378b09](https://github.com/rafhun/wpbp/commit/f378b09))
+* **grunt:** correctly import kss assets ([9ef4b46](https://github.com/rafhun/wpbp/commit/9ef4b46))
+* **grunt:** optimize config ([ef5ecfa](https://github.com/rafhun/wpbp/commit/ef5ecfa))
+* **grunt:** remove another typo from aliases ([5e0fe86](https://github.com/rafhun/wpbp/commit/5e0fe86))
+* **grunt:** remove dot in aliases ([8cf15ec](https://github.com/rafhun/wpbp/commit/8cf15ec))
+
+### Features
+
+* **grunt:** manage plugins and themes through composer ([16c5907](https://github.com/rafhun/wpbp/commit/16c5907))
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/rafhun/wpbp/compare/v0.1.3...v0.1.4) (2015-09-21)
 
