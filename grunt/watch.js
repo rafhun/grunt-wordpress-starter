@@ -5,7 +5,7 @@ module.exports = {
   },
   jsHint: {
     files: ['<%= config.srcFolders.js %>script.js', '<%= config.srcFolders.jsMolecules %>**/*.js', 'grunt/*.js', 'Gruntfile.js'],
-    tasks: ['jshint']
+    tasks: ['jshint:grunt', 'jshint:src']
   },
   scripts: {
     files: ['<%= config.srcFolders.js %>**/*.js'],
