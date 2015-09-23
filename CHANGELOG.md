@@ -1,3 +1,14 @@
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/rafhun/wpbp/compare/v0.1.6...v0.1.7) (2015-09-23)
+
+
+### Bug Fixes
+
+* **kss:** correctly include js to styleguide ([85449c0](https://github.com/rafhun/wpbp/commit/85449c0))
+* **watch:** run specific jshint task on changes not all ([cac1fa9](https://github.com/rafhun/wpbp/commit/cac1fa9))
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/rafhun/wpbp/compare/v0.1.5...v0.1.6) (2015-09-22)
 
