@@ -4,6 +4,7 @@ module.exports = {
     recursive: true,
     exclude: ['.git', '.hg', '.svn', '.DS_Store', '._*', 'Thumbs.db', '/tmp/cache/**'],
     include: ['/tmp/cache/.htaccess'],
+    compareMode: 'checksum'
   },
   staging: {
     options: {
