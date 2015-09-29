@@ -2,7 +2,7 @@ module.exports = {
   default: {
     src: '<%= config.srcFolders.scss %>',
     options: {
-      dest: '<%= config.buildFolders.documentation %>',
+      dest: '<%= config.rootFolder %><%= config.buildFolders.documentation %>',
       groups: {
         'undefined': 'Basic'
       },
