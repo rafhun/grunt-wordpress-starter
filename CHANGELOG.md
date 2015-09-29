@@ -1,3 +1,15 @@
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/rafhun/wpbp/compare/v0.1.7...v0.1.8) (2015-09-29)
+
+
+### Bug Fixes
+
+* **git:** ignore generated svg files ([d2c2806](https://github.com/rafhun/wpbp/commit/d2c2806))
+* **grunt:** save documentation into the wwwroot not the project root ([fee9033](https://github.com/rafhun/wpbp/commit/fee9033))
+* **rsync:** use compareMode: checksum by default ([8ee5878](https://github.com/rafhun/wpbp/commit/8ee5878)), closes [#1](https://github.com/rafhun/wpbp/issues/1)
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/rafhun/wpbp/compare/v0.1.6...v0.1.7) (2015-09-23)
 
