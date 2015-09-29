@@ -70,6 +70,9 @@ homescreen-*
 # generated favicon html
 favicons.html
 
+# generated svg
+src/icons/min
+
 # secrets (config files, db passwords, etc)
 secrets.json
 keys.php
