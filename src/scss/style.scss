@@ -1,64 +1,62 @@
-// our CSS follows roughly the principles of atomic design described by Brad Frost.
-// find more info here: http://bradfrost.com/blog/post/atomic-web-design/
-// 
-// For larger projects it might be advisable to include Pattern Lab as styleguide
-// generator instead of Hologram but for smaller projects this is perfect.
-// 
+// the main manifest file that imports all necessary ressources
 
-// this variable turns on the editor style mode, you can use this throughout
-// the stylesheet to define different style rules for the editor style sheet.
-// This might be especially important when it comes to stuff that is hidden on
-// the main website but of course should be visible in the backend. Use it as
-// follows:
-// @if $EDITOR-STYLES {
-//  // rules that should be true for the editor
-// } @ else {
-//  // the front end styles
-// }
-// 
+// Some of our styling might have to be different for the CMS editor in order for everything to be visible in there (especially for content components like accordions, …). This variable can be set to true to change the behavior of those components
 $EDITOR-STYLES: false;
 
-// we use susy to create flexible grid layouts
+// import susy from the bower_components (while hoping that a node version of susy gets released)
 @import '../../bower_components/susy/sass/susy';
 
-// import dependencies (nothing compiles here yet!!)
-@import 'dependencies/functions'; // contains only global functions (like rem-calc)
-@import 'dependencies/mixins'; // globally accessible mixins that might be used for several components
-
-// from here on out we define variables that configure our styles globally
+// Dependencies
+//
+// This section will not produce any code but just set up the projects settings and provide some basic global functionality through mixins and functions
+//
+// Style guide: dependencies
+//
+// Weight: 1
+//
+@import 'dependencies/functions';
 @import 'dependencies/color';
 @import 'dependencies/typography';
 @import 'dependencies/layout';
+@import 'dependencies/mixins';
 
-// next up is a global normalize or reset that can be imported directly from the source
-// we start compiling CSS here
-@import 'helpers/normalize';
+// importing the atoms
 
-// here come the atoms, they only include semantic HTML elements
-@import 'atoms/font';
-@import 'atoms/site';
-@import 'atoms/text-inline';
-@import 'atoms/text-block';
-@import 'atoms/lists';
-@import 'atoms/tables';
-@import 'atoms/forms';
-@import 'atoms/media';
-@import 'atoms/code';
+// Atoms
+//
+// We want to load the font face definitions before everything else, maybe we should even consider adding it right before normalize as kind of a vendor sheet.
+//
+// For everything else we consider the scope of the styles contained, from wide to narrow.
+//
+// Style guide: atoms
+//
+// Weight: 2
 
-// the next level are molecules, which basically are several atoms put together
-// stuff like a label, form input and submit button that make a search box
-// 
+@import 'atoms/webfonts';
 
+// import scss port of normalize.css by Nicolas Gallagher for a smart 'reset'
+@import '../../bower_components/normalize-scss/normalize';
 
-// further on we have organisms which usually describe more advanced UI patterns
-// such as a whole headerbar. Organisms always consist of several molecules put
-// together
-// 
+@import 'atoms/site'; // mainly html and body elements
+@import 'atoms/media'; // above all responsive images
+@import 'atoms/type'; // all typography, text styles
+//
+@import 'atoms/manifest';
 
+// Molecules
+//
+// Molecules are the smallest ui components we define. They usually just add styling to one element respectively. Since there are several files to import from subfolders we use a manifest file for molecules to keep the main stylesheet clean.
+//
+// Style guide: molecules
+//
+// Weight: 3
+@import 'molecules/manifest';
 
-// now organisms are being put together into templates, the header connects with
-// the main container and footer...
-// 
-
-
-// if we have page specific styles these come here
+// Organisms
+//
+// Organisms are built from several molecules and make larger parts of the page often already containing some layout decisions.
+//
+// Style guide: organisms
+//
+// Weight: 4
+@import 'organisms/manifest';
