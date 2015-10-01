@@ -73,6 +73,9 @@ favicons.html
 # generated svg
 src/icons/min
 
+# generated images for upload
+src/uploads/dist
+
 # secrets (config files, db passwords, etc)
 secrets.json
 keys.php

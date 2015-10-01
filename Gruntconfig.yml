@@ -20,8 +20,8 @@ srcFolders:
   icons: src/icons/
   iconsMin: src/icons/min/
   images: src/images/
-  imagesContent: src/images/content/
-  imagesTheme: src/images/theme/
+  imagesUpload: src/uploads/
+  imagesToUpload: src/uploads/dist/
   js: src/js/
   jsBuild: src/js/build/
   jsMolecules: src/js/molecules/

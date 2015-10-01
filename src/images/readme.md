@@ -1,0 +1,1 @@
+This folder should contain all images that are referenced from your CSS. Everything in here but the `favicon.png` will be minified and copied to your theme folder and there into an `images` folder. Therefore you can reference them by `/wp-content/themes/{theme-name}/images/{path-to-image}`.
