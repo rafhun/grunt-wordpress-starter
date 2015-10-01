@@ -1,3 +1,18 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/rafhun/wpbp/compare/v0.1.8...v0.2.0) (2015-10-01)
+
+
+### Bug Fixes
+
+* **browserSync:** refresh on changes to styleguide files as well ([4f932f3](https://github.com/rafhun/wpbp/commit/4f932f3)), closes [#2](https://github.com/rafhun/wpbp/issues/2)
+
+### Features
+
+* **grunt:** adjust imagemin to wordpress environment ([703d092](https://github.com/rafhun/wpbp/commit/703d092)), closes [#4](https://github.com/rafhun/wpbp/issues/4)
+* **grunt:** watch for file changes to styleguide markup files ([e6c736f](https://github.com/rafhun/wpbp/commit/e6c736f)), closes [#3](https://github.com/rafhun/wpbp/issues/3)
+
+
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/rafhun/wpbp/compare/v0.1.7...v0.1.8) (2015-09-29)
 
