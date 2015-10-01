@@ -81,10 +81,6 @@ setupUpdate:
   - 'copy:php'
   - 'hashres'
 
-icons:
-  - 'svgmin'
-  - 'grunticon'
-
 editorStyles:
   - 'clean:editorStyles'
   - 'sass:editorStyles'
@@ -126,7 +122,7 @@ scripts:
   - 'uglify'
 
 images:
-  - 'imagemin'
+  - 'imagemin:imagesTheme'
   - 'svgmin'
   - 'grunticon'
   - 'favicons'
@@ -138,3 +134,6 @@ fileMgm:
   - 'clean:favicon'
   - 'copy:editorStyles'
   - 'copy:fonts'
+
+prepareUploads:
+  - 'imagemin:imagesUpload'

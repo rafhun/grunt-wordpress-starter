@@ -1,0 +1,1 @@
+Put all files you plan to upload to WordPress into this folder. Before you upload make sure to run `grunt prepareUpload` which will minify these images and put them into the `src/uploads/dist` folder. Now you have compressed and optimized images ready for an upload through the WordPress interface.
