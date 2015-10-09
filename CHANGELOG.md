@@ -1,3 +1,14 @@
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/rafhun/wpbp/compare/v0.2.1...v0.2.2) (2015-10-09)
+
+
+### Bug Fixes
+
+* **grunt:** better behavior of watch on composer changes ([8b680a1](https://github.com/rafhun/wpbp/commit/8b680a1))
+* **grunt:** open browserSync to defined styleguide folder ([8c20b7e](https://github.com/rafhun/wpbp/commit/8c20b7e))
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/rafhun/wpbp/compare/v0.2.0...v0.2.1) (2015-10-09)
 
