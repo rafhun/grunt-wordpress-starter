@@ -37,6 +37,6 @@ module.exports = {
   },
   composer: {
     files: ['composer.json', 'composer.lock'],
-    tasks: ['shell:installPlugins']
+    tasks: ['shell:updatePlugins']
   }
 }
