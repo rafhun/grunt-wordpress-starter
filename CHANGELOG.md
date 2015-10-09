@@ -1,3 +1,18 @@
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/rafhun/wpbp/compare/v0.2.0...v0.2.1) (2015-10-09)
+
+
+### Bug Fixes
+
+* **scss:** use bower provided normalize and update main manifest structure ([edcf87e](https://github.com/rafhun/wpbp/commit/edcf87e))
+* **styles:** correctly name the styleguide index file ([0fb1b44](https://github.com/rafhun/wpbp/commit/0fb1b44))
+
+### Features
+
+* **wp:** add some more default plugins ([aa656bd](https://github.com/rafhun/wpbp/commit/aa656bd))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/rafhun/wpbp/compare/v0.1.8...v0.2.0) (2015-10-01)
 
