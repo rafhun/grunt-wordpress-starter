@@ -6,7 +6,7 @@ module.exports = {
     options: {
       watchTask: true,
       proxy: '<%= config.devUrl %>',
-      startPath: 'styleguide/index.html'
+      startPath: '<%= config.buildFolders.styleguide %>'
     }
   }
 }
