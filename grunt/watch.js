@@ -38,5 +38,9 @@ module.exports = {
   composer: {
     files: ['composer.json', 'composer.lock'],
     tasks: ['shell:updatePlugins']
+  },
+  htaccess: {
+    files: ['<%= config.srcFolders.config %>.htaccess'],
+    tasks: ['copy:htaccess']
   }
 }

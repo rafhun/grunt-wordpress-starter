@@ -134,6 +134,7 @@ fileMgm:
   - 'clean:favicon'
   - 'copy:editorStyles'
   - 'copy:fonts'
+  - 'copy:htaccess'
 
 prepareUploads:
   - 'imagemin:imagesUpload'

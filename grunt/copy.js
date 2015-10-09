@@ -33,5 +33,13 @@ module.exports = {
         dest: '<%= destFolder %>',
       }
     ]
+  },
+  htaccess: {
+    files: [
+      {
+        src: '<%= config.srcFolders.config %>.htaccess',
+        dest: '<%= config.rootFolder %>.htaccess'
+      }
+    ]
   }
 }
