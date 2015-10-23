@@ -9,6 +9,7 @@ buildFolders:
   icons: icons/
   images: images/
   js: js/
+  languages: languages/
   styleguide: styleguide/
   theme: wp-content/themes/
 
@@ -25,5 +26,6 @@ srcFolders:
   js: src/js/
   jsBuild: src/js/build/
   jsMolecules: src/js/molecules/
+  languages: languages/
   php: src/php/
   scss: src/scss/

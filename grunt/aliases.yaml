@@ -8,6 +8,7 @@ default:
   - 'styles'
   - 'images'
   - 'copy:php'
+  - 'translations'
   - 'hashres'
   - 'docs'
   - 'browserSync'
@@ -23,6 +24,7 @@ local:
   - 'styles'
   - 'images'
   - 'copy:php'
+  - 'translations'
   - 'hashres'
   - 'docs'
 
@@ -36,6 +38,7 @@ staging:
   - 'styles'
   - 'images'
   - 'copy:php'
+  - 'translations'
   - 'hashres'
   - 'docs'
 
@@ -49,6 +52,7 @@ production:
   - 'styles'
   - 'images'
   - 'copy:php'
+  - 'translations'
   - 'hashres'
   - 'docs'
 
@@ -135,6 +139,10 @@ fileMgm:
   - 'copy:editorStyles'
   - 'copy:fonts'
   - 'copy:htaccess'
+
+translations:
+  - 'po2mo'
+  - 'copy:languages'
 
 prepareUploads:
   - 'imagemin:imagesUpload'
