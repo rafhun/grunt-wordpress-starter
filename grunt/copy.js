@@ -24,6 +24,14 @@ module.exports = {
       dest: '<%= destFolder %>',
     }]
   },
+  languages: {
+    files: [{
+      expand: true,
+      cwd: '<%= config.srcFolders.languages %>',
+      src: ['**'],
+      dest: '<%= destFolder %><%= config.buildFolders.languages %>'
+    }]
+  },
   php: {
     files: [
       {
