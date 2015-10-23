@@ -1,12 +1,12 @@
 module.exports = {
   dev: {
     bsFiles: {
-      src: '<%= destFolder %>*.{css,php,js}'
+      src: ['<%= destFolder %>*.{css,php,js}', '<%= config.rootFolder %><%= config.buildFolders.styleguide %>*.html']
     },
     options: {
       watchTask: true,
       proxy: '<%= config.devUrl %>',
-      startPath: 'styleguide/index.html'
+      startPath: '<%= config.buildFolders.styleguide %>'
     }
   }
 }

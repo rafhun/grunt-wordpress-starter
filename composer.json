@@ -5,7 +5,8 @@
   }],
   "require": {
     "wpackagist-plugin/advanced-custom-fields": "4.4.*",
-    "wpackagist-plugin/wp-migrate-db": "0.7.*"
+    "wpackagist-plugin/wp-migrate-db": "0.7.*",
+    "wpackagist-plugin/wp-nested-pages": "1.5.*"
   },
   "extra": {
     "installer-paths": {

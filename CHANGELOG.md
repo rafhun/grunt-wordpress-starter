@@ -1,3 +1,56 @@
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/rafhun/wpbp/compare/v0.2.1...v0.2.2) (2015-10-09)
+
+
+### Bug Fixes
+
+* **grunt:** better behavior of watch on composer changes ([8b680a1](https://github.com/rafhun/wpbp/commit/8b680a1))
+* **grunt:** open browserSync to defined styleguide folder ([8c20b7e](https://github.com/rafhun/wpbp/commit/8c20b7e))
+
+
+
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/rafhun/wpbp/compare/v0.2.0...v0.2.1) (2015-10-09)
+
+
+### Bug Fixes
+
+* **scss:** use bower provided normalize and update main manifest structure ([edcf87e](https://github.com/rafhun/wpbp/commit/edcf87e))
+* **styles:** correctly name the styleguide index file ([0fb1b44](https://github.com/rafhun/wpbp/commit/0fb1b44))
+
+### Features
+
+* **wp:** add some more default plugins ([aa656bd](https://github.com/rafhun/wpbp/commit/aa656bd))
+
+
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/rafhun/wpbp/compare/v0.1.8...v0.2.0) (2015-10-01)
+
+
+### Bug Fixes
+
+* **browserSync:** refresh on changes to styleguide files as well ([4f932f3](https://github.com/rafhun/wpbp/commit/4f932f3)), closes [#2](https://github.com/rafhun/wpbp/issues/2)
+
+### Features
+
+* **grunt:** adjust imagemin to wordpress environment ([703d092](https://github.com/rafhun/wpbp/commit/703d092)), closes [#4](https://github.com/rafhun/wpbp/issues/4)
+* **grunt:** watch for file changes to styleguide markup files ([e6c736f](https://github.com/rafhun/wpbp/commit/e6c736f)), closes [#3](https://github.com/rafhun/wpbp/issues/3)
+
+
+
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/rafhun/wpbp/compare/v0.1.7...v0.1.8) (2015-09-29)
+
+
+### Bug Fixes
+
+* **git:** ignore generated svg files ([d2c2806](https://github.com/rafhun/wpbp/commit/d2c2806))
+* **grunt:** save documentation into the wwwroot not the project root ([fee9033](https://github.com/rafhun/wpbp/commit/fee9033))
+* **rsync:** use compareMode: checksum by default ([8ee5878](https://github.com/rafhun/wpbp/commit/8ee5878)), closes [#1](https://github.com/rafhun/wpbp/issues/1)
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/rafhun/wpbp/compare/v0.1.6...v0.1.7) (2015-09-23)
 

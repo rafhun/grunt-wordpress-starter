@@ -16,8 +16,8 @@ module.exports = {
     tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'kss']
   },
   images: {
-    files: ['<%= config.srcFolders.images %>**/*.{png,jpg,gif}'],
-    tasks: ['imagemin']
+    files: ['<%= config.srcFolders.images %>**/*.{png,jpg,gif,svg}'],
+    tasks: ['imagemin:imagesTheme']
   },
   grunticon: {
     files: ['<%= config.srcFolders.icons %>*.svg'],
@@ -32,11 +32,11 @@ module.exports = {
     tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres']
   },
   kss: {
-    files: ['<%= config.srcFolders.scss %>README.md'],
+    files: ['<%= config.srcFolders.scss %>readme.md','<%= config.srcFolders.scss %>**/*.{html,hbs}'],
     tasks: ['kss']
   },
   composer: {
     files: ['composer.json', 'composer.lock'],
-    tasks: ['shell:installPlugins']
+    tasks: ['shell:updatePlugins']
   }
 }
