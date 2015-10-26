@@ -1,3 +1,18 @@
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/rafhun/wpbp/compare/v0.2.2...v0.2.3) (2015-10-26)
+
+
+### Bug Fixes
+
+* **languages:** add watch task for translations ([08fed98](https://github.com/rafhun/wpbp/commit/08fed98))
+
+### Features
+
+* **grunt:** add default htaccess and tasks to copy it ([5c788ea](https://github.com/rafhun/wpbp/commit/5c788ea))
+* **wp:** add translation tasks ([17e9b53](https://github.com/rafhun/wpbp/commit/17e9b53))
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/rafhun/wpbp/compare/v0.2.1...v0.2.2) (2015-10-09)
 
