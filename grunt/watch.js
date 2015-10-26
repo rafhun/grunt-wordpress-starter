@@ -27,6 +27,10 @@ module.exports = {
     files: ['<%= config.srcFolders.images %>favicon.png'],
     tasks: ['clean:hashes', 'clean:favicon', 'favicons', 'htmlmin', 'replace:favicon', 'copy:index', 'hashres']
   },
+  languages: {
+    files: ['<%= config.srcFolders.languages %>*.po'],
+    tasks: ['translations']
+  },
   php: {
     files: ['<%= config.srcFolders.php %>**/*.php'],
     tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres']
