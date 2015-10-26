@@ -43,7 +43,7 @@
     "grunt-pot": "^0.2.1",
     "grunt-replace": "^0.11.0",
     "grunt-rsync": "^0.6.2",
-    "grunt-sass": "^1.0.0",
+    "grunt-sass": "^1.1.0",
     "grunt-sassdoc": "^2.0.1",
     "grunt-shell": "^1.1.2",
     "grunt-svgmin": "^2.0.1",
