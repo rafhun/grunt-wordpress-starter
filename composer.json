@@ -1,10 +1,25 @@
 {
-  "repositories": [{
+  "repositories": [
+    {
     "type": "composer",
     "url": "http://wpackagist.org"
-  }],
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.3.1",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "http://connect.advancedcustomfields.com/index.php?t=5.3.1&p=pro&a=download&k=[[KEY]]"
+        }
+      }
+    }
+  ],
   "require": {
-    "wpackagist-plugin/advanced-custom-fields": "4.4.*",
+    "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/regenerate-thumbnails": "*",
     "wpackagist-plugin/wp-migrate-db": "0.7.*",
     "wpackagist-plugin/wp-nested-pages": "1.5.*"
   },
