@@ -1,3 +1,23 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/rafhun/wpbp/compare/v0.2.3...v0.3.0) (2015-11-03)
+
+
+### Bug Fixes
+
+* **grunt:** remove sassdown reference from gruntfile ([4794e94](https://github.com/rafhun/wpbp/commit/4794e94))
+* **php:** remove empty files ([94cebe8](https://github.com/rafhun/wpbp/commit/94cebe8))
+* **rsync:** improve configuration for most use cases ([0b9367b](https://github.com/rafhun/wpbp/commit/0b9367b))
+* **scss:** remove all partial imports from style.scss except bower dependencies ([46ad264](https://github.com/rafhun/wpbp/commit/46ad264))
+* **scss-lint:** disable spaceAroundOperators rule ([e7bc23e](https://github.com/rafhun/wpbp/commit/e7bc23e))
+* **secrets-template:** remove unnecessary config values ([cc78da7](https://github.com/rafhun/wpbp/commit/cc78da7))
+
+### Features
+
+* **grunt:** add acf pro key to composer.json on setup ([1b3b2a8](https://github.com/rafhun/wpbp/commit/1b3b2a8))
+* **grunt:** automatically update devUrl on setup ([5bcdc50](https://github.com/rafhun/wpbp/commit/5bcdc50))
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/rafhun/wpbp/compare/v0.2.2...v0.2.3) (2015-10-26)
 
