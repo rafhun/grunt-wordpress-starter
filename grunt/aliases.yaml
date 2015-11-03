@@ -72,12 +72,14 @@ setup:
   - 'shell:getWP'
   - 'shell:getKeys'
   - 'replace:keys'
+  - 'replace:acfProKey'
   - 'shell:installPlugins'
   - 'shell:bower'
   - 'bower_concat'
 
 setupUpdate:
   - 'shell:updateUrl'
+  - 'replace:acfProKey'
   - 'shell:updatePlugins'
   - 'shell:bowerUpdate'
   - 'bower_concat'

@@ -56,5 +56,17 @@ module.exports = {
     },
     src: '<%= config.srcFolders.config %>wp-config-sample.php',
     dest: '<%= config.srcFolders.config %>wp-config.php'
+  },
+  acfProKey: {
+    options: {
+      patterns: [
+        {
+          match: 'acfProKey',
+          replacement: '<%= secrets.acfProKey %>'
+        }
+      ]
+    },
+    src: 'composer.json',
+    dest: 'composer.json'
   }
 }

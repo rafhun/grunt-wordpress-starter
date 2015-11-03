@@ -12,7 +12,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "http://connect.advancedcustomfields.com/index.php?t=5.3.1&p=pro&a=download&k=[[KEY]]"
+          "url": "http://connect.advancedcustomfields.com/index.php?t=5.3.1&p=pro&a=download&k=@@acfProKey"
         }
       }
     }
