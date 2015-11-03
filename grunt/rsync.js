@@ -11,6 +11,15 @@ module.exports = {
       src: 'wwwroot/',
       dest: '<%= secrets.staging.sshRoot %>',
       host: '<%= secrets.staging.sshHost %>',
+      delete: false
+    }
+  },
+  stagingDry: {
+    options: {
+      args: ['--verbose', '--dry-run'],
+      src: 'wwwroot/',
+      dest: '<%= secrets.staging.sshRoot %>',
+      host: '<%= secrets.staging.sshHost %>',
       delete: true
     }
   },
@@ -19,7 +28,7 @@ module.exports = {
       src: 'wwwroot/',
       dest: '<%= secrets.production.sshRoot %>',
       host: '<%= secrets.production.sshHost %>',
-      delete: true
+      delete: false
     }
   },
   productionDry: {
