@@ -22,5 +22,8 @@ module.exports = {
   },
   updatePlugins: {
     command: 'composer self-update && composer update --no-dev'
+  },
+  updateUrl: {
+    command: 'sed -i "" "s=<%= config.devUrl %>=http://${PWD##*/}.dev=g" Gruntconfig.yml'
   }
 }

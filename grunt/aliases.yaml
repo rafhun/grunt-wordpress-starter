@@ -68,6 +68,7 @@ getWP:
   - 'shell:getWP'
 
 setup:
+  - 'shell:updateUrl'
   - 'shell:getWP'
   - 'shell:getKeys'
   - 'replace:keys'
@@ -76,6 +77,7 @@ setup:
   - 'bower_concat'
 
 setupUpdate:
+  - 'shell:updateUrl'
   - 'shell:updatePlugins'
   - 'shell:bowerUpdate'
   - 'bower_concat'
