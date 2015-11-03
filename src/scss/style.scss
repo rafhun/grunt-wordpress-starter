@@ -14,11 +14,11 @@ $EDITOR-STYLES: false;
 //
 // Weight: 1
 //
-@import 'dependencies/functions';
-@import 'dependencies/color';
-@import 'dependencies/typography';
-@import 'dependencies/layout';
-@import 'dependencies/mixins';
+// @import 'dependencies/functions';
+// @import 'dependencies/color';
+// @import 'dependencies/typography';
+// @import 'dependencies/layout';
+// @import 'dependencies/mixins';
 
 // importing the atoms
 
@@ -32,16 +32,16 @@ $EDITOR-STYLES: false;
 //
 // Weight: 2
 
-@import 'atoms/webfonts';
+// @import 'atoms/webfonts';
 
 // import scss port of normalize.css by Nicolas Gallagher for a smart 'reset'
-@import '../../bower_components/normalize-scss/normalize';
+@import '../../bower_components/normalize-scss/_normalize.scss';
 
-@import 'atoms/site'; // mainly html and body elements
-@import 'atoms/media'; // above all responsive images
-@import 'atoms/type'; // all typography, text styles
-//
-@import 'atoms/manifest';
+// @import 'atoms/site'; // mainly html and body elements
+// @import 'atoms/media'; // above all responsive images
+// @import 'atoms/type'; // all typography, text styles
+// //
+// @import 'atoms/manifest';
 
 // Molecules
 //
@@ -50,7 +50,7 @@ $EDITOR-STYLES: false;
 // Style guide: molecules
 //
 // Weight: 3
-@import 'molecules/manifest';
+// @import 'molecules/manifest';
 
 // Organisms
 //
@@ -59,4 +59,4 @@ $EDITOR-STYLES: false;
 // Style guide: organisms
 //
 // Weight: 4
-@import 'organisms/manifest';
+// @import 'organisms/manifest';
