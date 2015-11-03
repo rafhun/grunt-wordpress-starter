@@ -4,7 +4,7 @@
   "authors": [
     "Raphael Hüni <rafhun©gmail.com>"
   ],
-  "description": "An automated Wordpress theme development environment, based on Grunt. It is preconfigured to use Sass with  Susy for styles, Hologram with  Cortana for automatic styleguide creation, JS and SCSS linters to ensure code consistency, BrowserSync because it just rocks and many more important tools.",
+  "description": "An automated Wordpress theme development environment, based on Grunt. It is preconfigured to use Sass (libsass) with Susy for styles, KSS for automatic styleguide creation, JS and SCSS linters to ensure code consistency, BrowserSync because it just rocks and many more important tools.",
   "keywords": [
     "wordpress",
     "theme",
