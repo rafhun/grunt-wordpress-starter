@@ -150,3 +150,11 @@ translations:
 
 prepareUploads:
   - 'imagemin:imagesUpload'
+
+ftpStaging:
+  - 'staging'
+  - 'ftp_push:staging'
+
+ftpProduction:
+  - 'production'
+  - 'ftp_push:production'
