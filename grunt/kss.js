@@ -2,7 +2,7 @@ module.exports = {
   options: {
     css: ['/<%= config.buildFolders.theme %><%= config.themeName %>/style.css', '/<%= config.buildFolders.theme %><%= config.themeName %>/<%= config.buildFolders.icons %>icons.data.svg.css'],
     js: '/<%= config.buildFolders.theme %><%= config.themeName %>/<%= config.buildFolders.js %>script.js',
-    // template: 'node_modules/grunt-kss/node_modules/kss/generator/handlebars/template/'
+    template: '<%= config.srcFolders.config %>kss/template/'
   },
   styleguide: {
     files: {

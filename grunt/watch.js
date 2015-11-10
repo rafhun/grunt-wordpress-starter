@@ -36,7 +36,7 @@ module.exports = {
     tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres']
   },
   kss: {
-    files: ['<%= config.srcFolders.scss %>readme.md','<%= config.srcFolders.scss %>**/*.{html,hbs}'],
+    files: ['<%= config.srcFolders.scss %>readme.md','<%= config.srcFolders.scss %>**/*.{html,hbs}', '<%= config.srcFolders.config %>kss/template/**'],
     tasks: ['kss']
   },
   composer: {
