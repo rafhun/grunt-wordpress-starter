@@ -1,3 +1,17 @@
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/rafhun/wpbp/compare/v0.3.0...v0.3.1) (2015-11-10)
+
+
+### Bug Fixes
+
+* **grunt:** remove excessive commas from secrets template ([6b7fca2](https://github.com/rafhun/wpbp/commit/6b7fca2))
+
+### Features
+
+* **kss:** add custom kss template ([0d66bdd](https://github.com/rafhun/wpbp/commit/0d66bdd)), closes [#5](https://github.com/rafhun/wpbp/issues/5)
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/rafhun/wpbp/compare/v0.2.3...v0.3.0) (2015-11-03)
 
