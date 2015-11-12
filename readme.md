@@ -5,7 +5,7 @@ This framework's goal is to ease Wordpress theme development by making it availa
 ## Prerequisites
 
 ### Framework
-As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the Wordpress installation process require `wget`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell and also that you track your progress with git.
+As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the Wordpress installation process require `wget` and `curl`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell and also that you track your progress with git.
 
 ### CMS / Server
 Wordpress requires PHP and a MySQL database on your server. However if you are only concerned about styling and do not need to work on the CMS itself you can do that as the generated styleguide is a simple static site that you can access directly.
@@ -13,6 +13,8 @@ Wordpress requires PHP and a MySQL database on your server. However if you are o
 If you are running on Mac OS X there are many great tutorials about setting up a development environment, [this one](http://codepen.io/rafhun/blog/setting-up-a-devenv-on-a-mac) is recommended.
 
 ### Set Up the Repo
+
+#### Keep boilerplate reference
 
 If you have access to Github Pro just fork the project to your account, then clone it to your machine.
 
@@ -28,14 +30,25 @@ By default this adds the github remote as `origin`. We want to change this as we
 git remote rename origin boilerplate
 ```
 
+#### Wipe out boilerplate and its complete history
+
+Clone the repo (see above) the enter into the folder and remove the `.git` folder (delete it in the finder or by staying in the command line: `rm -rf .git`). However make sure you are in the correct folder when running the above command!
+
+Next you can initialize a new repo by running
+
+```
+git init
+```
+
+Make sure to adjust the version number and concrete project information in all relevant files (`bower.json, package.json, readme.md ), add everything, then create your initial commit. Set up your online repo (for Bitbucket see below) and configure everything accordingly.
+
 Then create a new repo on [Bitbucket](http://bitbucket.org/). Once done you can follow the instructions given on Bitbucket itself. Choose that you already have data and copy the commands given there. After this you should be set up to push and pull from the new origin remote that points to the Bitbucket repo.
 
 ## Initialize a New Project
 
 ### Grunt Environment
-As a first step that otherwise might easily be forgotten open your `Gruntconfig.yml` file and adjust the value for `devUrl` to your development URL.
 
-Now you can run
+Run
 
 ```
 npm install
@@ -47,29 +60,24 @@ which pulls down all node modules that are defined as dependencies and puts them
 It is recommended to set up a database and its user before starting the Wordpress installation. To do this use your database administration tool of choice, access your MySQL server and create a new user with rights to only a new database dedicated to your Wordpress install. Make sure to remember your database name, database user name and password and best immediately put them down in your `secrets.json` file (see below).
 
 ### Secrets
-All configuration data for your `wp-config.php` file should be put into the `secrets.json` file. This is gitignored by default to make sure you do not end up posting your critical access data to your online repo. To ease setting up the secrets file there is a `secrets-template.json` in the repo which you can fill out and then save as `secrets.json`. The basic boilerplate allows for the configuration of three different environments (local, staging, production), however this can easily be extended by adjusting the corresponding grunt tasks (esp. `grunt/replace.js` and `grunt/rsync.js`). Within this file you also have the opportunity to configure your SSH access for remote servers.
+All configuration data for your `wp-config.php` file should be put into the `secrets.json` file. This is gitignored by default to make sure you do not end up posting your sensitive access data to your online repo. To ease setting up the secrets file there is a `secrets-template.json` in the repo which you can fill out and then save as `secrets.json`. The basic boilerplate allows for the configuration of three different environments (local, staging, production), however this can easily be extended by adjusting the corresponding grunt tasks (esp. `grunt/replace.js`, `grunt/ftp_push.js` and `grunt/rsync.js`). Within this file you also have the opportunity to configure your SSH or FTP access for remote servers.
 
 ### Wordpress
 Before proceeding with the Wordpress install make sure you have the database set up and have put the access details into your `secrets.json` file. If Grunt cannot find your secrets file it will not be able to run.
 
-Now to automate your Wordpress install run
-
-```
-grunt getWP
-```
-
-which pulls down the latest version of Wordpress, untars it and then moves the downloaded files into your root folder.
-
-As soon as the task is done you can call up your local server and follow the instructions to install Wordpress. Now you are ready to start developing the next great theme.
-
-### Theme Development Dependencies
-After successfully setting everything up you are now ready to start development. As the framework is based on Susy and offers jQuery support we need to install some more dependencies. This can be done by running
+Now to set your whole project up run
 
 ```
 grunt setup
 ```
 
-To find out which dependencies are being pulled in check out the `bower.json` file. With the move to Sassdown and Libsass this project is now completely independent of Ruby which is why we are pulling in Susy through bower. You are now ready to start developing your theme. Just run
+which updates the Local Dev URL automatically, pulls down the latest version of Wordpress, untars it and then moves the downloaded files into your root folder.
+
+To find out which dependencies are being pulled in check out the `bower.json` file. With the move to Sassdown and Libsass this project is now completely independent of Ruby which is why we are pulling in Susy through bower.
+
+We also use Composer to pull in all of our plugins and themes. The above setup task installs some basic plugins that are used for most installations. Only install new plugins through the Composer file to make them part of our repo.
+
+You are now ready to start developing your theme. Just run
 
 ```
 grunt
@@ -84,22 +92,36 @@ To change your themes name change `themeName` in `Gruntconfig.yml`. This automat
 
 Requirements on your machine or virtual development environment:
 
-* Ruby
-    - Bundler
 * Node
     - grunt-cli
-* wget (if you want to use the automatic Wordpress downloader)
+* wget or curl (if you want to use the automatic Wordpress downloader)
+* Composer
 
 If you are working on OS X the use of Homebrew is strongly recommended. Follow [these instructions](http://brew.sh).
 
 Node is needed for Grunt. Find out more about Grunt on the [official getting started guide](http://gruntjs.com/getting-started). The grunt-cli must be installed globally all other npm modules are downloaded locally.
 With Homebrew you can install node (npm is included) by running `brew install node`.
 
-Ruby is needed for Sass and Susy as well as the styleguide generator Hologram. It is not recommended to use the system ruby for your projects. Use rbenv or rvm to manage your ruby versions. You can install rbenv through Homebrew by running `brew install rbenv`.
-Bundler is used to manage the versions of your gems. To install it run `gem install bundler`. Find out more about bundler [on their website](http://bundler.io).
+## Wordpress
+This boilerplate starts completely from scratch. No files are in the relevant `src` folders to allow you a complete fresh start. Eventually we might include a starter theme for you to use though.
 
-A grunt task has been configured that automatically donwloads the latest wordpress version, untars it and deletes the downloaded archive. You can use this task to setup a new Wordpress installation or everytime you want to compile a fresh, clean install. Be careful though as this wipes out your whole webroot folder (in this case `wwwroot`) including all plugins.
+The header in your `style.css` file that is required by WordPress can be adjusted in the `Gruntfile.js`. Make sure to add your relevant information there.
 
-@TODO: automatically copy downloaded plugin files to the src folder before wiping out the webroot.
+### Styles
+For styling it is recommended to start with [this styles library](https://github.com/rafhun/styles-library), however you are free to add any sass files to the `src/scss` folder (resp. the one you defined in the `Gruntconfig.yml` file), just make sure to name the main import file `style.scss` or manually adjust the sass task accordingly. These files will be compiled and autoprefixed automatically. Then the header will be prepended to the resulting file which then also is minified. In your theme you should only import/use the minified CSS file while keeping the other one as a reference for your WordPress.
 
-If you want to use this task you need to install wget by running `brew install wget` since the file is downloaded through it.
+### PHP
+To start with we recommend the Underscores starter theme. Copy all PHP files that are delievered to you to the `src/php` (or the one you defined in `Gruntconfig.yml`) folder. With this you are ready to activate the theme and start development on it.
+
+### Javascript
+Add all vendor scripts to the `plugins.js` file in the source scripts folder and your own to the `scripts.js` one. Should you have created molecules that depend on a certain script add this to the molecules folder within the JS one. Again you can find and adapt all relevant folder names in the `Gruntconfig.yml`.
+
+## Deployment
+For deployment two task are ready to be used depending on your server access. We provide automated grunt deployment through SSH and rsync (which is preferred) and alternatively a grunt deployment via FTP (should you not be able to get SSH access to your hosting). The boilerplate comes prepared for two different remote areas (staging and production) as well as one local one. However more can easily be added by extending/adjusting the relevant tasks.
+
+### SSH Deployment
+To deploy your site through SSH it is recommended to first set up your connection by adding your public SSH key to the authorized keys list on your server. This means that you will be able to connect to the server without having to provide the password manually for every connection. Set up your own keys (there are enough tutorials on that online) then run the following command:
+
+```
+cat ~/.ssh/id_rsa.pub | ssh user@hostname 'cat >> .ssh/authorized_keys'
+```
