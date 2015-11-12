@@ -1,5 +1,12 @@
 #!/bin/bash
-wget https://wordpress.org/latest.tar.gz && tar zxvf latest.tar.gz
+if [[ $(type -t wget) ]]; then wget https://wordpress.org/latest.tar.gz && tar zxvf latest.tar.gz
+
+elif [[ $(type -t curl) ]]; then curl -O https://wordpress.org/latest.tar.gz && tar zxvf latest.tar.gz
+
+else
+  error "Could not find wget or curl, please install one of them"
+  return 1
+fi
 
 if [ -d $1 ]
 then
