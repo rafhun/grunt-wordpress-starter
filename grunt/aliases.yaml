@@ -1,5 +1,6 @@
 default:
   - 'fileMgm'
+  - 'copy:htaccess'
   - 'jshint:grunt'
   - 'jshint:src'
   - 'replace:keys'
@@ -16,6 +17,7 @@ default:
 
 local:
   - 'fileMgm'
+  - 'copy:htaccess'
   - 'jshint:grunt'
   - 'jshint:src'
   - 'replace:keys'
@@ -30,6 +32,7 @@ local:
 
 staging:
   - 'fileMgm'
+  - 'copy:htaccess~production'
   - 'jshint:grunt'
   - 'jshint:shipping'
   - 'replace:keys'
@@ -44,6 +47,7 @@ staging:
 
 production:
   - 'fileMgm'
+  - 'copy:htaccess~production'
   - 'jshint:grunt'
   - 'jshint:shipping'
   - 'replace:keys'
@@ -142,7 +146,6 @@ fileMgm:
   - 'clean:favicon'
   - 'copy:editorStyles'
   - 'copy:fonts'
-  - 'copy:htaccess'
 
 translations:
   - 'po2mo'

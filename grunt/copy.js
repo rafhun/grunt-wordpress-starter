@@ -49,5 +49,13 @@ module.exports = {
         dest: '<%= config.rootFolder %>.htaccess'
       }
     ]
+  },
+  htaccessProduction: {
+    files: [
+      {
+        src: '<%= config.srcFolders.config %>.htaccess~production',
+        dest: '<%= config.rootFolder %>.htaccess'
+      }
+    ]
   }
 }
