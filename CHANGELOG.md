@@ -1,3 +1,19 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/rafhun/wpbp/compare/v0.3.1...v0.4.0) (2015-11-17)
+
+
+### Bug Fixes
+
+* **hashres:** correctly hash script file ([7353bcf](https://github.com/rafhun/wpbp/commit/7353bcf))
+
+### Features
+
+* **grunt:** add ftp push task ([349a8cb](https://github.com/rafhun/wpbp/commit/349a8cb))
+* **htaccess:** add production env template ([c8e2a71](https://github.com/rafhun/wpbp/commit/c8e2a71))
+* **setup:** allow for wget or curl downloads ([0045db0](https://github.com/rafhun/wpbp/commit/0045db0))
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/rafhun/wpbp/compare/v0.3.0...v0.3.1) (2015-11-10)
 
