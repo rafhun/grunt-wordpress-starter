@@ -7,12 +7,13 @@ module.exports = {
       dest: '<%= destFolder %><%= config.buildFolders.icons %>'
     }],
     options: {
-      'compressPNG': true,
-      'dynamicColorOnly': true,
-      'colors': {
+      enhanceSVG: true,
+      compressPNG: true,
+      dynamicColorOnly: true,
+      colors: {
         primary: '#000',
       },
-      'customselectors': {
+      customselectors: {
         'home-primary': ['.icon-home:hover'],
       }
     }
