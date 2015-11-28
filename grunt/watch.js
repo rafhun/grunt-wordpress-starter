@@ -21,7 +21,7 @@ module.exports = {
   },
   grunticon: {
     files: ['<%= config.srcFolders.icons %>*.svg'],
-    tasks: ['svgmin', 'grunticon']
+    tasks: ['svgmin', 'grunticon', 'hashres']
   },
   favicons: {
     files: ['<%= config.srcFolders.images %>favicon.png'],
