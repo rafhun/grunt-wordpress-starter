@@ -10,13 +10,16 @@ buildFolders:
   images: images/
   js: js/
   languages: languages/
+  plugins: wp-content/plugins
   styleguide: styleguide/
-  theme: wp-content/themes/
+  themes: wp-content/themes/
 
 srcFolders:
   bower: src/bower_components/
   config: src/config/
   css: src/css/
+  customPlugins: src/plugins
+  customThemes: src/themes
   fonts: src/fonts/
   icons: src/icons/
   iconsMin: src/icons/min/

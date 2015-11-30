@@ -8,5 +8,5 @@ module.exports = {
   html: ['<%= destFolder %>*.html'],
   images: ['<%= destFolder %><%= config.buildFolders.img %>'],
   minSvg: ['<%= config.srcFolders.iconsMin %>*.svg'],
-  unhashed: ['<%= destFolder %>{style.min.css,script.min.js}']
+  unhashed: ['<%= destFolder %>{style.min.css,script.min.js}'],
 }
