@@ -1,3 +1,18 @@
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/rafhun/wpbp/compare/v0.4.0...v0.4.1) (2015-11-30)
+
+
+### Bug Fixes
+
+* **grunt:** hash the grunticon css files ([0aa925d](https://github.com/rafhun/wpbp/commit/0aa925d))
+
+### Features
+
+* **grunticon:** enable enhanceSVG ([d38c5e5](https://github.com/rafhun/wpbp/commit/d38c5e5))
+* **wordpress:** enable custom plugins and themes ([d8c7d1e](https://github.com/rafhun/wpbp/commit/d8c7d1e))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/rafhun/wpbp/compare/v0.3.1...v0.4.0) (2015-11-17)
 

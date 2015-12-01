@@ -1,4 +1,4 @@
-Version: 0.4.0
+Version: 0.4.1
 
 This framework's goal is to ease Wordpress theme development by making it available with some useful automation. It comes with preconfigured and easily adaptable Grunt tasks that make the most important development steps easier for you. The framework only needs a Node.js installation to work properly and includes tasks for Sass compiling, Javascript linting, concatenation and uglification but also for image optimization, icon creation as well as more administrative tasks such as an automated version bump and changelog generation. Also if you are working with a production and/or staging environment with SSH access you can easily deploy your builds through rsync.
 
@@ -125,3 +125,8 @@ To deploy your site through SSH it is recommended to first set up your connectio
 ```
 cat ~/.ssh/id_rsa.pub | ssh user@hostname 'cat >> .ssh/authorized_keys'
 ```
+
+As an alternative you can run `brew install copy-ssh-id` (requires Homebrew) which gives you access to the `ssh-copy-id` function (usage: `ssh-copy-id user@host`). This command basically does the same as the above command.
+
+## Custom Plugins/Themes
+To work with custom plugins or themes you can save them to the respective folders defined in the Gruntconfig (defaults are `src/plugins` resp. `src/themes`). All folders and files within these folders will be copied to the respective WordPress folders. This is useful if you are working with your own or with premium plugins/themes, i. e. a starter theme or a premium plugin that is not available through composer. However the composer approach should always be preferred as it is a cleaner way of keeping your files.

@@ -137,8 +137,6 @@ images:
   - 'imagemin:imagesTheme'
   - 'svgmin'
   - 'grunticon'
-  - 'favicons'
-  - 'htmlmin'
 
 fileMgm:
   - 'clean:dest'
@@ -146,6 +144,8 @@ fileMgm:
   - 'clean:favicon'
   - 'copy:editorStyles'
   - 'copy:fonts'
+  - 'copy:customPlugins'
+  - 'copy:customThemes'
 
 translations:
   - 'po2mo'

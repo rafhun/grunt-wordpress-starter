@@ -6,8 +6,9 @@ module.exports = {
   prod: {
     src: [
       '<%= destFolder %>style.min.css',
-      '<%= destFolder %><%= config.buildFolders.js %>script.min.js'
+      '<%= destFolder %><%= config.buildFolders.js %>script.min.js',
+      '<%= destFolder %><%= config.buildFolders.icons %>*.css'
     ],
-    dest: '<%=destFolder %>functions.php'
+    dest: ['<%=destFolder %>functions.php', '<%= destFolder %>header.php']
   }
 }

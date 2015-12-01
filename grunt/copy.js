@@ -57,5 +57,25 @@ module.exports = {
         dest: '<%= config.rootFolder %>.htaccess'
       }
     ]
+  },
+  customPlugins: {
+    files: [
+      {
+        expand: true,
+        cwd: '<%= config.srcFolders.customPlugins %>',
+        src: ['**'],
+        dest: '<%= config.rootFolder %><%= config.buildFolders.plugins %>',
+      }
+    ]
+  },
+  customThemes: {
+    files: [
+      {
+        expand: true,
+        cwd: '<%= config.srcFolders.customThemes %>',
+        src: ['**'],
+        dest: '<%= config.rootFolder %><%= config.buildFolders.themes %>',
+      }
+    ]
   }
 }
