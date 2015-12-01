@@ -35,7 +35,6 @@
     "grunt-contrib-uglify": "^0.10.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-conventional-changelog": "^5.0.0",
-    "grunt-favicons": "^0.7.0",
     "grunt-ftp-push": "^0.4.3",
     "grunt-grunticon": "^2.2.2",
     "grunt-hashres": "^0.4.1",
