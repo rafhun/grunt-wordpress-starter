@@ -54,7 +54,7 @@ function rafhun_setup() {
   add_image_size( 'header-desktop', 2560, 604 );
   add_image_size( 'header-mobile', 1240, 1240, true);
 
-  // This theme uses wp_nav_menu() in one location.
+  // This theme uses wp_nav_menu() in two locations.
   register_nav_menus( array(
     'primary-menu' => __( 'main nav', 'rafhun' ),
     'off-canvas-menu' => __( 'Off Canvas Menu', 'rafhun')
@@ -115,7 +115,8 @@ function rafhun_scripts() {
   /*wp_localize_script( 'rafhun-script', 'ajaxpagination', array(
     'ajaxurl' => admin_url( 'admin-ajax.php' )
   ));
-
+*/
+/*
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }*/
@@ -158,21 +159,8 @@ remove_action('wp_head', 'wp_generator');
  */
 // require get_template_directory() . '/inc/jetpack.php';
 
-/**
- * Load custom TeamProfiles post type
- */
-// require get_template_directory() . '/inc/TeamProfiles.php';
-
-// load custom References post type
-// require get_template_directory() . '/inc/References.php';
-
 // load ajax pagination stuff
 //require get_template_directory() . '/inc/AjaxPagination.php';
-
-/**
- * editor customizing
- */
-// require get_template_directory() . '/inc/editor.php';
 
 /**
  * Load Custom Off Canvas Walker Function
