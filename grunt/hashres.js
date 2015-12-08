@@ -9,6 +9,6 @@ module.exports = {
       '<%= destFolder %><%= config.buildFolders.js %>script.min.js',
       '<%= destFolder %><%= config.buildFolders.icons %>*.css'
     ],
-    dest: ['<%=destFolder %>functions.php', '<%= destFolder %>header.php']
+    dest: ['<%=destFolder %>functions.php', '<%= destFolder %>header.php', '<%= config.srcFolders.config %>kss/template/index.html']
   }
 }

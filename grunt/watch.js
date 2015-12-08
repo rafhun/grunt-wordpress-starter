@@ -21,7 +21,7 @@ module.exports = {
   },
   grunticon: {
     files: ['<%= config.srcFolders.icons %>*.svg'],
-    tasks: ['svgmin', 'grunticon', 'hashres']
+    tasks: ['svgmin', 'grunticon', 'hashres', 'kss']
   },
   favicons: {
     files: ['<%= config.srcFolders.images %>favicon.png'],
@@ -33,7 +33,7 @@ module.exports = {
   },
   php: {
     files: ['<%= config.srcFolders.php %>**/*.php'],
-    tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres']
+    tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres', 'kss']
   },
   kss: {
     files: ['<%= config.srcFolders.scss %>readme.md','<%= config.srcFolders.scss %>**/*.{html,hbs}', '<%= config.srcFolders.config %>kss/template/**'],
