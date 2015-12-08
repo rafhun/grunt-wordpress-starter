@@ -1,3 +1,21 @@
+<a name="0.4.3"></a>
+## [0.4.3](https://github.com/rafhun/wpbp/compare/v0.4.2...v0.4.3) (2015-12-08)
+
+
+### Bug Fixes
+
+* **fonts:** add default fonts folder ([eda0af4](https://github.com/rafhun/wpbp/commit/eda0af4))
+* **icons:** add default icons folder ([58eace9](https://github.com/rafhun/wpbp/commit/58eace9))
+* **js:** add base plugins and script files ([5401371](https://github.com/rafhun/wpbp/commit/5401371))
+* **kss:** correctly link subsections ([deac796](https://github.com/rafhun/wpbp/commit/deac796))
+
+### Features
+
+* **hashres:** also hash the icon css ([90b51f2](https://github.com/rafhun/wpbp/commit/90b51f2))
+* **php:** add off canvas walker example ([bae7215](https://github.com/rafhun/wpbp/commit/bae7215))
+
+
+
 <a name="0.4.2"></a>
 ## [0.4.2](https://github.com/rafhun/wpbp/compare/v0.4.1...v0.4.2) (2015-12-02)
 
