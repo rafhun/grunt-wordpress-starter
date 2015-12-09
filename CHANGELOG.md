@@ -1,3 +1,14 @@
+<a name="0.4.4"></a>
+## [0.4.4](https://github.com/rafhun/wpbp/compare/v0.4.3...v0.4.4) (2015-12-09)
+
+
+### Bug Fixes
+
+* **grunt:** change default value for acfProKey ([3915266](https://github.com/rafhun/wpbp/commit/3915266))
+* **hashres:** use full stylesheet names instead of * to prevent hashes added to file name ([9c8927c](https://github.com/rafhun/wpbp/commit/9c8927c))
+
+
+
 <a name="0.4.3"></a>
 ## [0.4.3](https://github.com/rafhun/wpbp/compare/v0.4.2...v0.4.3) (2015-12-08)
 
