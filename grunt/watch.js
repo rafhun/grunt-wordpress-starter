@@ -9,11 +9,11 @@ module.exports = {
   },
   scripts: {
     files: ['<%= config.srcFolders.js %>**/*.js'],
-    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:index', 'hashres', 'kss']
+    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:hashTargets', 'hashres', 'kss']
   },
   styles: {
     files: ['<%= config.srcFolders.scss %>**/*.scss'],
-    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:index', 'hashres', 'kss']
+    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:hashTargets', 'hashres', 'kss']
   },
   images: {
     files: ['<%= config.srcFolders.images %>**/*.{png,jpg,gif,svg}'],
@@ -25,7 +25,7 @@ module.exports = {
   },
   favicons: {
     files: ['<%= config.srcFolders.images %>favicon.png'],
-    tasks: ['clean:hashes', 'clean:favicon', 'favicons', 'htmlmin', 'replace:favicon', 'copy:index', 'hashres']
+    tasks: ['clean:hashes', 'clean:favicon', 'favicons', 'htmlmin', 'replace:favicon', 'copy:hashTargets', 'hashres']
   },
   languages: {
     files: ['<%= config.srcFolders.languages %>*.po'],

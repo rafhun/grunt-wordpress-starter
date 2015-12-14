@@ -16,11 +16,11 @@ module.exports = {
       }
     ]
   },
-  index: {
+  hashTargets: {
     files: [{
       expand: true,
       cwd: '<%= config.srcFolders.php %>',
-      src: 'index.php',
+      src: ['index.php', 'functions.php'],
       dest: '<%= destFolder %>',
     }]
   },

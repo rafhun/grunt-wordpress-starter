@@ -32,7 +32,7 @@ local:
 
 staging:
   - 'fileMgm'
-  - 'copy:htaccess~production'
+  - 'copy:htaccessProduction'
   - 'jshint:grunt'
   - 'jshint:shipping'
   - 'replace:keys'
@@ -47,7 +47,7 @@ staging:
 
 production:
   - 'fileMgm'
-  - 'copy:htaccess~production'
+  - 'copy:htaccessProduction'
   - 'jshint:grunt'
   - 'jshint:shipping'
   - 'replace:keys'
