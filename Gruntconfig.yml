@@ -29,6 +29,6 @@ srcFolders:
   js: src/js/
   jsBuild: src/js/build/
   jsMolecules: src/js/molecules/
-  languages: languages/
+  languages: src/languages/
   php: src/php/
   scss: src/scss/
