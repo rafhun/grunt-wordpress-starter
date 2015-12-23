@@ -1,3 +1,15 @@
+<a name="0.4.5"></a>
+## [0.4.5](https://github.com/rafhun/wpbp/compare/v0.4.4...v0.4.5) (2015-12-23)
+
+
+### Bug Fixes
+
+* **grunt:** fix hashing and copying of functions php and htaccess ([74ce6da](https://github.com/rafhun/wpbp/commit/74ce6da))
+* **grunt:** languages should be put into src folder ([aaf3cb6](https://github.com/rafhun/wpbp/commit/aaf3cb6))
+* **icons:** better handling of icons and hashres ([3bd9f0e](https://github.com/rafhun/wpbp/commit/3bd9f0e))
+
+
+
 <a name="0.4.4"></a>
 ## [0.4.4](https://github.com/rafhun/wpbp/compare/v0.4.3...v0.4.4) (2015-12-09)
 
