@@ -4,7 +4,7 @@ module.exports = {
       expand: true,
       cwd: '<%= config.srcFolders.iconsMin %>',
       src: ['*.svg', '*.png'],
-      dest: '<%= destFolder %><%= config.buildFolders.icons %>'
+      dest: '<%= config.srcFolders.grunticon %>'
     }],
     options: {
       enhanceSVG: true,

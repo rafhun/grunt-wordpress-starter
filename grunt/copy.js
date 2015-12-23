@@ -16,12 +16,36 @@ module.exports = {
       }
     ]
   },
+  functions: {
+    files: [{
+      expand: true,
+      cwd: '<%= config.srcFolders.php %>',
+      src: ['functions.php'],
+      dest: '<%= destFolder %>',
+    }]
+  },
   hashTargets: {
     files: [{
       expand: true,
       cwd: '<%= config.srcFolders.php %>',
-      src: ['index.php', 'functions.php'],
+      src: ['header.php', 'functions.php'],
       dest: '<%= destFolder %>',
+    }]
+  },
+  header: {
+    files: [{
+      expand: true,
+      cwd: '<%= config.srcFolders.php %>',
+      src: ['header.php'],
+      dest: '<%= destFolder %>',
+    }]
+  },
+  icons: {
+    files: [{
+      expand: true,
+      cwd: '<%= config.srcFolders.grunticon %>',
+      src: ['**'],
+      dest: '<%= destFolder %><%= config.buildFolders.icons %>'
     }]
   },
   languages: {

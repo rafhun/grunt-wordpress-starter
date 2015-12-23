@@ -137,6 +137,7 @@ images:
   - 'imagemin:imagesTheme'
   - 'svgmin'
   - 'grunticon'
+  - 'copy:icons'
 
 fileMgm:
   - 'clean:dest'

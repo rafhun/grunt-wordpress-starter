@@ -9,11 +9,11 @@ module.exports = {
   },
   scripts: {
     files: ['<%= config.srcFolders.js %>**/*.js'],
-    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:hashTargets', 'hashres', 'kss']
+    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:functions', 'hashres', 'kss']
   },
   styles: {
     files: ['<%= config.srcFolders.scss %>**/*.scss'],
-    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:hashTargets', 'hashres', 'kss']
+    tasks: ['clean:hashedCss', 'sass:main', 'autoprefixer:main', 'cssmin', 'uglify', 'copy:functions', 'hashres', 'kss']
   },
   images: {
     files: ['<%= config.srcFolders.images %>**/*.{png,jpg,gif,svg}'],
@@ -21,11 +21,7 @@ module.exports = {
   },
   grunticon: {
     files: ['<%= config.srcFolders.icons %>*.svg'],
-    tasks: ['svgmin', 'grunticon', 'hashres', 'kss']
-  },
-  favicons: {
-    files: ['<%= config.srcFolders.images %>favicon.png'],
-    tasks: ['clean:hashes', 'clean:favicon', 'favicons', 'htmlmin', 'replace:favicon', 'copy:hashTargets', 'hashres']
+    tasks: ['clean:hashedIcons', 'svgmin', 'grunticon', 'copy:header', 'copy:icons', 'hashres', 'kss']
   },
   languages: {
     files: ['<%= config.srcFolders.languages %>*.po'],

@@ -95,3 +95,6 @@ src/languages/*.po~
 
 # generated icons
 src/icons/min
+
+# generated grunticon
+src/.grunticon
