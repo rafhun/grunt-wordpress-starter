@@ -21,7 +21,7 @@ module.exports = {
   },
   grunticon: {
     files: ['<%= config.srcFolders.icons %>*.svg'],
-    tasks: ['clean:hashedIcons', 'svgmin', 'grunticon', 'copy:header', 'copy:icons', 'hashres', 'kss']
+    tasks: ['clean:hashedIcons', 'clean:kssConfig', 'svgmin', 'grunticon', 'copy:header', 'copy:icons', 'copy:kssConfig', 'hashres', 'kss']
   },
   languages: {
     files: ['<%= config.srcFolders.languages %>*.po'],
@@ -32,8 +32,12 @@ module.exports = {
     tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres', 'kss']
   },
   kss: {
-    files: ['<%= config.srcFolders.scss %>readme.md','<%= config.srcFolders.scss %>**/*.{html,hbs}', '<%= config.srcFolders.config %>kss/template/**'],
+    files: ['<%= config.srcFolders.scss %>readme.md','<%= config.srcFolders.scss %>**/*.{html,hbs}'],
     tasks: ['kss']
+  },
+  kssConfig: {
+    files: ['<%= config.srcFolders.config %>kss/template/**'],
+    tasks: ['clean:kssConfig', 'copy:kssConfig', 'hashres', 'kss']
   },
   composer: {
     files: ['composer.json', 'composer.lock'],

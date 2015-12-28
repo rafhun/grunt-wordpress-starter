@@ -143,10 +143,12 @@ fileMgm:
   - 'clean:dest'
   - 'clean:minSvg'
   - 'clean:favicon'
+  - 'clean:kssConfig'
   - 'copy:editorStyles'
   - 'copy:fonts'
   - 'copy:customPlugins'
   - 'copy:customThemes'
+  - 'copy:kssConfig'
 
 translations:
   - 'po2mo'

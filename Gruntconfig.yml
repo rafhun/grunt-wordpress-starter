@@ -1,5 +1,5 @@
 themeName: rafhun
-devUrl: http://wpbp.dev
+devUrl: http://wordwp.dev
 dbDump: db/
 rootFolder: wwwroot/
 
@@ -30,6 +30,7 @@ srcFolders:
   js: src/js/
   jsBuild: src/js/build/
   jsMolecules: src/js/molecules/
+  kssTemp: kss-dest/
   languages: src/languages/
   php: src/php/
   scss: src/scss/

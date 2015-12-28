@@ -48,6 +48,16 @@ module.exports = {
       dest: '<%= destFolder %><%= config.buildFolders.icons %>'
     }]
   },
+  kssConfig: {
+    files: [
+      {
+        expand: true,
+        cwd: '<%= config.srcFolders.config %>kss',
+        src: ['**'],
+        dest: '<%= config.srcFolders.config %>kss-dest'
+      }
+    ]
+  },
   languages: {
     files: [{
       expand: true,
