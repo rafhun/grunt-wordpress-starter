@@ -1,3 +1,14 @@
+<a name="0.4.6"></a>
+## [0.4.6](https://github.com/rafhun/wpbp/compare/v0.4.5...v0.4.6) (2015-12-28)
+
+
+### Bug Fixes
+
+* **grunt:** add temporary grunticon folder ([ec8e025](https://github.com/rafhun/wpbp/commit/ec8e025))
+* **hashres:** use temporary kss config to handle hashes for icons ([5144c3f](https://github.com/rafhun/wpbp/commit/5144c3f))
+
+
+
 <a name="0.4.5"></a>
 ## [0.4.5](https://github.com/rafhun/wpbp/compare/v0.4.4...v0.4.5) (2015-12-23)
 
