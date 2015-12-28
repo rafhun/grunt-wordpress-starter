@@ -21,6 +21,7 @@ srcFolders:
   customPlugins: src/plugins
   customThemes: src/themes
   fonts: src/fonts/
+  grunticon: src/.grunticon/
   icons: src/icons/
   iconsMin: src/icons/min/
   images: src/images/
