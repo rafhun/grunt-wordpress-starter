@@ -1,3 +1,13 @@
+<a name="0.4.7"></a>
+## [0.4.7](https://github.com/rafhun/wpbp/compare/v0.4.6...v0.4.7) (2015-12-30)
+
+
+### Bug Fixes
+
+* **grunt:** copy icons instead of regenerating to improve speed ([1dbde05](https://github.com/rafhun/wpbp/commit/1dbde05))
+
+
+
 <a name="0.4.6"></a>
 ## [0.4.6](https://github.com/rafhun/wpbp/compare/v0.4.5...v0.4.6) (2015-12-28)
 
