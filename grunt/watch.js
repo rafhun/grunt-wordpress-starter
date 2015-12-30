@@ -28,8 +28,12 @@ module.exports = {
     tasks: ['translations']
   },
   php: {
-    files: ['<%= config.srcFolders.php %>**/*.php'],
+    files: ['<%= config.srcFolders.php %>**/*.php', '!<%= config.srcFolders.php %>header.php'],
     tasks: ['clean:hashes', 'copy:php', 'cssmin', 'uglify', 'hashres', 'kss']
+  },
+  phpHeader: {
+    files: ['<%= config.srcFolders.php %>header.php'],
+    tasks: ['clean:hashedIcons', 'clean:kssConfig', 'copy:header', 'copy:icons', 'copy:kssConfig', 'hashres', 'kss']
   },
   kss: {
     files: ['<%= config.srcFolders.scss %>readme.md','<%= config.srcFolders.scss %>**/*.{html,hbs}'],

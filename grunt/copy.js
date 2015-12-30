@@ -54,7 +54,7 @@ module.exports = {
         expand: true,
         cwd: '<%= config.srcFolders.config %>kss',
         src: ['**'],
-        dest: '<%= config.srcFolders.config %>kss-dest'
+        dest: '<%= config.srcFolders.config %><%= config.srcFolders.kssTemp %>'
       }
     ]
   },
@@ -71,7 +71,7 @@ module.exports = {
       {
         expand: true,
         cwd: '<%= config.srcFolders.php %>',
-        src: ['**'],
+        src: ['**', '!header.php'],
         dest: '<%= destFolder %>',
       }
     ]
