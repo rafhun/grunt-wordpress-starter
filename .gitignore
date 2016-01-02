@@ -98,3 +98,5 @@ src/icons/min
 
 # generated grunticon
 src/.grunticon
+
+src/config/kss-dest
