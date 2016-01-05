@@ -1,0 +1,87 @@
+////
+/// @author Raphael Hüni
+///
+/// @group General
+////
+
+/// Variable to set the base value for rem calculations. This can usually be left at `16px` but might need to change in your context.
+$rem-base: 16px !default;
+
+/// This function removes units from values given to i. e. a mixin. This eases mixin usage, as values can be given to them with or without units.
+///
+/// The logic behind it is easy: to strip the unit you have to divide the given value by 1 of the same unit, i. e. `42px / ((42px * 0) + 1) equals 42px / 1px = 42`.
+///
+/// @author Hugo Giraudel
+///
+/// @link http://hugogiraudel.com/2013/08/12/sass-functions/
+/// Original documentation by the author.
+///
+/// @example scss
+///   strip-unit(42px)
+///   // 42
+///
+/// @param {string} $value - Input measurement with unit
+/// @returns {number} - Unitless value
+///
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+/// This function converts any value it is given to rems (on an optionally adjustable base). Also as a fallback and to ensure good code `0rem` is automatically converted to plain `0`.
+///
+/// @author Foundation by Zurb
+///
+/// @require $rem-base
+/// @require strip-unit
+///
+/// @param {Number} $value - The pixel value to be converted. Can be given with or without the unit
+/// @param {Number} $base-value [$rem-base] - The base value for which the rems should be computed (usually `16px` but might be different).
+///
+/// @example scss
+///   convert-to-rem(16px);
+///   // 1rem
+///
+/// @example scss
+///   convert-to-rem(20, 10);
+///   // 2rem
+///
+/// @returns {Number} Calculated Rem Value
+///
+/// @link https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss - Source
+///
+@function convert-to-rem($value, $base-value: $rem-base) {
+  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
+  @return $value;
+ }
+
+/// Used to calculate rems. New Syntax, allows to optionally calculate on a different base value to counter compounding effect of rem's. Call with 1, 2, 3 or 4 parameters, 'px' is not required but supported
+///
+/// @param {List} $values - A single one or a list of values to be converted. See examples below for the exact syntax.
+///
+/// @param {Number} $base-value [$rem-base] - Gives you the opportunity to set an optional base for the rem calculations.
+///
+/// @returns {Number | List} Number (if single input) or list or calculated converted values.
+///
+/// @example scss - Space delimited
+///   rem-calc(16 32 48px 64);
+///   // 1rem 2rem 3rem 4rem
+///
+/// @example scss - If you want to delimit using comma's, wrap it in another pair of brackets
+///   rem-calc((16, 32, 48, 64px));
+///   // 1rem 2rem 3rem 4rem
+///
+/// @author Foundation by Zurb
+///
+/// @link https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss
+@function rem-calc($values, $base-value: $rem-base) {
+  $max: length($values);
+
+  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+
+  $rem-values: ();
+  @for $i from 1 through $max {
+    $rem-values: append($rem-values, convert-to-rem(nth($values, $i), $base-value));
+  }
+  @return $rem-values;
+}
