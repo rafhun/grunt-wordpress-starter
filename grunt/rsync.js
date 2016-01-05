@@ -2,8 +2,10 @@ module.exports = {
   options: {
     args: ['--verbose'],
     recursive: true,
-    exclude: ['.git', '.hg', '.svn', '.DS_Store', '._*', 'Thumbs.db', '/tmp/cache/**'],
-    include: ['/tmp/cache/.htaccess'],
+    // use commented out line after first push to staging and live server unless you change something in your configuration file since some plugins (mainly wp super cache) write directly to the wp-config file.
+    // before pushing wp-config.php changes anew make sure to copy down all online changes into your src/config folder
+    exclude: ['.git', '.hg', '.svn', '.DS_Store', '._*', 'Thumbs.db', '/wp-content/uploads/**', '/wp-content/backupwordpress*'],
+    // exclude: ['.git', '.hg', '.svn', '.DS_Store', '._*', 'Thumbs.db', '/wp-content/uploads/**', '/wp-config.php', '/wp-content/backupwordpress*'],
     compareMode: 'checksum'
   },
   staging: {
