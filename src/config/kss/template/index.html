@@ -35,7 +35,9 @@
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
     <h1 class="kss-doc-title">{{options.title}}</h1>
+    <label for="nav-toggle-checkbox" class="nav-toggle" id="nav-toggle" href="#">Navigation</a>
   </header>
+  <input type="checkbox" class="nav-toggle-checkbox" id="nav-toggle-checkbox">
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
       <li class="kss-nav__menu-item">
@@ -55,7 +57,7 @@
         {{#eachSection reference}}
           {{#ifDepth 2}}
             <li class="kss-nav__menu-item">
-              <a href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">
+              <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
                 <span class="kss-nav__ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
                 ><span class="kss-nav__name">{{header}}</span>
               </a>
