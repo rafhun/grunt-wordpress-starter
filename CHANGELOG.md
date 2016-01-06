@@ -1,3 +1,20 @@
+<a name="0.4.8"></a>
+## [0.4.8](https://github.com/rafhun/wpbp/compare/v0.4.7...v0.4.8) (2016-01-06)
+
+
+### Bug Fixes
+
+* **kss:** ignore default kss-dest folder ([d70e0b2](https://github.com/rafhun/wpbp/commit/d70e0b2))
+* **rsync:** cleanup includes and excludes ([f6dcf15](https://github.com/rafhun/wpbp/commit/f6dcf15))
+
+### Features
+
+* **backups:** add wp backup plugin ([f008da8](https://github.com/rafhun/wpbp/commit/f008da8))
+* **kss:** replace sidebar by fixed top navigation ([3182e4b](https://github.com/rafhun/wpbp/commit/3182e4b))
+* **scss:** add commonly used configs, functions and mixins ([070c027](https://github.com/rafhun/wpbp/commit/070c027))
+
+
+
 <a name="0.4.7"></a>
 ## [0.4.7](https://github.com/rafhun/wpbp/compare/v0.4.6...v0.4.7) (2015-12-30)
 
