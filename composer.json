@@ -19,12 +19,12 @@
   ],
   "require": {
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
-    "wpackagist-plugin/backupwordpress": "3.*",
+    "wpackagist-plugin/backupwordpress": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
-    "wpackagist-plugin/wordpress-seo": "3.0.*",
-    "wpackagist-plugin/wp-migrate-db": "0.7.*",
-    "wpackagist-plugin/wp-nested-pages": "1.5.*",
-    "wpackagist-plugin/wp-super-cache": "1.4.*"
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/wp-migrate-db": "*",
+    "wpackagist-plugin/wp-nested-pages": "*",
+    "wpackagist-plugin/wp-super-cache": "*"
   },
   "extra": {
     "installer-paths": {
