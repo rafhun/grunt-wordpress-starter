@@ -1,3 +1,13 @@
+<a name="0.4.9"></a>
+## [0.4.9](https://github.com/rafhun/wpbp/compare/v0.4.8...v0.4.9) (2016-01-11)
+
+
+### Bug Fixes
+
+* **rsync:** get src from config ([713a9ed](https://github.com/rafhun/wpbp/commit/713a9ed))
+
+
+
 <a name="0.4.8"></a>
 ## [0.4.8](https://github.com/rafhun/wpbp/compare/v0.4.7...v0.4.8) (2016-01-06)
 
