@@ -1,5 +1,6 @@
 module.exports = {
   options: {
+    ssh: true,
     args: ['--verbose'],
     recursive: true,
     // use commented out line after first push to staging and live server unless you change something in your configuration file since some plugins (mainly wp super cache) write directly to the wp-config file.
@@ -10,7 +11,7 @@ module.exports = {
   },
   staging: {
     options: {
-      src: 'wwwroot/',
+      src: '<%= config.rootFolder %>',
       dest: '<%= secrets.staging.sshRoot %>',
       host: '<%= secrets.staging.sshHost %>',
       delete: false
@@ -19,7 +20,7 @@ module.exports = {
   stagingDry: {
     options: {
       args: ['--verbose', '--dry-run'],
-      src: 'wwwroot/',
+      src: '<%= config.rootFolder %>',
       dest: '<%= secrets.staging.sshRoot %>',
       host: '<%= secrets.staging.sshHost %>',
       delete: true
@@ -27,7 +28,7 @@ module.exports = {
   },
   production: {
     options: {
-      src: 'wwwroot/',
+      src: '<%= config.rootFolder %>',
       dest: '<%= secrets.production.sshRoot %>',
       host: '<%= secrets.production.sshHost %>',
       delete: false
@@ -36,7 +37,7 @@ module.exports = {
   productionDry: {
     options: {
       args: ['--verbose', '--dry-run'],
-      src: 'wwwroot/',
+      src: '<%= config.rootFolder %>',
       dest: '<%= secrets.production.sshRoot %>',
       host: '<%= secrets.production.sshHost %>',
       delete: true
