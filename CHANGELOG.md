@@ -1,3 +1,13 @@
+<a name="0.4.10"></a>
+## [0.4.10](https://github.com/rafhun/wpbp/compare/v0.4.9...v0.4.10) (2016-01-15)
+
+
+### Bug Fixes
+
+* **kss:** make themeName dynamic ([7ed3d84](https://github.com/rafhun/wpbp/commit/7ed3d84))
+
+
+
 <a name="0.4.9"></a>
 ## [0.4.9](https://github.com/rafhun/wpbp/compare/v0.4.8...v0.4.9) (2016-01-11)
 
