@@ -68,5 +68,17 @@ module.exports = {
     },
     src: 'composer.json',
     dest: 'composer.json'
+  },
+  themeName: {
+    options: {
+      patterns: [
+        {
+          match: 'themeName',
+          replacement: '<%= config.themeName %>'
+        }
+      ]
+    },
+    src: '<%= config.srcFolders.config %>kss/template/index.html',
+    dest: '<%= config.srcFolders.config %>kss/template/index.html'
   }
 }

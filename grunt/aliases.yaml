@@ -81,6 +81,7 @@ setup:
   - 'shell:getKeys'
   - 'replace:keys'
   - 'replace:acfProKey'
+  - 'replace:themeName'
   - 'shell:installPlugins'
   - 'shell:bower'
   - 'bower_concat'
