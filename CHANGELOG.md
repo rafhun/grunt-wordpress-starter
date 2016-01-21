@@ -1,3 +1,14 @@
+<a name="0.4.11"></a>
+## [0.4.11](https://github.com/rafhun/wpbp/compare/v0.4.10...v0.4.11) (2016-01-21)
+
+
+### Bug Fixes
+
+* **kss nav:** increase z-index to put it on top of everything ([01ede38](https://github.com/rafhun/wpbp/commit/01ede38))
+* **secrets:** add better default values for hostpoint config ([421c4da](https://github.com/rafhun/wpbp/commit/421c4da))
+
+
+
 <a name="0.4.10"></a>
 ## [0.4.10](https://github.com/rafhun/wpbp/compare/v0.4.9...v0.4.10) (2016-01-15)
 
