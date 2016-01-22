@@ -97,7 +97,7 @@ module.exports = {
       {
         expand: true,
         cwd: '<%= config.srcFolders.customPlugins %>',
-        src: ['**'],
+        src: ['**', '!**/gulpfile.js', '!**/.gitignore', '!**/node_modules/**', '!**/package.json'],
         dest: '<%= config.rootFolder %><%= config.buildFolders.plugins %>',
       }
     ]
