@@ -50,5 +50,13 @@ module.exports = {
   htaccess: {
     files: ['<%= config.srcFolders.config %>.htaccess'],
     tasks: ['copy:htaccess']
+  },
+  customPlugins: {
+    files: ['<%= config.srcFolders.customPlugins %>**'],
+    tasks: ['copy:customPlugins']
+  },
+  customThemes: {
+    files: ['<%= config.srcFolders.customThemes %>**'],
+    tasks: ['copy:customThemes']
   }
 }
