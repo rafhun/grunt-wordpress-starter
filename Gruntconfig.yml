@@ -18,8 +18,8 @@ srcFolders:
   bower: src/bower_components/
   config: src/config/
   css: src/css/
-  customPlugins: src/plugins
-  customThemes: src/themes
+  customPlugins: src/plugins/
+  customThemes: src/themes/
   fonts: src/fonts/
   grunticon: src/.grunticon/
   icons: src/icons/
