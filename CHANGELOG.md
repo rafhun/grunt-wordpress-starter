@@ -1,3 +1,13 @@
+<a name="0.4.13"></a>
+## [0.4.13](https://github.com/rafhun/wpbp/compare/v0.4.12...v0.4.13) (2016-01-26)
+
+
+### Bug Fixes
+
+* **grunt:** add missing slashes in Gruntconfig defs ([9b486e6](https://github.com/rafhun/wpbp/commit/9b486e6))
+
+
+
 <a name="0.4.12"></a>
 ## [0.4.12](https://github.com/rafhun/wpbp/compare/v0.4.11...v0.4.12) (2016-01-26)
 
