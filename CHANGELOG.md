@@ -1,3 +1,14 @@
+<a name="0.4.12"></a>
+## [0.4.12](https://github.com/rafhun/wpbp/compare/v0.4.11...v0.4.12) (2016-01-26)
+
+
+### Bug Fixes
+
+* **grunt:** only copy relevant custom plugin files ([d7f33ff](https://github.com/rafhun/wpbp/commit/d7f33ff))
+* **grunt:** watch custom plugins/themes as well ([4f0a6d9](https://github.com/rafhun/wpbp/commit/4f0a6d9))
+
+
+
 <a name="0.4.11"></a>
 ## [0.4.11](https://github.com/rafhun/wpbp/compare/v0.4.10...v0.4.11) (2016-01-21)
 
