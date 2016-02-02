@@ -4,7 +4,7 @@ module.exports = {
   },
   grunt: ['Gruntfile.js', 'grunt/*.js'],
   src: [
-    '<%= config.srcFolders.jsMolecules %>**',
+    '<%= config.srcFolders.jsMolecules %>**/*.js',
     '<%= config.srcFolders.js %>script.js'
   ],
   shipping: {
@@ -13,7 +13,7 @@ module.exports = {
     },
     files: {
       src: [
-        '<%= config.srcFolders.jsMolecules %>**',
+        '<%= config.srcFolders.jsMolecules %>**/*.js',
         '<%= config.srcFolders.js %>script.js',
       ],
     }
