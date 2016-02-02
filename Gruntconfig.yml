@@ -30,7 +30,7 @@ srcFolders:
   js: src/js/
   jsBuild: src/js/build/
   jsMolecules: src/js/molecules/
-  kssTemp: kss-dest/
+  kssTemp: .kss-dest/
   languages: src/languages/
   php: src/php/
   scss: src/scss/
