@@ -1,3 +1,19 @@
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/rafhun/wpbp/compare/v0.4.13...v0.5.0) (2016-02-02)
+
+
+### Bug Fixes
+
+* **grunt:** hide the kss dest folder by default on linux os ([d474cc0](https://github.com/rafhun/wpbp/commit/d474cc0))
+
+### Features
+
+* **js:** add molecules folder and a readme ([be0a155](https://github.com/rafhun/wpbp/commit/be0a155))
+* **php:** add some basic theme building blocks ([ba4eee1](https://github.com/rafhun/wpbp/commit/ba4eee1))
+* **scss:** add sensible defaults and more of the file structure ([304b586](https://github.com/rafhun/wpbp/commit/304b586))
+
+
+
 <a name="0.4.13"></a>
 ## [0.4.13](https://github.com/rafhun/wpbp/compare/v0.4.12...v0.4.13) (2016-01-26)
 
