@@ -41,7 +41,8 @@
       <div class="off-canvas-container">
         <nav role="navigation" class="off-canvas-nav">
           <?php
-          /* add your off canvas menu here
+          /* // add your off canvas menu here
+          // CAREFUL: if you include the custom walker here, make sure to require the file in functions.php (commented out by default)
             wp_nav_menu( array(
               'menu' => 'main nav',
               'theme_location' => 'off-canvas-menu',
