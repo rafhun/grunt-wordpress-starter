@@ -1,3 +1,13 @@
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/rafhun/wpbp/compare/v0.5.1...v0.5.2) (2016-02-02)
+
+
+### Bug Fixes
+
+* **jshint:** only lint js files in molecules folder ([78b20cc](https://github.com/rafhun/wpbp/commit/78b20cc))
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/rafhun/wpbp/compare/v0.5.0...v0.5.1) (2016-02-02)
 
