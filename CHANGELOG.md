@@ -1,3 +1,13 @@
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/rafhun/wpbp/compare/v0.5.0...v0.5.1) (2016-02-02)
+
+
+### Features
+
+* **backend:** add stylesheets and custom style select to editor ([5e72139](https://github.com/rafhun/wpbp/commit/5e72139))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/rafhun/wpbp/compare/v0.4.13...v0.5.0) (2016-02-02)
 

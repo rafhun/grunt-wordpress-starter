@@ -1,6 +1,6 @@
 {
   "name": "Automated-WP-Theme-Development-Environment",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "An automated Wordpress theme development environment, based on Grunt. It is preconfigured to use Sass (libsass) with Susy for styles, KSS for automatic styleguide creation, JS and SCSS linters to ensure code consistency, BrowserSync because it just rocks and many more important tools.",
   "repository": {
     "type": "git",
