@@ -1,0 +1,15 @@
+ul,
+ol {
+  list-style-position: $default-list-style-position;
+}
+
+// our dash ul's should be prepended by the default setting
+@include list(
+  $selector: '.dash-list'
+);
+
+@include list(
+  $selector: '.plus-list',
+  $custom-symbol: '+',
+  $pass-on-styles: true
+);

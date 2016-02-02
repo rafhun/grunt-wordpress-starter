@@ -1,0 +1,96 @@
+// Type
+//
+// Sets the default styles for all text. All variables used for these styles are defined in the dependencies/typography file.
+//
+// Markup: type.html
+//
+// Style guide: atoms.type
+
+
+// type configuration
+// here comes the basic body text configuration
+
+
+$paragraph-margin-bottom: $body-copy-font-size !default;
+
+// now come the headings
+$headings-font-color: $color-primary !default;
+$headings-font-family: $serif !default;
+$headings-font-weight: bold !default;
+$headings-text-rendering: optimizeLegibility !default;
+
+$h1-font-size: 1.9 * $body-copy-font-size !default;
+$h2-font-size: 1.4 * $body-copy-font-size !default;
+$h3-font-size: 1.2 * $body-copy-font-size !default;
+
+$h1-max-mobile-font: rem-calc(24) !default;
+$h2-max-mobile-font: rem-calc(21) !default;
+$h3-max-mobile-font: rem-calc(18) !default;
+
+// anchors at last
+$anchor-color-font: $color-primary !default;
+$anchor-color-font-hover: $anchor-color-font !default;
+$anchor-font-style: normal !default;
+$anchor-text-decoration: none !default;
+$anchor-text-decoration-hover: underline !default;
+
+
+// basic html tags
+
+// basic font styles for paragraphs
+
+p {
+  margin-bottom: $paragraph-margin-bottom;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// headings
+h1,
+h2,
+h3 {
+  color: $headings-font-color;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  text-rendering: $headings-text-rendering;
+}
+
+h1 {
+  font-size: $h1-max-mobile-font;
+
+  @include susy-media(font-desktop) {
+    font-size: $h1-font-size;
+  }
+}
+
+h2 {
+  font-size: $h2-max-mobile-font;
+
+  @include susy-media(font-desktop) {
+    font-size: $h2-font-size;
+  }
+}
+
+h3 {
+  font-size: $h3-max-mobile-font;
+
+  @include susy-media(font-desktop) {
+    font-size: $h3-font-size;
+  }
+}
+
+// anchors
+a {
+  color: $anchor-color-font;
+  font-style: $anchor-font-style;
+  text-decoration: $anchor-text-decoration;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $anchor-color-font-hover;
+    text-decoration: $anchor-text-decoration-hover;
+  }
+}

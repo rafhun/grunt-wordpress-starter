@@ -1,0 +1,21 @@
+// Here we add some alignment classes especially useful for
+// media and stuff
+
+.alignleft {
+  display: inline;
+  margin-right: 1.5em;
+  float: left;
+}
+
+.alignright {
+  display: inline;
+  margin-left: 1.5em;
+  float: right;
+}
+
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+}

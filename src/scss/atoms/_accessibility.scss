@@ -1,0 +1,30 @@
+// Accessibility
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:hover,
+  &:active,
+  &:focus {
+    display: block;
+    top: 5px;
+    left: 5px;
+    width: auto;
+    height: auto;
+    padding: 15px 23px 14px;
+    border-radius: 3px;
+    background-color: $color-background;
+    color: $color-text;
+    font-size: rem-calc(14);
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+    clip: auto;
+    z-index: 100000; // Above WP toolbar
+  }
+}

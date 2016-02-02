@@ -1,0 +1,53 @@
+////
+/// @group General
+/// @since 0.1.0
+////
+
+// Colors
+//
+// Every single color that is used throughout the stylesheet should be assigned to a variable in this file. Always assign color names to hex (or rgba or other) values to ensure better readable code. Then assign those variables to the theme ones.
+//
+// Style guide: dependencies.colors
+//
+// Weight: 2
+
+
+// colors (no defaults here, as variable name describes color)
+$golden-bell: #eb8714;
+$coffee: #73695a;
+
+// greys
+$dove-grey: #6f6f6f;
+$mercury: #e5e5e5;
+$seashell: #f1f1f1;
+$white: #fff;
+$black: #000;
+
+$darken: rgba(0, 0, 0, .1);
+$lighten: rgba(255, 255, 255, .1);
+
+// stylesheet variables
+/// Defines the primary color of the design
+/// @type Color
+$color-primary: $golden-bell !default;
+/// Defines a possible secondary color of the design, set to `$primary-color` if no secondary one is used.
+/// @type Color
+$color-secondary: $coffee !default;
+
+/// Defines the main font color
+/// @type Color
+$color-text: $dove-grey !default;
+/// Defines a secondary font color, set to `$color-text` if you do not need this
+/// @type Color
+$color-text-secondary: $mercury !default;
+
+/// Defines the default background color of the design. Set this to the most commonly occuring background color
+/// @type Color
+$color-background: $white !default;
+/// A possible secondary background color can be defined here, especially useful on i. e. one pager layouts with differently colored section. Set to `$color-background` if you do not need this.
+/// @type Color
+$color-background-secondary: $mercury !default;
+
+/// Sets the default color for all kinds of lines (i. e. borders, `hr`, etc)
+/// @type Color
+$color-lines: $darken !default;

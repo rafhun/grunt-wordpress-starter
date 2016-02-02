@@ -1,0 +1,44 @@
+// site wide styling of elements
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+&:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $color-text;
+  font-family: $body-copy-font-family;
+  font-size: $body-copy-font-size;
+  line-height: $body-copy-line-height;
+}
+
+// site wide resets affecting several different parts
+
+// Typography margins/paddings resets
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}

@@ -60,3 +60,21 @@ $EDITOR-STYLES: false;
 //
 // Weight: 4
 // @import 'organisms/manifest';
+
+// Templates
+//
+// Templates bring organisms together into a context.
+//
+// Style guide: templates
+//
+// Weight: 5
+// @import 'templates/manifest';
+
+// Pages
+//
+// Whole page previews. Next to no styles will be applied here, this mainly serves as master preview for the finished pages.
+//
+// Style guide: pages
+//
+// Weight: 6
+// @import 'pages/manifest'
