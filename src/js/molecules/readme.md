@@ -1,0 +1,1 @@
+Add scripts directly belonging to molecules to this folder. They will be imported after all bower components and after the `plugins.js` file but before the more general `scripts.js`, meaning you have access and can use all plugins, functions, etc. you have imported through bower or copied into the plugins file.
