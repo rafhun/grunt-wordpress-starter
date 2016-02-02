@@ -131,6 +131,10 @@ function chromefix_inline_css() {
 }
 add_action('admin_enqueue_scripts', 'chromefix_inline_css');
 
+/**
+ * Load Custom Editor Functionality (custom stylesheets and style select)
+ */
+require get_template_directory() . '/inc/editor.php';
 
 /**
  * Load Custom Off Canvas Walker Function
