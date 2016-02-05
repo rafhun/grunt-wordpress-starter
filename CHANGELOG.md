@@ -1,3 +1,13 @@
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/rafhun/wpbp/compare/v0.5.3...v0.5.4) (2016-02-05)
+
+
+### Bug Fixes
+
+* **mixins:** update clearfix mixin ([e5ae5c9](https://github.com/rafhun/wpbp/commit/e5ae5c9))
+
+
+
 <a name="0.5.3"></a>
 ## [0.5.3](https://github.com/rafhun/wpbp/compare/v0.5.2...v0.5.3) (2016-02-03)
 
