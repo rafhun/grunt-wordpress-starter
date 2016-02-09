@@ -1,3 +1,14 @@
+<a name="0.5.5"></a>
+## [0.5.5](https://github.com/rafhun/wpbp/compare/v0.5.4...v0.5.5) (2016-02-09)
+
+
+### Bug Fixes
+
+* **mixin:** clearfix::after should be display block ([8541a09](https://github.com/rafhun/wpbp/commit/8541a09))
+* **mixins:** triangle without center offset ([9e7a089](https://github.com/rafhun/wpbp/commit/9e7a089))
+
+
+
 <a name="0.5.4"></a>
 ## [0.5.4](https://github.com/rafhun/wpbp/compare/v0.5.3...v0.5.4) (2016-02-05)
 
