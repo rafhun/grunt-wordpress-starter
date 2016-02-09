@@ -85,7 +85,7 @@
 ///
 /// @param {String} $pos ['left'] - Which edge to create the triangle on (allowed are `'top'`, `'right'`, `'bottom'` or `'left'`.)
 /// @param {Number} $offset [0] - The offset from the origin (top or left) on the edge
-/// @param {Number} $center-offset [0] - Adjust center for use with before of after pseudo-elements
+/// @param {Number} $center-offset [0] - Adjust center for use with before of after pseudo-elements (negative or positive values allowed, negatives pull, positives push further)
 /// @param {String} $direction ['out'] - Direction of the triangle (`'in'` or `'out'`)
 /// @param {Number} $width [1rem] - Length of the triangle's base
 /// @param {Number} $height [$width] - Height of the triangle
@@ -101,7 +101,7 @@
 @mixin triangle(
   $pos: 'left',
   $offset: 0,
-  $center-offset: 0,
+  $center-offset: null,
   $direction: 'out',
   $width: 1rem, // defines how wide the triangles base is
   $height: $width, // describes the height of the triangle
@@ -168,15 +168,15 @@
 
     @if ($pos == 'top') {
       top: $v-offset;
-      left: if($offset == 'center', calc(50% - #{$width/2} - #{$center-offset}), $offset);
+      left: if($offset == 'center', calc(50% - #{$width/2} #{$center-offset}), $offset);
     } @else if ($pos == 'bottom') {
       bottom: $v-offset;
-      left: if($offset == 'center', calc(50% - #{$width/2} - #{$center-offset}), $offset);
+      left: if($offset == 'center', calc(50% - #{$width/2} #{$center-offset}), $offset);
     } @else if ($pos == 'left') {
-      top: if($offset == 'center', calc(50% - #{$width/2} - #{$center-offset}), $offset);
+      top: if($offset == 'center', calc(50% - #{$width/2} #{$center-offset}), $offset);
       left: $h-offset;
     } @else if ($pos == 'right') {
-      top: if($offset == 'center', calc(50% - #{$width/2} - #{$center-offset}), $offset);
+      top: if($offset == 'center', calc(50% - #{$width/2} #{$center-offset}), $offset);
       right: $h-offset;
     }
   }
