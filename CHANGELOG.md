@@ -1,3 +1,13 @@
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/rafhun/wpbp/compare/v0.5.5...v0.5.6) (2016-02-12)
+
+
+### Bug Fixes
+
+* **scss:** uncomment default imports ([d21a7a6](https://github.com/rafhun/wpbp/commit/d21a7a6))
+
+
+
 <a name="0.5.5"></a>
 ## [0.5.5](https://github.com/rafhun/wpbp/compare/v0.5.4...v0.5.5) (2016-02-09)
 
