@@ -1,3 +1,17 @@
+<a name="0.5.7"></a>
+## [0.5.7](https://github.com/rafhun/wpbp/compare/v0.5.6...v0.5.7) (2016-03-01)
+
+
+### Bug Fixes
+
+* **composer:** allow unsecure connections for composer ([c66f7bf](https://github.com/rafhun/wpbp/commit/c66f7bf))
+
+### Features
+
+* **grunt:** update dependencies and adjust config for v1.0 of bower_concat ([bf4aa1a](https://github.com/rafhun/wpbp/commit/bf4aa1a))
+
+
+
 <a name="0.5.6"></a>
 ## [0.5.6](https://github.com/rafhun/wpbp/compare/v0.5.5...v0.5.6) (2016-02-12)
 
