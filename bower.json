@@ -30,7 +30,7 @@
     "Gemfile"
   ],
   "dependencies": {
-    "jquery": "~2.2.0",
+    "jquery": "~2.2.1",
     "susy": "~2.2.12",
     "normalize-scss": "~3.0.3"
   }
