@@ -101,7 +101,7 @@ setupUpdate:
 editorStyles:
   - 'clean:editorStyles'
   - 'sass:editorStyles'
-  - 'autoprefixer:editorStyles'
+  - 'postcss:editorStyles'
   - 'copy:editorStyles'
 
 newKeys:
@@ -130,7 +130,7 @@ docs:
 
 styles:
   - 'sass:main'
-  - 'autoprefixer:main'
+  - 'postcss:main'
   - 'cssmin'
   - 'usebanner'
 

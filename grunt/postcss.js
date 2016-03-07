@@ -1,6 +1,13 @@
 module.exports = {
   options: {
-    browsers: ['last 2 versions']
+    map: {
+      inline: false,
+      annotation: '<%= destFolder %>'
+    },
+
+    processors: [
+      require( 'autoprefixer' )( { browsers: 'last 2 versions' } )
+    ]
   },
   main: {
     src: '<%= sass.main.dest %>',
