@@ -2,7 +2,7 @@
 /**
  * The template part for displaying results in search pages
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @since 0.5.0
  */
 ?>

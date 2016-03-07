@@ -2,7 +2,7 @@
 /**
  * The template part for displaying content
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @since 0.5.0
  */
 ?>

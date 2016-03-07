@@ -4,9 +4,9 @@
  *
  * This template file will be used by default for all pages that do not have a more specific template assigned to them.
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @subpackage rafhun
- * @since wpbp 0.5.0
+ * @since grunt-wordpress-starter 0.5.0
  */
 
 get_header(); ?>

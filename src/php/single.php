@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts and attachments
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @since 0.5.0
  */
 

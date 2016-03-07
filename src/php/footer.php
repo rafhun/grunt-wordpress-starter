@@ -4,9 +4,9 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @subpackage rafhun
- * @since wpbp 0.5.0
+ * @since grunt-wordpress-starter 0.5.0
  */
 ?>
 

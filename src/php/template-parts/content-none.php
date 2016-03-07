@@ -2,7 +2,7 @@
 /**
  * The template part for displaying a message that posts cannot be found
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @since 0.5.0
  */
 ?>

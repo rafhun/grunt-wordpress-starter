@@ -9,9 +9,9 @@
  *
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @subpackage rafhun
- * @since wpbp 0.5.0
+ * @since grunt-wordpress-starter 0.5.0
  */
 
 get_header(); ?>

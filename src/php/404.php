@@ -4,7 +4,7 @@
  *
  * This template will be used if the query matches no results, hence a wrong link was entered.
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @since 0.5.0
  */
 

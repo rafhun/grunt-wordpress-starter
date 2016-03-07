@@ -7,7 +7,7 @@
  *
  * If you'd like to further customize these archive views, you may create a new template file for each one. For example, tag.php, category.php, author.php, etc.
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @since 0.5.0
  */
 

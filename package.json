@@ -1,10 +1,10 @@
 {
-  "name": "Automated-WP-Theme-Development-Environment",
+  "name": "grunt-wordpress-starter",
   "version": "0.5.7",
   "description": "An automated Wordpress theme development environment, based on Grunt. It is preconfigured to use Sass (libsass) with Susy for styles, KSS for automatic styleguide creation, JS and SCSS linters to ensure code consistency, BrowserSync because it just rocks and many more important tools.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rafhun/wpbp"
+    "url": "https://github.com/rafhun/grunt-wordpress-starter"
   },
   "keywords": [
     "wordpress",
@@ -27,18 +27,18 @@
     "grunt-bump": "^0.7.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.0",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-htmlmin": "^0.6.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-htmlmin": "^1.0.0",
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-uglify": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-conventional-changelog": "^6.1.0",
     "grunt-ftp-push": "^0.4.4",
     "grunt-grunticon": "^2.2.2",
     "grunt-hashres": "^0.4.1",
-    "grunt-kss": "rafhun/grunt-kss#v2.1.4",
+    "grunt-kss": "rafhun/grunt-kss#v2.1.5",
     "grunt-po2mo": "^0.1.2",
     "grunt-pot": "^0.2.1",
     "grunt-replace": "^0.11.0",

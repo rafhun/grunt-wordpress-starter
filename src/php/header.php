@@ -4,9 +4,9 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package wpbp
+ * @package grunt-wordpress-starter
  * @subpackage rafhun
- * @since wpbp 0.5.0
+ * @since grunt-wordpress-starter 0.5.0
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

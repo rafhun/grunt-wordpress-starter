@@ -1,5 +1,5 @@
 themeName: rafhun
-devUrl: http://wordwp.dev
+devUrl: http://grunt-wordpress-starter.dev
 dbDump: db/
 rootFolder: wwwroot/
 

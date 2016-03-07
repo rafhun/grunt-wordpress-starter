@@ -1,4 +1,6 @@
-Version: 0.5.7
+`Version: 0.5.7`
+
+# Grunt Wordpress Starter
 
 This framework's goal is to ease Wordpress theme development by making it available with some useful automation. It comes with preconfigured and easily adaptable Grunt tasks that make the most important development steps easier for you. The framework only needs a Node.js installation to work properly and includes tasks for Sass compiling, Javascript linting, concatenation and uglification but also for image optimization, icon creation as well as more administrative tasks such as an automated version bump and changelog generation. Also if you are working with a production and/or staging environment with SSH access you can easily deploy your builds through rsync.
 
@@ -21,7 +23,7 @@ If you have access to Github Pro just fork the project to your account, then clo
 Here is the way to set it up with Bitbucket. Clone this repo to your local machine:
 
 ```
-git clone https://github.com/rafhun/wpbp.git {project-name}
+git clone https://github.com/rafhun/grunt-wordpress-starter.git {project-name}
 ```
 
 By default this adds the github remote as `origin`. We want to change this as we only keep the reference to the boilerplate. This can be done by running the following command from inside the repo you created with the clone (so do not forget to `cd` into it after cloning):
