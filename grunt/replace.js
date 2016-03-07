@@ -44,18 +44,6 @@ module.exports = {
     src: '<%= config.srcFolders.config %>wp-config.php',
     dest: '<%= config.rootFolder %>wp-config.php'
   },
-  favicon: {
-    options: {
-      patterns: [
-        {
-          match: 'include',
-          replacement: '<%= grunt.file.read("<%= config.srcFolders.php %>favicons.html") %>'
-        }
-      ]
-    },
-    src: '<%= config.srcFolders.php %>index.php',
-    dest: '<%= destFolder %>'
-  },
   // replace the keys with ones that can be downloaded directly through the wp api
   keys: {
     options: {
