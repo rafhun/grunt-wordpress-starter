@@ -4,7 +4,7 @@
 $EDITOR-STYLES: false;
 
 // import susy from the bower_components (while hoping that a node version of susy gets released)
-@import '../../bower_components/susy/sass/susy';
+@import 'susy/sass/susy';
 
 // Dependencies
 //
@@ -35,7 +35,7 @@ $EDITOR-STYLES: false;
 // @import 'atoms/webfonts';
 
 // import scss port of normalize.css by Nicolas Gallagher for a smart 'reset'
-@import '../../bower_components/normalize-scss/_normalize.scss';
+@import 'normalize-scss/_normalize.scss';
 
 @import 'atoms/site'; // mainly html and body elements
 @import 'atoms/media'; // above all responsive images
