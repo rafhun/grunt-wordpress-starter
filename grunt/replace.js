@@ -4,6 +4,10 @@ module.exports = {
       patterns: [
         {
           json: '<%= secrets.local %>'
+        },
+        {
+          match: 'db_prefix',
+          replacement: '<%= secrets.db_prefix %>'
         }
       ]
     },
@@ -15,6 +19,10 @@ module.exports = {
       patterns: [
         {
           json: '<%= secrets.staging %>'
+        },
+        {
+          match: 'db_prefix',
+          replacement: '<%= secrets.db_prefix %>'
         }
       ]
     },
@@ -26,6 +34,10 @@ module.exports = {
       patterns: [
         {
           json: '<%= secrets.production %>'
+        },
+        {
+          match: 'db_prefix',
+          replacement: '<%= secrets.db_prefix %>'
         }
       ]
     },
