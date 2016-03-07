@@ -1,4 +1,7 @@
 module.exports = {
+  options: {
+    sourceMap: true
+  },
   dist: {
     src: [
       '<%= bower_concat.all.dest.js %>',
