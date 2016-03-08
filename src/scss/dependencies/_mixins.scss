@@ -5,7 +5,7 @@
 ////
 
 
-/// This is the micro clearfix mixin used to clear floats.
+/// This is the micro clearfix mixin used to clear floats. As we no longer need to support very old browsers we can leave out the zoom option. Also using `display: block;` instead of `display: table;` gives us nicer collapsing margins.
 ///
 /// @author Nicolas Gallagher
 
@@ -79,13 +79,13 @@
 ///
 /// Added parameters for height and color of the triangle. Sometimes we want to be able to have more influence over the color of the triangle which is why we are making it a configurable option. The standard value still is the previously given `currentColor` but can now be changed according to the design wishes. Also an additional height variable is available. This defines the height of the triangle while the width describes the width of the base of the triangle. This enables us to easily add a triangle over the whole width of an element (like an off-canvas link's height) while keeping seperate control over the height.
 ///
-/// If we use the triangle on a box with `::before` or `::after` pseudo-elements we might need to adjust the center offset to account for these areas. This is why the `$center-offset` variable is introduced additionally. Its value gets subtracted from the computed one to perfectly center elements.
+/// If we use the triangle on a box with `::before` or `::after` pseudo-elements we might need to adjust the center offset to account for these areas. This is why the `$center-offset` variable is introduced additionally. Its default value is `null` which means no shift at all however both positive and negative numbers can be assigned to the variable. Its value will be added to the `$offset` variable meaning a positive one will push the triangle while a negative value will pull it.
 ///
 /// @author Eduardo Boucas, Raphael Hüni
 ///
 /// @param {String} $pos ['left'] - Which edge to create the triangle on (allowed are `'top'`, `'right'`, `'bottom'` or `'left'`.)
 /// @param {Number} $offset [0] - The offset from the origin (top or left) on the edge
-/// @param {Number} $center-offset [0] - Adjust center for use with before of after pseudo-elements (negative or positive values allowed, negatives pull, positives push further)
+/// @param {Number} $center-offset [null] - Adjust center for use with before of after pseudo-elements (negative or positive values allowed, negatives pull, positives push further)
 /// @param {String} $direction ['out'] - Direction of the triangle (`'in'` or `'out'`)
 /// @param {Number} $width [1rem] - Length of the triangle's base
 /// @param {Number} $height [$width] - Height of the triangle

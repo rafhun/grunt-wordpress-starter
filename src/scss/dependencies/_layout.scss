@@ -1,3 +1,9 @@
+////
+/// @author Raphael Hüni
+///
+/// @group General
+////
+
 // Layout
 //
 // This file defines the global layout options of the website. The values herein are to be understood symbolically since they are not really needed within a style/component library. Yet to make the whole structure easily portable and since components might depend on some of the variables they are included.
@@ -10,11 +16,15 @@
 //
 // Weight: 4
 
+/// This variable sets up the max container width that will be used in the Susy layout configuration
+/// @type Number
 $container-width: rem-calc( 1200 ) !default;
-$layout-columns: 12 !default;
-$header-height: rem-calc( 54 ) !default;
-$footer-height: rem-calc( 54 ) !default;
 
+/// The number of columns in your layout (used by Susy)
+/// @type Number
+$layout-columns: 12 !default;
+
+// susy configuration
 $susy: (
   container: $container-width,
   gutter-position: after,
@@ -46,13 +56,17 @@ $susy-media: (
   max-xs: max-width 19.9375em,
   max-sm: max-width 44.9375em,
   max-md: max-width 59.9375em,
-  xs-sm: 20em 40em,
-  sm-md: 40em 60em,
-  md-lg: 60em 80em,
+  xs-sm: 20em 44.9375em,
+  sm-md: 45em 59.9375em,
+  md-lg: 60em 79.9375em,
   go-desktop: 895px,
   max-mobile: max-width 894px,
   font-desktop: 30em
 );
+
+// global spacing and sizing variables
+$header-height: rem-calc( 54 ) !default;
+$footer-height: rem-calc( 54 ) !default;
 
 $base-bottom-margin: rem-calc( 12 ) !default;
 $base-bottom-margin-desktop: rem-calc( 24 ) !default;
