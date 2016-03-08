@@ -13,7 +13,7 @@ module.exports = {
       {
         expand: true,
         cwd: '<%= config.rootFolder %>',
-        src: ['**/*']
+        src: ['.htaccess', '**/*']
       }
     ]
   },
@@ -28,7 +28,7 @@ module.exports = {
       {
         expand: true,
         cwd: '<%= config.rootFolder %>',
-        src: ['**/*']
+        src: ['.htaccess', '**/*']
       }
     ]
   }
