@@ -2,6 +2,7 @@ module.exports = {
   stylesBanner: {
     options: {
       position: 'top',
+      replace: true,
       banner: '<%= banner %>',
       linebreak: true
     },

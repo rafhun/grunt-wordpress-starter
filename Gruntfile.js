@@ -16,9 +16,10 @@ module.exports = function(grunt) {
               ' * Description: Theme developed by rafhun from Werbelinie AG for ...\n' +
               ' * Version: <%= pkg.version %>\n' +
               ' * License: <%= pkg.license %>\n' +
-              ' * License URI: http://www.gnu.org/licenses/gpl-2.0.html\n' +
+              ' * License URI: http://www.gnu.org/licenses/gpl-3.0.html\n' +
               ' * Tags: \n' +
-              ' * Text Domain: <%= config.themeName %>\n\n' +
+              ' * Text Domain: <%= config.themeName %>\n' +
+              ' * Copyright <%= grunt.template.today("yyyy") %>: <%= pkg.author %>\n *\n' +
               ' * This stylesheet is not used by this Wordpress site it only exists as reference for Wordpress. The stylesheet in use can be found in this folder as style.min.{hash}.css\n' +
               ' */'
     }
