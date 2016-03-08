@@ -16,6 +16,9 @@
   ],
   "author": "rafhun",
   "license": "GPL-3.0",
+  "scripts": {
+    "install": "sh ./setup.sh"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "bower": "^1.7.7",
