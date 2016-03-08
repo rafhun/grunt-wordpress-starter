@@ -1,4 +1,7 @@
 module.exports = {
+  options: {
+    debug: true
+  },
   staging: {
     options: {
       host: '<%= secrets.staging.ftpHost %>',
@@ -10,7 +13,7 @@ module.exports = {
       {
         expand: true,
         cwd: '<%= config.rootFolder %>',
-        src: ['**']
+        src: ['**/*']
       }
     ]
   },
@@ -25,7 +28,7 @@ module.exports = {
       {
         expand: true,
         cwd: '<%= config.rootFolder %>',
-        src: ['**']
+        src: ['**/*']
       }
     ]
   }
