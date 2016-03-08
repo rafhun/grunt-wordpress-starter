@@ -1,11 +1,17 @@
 module.exports = {
   options: {
-    livereload: true,
     spawn: false
   },
+  gruntConfig: {
+    files: ['grunt/*.js', 'Gruntfile.js'],
+    tasks: ['jshint:grunt'],
+    options: {
+      reload: true
+    }
+  },
   jsHint: {
-    files: ['<%= config.srcFolders.js %>script.js', '<%= config.srcFolders.jsMolecules %>**/*.js', 'grunt/*.js', 'Gruntfile.js'],
-    tasks: ['jshint:grunt', 'jshint:src']
+    files: ['<%= config.srcFolders.js %>script.js', '<%= config.srcFolders.jsMolecules %>**/*.js'],
+    tasks: ['jshint:src']
   },
   scripts: {
     files: ['<%= config.srcFolders.js %>**/*.js'],
