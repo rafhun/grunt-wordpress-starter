@@ -12,6 +12,11 @@ module.exports = {
       '<%= destFolder %><%= config.buildFolders.icons %>icons.data.png.css',
       '<%= destFolder %><%= config.buildFolders.icons %>icons.fallback.css'
     ],
-    dest: ['<%=destFolder %>functions.php', '<%= destFolder %>header.php', '<%= config.srcFolders.config %><%= config.srcFolders.kssTemp %>/template/index.html', '<%= destFolder %>inc/editor.php']
+    dest: [
+      '<%=destFolder %>functions.php',
+      '<%= destFolder %>header.php',
+      '<%= config.srcFolders.config %><%= config.srcFolders.kssTemp %>/template/index.html',
+      '<%= destFolder %>inc/editor.php'
+    ]
   }
 }
