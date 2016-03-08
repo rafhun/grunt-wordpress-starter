@@ -7,6 +7,8 @@ module.exports = {
       dest: '<%= config.srcFolders.grunticon %>'
     }],
     options: {
+      defaultWidth: '300px',
+      defaultHeight: '200px',
       enhanceSVG: true,
       compressPNG: true,
       dynamicColorOnly: true,
