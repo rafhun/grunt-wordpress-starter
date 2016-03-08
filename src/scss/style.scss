@@ -1,7 +1,7 @@
 // the main manifest file that imports all necessary ressources
 
 // Some of our styling might have to be different for the CMS editor in order for everything to be visible in there (especially for content components like accordions, …). This variable can be set to true to change the behavior of those components
-$EDITOR-STYLES: false;
+$_editor-styles: false;
 
 // import susy from the bower_components (while hoping that a node version of susy gets released)
 @import 'susy/sass/susy';

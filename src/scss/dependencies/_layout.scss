@@ -10,10 +10,10 @@
 //
 // Weight: 4
 
-$container-width: rem-calc(1200) !default;
+$container-width: rem-calc( 1200 ) !default;
 $layout-columns: 12 !default;
-$header-height: rem-calc(54) !default;
-$footer-height: rem-calc(54) !default;
+$header-height: rem-calc( 54 ) !default;
+$footer-height: rem-calc( 54 ) !default;
 
 $susy: (
   container: $container-width,
@@ -23,17 +23,17 @@ $susy: (
   global-box-sizing: border-box,
   last-flow: to,
   debug: (
-   image: hide,
-   color: rgba(#66f, .25),
-   output: background,
-   toggle: top right,
+    image: hide,
+    color: rgba( #66F, .25 ),
+    output: background,
+    toggle: top right,
   ),
   use-custom: (
-   background-image: true,
-   background-options: false,
-   box-sizing: false,
-   clearfix: true,
-   rem: false,
+    background-image: true,
+    background-options: false,
+    box-sizing: false,
+    clearfix: true,
+    rem: false,
   )
 );
 
@@ -54,12 +54,12 @@ $susy-media: (
   font-desktop: 30em
 );
 
-$base-bottom-margin: rem-calc(12) !default;
-$base-bottom-margin-desktop: rem-calc(24) !default;
+$base-bottom-margin: rem-calc( 12 ) !default;
+$base-bottom-margin-desktop: rem-calc( 24 ) !default;
 $base-container-padding: $base-bottom-margin-desktop / 2 !default;
 
 $vertical-spacing: gutter() !default;
 $vertical-spacing-lg: 2 * $vertical-spacing !default;
 $vertical-spacing-xl: 4 * $vertical-spacing !default;
 
-$border-radius: rem-calc(4) !default;
+$border-radius: rem-calc( 4 ) !default;

@@ -21,9 +21,9 @@ $default-list-style-position: inside !default;
   $has-custom-symbol: true,
   $custom-symbol: '–',
   $symbol-color: currentColor,
-  $list-margin: rem-calc(12),
-  $list-indent: rem-calc(4),
-  $list-spacing: rem-calc(20),
+  $list-margin: rem-calc( 12 ),
+  $list-indent: rem-calc( 4 ),
+  $list-spacing: rem-calc( 20 ),
   $nested-margin-factor: 1,
   $pass-on-styles: false
 ) {
@@ -38,7 +38,7 @@ $default-list-style-position: inside !default;
     }
 
     @if $has-custom-symbol {
-      $item-selector: if($pass-on-styles, 'li', '> li');
+      $item-selector: if( $pass-on-styles, 'li', '> li' );
 
       #{$item-selector} {
         &::before {

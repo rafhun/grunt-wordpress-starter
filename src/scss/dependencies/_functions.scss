@@ -23,8 +23,8 @@ $rem-base: 16px !default;
 /// @param {string} $value - Input measurement with unit
 /// @returns {number} - Unitless value
 ///
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
+@function strip-unit( $value ) {
+  @return $value / ( $value * 0 + 1 );
 }
 
 /// This function converts any value it is given to rems (on an optionally adjustable base). Also as a fallback and to ensure good code `0rem` is automatically converted to plain `0`.
@@ -49,9 +49,9 @@ $rem-base: 16px !default;
 ///
 /// @link https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss - Source
 ///
-@function convert-to-rem($value, $base-value: $rem-base) {
-  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
-  @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
+@function convert-to-rem( $value, $base-value: $rem-base ) {
+  $value: strip-unit( $value ) / strip-unit( $base-value ) * 1rem;
+  @if ( $value == 0rem ) { $value: 0; } // Turn 0rem into 0
   @return $value;
  }
 
@@ -74,14 +74,14 @@ $rem-base: 16px !default;
 /// @author Foundation by Zurb
 ///
 /// @link https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss
-@function rem-calc($values, $base-value: $rem-base) {
-  $max: length($values);
+@function rem-calc( $values, $base-value: $rem-base ) {
+  $max: length( $values );
 
-  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+  @if $max == 1 { @return convert-to-rem( nth( $values, 1 ), $base-value ); }
 
   $rem-values: ();
   @for $i from 1 through $max {
-    $rem-values: append($rem-values, convert-to-rem(nth($values, $i), $base-value));
+    $rem-values: append( $rem-values, convert-to-rem( nth( $values, $i ), $base-value ) );
   }
   @return $rem-values;
 }
