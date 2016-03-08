@@ -1,4 +1,7 @@
 module.exports = {
+  options: {
+    timestamp: true,
+  },
   editorStyles: {
     files: [{
       src: '<%= config.srcFolders.css %>editor-styles.css',
