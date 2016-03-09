@@ -1,4 +1,4 @@
-`Version: 0.5.7`
+`Version: 1.0.0
 
 # Grunt Wordpress Starter
 

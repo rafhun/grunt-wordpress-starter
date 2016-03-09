@@ -1,3 +1,53 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v0.5.7...v1.0.0) (2016-03-09)
+
+
+### Bug Fixes
+
+* **config:** make db prefix variable dry ([3256c82](https://github.com/rafhun/grunt-wordpress-starter/commit/3256c82))
+* **grunt:** add default width/height for grunticon ([2de6c28](https://github.com/rafhun/grunt-wordpress-starter/commit/2de6c28))
+* **grunt:** cleanup and remove htmlmin task we no longer need ([b5fefd0](https://github.com/rafhun/grunt-wordpress-starter/commit/b5fefd0))
+* **grunt:** cleanup replace task no longer used ([a982130](https://github.com/rafhun/grunt-wordpress-starter/commit/a982130))
+* **grunt:** manually add .htaccess to the ftp push task ([1810d30](https://github.com/rafhun/grunt-wordpress-starter/commit/1810d30)), closes [#11](https://github.com/rafhun/grunt-wordpress-starter/issues/11)
+* **grunt:** optimize watch task ([73f0a35](https://github.com/rafhun/grunt-wordpress-starter/commit/73f0a35))
+* **grunt:** preserve timestamps on copy if nothing's changed ([6abc116](https://github.com/rafhun/grunt-wordpress-starter/commit/6abc116))
+* **grunt:** remove some not needed configuration for changelog ([a8b4c83](https://github.com/rafhun/grunt-wordpress-starter/commit/a8b4c83))
+* **grunt:** slightly change ftp push and run it in debug mode by default ([4973051](https://github.com/rafhun/grunt-wordpress-starter/commit/4973051))
+* **sassdoc:** correctly setup description file ([6d7c420](https://github.com/rafhun/grunt-wordpress-starter/commit/6d7c420))
+* **scss:** use normalize as node package and import cleanly ([c0195f9](https://github.com/rafhun/grunt-wordpress-starter/commit/c0195f9))
+
+### Features
+
+* **banner:** update banner and licensing information ([64b8765](https://github.com/rafhun/grunt-wordpress-starter/commit/64b8765))
+* **git:** add sensible gitattributes ([ce4348c](https://github.com/rafhun/grunt-wordpress-starter/commit/ce4348c))
+* **grunt:** add concat sourcemap ([4b15dc9](https://github.com/rafhun/grunt-wordpress-starter/commit/4b15dc9))
+* **grunt:** add sasslint to ensure code quality ([5fb3dd1](https://github.com/rafhun/grunt-wordpress-starter/commit/5fb3dd1))
+* **grunt:** add some plugin customization for svgmin ([0f14061](https://github.com/rafhun/grunt-wordpress-starter/commit/0f14061))
+* **grunt:** better sass compilation through options ([cfae792](https://github.com/rafhun/grunt-wordpress-starter/commit/cfae792))
+* **grunt:** move autoprefixer to postcss plugin ([2d69e40](https://github.com/rafhun/grunt-wordpress-starter/commit/2d69e40))
+* **grunt:** optimize browserSync configuration ([fd66f8e](https://github.com/rafhun/grunt-wordpress-starter/commit/fd66f8e))
+* **grunt:** optimize uglify with options ([db8be8b](https://github.com/rafhun/grunt-wordpress-starter/commit/db8be8b))
+* **grunt:** update bower concat configuration with separator ([d29ddb4](https://github.com/rafhun/grunt-wordpress-starter/commit/d29ddb4))
+* auto setup after npm install ([66686bf](https://github.com/rafhun/grunt-wordpress-starter/commit/66686bf))
+* rebrand whole project ([09a7e97](https://github.com/rafhun/grunt-wordpress-starter/commit/09a7e97))
+* **grunt:** update cssmin with better options ([4b0d952](https://github.com/rafhun/grunt-wordpress-starter/commit/4b0d952))
+* **grunt:** update shell tasks to use shorthand ([507cc82](https://github.com/rafhun/grunt-wordpress-starter/commit/507cc82))
+* **mixins:** add flex-center mixin ([dcf091f](https://github.com/rafhun/grunt-wordpress-starter/commit/dcf091f))
+* **scss:** refactor typography ([6e3d89b](https://github.com/rafhun/grunt-wordpress-starter/commit/6e3d89b))
+
+
+### BREAKING CHANGES
+
+* scss: all typography related variables are no longer defined in
+the dependencies but are moved to the atoms file. Meaning you no longer have access
+to these variables in the site partial. Therefore the body font definitions
+now reside in the more logical typography partial, no longer in the site one.
+* grunt: shell:getWPold is no longer available.
+* config: This requires a new setup for the secrets.json file. You
+can find the example in the updated secrets-template.json.
+
+
+
 <a name="0.5.7"></a>
 ## [0.5.7](https://github.com/rafhun/grunt-wordpress-starter/compare/v0.5.6...v0.5.7) (2016-03-01)
 
