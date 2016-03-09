@@ -187,3 +187,22 @@
     }
   }
 }
+
+/// Use flexbox to center children. Make sure you do not have to support IE9 or lower since this would break for that. If you can afford only supporting newer browsers, feel free to use this mixin. By default the children will be centered vertically and horizontally, however this can be configured by setting the booleans on the two parameters respectively.
+///
+/// @author Raphael Hüni
+///
+/// @param {Boolean} $vertical [true]    - Should the child be centered vertically?
+/// @param {Boolean} $horizontal [true]  - Should the child be centered horizontally?
+///
+/// @since 1.0.0
+@mixin flex-center-children( $vertical: true, $horizontal: true ) {
+  display: flex;
+  @if ( $vertical ) {
+    align-items: center;
+  }
+
+  @if ( $horizontal ) {
+    justify-content: center;
+  }
+}
