@@ -40,7 +40,7 @@
     "grunt-ftp-push": "^0.4.4",
     "grunt-grunticon": "^2.2.2",
     "grunt-hashres": "^0.4.1",
-    "grunt-kss": "rafhun/grunt-kss#v2.1.5",
+    "grunt-kss": "^4.1.0",
     "grunt-po2mo": "^0.1.2",
     "grunt-postcss": "^0.8.0",
     "grunt-pot": "^0.2.1",
