@@ -1,16 +1,48 @@
-// Type
+////
+/// @group General
+/// @since 1.0.0
+/// @author Raphael Hüni
+////
+
+// Typography
 //
-// Sets the default styles for all text. All variables used for these styles are defined in the dependencies/typography file.
+// Sets the default styles for all text. Also the default typography variables are set in this file which means we now can find all things related to type in this file.
+//
+// Hint: it is strongly recommended to use unitless values for the lineheight since they translate well in inheritance instances as they are font size dependent.
 //
 // Markup: type.html
 //
-// Style guide: atoms.type
+// Style guide: atoms.typography
+
+/// Font families for sans font types
+/// @type List
+$sans: 'TheSans', Helvetica, Arial, sans-serif !default;
+
+/// Font families for serif font types
+/// @type List
+$serif: Georgia, Utopia, Palatino, 'Palatino Linotype', serif !default;
+
+/// Font families for code font types
+/// @type List
+$code: Consolas, 'Courier New', Courier, monospace !default;
+
+$font-smoothing: antialiased !default;
 
 
 // type configuration
 // here comes the basic body text configuration
 
+/// Defines the default font family used for the body copy.
+$body-copy-font-family: $sans !default;
 
+/// Defines the default font size of the body copy.
+$body-copy-font-size: rem-calc( 18 ) !default;
+
+/// Defines the default line height of the body copy.
+$body-copy-line-height: 1.35 !default;
+
+/// Default margin bottom applied to paragraphs (equal to the body font size by default)
+/// @type Number
 $paragraph-margin-bottom: $body-copy-font-size !default;
 
 // now come the headings
@@ -34,10 +66,13 @@ $anchor-font-style: normal !default;
 $anchor-text-decoration: none !default;
 $anchor-text-decoration-hover: underline !default;
 
-
-// basic html tags
-
-// basic font styles for paragraphs
+// basic font styles for body
+body {
+  color: $color-text;
+  font-family: $body-copy-font-family;
+  font-size: $body-copy-font-size;
+  line-height: $body-copy-line-height;
+}
 
 p {
   margin-bottom: $paragraph-margin-bottom;
@@ -47,17 +82,18 @@ p {
   }
 }
 
-// headings
-h1,
-h2,
-h3 {
+// Headings
+/// This placeholder contains all base styles for the headings. Any heading we define from here on out can extend this placeholder.
+%heading-base {
   color: $headings-font-color;
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   text-rendering: $headings-text-rendering;
 }
 
-h1 {
+h1,
+.h1 {
+  @extend %heading-base;
   font-size: $h1-max-mobile-font;
 
   @include susy-media( font-desktop ) {
@@ -65,7 +101,9 @@ h1 {
   }
 }
 
-h2 {
+h2,
+.h2 {
+  @extend %heading-base;
   font-size: $h2-max-mobile-font;
 
   @include susy-media( font-desktop ) {
@@ -73,7 +111,9 @@ h2 {
   }
 }
 
-h3 {
+h3,
+.h3 {
+  @extend %heading-base;
   font-size: $h3-max-mobile-font;
 
   @include susy-media( font-desktop ) {

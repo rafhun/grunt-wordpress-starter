@@ -17,7 +17,6 @@ $_editor-styles: false;
 //
 @import 'dependencies/functions';
 @import 'dependencies/color';
-@import 'dependencies/typography';
 @import 'dependencies/layout';
 @import 'dependencies/mixins';
 
@@ -39,8 +38,8 @@ $_editor-styles: false;
 @import 'normalize.css/normalize';
 
 @import 'atoms/site'; // mainly html and body elements
+@import 'atoms/typography'; // all typography and text styles
 @import 'atoms/media'; // above all responsive images
-@import 'atoms/type'; // all typography, text styles
 // //
 @import 'atoms/manifest';
 
