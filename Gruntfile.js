@@ -22,6 +22,16 @@ module.exports = function(grunt) {
               ' * Copyright <%= grunt.template.today("yyyy") %>: <%= pkg.author %>\n *\n' +
               ' * This stylesheet is not used by this Wordpress site it only exists as reference for Wordpress. The stylesheet in use can be found in this folder as style.min.{hash}.css\n' +
               ' */'
+    },
+    jitGrunt: {
+      staticMappings: {
+        usebanner: 'grunt-banner',
+        bower_concat: 'grunt-bower-concat',
+        browserSync: 'grunt-browser-sync',
+        conventionalChangelog: 'grunt-conventional-changelog',
+        ftp_push: 'grunt-ftp-push',
+        sasslint: 'grunt-sass-lint'
+      }
     }
   });
 };
