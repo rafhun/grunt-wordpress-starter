@@ -1,3 +1,17 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.0.0...v1.1.0) (2016-03-11)
+
+
+### Bug Fixes
+
+* **grunt:** use jit-grunt to load tasks dynamically ([a366c6a](https://github.com/rafhun/grunt-wordpress-starter/commit/a366c6a))
+
+### Features
+
+* **grunt:** setup visual regression testing ([0e84246](https://github.com/rafhun/grunt-wordpress-starter/commit/0e84246)), closes [#15](https://github.com/rafhun/grunt-wordpress-starter/issues/15)
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v0.5.7...v1.0.0) (2016-03-09)
 
