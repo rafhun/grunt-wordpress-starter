@@ -100,3 +100,6 @@ src/icons/min
 src/.grunticon
 
 src/config/.kss-dest
+
+# visual test results screenshots
+tests/visual/results

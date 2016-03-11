@@ -1,5 +1,5 @@
 themeName: rafhun
-devUrl: http://grunt-wordpress-starter.dev
+devUrl: http://grunt-wordpress-starter.dev/
 dbDump: db/
 rootFolder: wwwroot/
 
@@ -34,3 +34,9 @@ srcFolders:
   languages: src/languages/
   php: src/php/
   scss: src/scss/
+
+testing:
+  base: 'tests/'
+  visual: 'visual/'
+  screenshots: 'screenshots/'
+  results: 'results/'

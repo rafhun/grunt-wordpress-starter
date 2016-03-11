@@ -30,7 +30,8 @@ module.exports = function(grunt) {
         browserSync: 'grunt-browser-sync',
         conventionalChangelog: 'grunt-conventional-changelog',
         ftp_push: 'grunt-ftp-push',
-        sasslint: 'grunt-sass-lint'
+        sasslint: 'grunt-sass-lint',
+        phantomcss: '@micahgodbolt/grunt-phantomcss'
       }
     }
   });
