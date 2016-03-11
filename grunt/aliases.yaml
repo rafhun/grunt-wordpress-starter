@@ -126,6 +126,7 @@ images:
 docs:
   - 'kss'
   - 'sassdoc'
+  # - 'phantomcss'
 
 translations:
   - 'po2mo'
