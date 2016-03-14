@@ -1,6 +1,7 @@
 #!/bin/bash
 if [ -a secrets.json ]
 then
+  grunt setupGruntconfig
   grunt setup
 else
   cp secrets-template.json secrets.json
@@ -15,5 +16,6 @@ else
     sed -i ".bak" "s/@@acfProKey/${answer}/g" secrets.json
     rm secrets.json.bak
   fi
+  grunt setupGruntconfig
   grunt setup
 fi

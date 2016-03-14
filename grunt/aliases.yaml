@@ -69,8 +69,6 @@ newKeys:
   - 'replace:keys'
 
 setup:
-  - 'prompt:themeName'
-  - 'replace:themeSetup'
   - 'shell:updateUrl'
   - 'shell:getWP'
   - 'newKeys'
@@ -91,6 +89,10 @@ setupUpdate:
   - 'cssmin'
   - 'copy:php'
   - 'hashres'
+
+setupGruntconfig:
+  - 'prompt:themeName'
+  - 'replace:themeSetup'
 
 fileMgm:
   - 'clean:dest'
