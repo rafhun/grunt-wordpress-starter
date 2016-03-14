@@ -69,6 +69,8 @@ newKeys:
   - 'replace:keys'
 
 setup:
+  - 'prompt:themeName'
+  - 'replace:themeSetup'
   - 'shell:updateUrl'
   - 'shell:getWP'
   - 'newKeys'

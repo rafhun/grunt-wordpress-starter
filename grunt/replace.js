@@ -69,6 +69,23 @@ module.exports = {
     src: 'composer.json',
     dest: 'composer.json'
   },
+  themeSetup: {
+    options: {
+      patterns: [
+        {
+          match: 'rafhun',
+          replacement: '<%= grunt.config( "prompt.themeName" ) %>'
+        }
+      ],
+      usePrefix: false
+    },
+    files: [
+      {
+        src: 'Gruntconfig.yml',
+        dest: 'Gruntconfig.yml'
+      }
+    ]
+  },
   themeName: {
     options: {
       patterns: [
