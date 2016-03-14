@@ -1,3 +1,17 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.1.0...v1.1.1) (2016-03-14)
+
+
+### Bug Fixes
+
+* **setup:** we need two independent tasks to reparse the config file ([40741af](https://github.com/rafhun/grunt-wordpress-starter/commit/40741af))
+
+### Features
+
+* **setup:** prompt for theme name and write it to the config file ([d934881](https://github.com/rafhun/grunt-wordpress-starter/commit/d934881))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.0.0...v1.1.0) (2016-03-11)
 
