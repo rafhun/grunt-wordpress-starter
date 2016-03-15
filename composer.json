@@ -23,6 +23,7 @@
   "require": {
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/backupwordpress": "*",
+    "wpackagist-plugin/developer": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/wp-migrate-db": "*",
