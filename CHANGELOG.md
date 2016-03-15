@@ -1,3 +1,19 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.1.1...v1.2.0) (2016-03-15)
+
+
+### Bug Fixes
+
+* **grunt:** create dev and prod wp-config.php ([7cf5395](https://github.com/rafhun/grunt-wordpress-starter/commit/7cf5395))
+
+### Features
+
+* **plugins:** add dev env composer with development plugins ([2e4188b](https://github.com/rafhun/grunt-wordpress-starter/commit/2e4188b))
+* **plugins:** add developer plugin ([bcaa131](https://github.com/rafhun/grunt-wordpress-starter/commit/bcaa131))
+* **plugins:** add more development plugins to composer and some docs ([efdae65](https://github.com/rafhun/grunt-wordpress-starter/commit/efdae65))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.1.0...v1.1.1) (2016-03-14)
 
