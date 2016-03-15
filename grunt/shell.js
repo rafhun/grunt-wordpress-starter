@@ -6,7 +6,5 @@ module.exports = {
   getKeys: 'sh getKeys.sh keys.php',
   installPlugins: 'composer self-update && composer install --no-dev',
   updatePlugins: 'composer self-update && composer update --no-dev',
-  installPluginsDev: 'COMPOSER=composer.dev.json composer self-update && composer install --no-dev',
-  updatePluginsDev: 'COMPOSER=composer.dev.json composer self-update && composer update --no-dev',
   updateUrl: 'sed -i "" "s=<%= config.devUrl %>=http://${PWD##*/}.dev=g" Gruntconfig.yml'
 }

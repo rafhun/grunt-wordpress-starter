@@ -27,7 +27,17 @@
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/wp-migrate-db": "*",
     "wpackagist-plugin/wp-nested-pages": "*",
-    "wpackagist-plugin/wp-super-cache": "*"
+    "wpackagist-plugin/wp-super-cache": "*",
+    "wpackagist-plugin/developer": "*",
+    "wpackagist-plugin/debug-bar": "*",
+    "wpackagist-plugin/debug-bar-console": "*",
+    "wpackagist-plugin/debug-bar-cron": "*",
+    "wpackagist-plugin/debug-bar-extender": "*",
+    "wpackagist-plugin/rewrite-rules-inspector": "*",
+    "wpackagist-plugin/log-deprecated-notices": "*",
+    "wpackagist-plugin/log-viewer": "*",
+    "wpackagist-plugin/simply-show-ids": "*",
+    "wpackagist-plugin/theme-check": "*"
 
   },
   "extra": {
