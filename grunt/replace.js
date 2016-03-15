@@ -54,7 +54,19 @@ module.exports = {
         }
       ]
     },
-    src: '<%= config.srcFolders.config %>wp-config-sample.php',
+    src: '<%= config.srcFolders.config %>wp-config-prod.php',
+    dest: '<%= config.srcFolders.config %>wp-config.php'
+  },
+  keysDev: {
+    options: {
+      patterns: [
+        {
+          match: 'include',
+          replacement: '<%= grunt.file.read("keys.php") %>'
+        }
+      ]
+    },
+    src: '<%= config.srcFolders.config %>wp-config-dev.php',
     dest: '<%= config.srcFolders.config %>wp-config.php'
   },
   acfProKey: {
