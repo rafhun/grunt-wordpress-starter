@@ -1,0 +1,3 @@
+# Server Configuration
+
+This starter is created for use with an Apache server and as such contains a `.htaccess` file with recommended server configurations. Actually there are two different versions of the file, again one for development and one for live. These are applied through Grunt automatically to the correct usecase when you are running your tasks. The default development configuration just contains the basic WordPress rules while the development version (also applied for the staging task) contains basic rules for caching, compression and so on (based on the [H5BP-Template](https://github.com/h5bp/server-configs-apache)). These rules are applied for the staging server as well to enable you to test out the complete configuration before you are going live.
