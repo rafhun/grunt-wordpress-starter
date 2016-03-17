@@ -6,9 +6,6 @@ module.exports = {
     dest: {
       js: '<%= config.srcFolders.js %>bower.js',
     },
-    exclude: [
-      'susy',
-      'normalize-scss'
-    ],
+    exclude: [],
   }
 }

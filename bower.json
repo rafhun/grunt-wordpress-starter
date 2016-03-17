@@ -2,7 +2,7 @@
   "name": "grunt-wordpress-starter",
   "version": "1.2.0",
   "authors": [
-    "Raphael Hüni <rafhun©gmail.com>"
+    "Raphael Hüni <rafhun@gmail.com>"
   ],
   "description": "An automated Wordpress theme development environment, based on Grunt. It is preconfigured to use Sass (libsass) with Susy for styles, KSS for automatic styleguide creation, JS and SCSS linters to ensure code consistency, BrowserSync because it just rocks and many more important tools.",
   "keywords": [
@@ -30,8 +30,6 @@
     "Gemfile"
   ],
   "dependencies": {
-    "jquery": "~2.2.1",
-    "susy": "~2.2.12",
-    "normalize-scss": "~3.0.3"
+    "jquery": "~2.2.1"
   }
 }
