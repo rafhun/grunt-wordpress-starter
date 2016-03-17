@@ -1,3 +1,13 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.0...v1.2.1) (2016-03-17)
+
+
+### Bug Fixes
+
+* **dependencies:** move susy dependency to npm ([345fea4](https://github.com/rafhun/grunt-wordpress-starter/commit/345fea4))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.1.1...v1.2.0) (2016-03-15)
 
