@@ -22,55 +22,55 @@
 
 
     grunticon([
-      "/wp-content/themes/@@themeName/icons/icons.data.svg.css",
-      "/wp-content/themes/@@themeName/icons/icons.data.png.css",
-      "/wp-content/themes/@@themeName/icons/icons.fallback.css"],
+      "/wp-content/themes/rafhun/icons/icons.data.svg.css",
+      "/wp-content/themes/rafhun/icons/icons.data.png.css",
+      "/wp-content/themes/rafhun/icons/icons.fallback.css"],
     grunticon.svgLoadedCallback );
   </script>
-  <noscript><link href="/wp-content/themes/@@themeName/icons/icons.fallback.css" rel="stylesheet"></noscript>
+  <noscript><link href="/wp-content/themes/rafhun/icons/icons.fallback.css" rel="stylesheet"></noscript>
 
 </head>
 <body id="kss-node">
 
-<div class="kss-sidebar kss-style">
-  <header class="kss-header">
-    <h1 class="kss-doc-title">{{options.title}}</h1>
-    <label for="nav-toggle-checkbox" class="nav-toggle" id="nav-toggle" href="#">Navigation</a>
-  </header>
-  <input type="checkbox" class="nav-toggle-checkbox" id="nav-toggle-checkbox">
-  <nav class="kss-nav">
-    <ul class="kss-nav__menu">
-      <li class="kss-nav__menu-item">
-        <a href="./">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">Overview</span>
-        </a>
-      </li>
-    {{#eachRoot}}
-      <li class="kss-nav__menu-item">
-        <a href="section-{{referenceURI}}.html">
-          <span class="kss-nav__ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
-          ><span class="kss-nav__name">{{header}}</span>
-        </a>
-      {{#ifReference ../rootName}}
-        <ul class="kss-nav__menu-child">
-        {{#eachSection reference}}
-          {{#ifDepth 2}}
-            <li class="kss-nav__menu-item">
-              <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
-                <span class="kss-nav__ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
-                ><span class="kss-nav__name">{{header}}</span>
-              </a>
-            </li>
-          {{/ifDepth}}
-        {{/eachSection}}
-        </ul>
-      {{/ifReference}}
-      </li>
-    {{/eachRoot}}
-    </ul>
-  </nav>
-</div>
+  <div class="kss-sidebar kss-style">
+    <header class="kss-header">
+      <h1 class="kss-doc-title">{{options.title}}</h1>
+        <button onclick="hideSidebar()" style="color: white; background: black; border-radius: 3px; border: 0;">hide sidebar</button>
+      <label for="nav-toggle-checkbox" class="nav-toggle" id="nav-toggle" href="#">Navigation</a>
+    </header>
+    <nav class="kss-nav">
+      <ul class="kss-nav__menu">
+        <li class="kss-nav__menu-item">
+          <a href="./">
+            <span class="kss-nav__ref">0</span
+            ><span class="kss-nav__name">Overview</span>
+          </a>
+        </li>
+      {{#eachRoot}}
+        <li class="kss-nav__menu-item">
+          <a href="section-{{referenceURI}}.html">
+            <span class="kss-nav__ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
+            ><span class="kss-nav__name">{{header}}</span>
+          </a>
+        {{#ifReference ../rootName}}
+          <ul class="kss-nav__menu-child">
+          {{#eachSection reference}}
+            {{#ifDepth 2}}
+              <li class="kss-nav__menu-item">
+                <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
+                  <span class="kss-nav__ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
+                  ><span class="kss-nav__name">{{header}}</span>
+                </a>
+              </li>
+            {{/ifDepth}}
+          {{/eachSection}}
+          </ul>
+        {{/ifReference}}
+        </li>
+      {{/eachRoot}}
+      </ul>
+    </nav>
+  </div>
 <article role="main" class="kss-main">
 {{#if homepage}}
   <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
