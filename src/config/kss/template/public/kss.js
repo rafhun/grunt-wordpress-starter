@@ -51,3 +51,9 @@
   new KssStateGenerator;
 
 }).call(this);
+
+
+var hideSidebar = function() {
+  document.getElementsByClassName('kss-sidebar')[0].style.visibility = 'hidden';
+  document.getElementsByClassName('kss-main')[0].style.width = '100%';
+}
