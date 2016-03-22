@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@micahgodbolt/grunt-phantomcss": "^0.4.3",
-    "autoprefixer": "^6.3.3",
+    "autoprefixer": "^6.3.4",
     "bower": "^1.7.7",
     "glob": "^7.0.0",
     "grunt": "^0.4.5",
