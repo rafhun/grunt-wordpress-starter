@@ -17,7 +17,8 @@
   "author": "rafhun",
   "license": "GPL-3.0",
   "scripts": {
-    "install": "sh ./setup.sh"
+    "install": "sh ./setup.sh",
+    "grunt": "grunt"
   },
   "devDependencies": {
     "@micahgodbolt/grunt-phantomcss": "^0.4.3",
