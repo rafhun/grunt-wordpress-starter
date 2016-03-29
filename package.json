@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@micahgodbolt/grunt-phantomcss": "^0.4.3",
-    "autoprefixer": "^6.3.4",
+    "autoprefixer": "^6.3.5",
     "bower": "^1.7.7",
     "glob": "^7.0.0",
     "grunt": "^0.4.5",
@@ -39,7 +39,7 @@
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-conventional-changelog": "^6.1.0",
-    "grunt-ftp-push": "^0.4.4",
+    "grunt-ftp-push": "^1.0.0",
     "grunt-grunticon": "^2.2.2",
     "grunt-hashres": "^0.4.1",
     "grunt-kss": "^4.1.0",
