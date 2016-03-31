@@ -1,3 +1,15 @@
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.2...v1.2.3) (2016-03-31)
+
+
+### Bug Fixes
+
+* **composer:** use SSL for wpackagist repository ([99ab8fe](https://github.com/rafhun/grunt-wordpress-starter/commit/99ab8fe))
+* **grunt:** add grunt as npm script ([14ae115](https://github.com/rafhun/grunt-wordpress-starter/commit/14ae115))
+* **grunt:** add trailing slash to config.devUrl to ease testing ([c971728](https://github.com/rafhun/grunt-wordpress-starter/commit/c971728))
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.1...v1.2.2) (2016-03-21)
 
