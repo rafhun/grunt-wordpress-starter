@@ -31,7 +31,8 @@ module.exports = function(grunt) {
         conventionalChangelog: 'grunt-conventional-changelog',
         ftp_push: 'grunt-ftp-push',
         sasslint: 'grunt-sass-lint',
-        phantomcss: '@micahgodbolt/grunt-phantomcss'
+        phantomcss: '@micahgodbolt/grunt-phantomcss',
+        makepot: 'grunt-wp-i18n'
       }
     }
   });
