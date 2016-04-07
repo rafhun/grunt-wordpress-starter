@@ -23,7 +23,7 @@ get_header(); ?>
 
   <?php
   // start the loop
-  while ( have_posts() ) : the_posts();
+  while ( have_posts() ) : the_post();
 
     // inlcude post format specific template for the content, or just put your template in here
     get_template_part( 'template-parts/content', get_post_format() );
