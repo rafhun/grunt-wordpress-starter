@@ -25,14 +25,14 @@ module.exports = function(grunt) {
     },
     jitGrunt: {
       staticMappings: {
-        usebanner: 'grunt-banner',
         bower_concat: 'grunt-bower-concat',
         browserSync: 'grunt-browser-sync',
         conventionalChangelog: 'grunt-conventional-changelog',
         ftp_push: 'grunt-ftp-push',
-        sasslint: 'grunt-sass-lint',
+        makepot: 'grunt-wp-i18n',
         phantomcss: '@micahgodbolt/grunt-phantomcss',
-        makepot: 'grunt-wp-i18n'
+        sasslint: 'grunt-sass-lint',
+        usebanner: 'grunt-banner'
       }
     }
   });
