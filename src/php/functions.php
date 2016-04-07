@@ -57,7 +57,8 @@ function rafhun_setup() {
   // This theme uses wp_nav_menu() in two locations.
   register_nav_menus( array(
     'primary-menu' => __( 'main nav', 'rafhun' ),
-    'off-canvas-menu' => __( 'Off Canvas Menu', 'rafhun')
+    'off-canvas-menu' => __( 'Off Canvas Menu', 'rafhun'),
+    'metanavigation' => __( 'Metanavigation', 'rafhun' )
   ) );
 
   /*
@@ -75,12 +76,6 @@ function rafhun_setup() {
   add_theme_support( 'post-formats', array(
     'aside', 'image', 'video', 'quote', 'link',
   ) );
-
-  // Set up the WordPress core custom background feature.
-  add_theme_support( 'custom-background', apply_filters( 'rafhun_custom_background_args', array(
-    'default-color' => 'ffffff',
-    'default-image' => '',
-  ) ) );
 }
 endif; // rafhun_setup
 add_action( 'after_setup_theme', 'rafhun_setup' );
@@ -90,6 +85,7 @@ add_action( 'after_setup_theme', 'rafhun_setup' );
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
+/*
 function rafhun_widgets_init() {
   register_sidebar( array(
     'name'          => __( 'Sidebar', 'rafhun' ),
@@ -102,6 +98,7 @@ function rafhun_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'rafhun_widgets_init' );
+*/
 
 /**
  * Enqueue scripts and styles.
@@ -124,12 +121,16 @@ function rafhun_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'rafhun_scripts' );
 
-// fix chrome admin nav issue
-
+// fix chrome v45 admin nav issue
+/*
 function chromefix_inline_css() {
   wp_add_inline_style( 'wp-admin', '#adminmenu { transform: translateZ(0); }' );
 }
 add_action('admin_enqueue_scripts', 'chromefix_inline_css');
+*/
+
+
+// Following are includes / requires containing configuration that is outsourced to files
 
 /**
  * Load Custom Editor Functionality (custom stylesheets and style select)
