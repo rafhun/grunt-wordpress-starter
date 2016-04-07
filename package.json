@@ -23,9 +23,9 @@
   "devDependencies": {
     "@micahgodbolt/grunt-phantomcss": "^0.4.3",
     "autoprefixer": "^6.3.6",
-    "bower": "^1.7.8",
+    "bower": "^1.7.9",
     "glob": "^7.0.0",
-    "grunt": "^1.0.0",
+    "grunt": "^1.0.1",
     "grunt-banner": "^0.6.0",
     "grunt-bower-concat": "^1.0.0",
     "grunt-browser-sync": "^2.2.0",
