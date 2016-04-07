@@ -6,12 +6,49 @@ function rafhun_editor_styles() {
 
 add_action( 'admin_init', 'rafhun_editor_styles' );
 
-// style selector
+// basic toolbar (mce_buttons) configuration
+//
+// with the current_user_can condition we check for the admin level of the user. For all users other then administrators some toolbar buttons get removed since they lead to abuse of power of the editor.
+
+function rafhun_editor_mce_buttons( $buttons ) {
+  // remove formatting buttons the user should not be able to use
+  $remove = array(
+    'italic',
+    'strikethrough',
+    'hr',
+    'alignleft',
+    'aligncenter',
+    'alignright'
+  );
+
+  return array_diff( $buttons, $remove );
+}
+
+if ( !current_user_can( 'list_users' ) ) :
+  add_filter( 'mce_buttons', 'rafhun_editor_mce_buttons' );
+endif;
+
+// advanced toolbar (mce_buttons_2) configuration
 //
 // This first part adds the styleselect dropdown to the tinymce editor
 function rafhun_editor_mce_buttons_2( $buttons ) {
+  // add the styleselect dropdown
   array_unshift( $buttons, 'styleselect' );
-  return $buttons;
+
+  // remove buttons we do not want to appear
+  $remove = array(
+    'underline',
+    'alignjustify',
+    'forecolor',
+    'outdent',
+    'indent'
+  );
+
+  if ( current_user_can( 'list_users' ) ) :
+    return $buttons;
+  else:
+    return array_diff( $buttons, $remove );
+  endif;
 }
 
 add_filter( 'mce_buttons_2', 'rafhun_editor_mce_buttons_2' );
