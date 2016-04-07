@@ -133,7 +133,7 @@ docs:
   # - 'phantomcss'
 
 translations:
-  - 'po2mo'
+  - 'potomo'
   - 'copy:languages'
 
 prepareUploads:
