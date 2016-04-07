@@ -1,3 +1,23 @@
+<a name="1.2.4"></a>
+## [1.2.4](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.3...v1.2.4) (2016-04-07)
+
+
+### Bug Fixes
+
+* **grunt:** include the wp-content/uploads folder for the first push ([e574de9](https://github.com/rafhun/grunt-wordpress-starter/commit/e574de9))
+* **grunt:** update translation plugins to better supported ones ([147105d](https://github.com/rafhun/grunt-wordpress-starter/commit/147105d))
+* **grunt:** update translations task in aliases ([bf27833](https://github.com/rafhun/grunt-wordpress-starter/commit/bf27833))
+* **jshint:** add grunticon as allowed global variable ([5225231](https://github.com/rafhun/grunt-wordpress-starter/commit/5225231))
+* **php:** adjust header markup to better reflect basic usage ([340718d](https://github.com/rafhun/grunt-wordpress-starter/commit/340718d))
+* **php:** clean up the functions.php file ([6272196](https://github.com/rafhun/grunt-wordpress-starter/commit/6272196))
+* **php:** typo the_posts() now the_post() ([7591744](https://github.com/rafhun/grunt-wordpress-starter/commit/7591744))
+
+### Features
+
+* **php:** add template-tags file and require statement ([5c48366](https://github.com/rafhun/grunt-wordpress-starter/commit/5c48366))
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.2...v1.2.3) (2016-03-31)
 
