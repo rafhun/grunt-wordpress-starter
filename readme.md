@@ -53,25 +53,28 @@ To change your themes name change `themeName` in `Gruntconfig.yml`. This automat
 Requirements on your machine or virtual development environment:
 
 * Node
-    - grunt-cli
 * wget or curl (if you want to use the automatic Wordpress downloader)
 * Composer
 
 If you are working on OS X the use of Homebrew is strongly recommended. Follow [these instructions](http://brew.sh).
 
-Node is needed for Grunt. Find out more about Grunt on the [official getting started guide](http://gruntjs.com/getting-started). The grunt-cli must be installed globally all other npm modules are downloaded locally.
-With Homebrew you can install node (npm is included) by running `brew install node`.
+Node is needed for Grunt. Find out more about Grunt on the [official getting started guide](http://gruntjs.com/getting-started).
+With Homebrew you can install node (which includes npm) by running `brew install node`.
 
 ## Wordpress
 This boilerplate contains some very basic starter files to represent the workflow configured in `Gruntconfig.yml`. However you are not bound to these folder structures and can simply adjust them through the `Gruntconfig.yml` file. Also everything can be deleted and you can start from scratch if you wish.
 
-The header in your `style.css` file that is required by WordPress can be adjusted in the `Gruntfile.js`. Make sure to add your relevant information there.
+The header in your `style.css` file that is required by WordPress can be adjusted in the `Gruntfile.js`. Make sure to add your relevant information there. A preset pulling data from the information in `package.json` is already implemented only some descriptive details need to be adjusted.
 
 ### Styles
 For styling it is recommended to start with [this styles library](https://github.com/rafhun/styles-library), however you are free to add any sass files to the `src/scss` folder (resp. the one you defined in the `Gruntconfig.yml` file), just make sure to name the main import file `style.scss` or manually adjust the sass task accordingly. These files will be compiled and autoprefixed automatically. Then the header will be prepended to the resulting file which in a last step is minified. In your theme you should only import/use the minified CSS file while keeping the other one as a reference for WordPress.
 
+External style dependencies can be controlled through Bower or NPM. Both default paths for these package managers (`/bower_components`, `/node_modules`) are included in the Sass task which lets you directly import dependencies (no need to move through the whole folder structure). See the already included libraries (`Susy`, `normalize-css`) for an example.
+
 ### PHP
-To start with we recommend the Underscores starter theme. Copy all PHP files that are delivered to you to the `src/php` (or the one you defined in `Gruntconfig.yml`) folder. With this you are ready to activate the theme and start development on it.
+A very barebones starter theme is set up in the PHP folder (by default `src/php`) which can be used to build upon. If you want to implement your own theme make sure to first check out the existing `header.php` file and copy over the grunticon loader, should you wish to use Grunticons.
+
+To start on your own just copy all PHP files to the dedicated PHP folder and start editing.
 
 ### Javascript
 Generally you should add JS dependencies through Bower if they are available. Simply add their name and version information to the `bower.json` file and then execute `grunt setupUpdate`. Add all other vendor scripts to the `plugins.js` file in the source scripts folder and your own to the `scripts.js` one. Should you have created molecules that depend on a certain script add this to the molecules folder within the JS one. Again you can find and adapt all relevant folder names in the `Gruntconfig.yml`.
