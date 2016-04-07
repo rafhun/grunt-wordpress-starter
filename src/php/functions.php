@@ -138,6 +138,11 @@ add_action('admin_enqueue_scripts', 'chromefix_inline_css');
 require get_template_directory() . '/inc/editor.php';
 
 /**
+ * Template Tags (to be used within the loop)
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
  * Load Custom Off Canvas Walker Function
  */
 // require get_template_directory() . '/inc/off-canvas-walker.php';
