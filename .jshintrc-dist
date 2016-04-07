@@ -23,5 +23,8 @@
   "node": true,
   "strict": false,
   "evil": true,
-  "sub":true
+  "sub": true,
+  "globals": {
+    "grunticon": true
+  }
 }
