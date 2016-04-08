@@ -60,26 +60,26 @@ function rafhun_editor_mce_before_init_insert_formats( $init_array ) {
   $style_formats = array(
     // this creates a ul from the selected elements, or just adds the class if the ul is already found in the selection
     array(
-      'title' => 'Standard Liste',
+      'title' => __( 'Default List', 'rafhun' ),
       'block' => 'ul',
       'selector' => 'ul',
       'classes' => 'dash-list'
     ),
     // this is how inline styles are setup. Selected text will be wrapped in the given tag
     array(
-      'title' => 'Primärer Button',
+      'title' => __( 'Primary Button', 'rafhun' ),
       'inline' => 'a',
       'selector' => 'a',
       'classes' => 'btn btn-primary'
     ),
     array(
-      'title' => 'Lead Absatz',
+      'title' => __( 'Lead Paragraph', 'rafhun' ),
       'block' => 'p',
       'selector' => 'p',
       'classes' => 'lead'
     ),
     array(
-      'title' => 'Beispiel Inline Style',
+      'title' => __( 'Inline Style Example', 'rafhun' ),
       'inline' => 'span',
       'classes' => 'inline-style-class'
     )
