@@ -25,6 +25,9 @@
   "evil": true,
   "sub": true,
   "globals": {
-    "grunticon": true
+    "grunticon": true,
+    "casper": true,
+    "phantom": true,
+    "phantomcss": true
   }
 }
