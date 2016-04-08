@@ -1,3 +1,23 @@
+<a name="1.2.5"></a>
+## [1.2.5](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.4...v1.2.5) (2016-04-08)
+
+
+### Bug Fixes
+
+* **jshint:** add ajaxpagination global variable ([0181aac](https://github.com/rafhun/grunt-wordpress-starter/commit/0181aac))
+* **jshint:** add testing globals to .jshintrc ([d3ed0cd](https://github.com/rafhun/grunt-wordpress-starter/commit/d3ed0cd))
+* **php:** add query_vars example to ajax loading localize script ([b1aeafb](https://github.com/rafhun/grunt-wordpress-starter/commit/b1aeafb))
+* **php:** comment out custom image sizes by default ([1fd99e9](https://github.com/rafhun/grunt-wordpress-starter/commit/1fd99e9))
+* **php:** make editor styleselect titles translatable ([bd0f8d0](https://github.com/rafhun/grunt-wordpress-starter/commit/bd0f8d0))
+* **php:** replace wrong textdomains ([6f33927](https://github.com/rafhun/grunt-wordpress-starter/commit/6f33927))
+* **tests:** improve test script template ([5709b56](https://github.com/rafhun/grunt-wordpress-starter/commit/5709b56))
+
+### Features
+
+* **php:** remove some editor buttons for non-admins ([375d6d3](https://github.com/rafhun/grunt-wordpress-starter/commit/375d6d3))
+
+
+
 <a name="1.2.4"></a>
 ## [1.2.4](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.3...v1.2.4) (2016-04-07)
 
