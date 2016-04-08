@@ -25,6 +25,7 @@
   "evil": true,
   "sub": true,
   "globals": {
+    "ajaxpagination": true,
     "grunticon": true
   }
 }
