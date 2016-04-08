@@ -49,10 +49,10 @@ function rafhun_setup() {
   add_theme_support( 'post-thumbnails' );
 
   // add additional image size for page headers
-  add_image_size( 'page-header', 2000, 1200, true );
-  add_image_size( 'flexslider', 952, 625, true);
-  add_image_size( 'header-desktop', 2560, 604 );
-  add_image_size( 'header-mobile', 1240, 1240, true);
+  // add_image_size( 'page-header', 2000, 1200, true );
+  // add_image_size( 'flexslider', 952, 625, true);
+  // add_image_size( 'header-desktop', 2560, 604 );
+  // add_image_size( 'header-mobile', 1240, 1240, true);
 
   // This theme uses wp_nav_menu() in two locations.
   register_nav_menus( array(
