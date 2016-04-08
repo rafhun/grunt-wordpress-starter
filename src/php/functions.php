@@ -109,8 +109,11 @@ function rafhun_scripts() {
   wp_enqueue_script( 'rafhun-script', get_template_directory_uri() . '/js/script.min.js', array(), null, true);
 
   // needed for ajax loading
-  /*wp_localize_script( 'rafhun-script', 'ajaxpagination', array(
-    'ajaxurl' => admin_url( 'admin-ajax.php' )
+  /*
+  global $wp_query;
+  wp_localize_script( 'rafhun-script', 'ajaxpagination', array(
+    'ajaxurl' => admin_url( 'admin-ajax.php' ),
+    'query_vars' => json_encode( $wp_query->query )
   ));
 */
 /*
