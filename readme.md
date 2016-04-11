@@ -28,6 +28,8 @@ npm install
 
 which in a first step pulls down all node dependencies defined in `package.json` and afterwards runs the setup script. This script will automatically create a `secrets.json` file for you (should it not yet exist) and ask for your ACF Pro Key. If you enter it, this will be copied to the `secrets.json` file, however if you do not possess a license for ACF Pro and do not enter a key, the dependency in `composer.json` will be changed to the basic version of the plugin. Next all Composer and Bower dependencies are downloaded and stored to their appropriate folders (WordPress Core is also managed through Composer).
 
+**Hint**: If you run into an error during the composer install process which essentially reads `Server certificate verification failed: issuer is not trusted` you might need to run `svn list https://plugins.svn.wordpress.org` and accept the certificate permanently by confirming with `p`. This adds the certificate as valid and you will no longer get this error upon installation. To finish the setup after getting that error, run `grunt setup`.
+
 ### MySQL
 After the installation it is recommended to set up your database and add the credentials to the `secrets.json` file, that was created for you in the above step. Do not forget to adjust the prefix according to your wishes.
 
