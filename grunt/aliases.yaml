@@ -70,18 +70,17 @@ newKeys:
 
 setup:
   - 'shell:updateUrl'
-  - 'shell:getWP'
+  - 'shell:composer'
   - 'newKeys'
   - 'replace:acfProKey'
   - 'replace:themeName'
-  - 'shell:installPlugins'
   - 'shell:bower'
   - 'bower_concat'
 
 setupUpdate:
   - 'shell:updateUrl'
+  - 'shell:composerUpdate'
   - 'replace:acfProKey'
-  - 'shell:updatePlugins'
   - 'shell:bowerUpdate'
   - 'bower_concat'
   - 'concat'

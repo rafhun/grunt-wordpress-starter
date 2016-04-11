@@ -9,7 +9,7 @@ Some additional documentation about the different tasks can be found in the [doc
 ## Prerequisites
 
 ### Framework
-As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the Wordpress installation process require `wget` or `curl`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell (that can execute `.sh` scripts) and also that you track your progress with git.
+As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the Wordpress setup process require `wget` or `curl`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell (that can execute `.sh` scripts) and also that you track your progress with git.
 
 ### CMS / Server
 Wordpress requires PHP and a MySQL database on your server. However if you are only concerned about styling and do not need to work on the CMS itself you can do that as the generated styleguide is a simple static site that you can access directly.
@@ -26,7 +26,7 @@ Run
 npm install
 ```
 
-which in a first step pulls down all node dependencies defined in `package.json` and afterwards runs the setup script. This script will automatically create a `secrets.json` file for you (should it not yet exist) and ask for your ACF Pro Key. If you enter it, this will be copied to the `secrets.json` file, however if you do not possess a license for ACF Pro and do not enter a key, the dependency in `composer.json` will be changed to the basic version of the plugin. Next the script pulls the latest version of WordPress from their servers, add all Composer and Bower dependencies thus preparing your local install.
+which in a first step pulls down all node dependencies defined in `package.json` and afterwards runs the setup script. This script will automatically create a `secrets.json` file for you (should it not yet exist) and ask for your ACF Pro Key. If you enter it, this will be copied to the `secrets.json` file, however if you do not possess a license for ACF Pro and do not enter a key, the dependency in `composer.json` will be changed to the basic version of the plugin. Next all Composer and Bower dependencies are downloaded and stored to their appropriate folders (WordPress Core is also managed through Composer).
 
 ### MySQL
 After the installation it is recommended to set up your database and add the credentials to the `secrets.json` file, that was created for you in the above step. Do not forget to adjust the prefix according to your wishes.
@@ -48,12 +48,12 @@ NOTE: it is recommended to install WordPress from your local development URL not
 ## Folder Structure
 The basic folder structure is defined respectively mirrored within `Gruntconfig.yml` file. All paths needed in grunt are defined therein to make it easy for you to adapt the structure to your needs. Folder paths within grunt configuration files are all given by referencing these variables so make sure you follow the given folder structure or change your `Gruntconfig.yml`.
 
-To change your themes name change `themeName` in `Gruntconfig.yml`. This automatically names your theme folder and adjusts your grunt paths. However make sure to define your final theme name before starting development as otherwise some absolute file paths in i. e. your CSS or PHP files might break, should they include the theme's name.
+To change your theme's name change `themeName` in `Gruntconfig.yml`. This automatically names your theme folder and adjusts your grunt paths. However make sure to define your final theme name before starting development as otherwise some absolute file paths in i. e. your CSS or PHP files might break, should they include the theme's name.
 
 Requirements on your machine or virtual development environment:
 
 * Node
-* wget or curl (if you want to use the automatic Wordpress downloader)
+* wget or curl (if you want to use the automatic Wordpress key generator)
 * Composer
 
 If you are working on OS X the use of Homebrew is strongly recommended. Follow [these instructions](http://brew.sh).
@@ -61,7 +61,9 @@ If you are working on OS X the use of Homebrew is strongly recommended. Follow [
 Node is needed for Grunt. Find out more about Grunt on the [official getting started guide](http://gruntjs.com/getting-started).
 With Homebrew you can install node (which includes npm) by running `brew install node`.
 
-## Wordpress
+## WordPress
+The WordPress core files are managed through Composer. By default we auto update patch releases but need to manually update the minor version once we are ready to use it. This is also the way WordPress itself handles updates by default.
+
 This boilerplate contains some very basic starter files to represent the workflow configured in `Gruntconfig.yml`. However you are not bound to these folder structures and can simply adjust them through the `Gruntconfig.yml` file. Also everything can be deleted and you can start from scratch if you wish.
 
 The header in your `style.css` file that is required by WordPress can be adjusted in the `Gruntfile.js`. Make sure to add your relevant information there. A preset pulling data from the information in `package.json` is already implemented only some descriptive details need to be adjusted.

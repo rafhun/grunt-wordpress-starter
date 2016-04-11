@@ -21,6 +21,7 @@
     }
   ],
   "require": {
+    "johnpbloch/wordpress": "~4.4.2",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/backupwordpress": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
@@ -44,6 +45,7 @@
     "installer-paths": {
       "wwwroot/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
       "wwwroot/wp-content/themes/{$name}/": ["type:wordpress-theme"]
-    }
+    },
+    "wordpress-install-dir": "wwwroot/"
   }
 }
