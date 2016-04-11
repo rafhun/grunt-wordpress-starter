@@ -94,6 +94,12 @@ As an alternative you can run `brew install copy-ssh-id` (requires Homebrew) whi
 ## Custom Plugins/Themes
 To work with custom plugins or themes you can save them to the respective folders defined in the Gruntconfig (defaults are `src/plugins` resp. `src/themes`). All folders and files within these folders will be copied to the respective WordPress folders. This is useful if you are working with your own or with premium plugins/themes, i. e. a starter theme or a premium plugin that is not available through composer. However the composer approach should always be preferred as it is a cleaner way of keeping your files.
 
+## WP-CLI
+If you are using the [WP-CLI](http://wp-cli.org/) there is a configuration file (`wp-cli.yml`) which points the WP-CLI to the installation folder.
+
+## Root Folder Configuration
+If you are not using or do not want to use `wwwroot/` as your destination folder unfortunately this has to be manually adjusted in the configuration files (easier solution pending). It is recommended that you use a find in project functionality to search and replace `wwwroot/`.
+
 ## Set Up the Repo
 Comes down to personal preference, serve more as a personal reminder of ways to do this.
 
