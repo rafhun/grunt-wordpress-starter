@@ -5,5 +5,6 @@ module.exports = {
   composer: 'composer self-update && composer install --no-dev',
   composerUpdate: 'composer self-update && composer update --no-dev',
   getKeys: 'sh getKeys.sh keys.php',
+  updateRootPath: 'sed -i "" "s=wwwroot/=<%= config.rootPath %>=g" composer.json wp-cli.yml .gitignore',
   updateUrl: 'sed -i "" "s=<%= config.devUrl %>=http://${PWD##*/}.dev/=g" Gruntconfig.yml'
 }

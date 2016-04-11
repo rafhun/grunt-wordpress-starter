@@ -87,6 +87,10 @@ module.exports = {
         {
           match: 'rafhun',
           replacement: '<%= grunt.config( "prompt.themeName" ) %>'
+        },
+        {
+          match: 'wwwroot/',
+          replacement: '<%= grunt.config( "prompt.rootFolder" ) %>'
         }
       ],
       usePrefix: false
