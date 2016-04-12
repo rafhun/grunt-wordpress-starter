@@ -70,6 +70,7 @@ newKeys:
 
 setup:
   - 'shell:updateRootPath'
+  - 'shell:updateSecretsRoot'
   - 'shell:updateUrl'
   - 'shell:composer'
   - 'newKeys'

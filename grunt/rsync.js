@@ -13,8 +13,8 @@ module.exports = {
     options: {
       include: ['.map'],
       src: '<%= config.rootFolder %>',
-      dest: '<%= secrets.staging.sshRoot %>',
-      host: '<%= secrets.staging.sshHost %>',
+      dest: '<%= secrets.staging.root %>',
+      host: '<%= secrets.staging.host %>',
       delete: false
     }
   },
@@ -22,16 +22,16 @@ module.exports = {
     options: {
       args: ['--verbose', '--dry-run'],
       src: '<%= config.rootFolder %>',
-      dest: '<%= secrets.staging.sshRoot %>',
-      host: '<%= secrets.staging.sshHost %>',
+      dest: '<%= secrets.staging.root %>',
+      host: '<%= secrets.staging.host %>',
       delete: true
     }
   },
   production: {
     options: {
       src: '<%= config.rootFolder %>',
-      dest: '<%= secrets.production.sshRoot %>',
-      host: '<%= secrets.production.sshHost %>',
+      dest: '<%= secrets.production.root %>',
+      host: '<%= secrets.production.host %>',
       delete: false
     }
   },
@@ -39,8 +39,8 @@ module.exports = {
     options: {
       args: ['--verbose', '--dry-run'],
       src: '<%= config.rootFolder %>',
-      dest: '<%= secrets.production.sshRoot %>',
-      host: '<%= secrets.production.sshHost %>',
+      dest: '<%= secrets.production.root %>',
+      host: '<%= secrets.production.host %>',
       delete: true
     }
   }
