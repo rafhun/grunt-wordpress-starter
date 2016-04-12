@@ -1,0 +1,125 @@
+# Copyright (C) 2016 rafhun
+# This file is distributed under the GPL-3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: rafhun 1.2.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wwwroot/wp-content/"
+"themes/rafhun/style\n"
+"POT-Creation-Date: 2016-04-12 13:13+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-04-12 13:15+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Last-Translator: Raphael Hüni <rafhun@gmail.com>\n"
+"Language: de_CH\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Uups! Die Seite kann nicht gefunden werden."
+
+#: 404.php:17
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Wir konnten den gesuchten Inhalt nicht finden. Probieren Sie die "
+"Suchfunktion aus!"
+
+#: functions.php:59
+msgid "main nav"
+msgstr "Hauptnavigation"
+
+#: functions.php:60
+msgid "Off Canvas Menu"
+msgstr "Off Canvas Menu"
+
+#: functions.php:61
+msgid "Metanavigation"
+msgstr "Metanavigation"
+
+#: header.php:40
+msgid "Skip to content"
+msgstr "Zum Inhalt springen"
+
+#: header.php:59
+msgid "Toggle Off-Canvas"
+msgstr "Navigation einblenden"
+
+#: inc/editor.php:63
+msgid "Default List"
+msgstr "Standardliste"
+
+#: inc/editor.php:70
+msgid "Primary Button"
+msgstr "Prim&auml;rer Button"
+
+#: inc/editor.php:76
+msgid "Lead Paragraph"
+msgstr "Lead Absatz"
+
+#: inc/editor.php:82
+msgid "Inline Style Example"
+msgstr "Inline Stil Beispiel"
+
+#: index.php:46
+msgid "Previous page"
+msgstr "Vorherige Seite"
+
+#: index.php:47
+msgid "Next page"
+msgstr "N&auml;chste Seite"
+
+#: index.php:48
+msgid "Page"
+msgstr "Seite"
+
+#: search.php:15
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: template-parts/content-none.php:11
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: template-parts/content-none.php:21
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Bereit den ersten Post zu veröffentlichen? <a href=\"%1$s\">Hier starten.</"
+"a>."
+
+#: template-parts/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Leider wurden für Ihre Suche keine Resultate gefunden. Bitte versuchen Sie "
+"es mit anderen Suchw&ouml;rtern noch einmal."
+
+#: template-parts/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es scheint, dass wir zu Ihrem Link keine Seite finden k&ouml;nnen. "
+"Vielleicht kann die Suche helfen."
+
+#. Author of the plugin/theme
+msgid "rafhun"
+msgstr "rafhun"
+
+#. Description of the plugin/theme
+msgid "Theme developed by rafhun from Werbelinie AG for ..."
+msgstr "Theme von rafhun von der Werbelinie AG entwickelt f&uuml;r …"
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/rafhun"
+msgstr "https://github.com/rafhun"
