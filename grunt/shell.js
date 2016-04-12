@@ -9,5 +9,5 @@ module.exports = {
   getKeys: 'sh getKeys.sh keys.php',
   updateRootPath: 'sed -i "" "s=wwwroot/=<%= config.rootFolder %>=g" composer.json wp-cli.yml .gitignore secrets.json secrets-template.json',
   updateSecretsRoot: 'sed -i "" "s=/www/sites/grunt-wordpress-starter=${PWD}=g" secrets.json secrets-template.json',
-  updateUrl: 'sed -i "" "s=<%= config.devUrl %>=http://${PWD##*/}.dev/=g" Gruntconfig.yml'
+  updateUrl: 'sed -i "" "s=<%= config.devUrl %>=http://${PWD##*/}.dev/=g" Gruntconfig.yml secrets.json'
 }
