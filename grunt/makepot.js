@@ -1,8 +1,8 @@
 module.exports = {
   theme: {
     options: {
-      cwd: '<%= config.srcFolders.php %>',
-      domainPath: '../../<%= config.srcFolders.languages %>',
+      cwd: '<%= destFolder %>',
+      domainPath: '../../../../<%= config.srcFolders.languages %>',
       mainFile: '<%= destFolder %>style.css',
       potFilename: '<%= config.themeName %>.pot',
       potHeaders: {
