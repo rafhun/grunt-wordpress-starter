@@ -1,6 +1,8 @@
 #!/bin/bash
-if wp core download --locale=de_CH ; then
-  echo "Installed through WP CLI"
+if wp core download --locale=$2 ; then
+  echo "Installed through WP CLI with language $2"
+elif wp core download ; then
+  echo "Installed through WP CLI."    
 else
   if [[ $(type -t wget) ]]; then wget https://wordpress.org/latest.tar.gz && tar zxvf latest.tar.gz
 

@@ -7,7 +7,7 @@ module.exports = {
   dbLocal2Stage: 'wp search-replace "<%= secrets.local.root %>" "<%= secrets.staging.root %>" --network && wp search-replace "<%= secrets.local.url %>" "<%= secrets.staging.url %>" --network --export=<%= config.dbDump %>local2stage-<%= grunt.template.today( "yyyymmdd-HHMMSS") %>.sql && wp search-replace "<%= secrets.staging.root %>" "<%= secrets.local.root %>" --network',
   dbLocal2Live: 'wp search-replace "<%= secrets.local.root %>" "<%= secrets.production.root %>" --network && wp search-replace "<%= secrets.local.url %>" "<%= secrets.production.url %>" --network --export=<%= config.dbDump %>local2live-<%= grunt.template.today( "yyyymmdd-HHMMSS") %>.sql && wp search-replace "<%= secrets.production.root %>" "<%= secrets.local.root %>" --network',
   getKeys: 'sh getKeys.sh keys.php',
-  getWP: 'sh getWP.sh <%= config.rootFolder %>',
+  getWP: 'sh getWP.sh <%= config.rootFolder %> <%= config.locale %>',
   updateRootPath: 'sed -i "" "s=wwwroot/=<%= config.rootFolder %>=g" composer.json wp-cli.yml .gitignore secrets.json secrets-template.json',
   updateSecretsRoot: 'sed -i "" "s=/www/sites/grunt-wordpress-starter=${PWD}=g" secrets.json secrets-template.json',
   updateUrl: 'sed -i "" "s=<%= config.devUrl %>=http://${PWD##*/}.dev/=g" Gruntconfig.yml secrets.json'

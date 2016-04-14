@@ -40,3 +40,5 @@ testing:
   visual: 'visual/'
   screenshots: 'screenshots/'
   results: 'results/'
+
+locale: de_CH
