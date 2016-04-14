@@ -91,6 +91,10 @@ module.exports = {
         {
           match: 'wwwroot/',
           replacement: '<%= grunt.config( "prompt.rootFolder" ) %>'
+        },
+        {
+          match: 'de_CH',
+          replacement: '<%= grunt.config( "prompt.locale" ) %>'
         }
       ],
       usePrefix: false

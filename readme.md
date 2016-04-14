@@ -11,6 +11,14 @@ Some additional documentation about the different tasks can be found in the [doc
 ### Framework
 As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the Wordpress setup process require `wget` or `curl`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell (that can execute `.sh` scripts) and also that you track your progress with git.
 
+For ease of use and some custom functionality it is recommended that you install the [WP-CLI](http://wp-cli.org/). Install via Homebrew or see the instructions on the website:
+
+```bash
+brew install homebrew/php/wp-cli
+```
+
+Also make note of the bash completion package they offer.
+
 ### CMS / Server
 Wordpress requires PHP and a MySQL database on your server. However if you are only concerned about styling and do not need to work on the CMS itself you can do that as the generated styleguide is a simple static site that you can access directly.
 
@@ -26,7 +34,9 @@ Run
 npm install
 ```
 
-which in a first step pulls down all node dependencies defined in `package.json` and afterwards runs the setup script. This script will automatically create a `secrets.json` file for you (should it not yet exist) and ask for your ACF Pro Key. If you enter it, this will be copied to the `secrets.json` file, however if you do not possess a license for ACF Pro and do not enter a key, the dependency in `composer.json` will be changed to the basic version of the plugin. Next all Composer and Bower dependencies are downloaded and stored to their appropriate folders (WordPress Core is also managed through Composer).
+which in a first step pulls down all node dependencies defined in `package.json` and afterwards runs the setup script. This script will automatically create a `secrets.json` file for you (should it not yet exist) and ask for your ACF Pro Key. If you enter it, this will be copied to the `secrets.json` file, however if you do not possess a license for ACF Pro and do not enter a key, the dependency in `composer.json` will be changed to the basic version of the plugin. Now a custom bash script will download the latest WordPress version for you either through the WP-CLI, `wget` or `curl`, depending on what is available. Next all Composer and Bower dependencies are downloaded and stored to their appropriate folders.
+
+During the installation process you will be prompted for several customizable options such as the name of your destination folder, the name of the theme you want to develop and the locale for which WordPress will be downloaded. The locale will fall back to the default `en_US` should the one you have entered not exist. Also this option is only of relevance if you have the WP-CLI installed. Should this not be the case the `en_US` version will be downloaded by default and you will have to change languages later manually.
 
 **Hint**: If you run into an error during the composer install process which essentially reads `Server certificate verification failed: issuer is not trusted` you might need to run `svn list https://plugins.svn.wordpress.org` and accept the certificate permanently by confirming with `p`. This adds the certificate as valid and you will no longer get this error upon installation. To finish the setup after getting that error, run `grunt setup`.
 

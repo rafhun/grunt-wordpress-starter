@@ -72,6 +72,7 @@ setup:
   - 'shell:updateRootPath'
   - 'shell:updateSecretsRoot'
   - 'shell:updateUrl'
+  - 'shell:getWP'
   - 'shell:composer'
   - 'newKeys'
   - 'replace:acfProKey'

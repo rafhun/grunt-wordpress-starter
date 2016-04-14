@@ -21,6 +21,12 @@ module.exports = {
 
             return value;
           }
+        },
+        {
+          config: 'prompt.locale',
+          type: 'input',
+          message: 'Default WordPress Locale: ',
+          default: 'de_CH'
         }
       ]
     }
