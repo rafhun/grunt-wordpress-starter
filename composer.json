@@ -21,7 +21,6 @@
     }
   ],
   "require": {
-    "johnpbloch/wordpress": "~4.4.2",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/backupwordpress": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
