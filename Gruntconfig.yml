@@ -3,6 +3,10 @@ devUrl: http://grunt-wordpress-starter.dev/
 dbDump: db/
 rootFolder: wwwroot/
 
+wordpress:
+  locale: de_CH
+  wpVersion: 4.5
+
 buildFolders:
   documentation: documentation/
   fonts: fonts/
@@ -40,5 +44,3 @@ testing:
   visual: 'visual/'
   screenshots: 'screenshots/'
   results: 'results/'
-
-locale: de_CH

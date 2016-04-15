@@ -1,8 +1,10 @@
 #!/bin/bash
-if wp core download --locale=$2 ; then
-  echo "Installed through WP CLI with language $2"
+if wp core download --version=$2 --locale=$3 ; then
+  echo "Installed version $2 through WP CLI with language $3"
+elif wp core download --version=$2 ; then
+  echo "Installed version $2 through WP CLI."
 elif wp core download ; then
-  echo "Installed through WP CLI."    
+  echo "Installed latest version through WP CLI. Please update your Gruntconfig with the necessary values (version and language code)."
 else
   if [[ $(type -t wget) ]]; then wget https://wordpress.org/latest.tar.gz && tar zxvf latest.tar.gz
 

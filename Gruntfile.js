@@ -1,13 +1,13 @@
-module.exports = function(grunt) {
+module.exports = function( grunt ) {
 
-  require('time-grunt')(grunt);
+  require( 'time-grunt' )( grunt );
 
-  require('load-grunt-config')(grunt, {
+  require( 'load-grunt-config' )( grunt, {
     data: {
-      pkg: grunt.file.readJSON('package.json'),
-      config: grunt.file.readYAML('Gruntconfig.yml'),
+      pkg: grunt.file.readJSON( 'package.json' ),
+      config: grunt.file.readYAML( 'Gruntconfig.yml' ),
       destFolder: '<%= config.rootFolder %><%= config.buildFolders.themes %><%= config.themeName %>/',
-      secrets: grunt.file.readJSON('secrets.json'),
+      secrets: grunt.file.readJSON( 'secrets.json' ),
       banner: '/*\n' +
               ' * Theme Name: <%= config.themeName %>\n' +
               ' * Theme URI: \n' +
