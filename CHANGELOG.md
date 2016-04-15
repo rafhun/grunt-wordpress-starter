@@ -1,3 +1,32 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.5...v1.3.0) (2016-04-15)
+
+
+### Bug Fixes
+
+* update gitignore file ([fd1c656](https://github.com/rafhun/grunt-wordpress-starter/commit/fd1c656))
+* **bower:** reduce description length according to specs ([ba129d9](https://github.com/rafhun/grunt-wordpress-starter/commit/ba129d9))
+* **composer:** remove wp from composer ([79a3696](https://github.com/rafhun/grunt-wordpress-starter/commit/79a3696))
+* **grunt:** adjust composerUpdate call in watch task ([5cd090d](https://github.com/rafhun/grunt-wordpress-starter/commit/5cd090d))
+* **grunt:** also update url printed to secrets.json file ([de7d0b7](https://github.com/rafhun/grunt-wordpress-starter/commit/de7d0b7))
+* **grunt:** better configuration of makepot to find base file correctly ([b256b9d](https://github.com/rafhun/grunt-wordpress-starter/commit/b256b9d))
+* **grunt:** correctly close grunt template tag ([2fdfc69](https://github.com/rafhun/grunt-wordpress-starter/commit/2fdfc69))
+* **grunt:** correctly reference rootFolder config ([cee299f](https://github.com/rafhun/grunt-wordpress-starter/commit/cee299f))
+* **setup:** cleaner setup process for the acf key ([c260883](https://github.com/rafhun/grunt-wordpress-starter/commit/c260883))
+
+### Features
+
+* **cli:** add wp-cli configuration file ([0b50acb](https://github.com/rafhun/grunt-wordpress-starter/commit/0b50acb))
+* **grunt:** add wp cli based db migration ([91f8370](https://github.com/rafhun/grunt-wordpress-starter/commit/91f8370))
+* **grunt:** ask user for dist folder and setup files accordingly ([803b773](https://github.com/rafhun/grunt-wordpress-starter/commit/803b773))
+* **grunt:** provide locale option for wp install ([7066d32](https://github.com/rafhun/grunt-wordpress-starter/commit/7066d32))
+* **grunt:** version management through grunt ([b7f1df7](https://github.com/rafhun/grunt-wordpress-starter/commit/b7f1df7))
+* **translations:** add starting pot and de_CH po files to jumpstart translation efforts ([ccdb0bd](https://github.com/rafhun/grunt-wordpress-starter/commit/ccdb0bd))
+* **wp:** manage WordPress through composer ([0b1d647](https://github.com/rafhun/grunt-wordpress-starter/commit/0b1d647))
+* **wp:** re-introduce getWP script with wp-cli use ([015f292](https://github.com/rafhun/grunt-wordpress-starter/commit/015f292))
+
+
+
 <a name="1.2.5"></a>
 ## [1.2.5](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.4...v1.2.5) (2016-04-08)
 
