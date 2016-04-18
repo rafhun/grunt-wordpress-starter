@@ -8,6 +8,14 @@ module.exports = {
         {
           match: 'db_prefix',
           replacement: '<%= secrets.db_prefix %>'
+        },
+        {
+          match: /(https?:\/\/)/g,
+          replace: ''
+        },
+        {
+          match: /(\.\w{2,3})\//g,
+          replace: '$1'
         }
       ]
     },
@@ -23,6 +31,14 @@ module.exports = {
         {
           match: 'db_prefix',
           replacement: '<%= secrets.db_prefix %>'
+        },
+        {
+          match: /(https?:\/\/)/g,
+          replace: ''
+        },
+        {
+          match: /(\.\w{2,3})\//g,
+          replace: '$1'
         }
       ]
     },
@@ -38,13 +54,20 @@ module.exports = {
         {
           match: 'db_prefix',
           replacement: '<%= secrets.db_prefix %>'
+        },
+        {
+          match: /(https?:\/\/)/g,
+          replace: ''
+        },
+        {
+          match: /(\.\w{2,3})\//g,
+          replace: '$1'
         }
       ]
     },
     src: '<%= config.srcFolders.config %>wp-config.php',
     dest: '<%= config.rootFolder %>wp-config.php'
   },
-  // replace the keys with ones that can be downloaded directly through the wp api
   keys: {
     options: {
       patterns: [
@@ -67,6 +90,30 @@ module.exports = {
       ]
     },
     src: '<%= config.srcFolders.config %>wp-config-dev.php',
+    dest: '<%= config.srcFolders.config %>wp-config.php'
+  },
+  keysMulti: {
+    options: {
+      patterns: [
+        {
+          match: 'include',
+          replacement: '<%= grunt.file.read("keys.php") %>'
+        }
+      ]
+    },
+    src: '<%= config.srcFolders.config %>wp-config-multi-prod.php',
+    dest: '<%= config.srcFolders.config %>wp-config.php'
+  },
+  keysDevMulti: {
+    options: {
+      patterns: [
+        {
+          match: 'include',
+          replacement: '<%= grunt.file.read("keys.php") %>'
+        }
+      ]
+    },
+    src: '<%= config.srcFolders.config %>wp-config-multi-dev.php',
     dest: '<%= config.srcFolders.config %>wp-config.php'
   },
   acfProKey: {

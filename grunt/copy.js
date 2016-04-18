@@ -95,6 +95,22 @@ module.exports = {
       }
     ]
   },
+  htaccessMulti: {
+    files: [
+      {
+        src: '<%= config.srcFolders.config %>.htaccess~multi',
+        dest: '<%= config.rootFolder %>.htaccess'
+      }
+    ]
+  },
+  htaccessProductionMulti: {
+    files: [
+      {
+        src: '<%= config.srcFolders.config %>.htaccess~productionMulti',
+        dest: '<%= config.rootFolder %>.htaccess'
+      }
+    ]
+  },
   customPlugins: {
     files: [
       {
