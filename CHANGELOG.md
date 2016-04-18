@@ -1,3 +1,20 @@
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.3.0...v1.4.0) (2016-04-18)
+
+
+### Bug Fixes
+
+* **grunt:** add domain protocol to secrets-template urls ([ca3b8f2](https://github.com/rafhun/grunt-wordpress-starter/commit/ca3b8f2))
+* **grunt:** smarter order of setup task, replace before executing ([1e298ba](https://github.com/rafhun/grunt-wordpress-starter/commit/1e298ba))
+* **grunt:** use correct config variable for wp version to make install work correctly ([418751d](https://github.com/rafhun/grunt-wordpress-starter/commit/418751d))
+* **php:** cleanup wp-config templates ([1ca151c](https://github.com/rafhun/grunt-wordpress-starter/commit/1ca151c))
+
+### Features
+
+* **grunt:** make multisite compatible ([f1e3480](https://github.com/rafhun/grunt-wordpress-starter/commit/f1e3480))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.2.5...v1.3.0) (2016-04-15)
 
