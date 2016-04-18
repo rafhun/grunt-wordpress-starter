@@ -9,7 +9,6 @@ define('DB_NAME', '@@db_name');
 define('DB_USER', '@@db_user');
 define('DB_PASSWORD', '@@db_password');
 define('DB_HOST', '@@db_host');
-
 define('DB_CHARSET', 'utf8');
 
 /** Der collate type sollte nicht geändert werden */
@@ -45,6 +44,13 @@ define( 'DISALLOW_FILE_MODS', false );
 
 /* Multisite */
 define ( 'WP_ALLOW_MULTISITE', true );
+
+define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', false );
+define( 'DOMAIN_CURRENT_SITE', '@@url' );
+define( 'PATH_CURRENT_SITE', '/' );
+define( 'SITE_ID_CURRENT_SITE', 1 );
+define( 'BLOG_ID_CURRENT_SITE', 1 );
 
 /* That's all, stop editing! Happy blogging. */
 

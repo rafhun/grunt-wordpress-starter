@@ -6,14 +6,7 @@ default:
   - 'jshint:src'
   - 'replace:keysDev'
   - 'replace:local'
-  - 'scripts'
-  - 'styles'
-  - 'images'
-  - 'copy:php'
-  - 'copy:header'
-  - 'translations'
-  - 'hashres'
-  - 'docs'
+  - 'build'
   - 'browserSync'
   - 'watch'
 
@@ -25,14 +18,7 @@ local:
   - 'jshint:src'
   - 'replace:keysDev'
   - 'replace:local'
-  - 'scripts'
-  - 'styles'
-  - 'images'
-  - 'copy:php'
-  - 'copy:header'
-  - 'translations'
-  - 'hashres'
-  - 'docs'
+  - 'build'
 
 staging:
   - 'versionCheck'
@@ -42,14 +28,7 @@ staging:
   - 'jshint:shipping'
   - 'replace:keysDev'
   - 'replace:staging'
-  - 'scripts'
-  - 'styles'
-  - 'images'
-  - 'copy:php'
-  - 'copy:header'
-  - 'translations'
-  - 'hashres'
-  - 'docs'
+  - 'build'
 
 production:
   - 'versionCheck'
@@ -59,28 +38,63 @@ production:
   - 'jshint:shipping'
   - 'replace:keys'
   - 'replace:production'
-  - 'scripts'
-  - 'styles'
-  - 'images'
-  - 'copy:php'
-  - 'copy:header'
-  - 'translations'
-  - 'hashres'
-  - 'docs'
+  - 'build'
+
+multi:
+  - 'versionCheck'
+  - 'fileMgm'
+  - 'copy:htaccessMulti'
+  - 'jshint:grunt'
+  - 'jshint:src'
+  - 'replace:keysDevMulti'
+  - 'replace:local'
+  - 'build'
+  - 'browserSync'
+  - 'watch'
+
+localMulti:
+  - 'versionCheck'
+  - 'fileMgm'
+  - 'copy:htaccessMulti'
+  - 'jshint:grunt'
+  - 'jshint:src'
+  - 'replace:keysDevMulti'
+  - 'replace:local'
+  - 'build'
+
+stagingMulti:
+  - 'versionCheck'
+  - 'fileMgm'
+  - 'copy:htaccessProductionMulti'
+  - 'jshint:grunt'
+  - 'jshint:shipping'
+  - 'replace:keysDevMulti'
+  - 'replace:staging'
+  - 'build'
+
+productionMulti:
+  - 'versionCheck'
+  - 'fileMgm'
+  - 'copy:htaccessProductionMulti'
+  - 'jshint:grunt'
+  - 'jshint:shipping'
+  - 'replace:keysMulti'
+  - 'replace:production'
+  - 'build'
 
 newKeys:
   - 'shell:getKeys'
   - 'replace:keys'
 
 setup:
+  - 'replace:acfProKey'
+  - 'replace:themeName'
   - 'shell:updateRootPath'
   - 'shell:updateSecretsRoot'
   - 'shell:updateUrl'
   - 'shell:getWP'
   - 'shell:composer'
   - 'newKeys'
-  - 'replace:acfProKey'
-  - 'replace:themeName'
   - 'shell:bower'
   - 'bower_concat'
 
@@ -132,6 +146,16 @@ images:
   - 'svgmin'
   - 'grunticon'
   - 'copy:icons'
+
+build:
+  - 'scripts'
+  - 'styles'
+  - 'images'
+  - 'copy:php'
+  - 'copy:header'
+  - 'translations'
+  - 'hashres'
+  - 'docs'
 
 docs:
   - 'kss'
