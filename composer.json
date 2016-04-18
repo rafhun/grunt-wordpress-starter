@@ -15,7 +15,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=@@acfProKey"
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.3.7&k=@@acfProKey"
         }
       }
     }
