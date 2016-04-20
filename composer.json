@@ -44,7 +44,6 @@
     "installer-paths": {
       "wwwroot/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
       "wwwroot/wp-content/themes/{$name}/": ["type:wordpress-theme"]
-    },
-    "wordpress-install-dir": "wwwroot/"
+    }
   }
 }
