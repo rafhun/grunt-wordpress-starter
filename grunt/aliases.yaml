@@ -130,6 +130,7 @@ scripts:
   - 'uglify'
 
 styles:
+  - 'sasslint'
   - 'sass:main'
   - 'postcss:main'
   - 'cssmin'
