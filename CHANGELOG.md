@@ -1,3 +1,17 @@
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.4.0...v1.4.1) (2016-04-22)
+
+
+### Bug Fixes
+
+* **composer:** remove fragment from wp through composer trial ([efc6a7d](https://github.com/rafhun/grunt-wordpress-starter/commit/efc6a7d))
+
+### Features
+
+* **scss:** add sasslint to the default builds ([db1c314](https://github.com/rafhun/grunt-wordpress-starter/commit/db1c314))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.3.0...v1.4.0) (2016-04-18)
 
