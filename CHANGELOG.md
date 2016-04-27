@@ -1,3 +1,15 @@
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.4.1...v1.4.2) (2016-04-27)
+
+
+### Bug Fixes
+
+* **grunt:** add one more fallback for the updater ([a5910ef](https://github.com/rafhun/grunt-wordpress-starter/commit/a5910ef))
+* **grunt:** add the version check to setupUpdate ([ca9be74](https://github.com/rafhun/grunt-wordpress-starter/commit/ca9be74))
+* **linter:** no spaces between parens in scss lint ([c312038](https://github.com/rafhun/grunt-wordpress-starter/commit/c312038))
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.4.0...v1.4.1) (2016-04-22)
 
