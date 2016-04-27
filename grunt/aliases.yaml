@@ -99,6 +99,7 @@ setup:
   - 'bower_concat'
 
 setupUpdate:
+  - 'versionCheck'
   - 'shell:updateUrl'
   - 'shell:composerUpdate'
   - 'replace:acfProKey'
