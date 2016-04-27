@@ -11,6 +11,9 @@ else
   elif wp core update --version=$1 --force ; then
     echo "Updated to $1"
     exit 0
+  elif wp core update --version=$1 --locale=en_US --force ; then
+    echo "Updated to $1"
+    exit 0
   fi
   exit 1
 fi
