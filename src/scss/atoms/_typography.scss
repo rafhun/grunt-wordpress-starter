@@ -36,7 +36,7 @@ $font-smoothing: antialiased !default;
 $body-copy-font-family: $sans !default;
 
 /// Defines the default font size of the body copy.
-$body-copy-font-size: rem-calc( 18 ) !default;
+$body-copy-font-size: rem-calc(18) !default;
 
 /// Defines the default line height of the body copy.
 $body-copy-line-height: 1.35 !default;
@@ -55,9 +55,9 @@ $h1-font-size: 1.9 * $body-copy-font-size !default;
 $h2-font-size: 1.4 * $body-copy-font-size !default;
 $h3-font-size: 1.2 * $body-copy-font-size !default;
 
-$h1-max-mobile-font: rem-calc( 24 ) !default;
-$h2-max-mobile-font: rem-calc( 21 ) !default;
-$h3-max-mobile-font: rem-calc( 18 ) !default;
+$h1-max-mobile-font: rem-calc(24) !default;
+$h2-max-mobile-font: rem-calc(21) !default;
+$h3-max-mobile-font: rem-calc(18) !default;
 
 // anchors at last
 $anchor-color-font: $color-primary !default;
@@ -96,7 +96,7 @@ h1,
   @extend %heading-base;
   font-size: $h1-max-mobile-font;
 
-  @include susy-media( font-desktop ) {
+  @include susy-media(font-desktop) {
     font-size: $h1-font-size;
   }
 }
@@ -106,7 +106,7 @@ h2,
   @extend %heading-base;
   font-size: $h2-max-mobile-font;
 
-  @include susy-media( font-desktop ) {
+  @include susy-media(font-desktop) {
     font-size: $h2-font-size;
   }
 }
@@ -116,7 +116,7 @@ h3,
   @extend %heading-base;
   font-size: $h3-max-mobile-font;
 
-  @include susy-media( font-desktop ) {
+  @include susy-media(font-desktop) {
     font-size: $h3-font-size;
   }
 }

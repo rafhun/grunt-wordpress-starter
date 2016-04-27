@@ -40,7 +40,7 @@
 ///
 /// @todo replace dependency on inline-block display method, since a hack is needed to fix alignment. What other possibilities for this layout exist?
 
-@mixin separator( $margins: rem-calc( 6 ), $separator-color: inherit, $separator: '|', $font-size: inherit, $inline-block-fix: true ) {
+@mixin separator($margins: rem-calc(6), $separator-color: inherit, $separator: '|', $font-size: inherit, $inline-block-fix: true) {
   display: inline-block;
 
   margin-left: $margins;
@@ -108,7 +108,7 @@
   $color: currentColor,
   $type: 'after'
 ) {
-  @if( $center-offset ) {
+  @if($center-offset) {
     $center-adjust: $width / 2 + $center-offset;
   } @else {
     $center-adjust: $width / 2;
@@ -133,56 +133,56 @@
     z-index: 1;
 
     // Triangle: down
-    @if ( ( ( $pos == 'top' ) and ( $direction == 'in' ) ) or ( $pos == 'bottom' ) and ( $direction == 'out' ) ) {
+    @if ((($pos == 'top') and ($direction == 'in')) or ($pos == 'bottom') and ($direction == 'out')) {
       border-top: $height solid $color;
       border-right: $width / 2 solid transparent;
       border-bottom: 0;
       border-left: $width / 2 solid transparent;
 
-      $v-offset: if( $direction == 'in', 0, -$height );
+      $v-offset: if($direction == 'in', 0, -$height);
     }
 
     // Triangle: up
-    @if ( ( ( $pos == 'top' ) and ( $direction == 'out' ) ) or ( $pos == 'bottom' ) and ( $direction == 'in' ) ) {
+    @if ((($pos == 'top') and ($direction == 'out')) or ($pos == 'bottom') and ($direction == 'in')) {
       border-top: 0;
       border-right: $width / 2 solid transparent;
       border-bottom: $height solid $color;
       border-left: $width / 2 solid transparent;
 
-      $v-offset: if( $direction == 'in', 0, -$height );
+      $v-offset: if($direction == 'in', 0, -$height);
     }
 
     // Triangle: right
-    @if ( ( ( $pos == 'left' ) and ( $direction == 'in' ) ) or ( $pos == 'right' ) and ( $direction == 'out' ) ) {
+    @if ((($pos == 'left') and ($direction == 'in')) or ($pos == 'right') and ($direction == 'out')) {
       border-top: $width / 2 solid transparent;
       border-right: 0;
       border-bottom: $width / 2 solid transparent;
       border-left: $height solid $color;
 
-      $h-offset: if( $direction == 'in', 0, -$height );
+      $h-offset: if($direction == 'in', 0, -$height);
     }
 
     // Triangle: left
-    @if ( ( ( $pos == 'left' ) and ( $direction == 'out' ) ) or ( $pos == 'right' ) and ( $direction == 'in' ) ) {
+    @if ((($pos == 'left') and ($direction == 'out')) or ($pos == 'right') and ($direction == 'in')) {
       border-top: $width / 2 solid transparent;
       border-right: $height solid $color;
       border-bottom: $width / 2 solid transparent;
       border-left: 0;
 
-      $h-offset: if( $direction == 'in', 0, -$height );
+      $h-offset: if($direction == 'in', 0, -$height);
     }
 
-    @if ( $pos == 'top' ) {
+    @if ($pos == 'top') {
       top: $v-offset;
-      left: if( $offset == 'center', calc( 50% - #{$center-adjust} ), $offset );
-    } @else if ( $pos == 'bottom' ) {
+      left: if($offset == 'center', calc(50% - #{$center-adjust}), $offset);
+    } @else if ($pos == 'bottom') {
       bottom: $v-offset;
-      left: if( $offset == 'center', calc( 50% - #{$center-adjust} ), $offset );
-    } @else if ( $pos == 'left' ) {
-      top: if( $offset == 'center', calc( 50% - #{$center-adjust} ), $offset );
+      left: if($offset == 'center', calc(50% - #{$center-adjust}), $offset);
+    } @else if ($pos == 'left') {
+      top: if($offset == 'center', calc(50% - #{$center-adjust}), $offset);
       left: $h-offset;
-    } @else if ( $pos == 'right' ) {
-      top: if( $offset == 'center', calc( 50% - #{$center-adjust} ), $offset );
+    } @else if ($pos == 'right') {
+      top: if($offset == 'center', calc(50% - #{$center-adjust}), $offset);
       right: $h-offset;
     }
   }
@@ -196,13 +196,13 @@
 /// @param {Boolean} $horizontal [true]  - Should the child be centered horizontally?
 ///
 /// @since 1.0.0
-@mixin flex-center-children( $vertical: true, $horizontal: true ) {
+@mixin flex-center-children($vertical: true, $horizontal: true) {
   display: flex;
-  @if ( $vertical ) {
+  @if ($vertical) {
     align-items: center;
   }
 
-  @if ( $horizontal ) {
+  @if ($horizontal) {
     justify-content: center;
   }
 }

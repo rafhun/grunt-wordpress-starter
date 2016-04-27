@@ -5,7 +5,7 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
-  clip: rect( 1px, 1px, 1px, 1px );
+  clip: rect(1px, 1px, 1px, 1px);
 
   &:hover,
   &:active,
@@ -19,7 +19,7 @@
     border-radius: 3px;
     background-color: $color-background;
     color: $color-text;
-    font-size: rem-calc( 14 );
+    font-size: rem-calc(14);
     font-weight: bold;
     line-height: normal;
     text-decoration: none;

@@ -18,7 +18,7 @@
 
 /// This variable sets up the max container width that will be used in the Susy layout configuration
 /// @type Number
-$container-width: rem-calc( 1200 ) !default;
+$container-width: rem-calc(1200) !default;
 
 /// The number of columns in your layout (used by Susy)
 /// @type Number
@@ -34,7 +34,7 @@ $susy: (
   last-flow: to,
   debug: (
     image: hide,
-    color: rgba( #66F, .25 ),
+    color: rgba(#66F, .25),
     output: background,
     toggle: top right,
   ),
@@ -65,15 +65,15 @@ $susy-media: (
 );
 
 // global spacing and sizing variables
-$header-height: rem-calc( 54 ) !default;
-$footer-height: rem-calc( 54 ) !default;
+$header-height: rem-calc(54) !default;
+$footer-height: rem-calc(54) !default;
 
-$base-bottom-margin: rem-calc( 12 ) !default;
-$base-bottom-margin-desktop: rem-calc( 24 ) !default;
+$base-bottom-margin: rem-calc(12) !default;
+$base-bottom-margin-desktop: rem-calc(24) !default;
 $base-container-padding: $base-bottom-margin-desktop / 2 !default;
 
 $vertical-spacing: gutter() !default;
 $vertical-spacing-lg: 2 * $vertical-spacing !default;
 $vertical-spacing-xl: 4 * $vertical-spacing !default;
 
-$border-radius: rem-calc( 4 ) !default;
+$border-radius: rem-calc(4) !default;
