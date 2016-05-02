@@ -27,7 +27,7 @@ srcFolders:
   fonts: src/fonts/
   grunticon: src/.grunticon/
   icons: src/icons/
-  iconsMin: src/icons/min/
+  iconsMin: src/icons/.min/
   images: src/images/
   imagesUpload: src/uploads/
   imagesToUpload: src/uploads/dist/

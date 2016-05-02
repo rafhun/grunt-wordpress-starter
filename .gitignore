@@ -64,7 +64,7 @@ homescreen-*
 favicons.html
 
 # generated svg
-src/icons/min
+src/icons/.min
 
 # generated images for upload
 src/uploads/dist
@@ -84,9 +84,6 @@ vendor/
 # generated translation files
 src/languages/*.mo
 src/languages/*.po~
-
-# generated icons
-src/icons/min
 
 # generated grunticon
 src/.grunticon
