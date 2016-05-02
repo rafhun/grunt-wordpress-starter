@@ -55,6 +55,7 @@
       </div>
       <div id="page" class="main">
         <header id="masthead" class="site-header" role="banner">
+          <?php the_custom_logo(); ?>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="wl-logo">Werbelinie AG</a>
           <a href="#" class="off-canvas-toggle icon-menu" data-js="off-canvas-toggle"><?php _e('Toggle Off-Canvas', 'rafhun') ?></a>
           <nav class="navbar" role="navigation">

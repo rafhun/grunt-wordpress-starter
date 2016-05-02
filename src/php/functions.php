@@ -76,6 +76,21 @@ function rafhun_setup() {
   add_theme_support( 'post-formats', array(
     'aside', 'image', 'video', 'quote', 'link',
   ) );
+
+  /**
+   * Enable support for a custom logo – make it possible to adjust the page logo through the customizer
+   *
+   * Note: These settings will not be correct by default for every theme, adjust sizes according to your specs
+   */
+  $args = array(
+    'height' => 100, // expected logo height in pixels
+    'width' => 400, // expected logo width in pixels
+    'flex-height' => true, // allow for logo to be higher (if there is room around the logo vertically -> makes sense in a sidebar)
+    'flex-width' => true, // allow for logo to be wider (if there is room around the logo horizontally)
+    // 'header-text' => array( 'site-title', 'site-description' ), // header text to be replaced by logo
+  );
+
+  add_theme_support( 'custom-logo', $args );
 }
 endif; // rafhun_setup
 add_action( 'after_setup_theme', 'rafhun_setup' );
