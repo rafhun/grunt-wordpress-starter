@@ -25,46 +25,26 @@ Temporary Items
 # workspace files are user specific
 *.sublime-workspace
 
-# sftp configuratoin file
-sftp-config.json
+# Node Stuff
+.grunt
+node_modules
 
 # Sass Files
 .sass-cache
 *.css.map
 
-# Compiled Files
-
+# Compiled Stylesheets
 src/css
-
-# Node Stuff
-.grunt
-node_modules
 
 # bower, second file is compiled from bower_components
 bower_components
 src/js/bower.js
 
-# bundler components
-bundler_components
-.bundle
-
-# generated SVG sprite
-shapes.svg
-
-# generated favicons
-favicon.*
-!src/images/favicon.png
-apple-touch-icon*
-windows-tile-*
-coast-icon-*
-firefox-icon-*
-homescreen-*
-
-# generated favicon html
-favicons.html
-
 # generated svg
 src/icons/.min
+
+# generated grunticon
+src/.grunticon
 
 # generated images for upload
 src/uploads/dist
@@ -74,9 +54,8 @@ secrets.json
 keys.php
 src/config/wp-config.php
 
-# wordpress files
+# all wordpress files
 wwwroot/
-# !wwwroot/wp-content
 
 # Composer Files
 vendor/
@@ -85,9 +64,7 @@ vendor/
 src/languages/*.mo
 src/languages/*.po~
 
-# generated grunticon
-src/.grunticon
-
+# generated kss template
 src/config/.kss-dest
 
 # visual test results screenshots
