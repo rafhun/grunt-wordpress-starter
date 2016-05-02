@@ -31,7 +31,7 @@ rules:
   no-color-keywords: 1
   no-color-literals: 1
   no-css-comments: 1
-  # no-debug: 1
+  no-debug: 0
   no-duplicate-properties: 1
   no-empty-rulesets: 2
   no-extends: 0
@@ -49,7 +49,7 @@ rules:
   no-url-protocols: 1
   no-vendor-prefixes: 1
   no-warn: 0
-  propety-units: 0
+  property-units: 0
 
   # Nesting
   force-attribute-nesting: 0
