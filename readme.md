@@ -1,5 +1,8 @@
 Version: 1.4.2
 
+# Compatibility
+Tested up to and used with **Node v5.11** (not yet compatible with Node v6.0). Also fully compatible with **Grunt v1.0**. The project contains an NVM configuration file, should you use that, to manage your Node versions. This will usually be updated to reflect the latest compatible version the starter can be used with. Run `nvm use` to load the version referenced in the `.nvmrc` file.
+
 # Grunt Wordpress Starter
 
 This framework's goal is to ease Wordpress theme development by making it available with some useful automation. It comes with preconfigured and easily adaptable Grunt tasks that make the most important development steps easier for you. The framework only needs a Node.js installation to work properly and includes tasks for Sass compiling, Javascript linting, concatenation and uglification but also for image optimization, icon creation as well as more administrative tasks such as an automated version bump and changelog generation. Also if you are working with a production and/or staging environment with SSH access you can easily deploy your builds through rsync.
