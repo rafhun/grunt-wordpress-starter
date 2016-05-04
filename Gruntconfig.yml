@@ -14,7 +14,7 @@ buildFolders:
   images: images/
   js: js/
   languages: languages/
-  plugins: wp-content/plugins
+  plugins: wp-content/plugins/
   styleguide: styleguide/
   themes: wp-content/themes/
 
