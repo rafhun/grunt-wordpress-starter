@@ -40,7 +40,7 @@ srcFolders:
   scss: src/scss/
 
 testing:
-  base: 'tests/'
-  visual: 'visual/'
-  screenshots: 'screenshots/'
-  results: 'results/'
+  base: tests/
+  visual: visual/
+  screenshots: screenshots/
+  results: results/
