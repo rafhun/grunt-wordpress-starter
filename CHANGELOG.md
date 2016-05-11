@@ -1,3 +1,24 @@
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.4.2...v1.5.0) (2016-05-11)
+
+
+### Bug Fixes
+
+* **grunt:** add missing trailing slash in Gruntconfig([b7c0e06](https://github.com/rafhun/grunt-wordpress-starter/commit/b7c0e06))
+* **grunt:** add trailing slashes to secrets urls([8d4173e](https://github.com/rafhun/grunt-wordpress-starter/commit/8d4173e))
+* **grunt:** change default min svg folder and ignore it([1070d36](https://github.com/rafhun/grunt-wordpress-starter/commit/1070d36))
+* **grunt:** correctly define the testing paths by removing the quotes([3afd42a](https://github.com/rafhun/grunt-wordpress-starter/commit/3afd42a))
+* **scss:** update some linting rules([d20288f](https://github.com/rafhun/grunt-wordpress-starter/commit/d20288f))
+
+
+### Features
+
+* add nvm configuration file([c4cb4da](https://github.com/rafhun/grunt-wordpress-starter/commit/c4cb4da))
+* **php:** add template to support custom logos([bc6f29a](https://github.com/rafhun/grunt-wordpress-starter/commit/bc6f29a))
+* add ternjs config file([77a5f14](https://github.com/rafhun/grunt-wordpress-starter/commit/77a5f14))
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.4.1...v1.4.2) (2016-04-27)
 
