@@ -1,3 +1,13 @@
+<a name="1.5.1"></a>
+## [1.5.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.5.0...v1.5.1) (2016-05-19)
+
+
+### Bug Fixes
+
+* no longer allow insecure connections for composer([26a999d](https://github.com/rafhun/grunt-wordpress-starter/commit/26a999d))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.4.2...v1.5.0) (2016-05-11)
 
