@@ -24,6 +24,7 @@
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/wp-migrate-db": "*",
     "wpackagist-plugin/wp-nested-pages": "*",
+    "wpackagist-plugin/wp-smushit": "*",
     "wpackagist-plugin/wp-super-cache": "*",
     "wpackagist-plugin/developer": "*",
     "wpackagist-plugin/debug-bar": "*",
