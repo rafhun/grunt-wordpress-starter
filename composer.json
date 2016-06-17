@@ -8,11 +8,11 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.3.8.1",
+        "version": "5.3.9.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.3.8.1&k=@@acfProKey"
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.3.9.1&k=@@acfProKey"
         }
       }
     }
@@ -20,22 +20,25 @@
   "require": {
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/backupwordpress": "*",
-    "wpackagist-plugin/regenerate-thumbnails": "*",
-    "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/wp-migrate-db": "*",
-    "wpackagist-plugin/wp-nested-pages": "*",
-    "wpackagist-plugin/wp-smushit": "*",
-    "wpackagist-plugin/wp-super-cache": "*",
     "wpackagist-plugin/developer": "*",
     "wpackagist-plugin/debug-bar": "*",
     "wpackagist-plugin/debug-bar-console": "*",
     "wpackagist-plugin/debug-bar-cron": "*",
     "wpackagist-plugin/debug-bar-extender": "*",
-    "wpackagist-plugin/rewrite-rules-inspector": "*",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
     "wpackagist-plugin/log-deprecated-notices": "*",
     "wpackagist-plugin/log-viewer": "*",
+    "wpackagist-plugin/minqueue": "*",
+    "wpackagist-plugin/regenerate-thumbnails": "*",
+    "wpackagist-plugin/rewrite-rules-inspector": "*",
     "wpackagist-plugin/simply-show-ids": "*",
-    "wpackagist-plugin/theme-check": "*"
+    "wpackagist-plugin/theme-check": "*",
+    "wpackagist-plugin/wordfence": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/wp-migrate-db": "*",
+    "wpackagist-plugin/wp-nested-pages": "*",
+    "wpackagist-plugin/wp-smushit": "*",
+    "wpackagist-plugin/wp-super-cache": "*"
 
   },
   "extra": {
