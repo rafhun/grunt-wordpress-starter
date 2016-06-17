@@ -1,3 +1,19 @@
+<a name="1.5.2"></a>
+## [1.5.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.5.1...v1.5.2) (2016-06-17)
+
+
+### Bug Fixes
+
+* **scss:** enable webfont import by default([de2381d](https://github.com/rafhun/grunt-wordpress-starter/commit/de2381d))
+
+
+### Features
+
+* **wp:** add wp-smushit plugin to default plugins([ddd076f](https://github.com/rafhun/grunt-wordpress-starter/commit/ddd076f))
+* **wp:** update default plugins([196ba6b](https://github.com/rafhun/grunt-wordpress-starter/commit/196ba6b))
+
+
+
 <a name="1.5.1"></a>
 ## [1.5.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.5.0...v1.5.1) (2016-05-19)
 
