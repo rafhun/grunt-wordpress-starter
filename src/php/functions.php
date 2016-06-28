@@ -157,3 +157,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * Load Custom Off Canvas Walker Function
  */
 // require get_template_directory() . '/inc/off-canvas-walker.php';
+
+/**
+ * Load some essential helper functions
+ */
+// require get_template_directory() . '/inc/helpers.php';
+
+/**
+ * Load custom gallery shortcode output
+ */
+// require get_template_directory() . '/inc/custom-gallery.php';
