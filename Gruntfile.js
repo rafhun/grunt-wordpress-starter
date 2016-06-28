@@ -13,7 +13,7 @@ module.exports = function( grunt ) {
               ' * Theme URI: \n' +
               ' * Author: <%= pkg.author %>\n' +
               ' * Author URI: https://github.com/rafhun\n' +
-              ' * Description: Theme developed by rafhun from Werbelinie AG for ...\n' +
+              ' * Description: Theme developed by Werbelinie AG for ...\n' +
               ' * Version: <%= pkg.version %>\n' +
               ' * License: <%= pkg.license %>\n' +
               ' * License URI: http://www.gnu.org/licenses/gpl-3.0.html\n' +
