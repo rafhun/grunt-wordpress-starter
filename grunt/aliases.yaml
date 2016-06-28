@@ -11,7 +11,7 @@ default:
   - 'watch'
 
 local:
-  # - 'versionCheck'
+  - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccess'
   - 'jshint:grunt'
