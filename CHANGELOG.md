@@ -1,3 +1,13 @@
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.5.2...v1.6.0) (2016-06-28)
+
+
+### Features
+
+* **js:** bump to jQuery 3.0.0([c4a472a](https://github.com/rafhun/grunt-wordpress-starter/commit/c4a472a))
+
+
+
 <a name="1.5.2"></a>
 ## [1.5.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.5.1...v1.5.2) (2016-06-17)
 
