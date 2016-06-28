@@ -124,6 +124,13 @@ function werbelinie_scripts() {
 
   wp_enqueue_script( 'werbelinie-script', get_template_directory_uri() . '/js/script.min.js', array(), null, true);
 
+  // with this you can add translatable strings to your JS
+  /*
+  wp_localize_script( 'werbelinie-screenReaderText', 'screenReaderText', array(
+    'offCanvasBack' => _x( 'Back', 'Off-Canvas-Back Button Text', 'espace' )
+  ) );
+  */
+
   // needed for ajax loading
   /*
   global $wp_query;
