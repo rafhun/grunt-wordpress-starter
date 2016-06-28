@@ -64,6 +64,7 @@
               wp_nav_menu( array(
                 'theme_location' => 'primary-menu',
                 'menu_class' => 'navbar-list',
+                // 'walker' => new werbelinie_walker_one_pager_nav,
                 'depth' => 1
               ) );
             */

@@ -159,6 +159,11 @@ require get_template_directory() . '/inc/template-tags.php';
 // require get_template_directory() . '/inc/off-canvas-walker.php';
 
 /**
+ * Load Custom One Pager Walker Function
+ */
+// require get_template_directory() . '/inc/one-pager-walker.php';
+
+/**
  * Load some essential helper functions
  */
 // require get_template_directory() . '/inc/helpers.php';
