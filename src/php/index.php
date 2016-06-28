@@ -10,7 +10,7 @@
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
  * @package grunt-wordpress-starter
- * @subpackage rafhun
+ * @subpackage werbelinie
  * @since grunt-wordpress-starter 0.5.0
  */
 
@@ -43,9 +43,9 @@ get_header(); ?>
 
       // Previous/next page navigation.
       the_posts_pagination( array(
-        'prev_text'          => __( 'Previous page', 'rafhun' ),
-        'next_text'          => __( 'Next page', 'rafhun' ),
-        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'rafhun' ) . ' </span>',
+        'prev_text'          => __( 'Previous page', 'werbelinie' ),
+        'next_text'          => __( 'Next page', 'werbelinie' ),
+        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'werbelinie' ) . ' </span>',
       ) );
 
     // If no content, include the "No posts found" template.

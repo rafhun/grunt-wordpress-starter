@@ -6,7 +6,7 @@ module.exports = {
           config: 'prompt.themeName',
           type: 'input',
           message: 'Theme Name: ',
-          default: 'rafhun'
+          default: 'werbelinie'
         },
         {
           config: 'prompt.rootFolder',

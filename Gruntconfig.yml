@@ -1,11 +1,11 @@
-themeName: rafhun
+themeName: werbelinie
 devUrl: http://grunt-wordpress-starter.dev/
 dbDump: db/
 rootFolder: wwwroot/
 
 wordpress:
   locale: de_CH
-  version: 4.5.2
+  version: 4.5.3
 
 buildFolders:
   documentation: documentation/

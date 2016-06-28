@@ -3,7 +3,7 @@
  * Custom Walker function for our off canvas menus, adds some custom attributes
  */
 
-class rafhun_walker_nav_menu extends Walker_Nav_Menu {
+class werbelinie_walker_nav_menu extends Walker_Nav_Menu {
   function start_lvl( &$output, $depth = 0, $args = array() ) {
     $indent = ( $depth > 0 ? str_repeat( "\t", $depth ) : '' );
     $output .= "\n" . $indent . '<ul class="sub-menu">' . "\n";

@@ -5,7 +5,7 @@
  * This template file will be used by default for all pages that do not have a more specific template assigned to them.
  *
  * @package grunt-wordpress-starter
- * @subpackage rafhun
+ * @subpackage werbelinie
  * @since grunt-wordpress-starter 0.5.0
  */
 
@@ -19,7 +19,7 @@ get_header(); ?>
     <?php get_template_part( 'template-parts/content', 'page' ); ?>
 
   <?php endwhile; ?>
-  
+
 <?php endif; ?>
 
 <!-- close page specific containers here -->

@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till <div id="content">
  *
  * @package grunt-wordpress-starter
- * @subpackage rafhun
+ * @subpackage werbelinie
  * @since grunt-wordpress-starter 0.5.0
  */
 ?><!DOCTYPE html>
@@ -37,7 +37,7 @@
 <body <?php body_class(); ?>>
   <div class="body-container">
     <div class="transformer">
-      <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'rafhun' ); ?></a>
+      <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'werbelinie' ); ?></a>
       <div class="off-canvas-container">
         <nav role="navigation" class="off-canvas-nav">
           <?php
@@ -47,7 +47,7 @@
               'menu' => 'main nav',
               'theme_location' => 'off-canvas-menu',
               'menu_class' => 'off-canvas-list',
-              'walker' => new rafhun_walker_nav_menu
+              'walker' => new werbelinie_walker_nav_menu
             ) );
           */
           ?>
@@ -57,7 +57,7 @@
         <header id="masthead" class="site-header" role="banner">
           <?php the_custom_logo(); ?>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="wl-logo">Werbelinie AG</a>
-          <a href="#" class="off-canvas-toggle icon-menu" data-js="off-canvas-toggle"><?php _e('Toggle Off-Canvas', 'rafhun') ?></a>
+          <a href="#" class="off-canvas-toggle icon-menu" data-js="off-canvas-toggle"><?php _e('Toggle Off-Canvas', 'werbelinie') ?></a>
           <nav class="navbar" role="navigation">
             <?php
             /* add your main navbar here

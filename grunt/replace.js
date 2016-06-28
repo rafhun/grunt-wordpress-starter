@@ -132,7 +132,7 @@ module.exports = {
     options: {
       patterns: [
         {
-          match: 'rafhun',
+          match: 'werbelinie',
           replacement: '<%= grunt.config( "prompt.themeName" ) %>'
         },
         {

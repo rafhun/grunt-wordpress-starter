@@ -1,8 +1,8 @@
 <?php
 /**
- * rafhun functions and definitions
+ * werbelinie functions and definitions
  *
- * @package rafhun
+ * @package grunt-wordpress-starter
  */
 
 /**
@@ -12,7 +12,7 @@ if ( ! isset( $content_width ) ) {
   $content_width = 640; /* pixels */
 }
 
-if ( ! function_exists( 'rafhun_setup' ) ) :
+if ( ! function_exists( 'werbelinie_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -20,15 +20,15 @@ if ( ! function_exists( 'rafhun_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function rafhun_setup() {
+function werbelinie_setup() {
 
   /*
    * Make theme available for translation.
    * Translations can be filed in the /languages/ directory.
-   * If you're building a theme based on rafhun, use a find and replace
-   * to change 'rafhun' to the name of your theme in all the template files
+   * If you're building a theme based on werbelinie, use a find and replace
+   * to change 'werbelinie' to the name of your theme in all the template files
    */
-  load_theme_textdomain( 'rafhun', get_template_directory() . '/languages' );
+  load_theme_textdomain( 'werbelinie', get_template_directory() . '/languages' );
 
   // Add default posts and comments RSS feed links to head.
   add_theme_support( 'automatic-feed-links' );
@@ -56,9 +56,9 @@ function rafhun_setup() {
 
   // This theme uses wp_nav_menu() in two locations.
   register_nav_menus( array(
-    'primary-menu' => __( 'main nav', 'rafhun' ),
-    'off-canvas-menu' => __( 'Off Canvas Menu', 'rafhun'),
-    'metanavigation' => __( 'Metanavigation', 'rafhun' )
+    'primary-menu' => __( 'main nav', 'werbelinie' ),
+    'off-canvas-menu' => __( 'Off Canvas Menu', 'werbelinie'),
+    'metanavigation' => __( 'Metanavigation', 'werbelinie' )
   ) );
 
   /*
@@ -92,8 +92,9 @@ function rafhun_setup() {
 
   add_theme_support( 'custom-logo', $args );
 }
-endif; // rafhun_setup
-add_action( 'after_setup_theme', 'rafhun_setup' );
+endif; // werbelinie_setup
+
+add_action( 'after_setup_theme', 'werbelinie_setup' );
 
 /**
  * Register widget area.
@@ -101,9 +102,9 @@ add_action( 'after_setup_theme', 'rafhun_setup' );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 /*
-function rafhun_widgets_init() {
+function werbelinie_widgets_init() {
   register_sidebar( array(
-    'name'          => __( 'Sidebar', 'rafhun' ),
+    'name'          => __( 'Sidebar', 'werbelinie' ),
     'id'            => 'sidebar-1',
     'description'   => '',
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -112,21 +113,21 @@ function rafhun_widgets_init() {
     'after_title'   => '</h1>',
   ) );
 }
-add_action( 'widgets_init', 'rafhun_widgets_init' );
+add_action( 'widgets_init', 'werbelinie_widgets_init' );
 */
 
 /**
  * Enqueue scripts and styles.
  */
-function rafhun_scripts() {
-  wp_enqueue_style( 'rafhun-style', get_template_directory_uri() . '/style.min.css', array(), null );
+function werbelinie_scripts() {
+  wp_enqueue_style( 'werbelinie-style', get_template_directory_uri() . '/style.min.css', array(), null );
 
-  wp_enqueue_script( 'rafhun-script', get_template_directory_uri() . '/js/script.min.js', array(), null, true);
+  wp_enqueue_script( 'werbelinie-script', get_template_directory_uri() . '/js/script.min.js', array(), null, true);
 
   // needed for ajax loading
   /*
   global $wp_query;
-  wp_localize_script( 'rafhun-script', 'ajaxpagination', array(
+  wp_localize_script( 'werbelinie-localized-script', 'ajaxpagination', array(
     'ajaxurl' => admin_url( 'admin-ajax.php' ),
     'query_vars' => json_encode( $wp_query->query )
   ));
@@ -137,15 +138,7 @@ function rafhun_scripts() {
   }*/
 }
 
-add_action( 'wp_enqueue_scripts', 'rafhun_scripts' );
-
-// fix chrome v45 admin nav issue
-/*
-function chromefix_inline_css() {
-  wp_add_inline_style( 'wp-admin', '#adminmenu { transform: translateZ(0); }' );
-}
-add_action('admin_enqueue_scripts', 'chromefix_inline_css');
-*/
+add_action( 'wp_enqueue_scripts', 'werbelinie_scripts' );
 
 
 // Following are includes / requires containing configuration that is outsourced to files
