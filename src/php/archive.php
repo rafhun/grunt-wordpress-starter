@@ -11,12 +11,13 @@
  * @since 0.5.0
  */
 
-get_header(); ?>
+get_header();
+// open relevant containers
+?>
 
-<!-- open relevant containers -->
 <?php if ( have_posts() ) : ?>
-  <!-- add fitting title and description -->
   <?php
+  // add fitting title and description
   the_archive_title( '<h1>', '</h1>' );
   the_archive_description( '<div>', '</div>' );
   ?>
@@ -37,7 +38,7 @@ get_header(); ?>
 else:
   get_template_part( 'template-parts/content', 'none' );
 endif;
+// close relevant containers
 ?>
 
-<!-- close relevant containers -->
 <?php get_footer(); ?>

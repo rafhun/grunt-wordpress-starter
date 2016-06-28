@@ -20,8 +20,6 @@ $_editor-styles: false;
 @import 'dependencies/layout';
 @import 'dependencies/mixins';
 
-// importing the atoms
-
 // Atoms
 //
 // We want to load the font face definitions before everything else, maybe we should even consider adding it right before normalize as kind of a vendor sheet.
@@ -31,7 +29,6 @@ $_editor-styles: false;
 // Style guide: atoms
 //
 // Weight: 2
-
 @import 'atoms/webfonts';
 
 // import normalize.css by Nicolas Gallagher for a smart 'reset'
@@ -40,7 +37,7 @@ $_editor-styles: false;
 @import 'atoms/site'; // mainly html and body elements
 @import 'atoms/typography'; // all typography and text styles
 @import 'atoms/media'; // above all responsive images
-// //
+
 @import 'atoms/manifest';
 
 // Molecules

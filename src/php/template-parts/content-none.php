@@ -6,9 +6,11 @@
  * @since 0.5.0
  */
 ?>
-<!-- open containers -->
-<!-- set a title to indicate that nothing was found in a header -->
-<?php _e( 'Nothing Found', 'themeName' ); ?>
+
+<?php
+// set a title to indicate that nothing was found in a header
+_e( 'Nothing Found', 'themeName' );
+?>
 
 <?php
 // differentiate between a few different cases
@@ -29,5 +31,3 @@ if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
   <?php get_search_form(); ?>
 
 <?php endif; ?>
-
-<!-- close containers -->

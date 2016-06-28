@@ -6,12 +6,12 @@
  * @since 0.5.0
  */
 
-get_header(); ?>
+get_header();
 
-<!-- open relevant containers -->
-
+// open relevant containers
+?>
 <?php if ( have_posts() ) : ?>
-  <!-- set a header that shows the search query -->
+  <?php // set a header that shows the search query ?>
   <?php printf( __( 'Search Results for: %s', 'themeName' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?>
 
   <?php
@@ -31,6 +31,6 @@ else:
   get_template_part( 'template-parts/content', 'none' );
 endif; ?>
 
-<!-- close the relevant containers -->
+<?php // close the relevant containers ?>
 
 <?php get_footer(); ?>

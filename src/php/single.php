@@ -6,9 +6,9 @@
  * @since 0.5.0
  */
 
-get_header(); ?>
-
-<!-- open relevant containers -->
+get_header();
+// open relevant containers
+?>
 
 <?php
 // start the loop
@@ -28,5 +28,6 @@ while ( have_posts() ) : the_post();
 endwhile;
 ?>
 
-<!-- close relevant containers -->
+<?php // close relevant containers ?>
+
 <?php get_footer(); ?>

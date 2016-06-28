@@ -5,9 +5,9 @@
  * @package grunt-wordpress-starter
  * @since 0.5.0
  */
-?>
 
-<!-- style your search results here, best within article tags. Usage of template tags like the_title is possible -->
+// style your search results here, best within article tags. Usage of template tags like the_title is possible
+?>
 
 <?php
 // make sure to link up titles correctly:

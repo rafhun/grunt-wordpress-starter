@@ -9,19 +9,20 @@
  * @since grunt-wordpress-starter 0.5.0
  */
 
-get_header(); ?>
+get_header();
+// open page specific containers here
+?>
 
-<!-- open page specific containers here -->
 <?php if ( have_posts() ) : ?>
 
   <?php while ( have_posts() ) : the_post(); ?>
-    <!-- display the page according to your template or include the page content template like below -->
+    <?php // display the page according to your template or include the page content template like below ?>
     <?php get_template_part( 'template-parts/content', 'page' ); ?>
 
   <?php endwhile; ?>
 
 <?php endif; ?>
 
-<!-- close page specific containers here -->
+<?php // close page specific containers here ?>
 
 <?php get_footer(); ?>
