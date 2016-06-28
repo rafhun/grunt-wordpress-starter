@@ -1,4 +1,4 @@
-Version: 1.6.0
+Version: 1.7.0
 
 # Compatibility
 Tested up to and used with **Node v5.11** (not yet compatible with Node v6.0). Also fully compatible with **Grunt v1.0**. The project contains an NVM configuration file, should you use that, to manage your Node versions. This will usually be updated to reflect the latest compatible version the starter can be used with. Run `nvm use` to load the version referenced in the `.nvmrc` file.

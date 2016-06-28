@@ -1,3 +1,18 @@
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.6.0...v1.7.0) (2016-06-28)
+
+
+### Features
+
+* change default textdomain to werbelinie([afa6008](https://github.com/rafhun/grunt-wordpress-starter/commit/afa6008))
+* **php:** add example for translatable js strings([c4c472c](https://github.com/rafhun/grunt-wordpress-starter/commit/c4c472c))
+* **php:** add possibility for custom gallery shortcode output([4080c2b](https://github.com/rafhun/grunt-wordpress-starter/commit/4080c2b))
+* **php:** add some recurring helper functions([e6f2b65](https://github.com/rafhun/grunt-wordpress-starter/commit/e6f2b65))
+* **php:** one pager navigation walker([7fc4883](https://github.com/rafhun/grunt-wordpress-starter/commit/7fc4883))
+* **wp:** change default text domain and make it replaceable([3a214e4](https://github.com/rafhun/grunt-wordpress-starter/commit/3a214e4))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.5.2...v1.6.0) (2016-06-28)
 
