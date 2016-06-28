@@ -26,9 +26,9 @@ function werbelinie_setup() {
    * Make theme available for translation.
    * Translations can be filed in the /languages/ directory.
    * If you're building a theme based on werbelinie, use a find and replace
-   * to change 'werbelinie' to the name of your theme in all the template files
+   * to change 'themeName' to the name of your theme in all the template files
    */
-  load_theme_textdomain( 'werbelinie', get_template_directory() . '/languages' );
+  load_theme_textdomain( 'themeName', get_template_directory() . '/languages' );
 
   // Add default posts and comments RSS feed links to head.
   add_theme_support( 'automatic-feed-links' );
@@ -56,9 +56,9 @@ function werbelinie_setup() {
 
   // This theme uses wp_nav_menu() in two locations.
   register_nav_menus( array(
-    'primary-menu' => __( 'main nav', 'werbelinie' ),
-    'off-canvas-menu' => __( 'Off Canvas Menu', 'werbelinie'),
-    'metanavigation' => __( 'Metanavigation', 'werbelinie' )
+    'primary-menu' => __( 'main nav', 'themeName' ),
+    'off-canvas-menu' => __( 'Off Canvas Menu', 'themeName'),
+    'metanavigation' => __( 'Metanavigation', 'themeName' )
   ) );
 
   /*
@@ -104,7 +104,7 @@ add_action( 'after_setup_theme', 'werbelinie_setup' );
 /*
 function werbelinie_widgets_init() {
   register_sidebar( array(
-    'name'          => __( 'Sidebar', 'werbelinie' ),
+    'name'          => __( 'Sidebar', 'themeName' ),
     'id'            => 'sidebar-1',
     'description'   => '',
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',

@@ -132,7 +132,7 @@ module.exports = {
     options: {
       patterns: [
         {
-          match: 'werbelinie',
+          match: 'themeNamePlaceholder',
           replacement: '<%= grunt.config( "prompt.themeName" ) %>'
         },
         {

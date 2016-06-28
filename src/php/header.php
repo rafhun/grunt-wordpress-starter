@@ -37,7 +37,7 @@
 <body <?php body_class(); ?>>
   <div class="body-container">
     <div class="transformer">
-      <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'werbelinie' ); ?></a>
+      <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'themeName' ); ?></a>
       <div class="off-canvas-container">
         <nav role="navigation" class="off-canvas-nav">
           <?php
@@ -57,7 +57,7 @@
         <header id="masthead" class="site-header" role="banner">
           <?php the_custom_logo(); ?>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="wl-logo">Werbelinie AG</a>
-          <a href="#" class="off-canvas-toggle icon-menu" data-js="off-canvas-toggle"><?php _e('Toggle Off-Canvas', 'werbelinie') ?></a>
+          <a href="#" class="off-canvas-toggle icon-menu" data-js="off-canvas-toggle"><?php _e('Toggle Off-Canvas', 'themeName') ?></a>
           <nav class="navbar" role="navigation">
             <?php
             /* add your main navbar here

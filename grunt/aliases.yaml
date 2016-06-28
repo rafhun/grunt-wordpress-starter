@@ -11,7 +11,7 @@ default:
   - 'watch'
 
 local:
-  - 'versionCheck'
+  # - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccess'
   - 'jshint:grunt'
@@ -92,6 +92,7 @@ setup:
   - 'shell:updateRootPath'
   - 'shell:updateSecretsRoot'
   - 'shell:updateUrl'
+  - 'shell:themeTextDomain'
   - 'shell:getWP'
   - 'shell:composer'
   - 'newKeys'
@@ -101,6 +102,7 @@ setup:
 setupUpdate:
   - 'versionCheck'
   - 'shell:updateUrl'
+  - 'shell:themeTextDomain'
   - 'shell:composerUpdate'
   - 'replace:acfProKey'
   - 'shell:bowerUpdate'

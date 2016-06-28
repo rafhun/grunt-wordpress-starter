@@ -2,10 +2,11 @@
 # This file is distributed under the GPL-3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: rafhun 1.4.2\n"
+"Project-Id-Version: werbelinie 1.6.0\n"
 "Report-Msgid-Bugs-To: "
-"https://wordpress.org/support/theme/wwwroot/wp-content/themes/rafhun/style\n"
-"POT-Creation-Date: 2016-05-02 13:06:01+00:00\n"
+"https://wordpress.org/support/theme/wwwroot/wp-content/themes/werbelinie/"
+"style\n"
+"POT-Creation-Date: 2016-06-28 08:46:25+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,7 +50,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:59
+#: header.php:60
 msgid "Toggle Off-Canvas"
 msgstr ""
 
@@ -105,12 +106,16 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "rafhun"
+#. Theme Name of the plugin/theme
+msgid "werbelinie"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid "Theme developed by rafhun from Werbelinie AG for ..."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "rafhun"
 msgstr ""
 
 #. Author URI of the plugin/theme

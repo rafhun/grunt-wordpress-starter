@@ -12,7 +12,7 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
   <!-- set a header that shows the search query -->
-  <?php printf( __( 'Search Results for: %s', 'werbelinie' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?>
+  <?php printf( __( 'Search Results for: %s', 'themeName' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?>
 
   <?php
   // now start the loop

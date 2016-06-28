@@ -10,6 +10,7 @@ module.exports = {
   getKeys: 'sh getKeys.sh keys.php',
   getVersion: 'grep wp_version <%= config.rootFolder %>wp-includes/version.php | egrep -o "([0-9]{1,}\.)+[0-9]{1,}"',
   getWP: 'sh getWP.sh <%= config.rootFolder %> <%= config.wordpress.version %> <%= config.wordpress.locale %>',
+  themeTextDomain: 'sed -i "" "s=\'themeName\'=\'<%= config.themeName %>\'=g" <%= config.srcFolders.php %>**/*.php',
   updateRootPath: 'sed -i "" "s=wwwroot/=<%= config.rootFolder %>=g" composer.json wp-cli.yml .gitignore secrets.json secrets-template.json',
   updateSecretsRoot: 'sed -i "" "s=/www/sites/grunt-wordpress-starter=${PWD}=g" secrets.json secrets-template.json',
   updateUrl: 'sed -i "" "s=<%= config.devUrl %>=http://${PWD##*/}.dev/=g" Gruntconfig.yml secrets.json'
