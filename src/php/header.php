@@ -64,7 +64,7 @@
               wp_nav_menu( array(
                 'theme_location' => 'primary-menu',
                 'menu_class' => 'navbar-list',
-                // 'walker' => new werbelinie_walker_one_pager_nav,
+                // 'walker' => new Werbelinie_One_Pager_Nav_Walker,
                 'depth' => 1
               ) );
             */

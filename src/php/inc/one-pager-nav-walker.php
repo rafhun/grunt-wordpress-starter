@@ -9,7 +9,7 @@
  * @since grunt-wordpress-starter 1.7.0
  */
 
-class werbelinie_walker_one_pager_nav extends Walker_Nav_Menu {
+class Werbelinie_One_Pager_Nav_Walker extends Walker_Nav_Menu {
   function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
     global $wp_query;
     $indent = ( $depth > 0 ? str_repeat( "\t", $depth ) : '' );
