@@ -36,7 +36,7 @@ endif;
  *
  * The function could possibly be extended to support the phone number markup of multiple languages or countries (differentiate by country code or by length of number)
  */
-if ( ! function_exists( 'werbelinie_phone_cleanup' ) ) :
+if ( ! function_exists( 'werbelinie_phone_cleanup' ) && function_exists( 'werbelinie_phone_preformat' ) ) :
   function werbelinie_phone_cleanup( $phone_number ) {
     $number = werbelinie_phone_preformat( $phone_number );
 
