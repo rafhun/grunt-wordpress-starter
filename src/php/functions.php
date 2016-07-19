@@ -127,7 +127,7 @@ function werbelinie_scripts() {
   // with this you can add translatable strings to your JS
   /*
   wp_localize_script( 'werbelinie-screenReaderText', 'screenReaderText', array(
-    'offCanvasBack' => _x( 'Back', 'Off-Canvas-Back Button Text', 'espace' )
+    'offCanvasBack' => _x( 'Back', 'Off-Canvas-Back Button Text', 'werbelinie' )
   ) );
   */
 
