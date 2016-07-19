@@ -26,6 +26,8 @@ if ( ! function_exists( 'werbelinie_phone_preformat' ) ) :
   }
 endif;
 
+add_filter( 'werbelinie_clean_phone', 'werbelinie_phone_preformat' );
+
 /**
  * function werbelinie_phone_cleanup( $phone_number ) {}
  *
@@ -53,6 +55,8 @@ if ( ! function_exists( 'werbelinie_phone_cleanup' ) && function_exists( 'werbel
    }
   }
 endif;
+
+add_filter( 'werbelinie_pretty_phone', 'werbelinie_phone_cleanup' );
 
 
 /**
