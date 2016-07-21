@@ -6,7 +6,7 @@ module.exports = {
     },
 
     processors: [
-      require( 'autoprefixer' )( { browsers: 'last 2 versions' } )
+      require( 'autoprefixer' )( { browsers: 'last 3 versions' } )
     ]
   },
   main: {
