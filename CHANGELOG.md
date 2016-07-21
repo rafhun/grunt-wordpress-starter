@@ -1,3 +1,23 @@
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.7.0...v1.8.0) (2016-07-21)
+
+
+### Bug Fixes
+
+* **grunt:** keep ios saf 8 support after autoprefixer bump([1dbe27e](https://github.com/rafhun/grunt-wordpress-starter/commit/1dbe27e))
+* **grunt:** reenable version check for local task([a0d5395](https://github.com/rafhun/grunt-wordpress-starter/commit/a0d5395))
+* **php:** better naming for one pager walker([bab1309](https://github.com/rafhun/grunt-wordpress-starter/commit/bab1309))
+* **php:** check existence of function before creating it([faa4fc2](https://github.com/rafhun/grunt-wordpress-starter/commit/faa4fc2))
+* **php:** correctly set theme text domain([f6498d7](https://github.com/rafhun/grunt-wordpress-starter/commit/f6498d7))
+
+
+### Features
+
+* **php:** add base template for one pager parent([ba5d945](https://github.com/rafhun/grunt-wordpress-starter/commit/ba5d945))
+* **php:** add filters for phone cleanup functions([c2e0cfd](https://github.com/rafhun/grunt-wordpress-starter/commit/c2e0cfd))
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.6.0...v1.7.0) (2016-06-28)
 
