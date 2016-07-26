@@ -16,6 +16,8 @@
 //
 // Weight: 4
 
+$fonts-loaded-class: '.wl-fonts-loaded';
+
 /// This variable sets up the max container width that will be used in the Susy layout configuration
 /// @type Number
 $container-width: rem-calc(1200) !default;

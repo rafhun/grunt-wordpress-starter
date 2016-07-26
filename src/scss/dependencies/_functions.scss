@@ -85,3 +85,12 @@ $rem-base: 16px !default;
   }
   @return $rem-values;
 }
+
+/// Prepend value or list to an existing list
+///
+/// @param {List} $list - Variable containing a string or list (existing list)
+///
+/// @param {List} $value - Variable containing string or list that is to be prepended
+@function prepend($list, $value) {
+  @return join($value, $list);
+}

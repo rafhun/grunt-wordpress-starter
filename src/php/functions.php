@@ -179,3 +179,8 @@ require get_template_directory() . '/inc/template-tags.php';
  * Load custom gallery shortcode output
  */
 // require get_template_directory() . '/inc/custom-gallery.php';
+
+/**
+ * Custom Font Loader
+ */
+require get_template_directory() . '/inc/font-loader.php';

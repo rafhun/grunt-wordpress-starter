@@ -2,6 +2,9 @@
 
 Our styles are compiled with `libsass` then put through PostCSS where they are automatically prefixed and are finally minified through `cssmin`. Before minification we add the banner needed for the WordPress theme to work and save this file to the theme folder. It is not included in the site, but serves as an uncompressed reference and information source for WordPress.
 
+## Fonts and the Font Loader
+For using custom webfonts a loader has been implemented that needs some adjustments to work properly. Open the `src/php/inc/font-loader.php` as well as the `src/config/kss/template/index.html` file and make sure to adjust the font family names. You can also add multiple fonts in multiple stages, however you feel is appropriate. Find some examples [here](https://www.zachleat.com/web/comprehensive-webfonts/) and [here](https://www.zachleat.com/web-fonts/demos/foft.html).
+
 ## Documentation
 There are two types of documentation available within our Sass code. For one we can document our Sass itself through Sassdoc, on the other hand a styleguide can be generated directly from the source code.
 

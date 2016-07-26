@@ -16,11 +16,15 @@
 
 /// Font families for sans font types
 /// @type List
-$sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+$sans-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+
+$sans-custom: 'Lato';
 
 /// Font families for serif font types
 /// @type List
 $serif: Georgia, Utopia, Palatino, 'Palatino Linotype', serif !default;
+
+$serif-custom: 'Roboto Slab';
 
 /// Font families for code font types
 /// @type List
@@ -33,7 +37,8 @@ $font-smoothing: antialiased !default;
 // here comes the basic body text configuration
 
 /// Defines the default font family used for the body copy.
-$body-copy-font-family: $sans !default;
+$body-copy-font-family-fallback: $sans !default;
+$body-copy-font-family: prepend($sans-default, $sans-custom) !default;
 
 /// Defines the default font size of the body copy.
 $body-copy-font-size: rem-calc(18) !default;
@@ -47,7 +52,8 @@ $paragraph-margin-bottom: $body-copy-font-size !default;
 
 // now come the headings
 $headings-font-color: $color-primary !default;
-$headings-font-family: $serif !default;
+$headings-font-family-fallback: $serif !default;
+$headings-font-family: prepend($serif, $serif-custom) !default;
 $headings-font-weight: bold !default;
 $headings-text-rendering: optimizeLegibility !default;
 
@@ -69,9 +75,13 @@ $anchor-text-decoration-hover: underline !default;
 // basic font styles for body
 body {
   color: $color-text;
-  font-family: $body-copy-font-family;
+  font-family: $body-copy-font-family-fallback;
   font-size: $body-copy-font-size;
   line-height: $body-copy-line-height;
+
+  #{$fonts-loaded-class} & {
+    font-family: $body-copy-font-family;
+  }
 }
 
 p {
@@ -86,9 +96,13 @@ p {
 /// This placeholder contains all base styles for the headings. Any heading we define from here on out can extend this placeholder.
 %heading-base {
   color: $headings-font-color;
-  font-family: $headings-font-family;
+  font-family: $headings-font-family-fallback;
   font-weight: $headings-font-weight;
   text-rendering: $headings-text-rendering;
+
+  #{$fonts-loaded-class} & {
+    font-family: $headings-font-family;
+  }
 }
 
 h1,
