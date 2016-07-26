@@ -130,6 +130,7 @@ fileMgm:
 
 scripts:
   - 'concat'
+  - 'babel'
   - 'uglify'
 
 styles:

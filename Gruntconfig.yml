@@ -32,7 +32,7 @@ srcFolders:
   imagesUpload: src/uploads/
   imagesToUpload: src/uploads/dist/
   js: src/js/
-  jsBuild: src/js/build/
+  jsBuild: src/js/.build/
   jsMolecules: src/js/molecules/
   kssTemp: .kss-dest/
   languages: src/languages/

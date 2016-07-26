@@ -69,3 +69,6 @@ src/config/.kss-dest
 
 # visual test results screenshots
 tests/visual/results
+
+# js babel build
+src/js/.build/
