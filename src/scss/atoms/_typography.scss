@@ -37,7 +37,7 @@ $font-smoothing: antialiased !default;
 // here comes the basic body text configuration
 
 /// Defines the default font family used for the body copy.
-$body-copy-font-family-fallback: $sans !default;
+$body-copy-font-family-fallback: $sans-default !default;
 $body-copy-font-family: prepend($sans-default, $sans-custom) !default;
 
 /// Defines the default font size of the body copy.
