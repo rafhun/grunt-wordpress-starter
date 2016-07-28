@@ -1,3 +1,15 @@
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.8.0...v1.9.0) (2016-07-28)
+
+
+### Features
+
+* add font loader for better performance([9239c2b](https://github.com/rafhun/grunt-wordpress-starter/commit/9239c2b))
+* **grunt/js:** add babel for es6 support([ae9d12f](https://github.com/rafhun/grunt-wordpress-starter/commit/ae9d12f))
+* **scss:** use system fonts as default fallback in the sans font stack([6ef1115](https://github.com/rafhun/grunt-wordpress-starter/commit/6ef1115))
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.7.0...v1.8.0) (2016-07-21)
 
