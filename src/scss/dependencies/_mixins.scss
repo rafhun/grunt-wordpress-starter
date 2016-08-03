@@ -206,3 +206,39 @@
     justify-content: center;
   }
 }
+
+/// Allows you to easily apply hover transitions on certain elements. All transition settings are available through the mixin, thus it is possible to set them exactly to your liking. However, and probably most importantly, some sensible defaults have been set.
+/// The mixin does not use the shorthand property, therefore multiple properties can be transitioned, by using lists instead of strings as parameters.
+///
+/// @author Raphael Hüni
+///
+/// @param {String|List} $property [background-color]
+/// @param {Number|List} $duration [.3s]
+/// @param {String|List} $timing-function ['ease-in']
+/// @param {String|List} $timing-function-hover ['ease-out']
+/// @param {Number|List} $delay [null]
+///
+/// @since 1.10.0
+@mixin hover-transition(
+  $property: 'background-color',
+  $duration: .3s,
+  $timing-function: 'ease-in',
+  $timing-function-hover: 'ease-out',
+  $delay: null
+) {
+  transition-duration: #{$duration};
+  transition-property: #{$property};
+  transition-timing-function: #{$timing-function};
+
+  @if ($delay) {
+    transition-delay: #{$delay};
+  }
+
+  @if ($timing-function-hover != $timing-function) {
+    &:hover,
+    &:active,
+    &:focus {
+      transition-timing-function: #{$timing-function-hover};
+    }
+  }
+}
