@@ -1,3 +1,20 @@
+<a name="1.9.1"></a>
+## [1.9.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.9.0...v1.9.1) (2016-08-03)
+
+
+### Bug Fixes
+
+* **js:** add promises polyfill for fontObserver script([6ffeeef](https://github.com/rafhun/grunt-wordpress-starter/commit/6ffeeef))
+* **js:** temporarily remove babel again([e4adb38](https://github.com/rafhun/grunt-wordpress-starter/commit/e4adb38))
+* **scss:** correctly reference default sans font([571cb95](https://github.com/rafhun/grunt-wordpress-starter/commit/571cb95))
+
+
+### Features
+
+* **scss:** add mixin for smooth hover transitions([c881942](https://github.com/rafhun/grunt-wordpress-starter/commit/c881942))
+
+
+
 <a name="1.9.0"></a>
 # [1.9.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.8.0...v1.9.0) (2016-07-28)
 
