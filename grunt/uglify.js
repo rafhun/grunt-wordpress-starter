@@ -7,7 +7,7 @@ module.exports = {
     screwIE8: true
   },
   build: {
-    src: '<%= babel.dist.dest %>',
+    src: '<%= concat.dist.dest %>',
     dest: '<%= destFolder %><%= config.buildFolders.js %>script.min.js'
   }
 }
