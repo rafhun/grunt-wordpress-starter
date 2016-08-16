@@ -3,32 +3,33 @@ module.exports = {
     options: {
       questions: [
         {
-          config: 'prompt.themeName',
-          type: 'input',
-          message: 'Theme Name: ',
-          default: 'werbelinie'
+          config: "prompt.themeName",
+          type: "input",
+          message: "Theme Name: ",
+          default: "werbelinie",
         },
         {
-          config: 'prompt.rootFolder',
-          type: 'input',
-          message: 'Root Folder: ',
-          default: 'wwwroot/',
+          config: "prompt.rootFolder",
+          type: "input",
+          message: "Root Folder: ",
+          default: "wwwroot/",
           filter: function( value ) {
             var lastChar = value.substr( -1 );
-            if ( lastChar !== '/' ) {
-              value += '/';
+
+            if ( lastChar !== "/" ) {
+              value += "/";
             }
 
             return value;
-          }
+          },
         },
         {
-          config: 'prompt.locale',
-          type: 'input',
-          message: 'Default WordPress Locale: ',
-          default: 'de_CH'
-        }
-      ]
-    }
-  }
-}
+          config: "prompt.locale",
+          type: "input",
+          message: "Default WordPress Locale: ",
+          default: "de_CH",
+        },
+      ],
+    },
+  },
+};

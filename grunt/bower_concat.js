@@ -1,11 +1,7 @@
 module.exports = {
-  options: {
-    separator: ';\n'
-  },
+  options: { separator: ";\n" },
   all: {
-    dest: {
-      js: '<%= config.srcFolders.js %>bower.js',
-    },
+    dest: { js: "<%= config.srcFolders.js %>bower.js" },
     exclude: [],
-  }
-}
+  },
+};
