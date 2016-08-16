@@ -8,11 +8,11 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.3.10",
+        "version": "5.4.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.3.10&k=@@acfProKey"
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.4.1&k=@@acfProKey"
         }
       }
     }
@@ -31,6 +31,7 @@
     "wpackagist-plugin/minqueue": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
     "wpackagist-plugin/rewrite-rules-inspector": "*",
+    "wpackagist-plugin/safe-svg": "*",
     "wpackagist-plugin/simply-show-ids": "*",
     "wpackagist-plugin/theme-check": "*",
     "wpackagist-plugin/wordfence": "*",
