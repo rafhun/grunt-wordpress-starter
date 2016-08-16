@@ -1,7 +1,5 @@
 module.exports = {
   options: {
-    compact: false,
-    presets: ['es2015'],
     sourceMap: true
   },
   dist: {
