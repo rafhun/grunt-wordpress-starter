@@ -73,3 +73,5 @@ tests/visual/results
 # temporary babel files, we keep them around for inspection should something go wrong, but they have no place in version control
 .babel-build/
 
+# eslint cache file
+.eslintcache
