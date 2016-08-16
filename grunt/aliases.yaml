@@ -129,8 +129,8 @@ fileMgm:
   - 'copy:kssConfig'
 
 scripts:
+  - 'babel'
   - 'concat'
-  # - 'babel'
   - 'uglify'
 
 styles:

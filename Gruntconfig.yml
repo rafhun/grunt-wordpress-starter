@@ -32,6 +32,8 @@ srcFolders:
   imagesUpload: src/uploads/
   imagesToUpload: src/uploads/dist/
   js: src/js/
+  jsBabel: babel/
+  jsBabelBuild: src/js/.babel-build/
   jsBuild: src/js/.build/
   jsMolecules: src/js/molecules/
   kssTemp: .kss-dest/

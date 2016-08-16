@@ -15,11 +15,11 @@ module.exports = {
   },
   scripts: {
     files: ['<%= config.srcFolders.js %>**/*.js'],
-    tasks: ['clean:hashedJs', 'concat', 'uglify', 'cssmin', 'copy:functions', 'hashres', 'kss']
+    tasks: ['clean:hashedJs', 'scripts', 'cssmin', 'copy:functions', 'hashres', 'kss']
   },
   styles: {
     files: ['<%= config.srcFolders.scss %>**/*.scss'],
-    tasks: ['clean:hashedCss', 'sass:main', 'postcss:main', 'cssmin', 'uglify', 'copy:functions', 'hashres', 'kss']
+    tasks: ['clean:hashedCss', 'styles', 'uglify', 'copy:functions', 'hashres', 'kss']
   },
   images: {
     files: ['<%= config.srcFolders.images %>**/*.{png,jpg,gif,svg}'],
