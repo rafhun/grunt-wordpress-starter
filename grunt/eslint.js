@@ -7,6 +7,6 @@ module.exports = {
     "Gruntfile.js",
     "grunt/*.js",
     "<%= config.srcFolders.jsMolecules %>**/*.js",
-    "<%= config.srcFolders.js %>script.j",
+    "<%= config.srcFolders.js %>script.js",
   ],
 };
