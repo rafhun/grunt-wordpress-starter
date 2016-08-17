@@ -1,0 +1,1 @@
+// if your third party plugins cannot be obtained through bower or npm paste them here. Should they contain es6 code do not use this file, use plugins.es6.js instead. Otherwise paste here. In concatenation the es6 plugins file comes first. To ease usage, decide at the beginning of your project, whether to use the es6 file or this one, then delete the other one.

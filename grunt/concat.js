@@ -3,9 +3,11 @@ module.exports = {
   dist: {
     src: [
       "<%= bower_concat.all.dest.js %>",
+      "<%= config.srcFolders.js %>plugins.es5.js",
       "<%= config.srcFolders.js %>plugins.js",
-      "<%= config.srcFolders.jsBabelBuild %>**/*.js",
       "<%= config.srcFolders.jsMolecules %>**/*.js",
+      "!<%= config.srcFolders.jsMolecules %>**/*.es6.js",
+      "<%= config.srcFolders.js %>script.es5.js",
       "<%= config.srcFolders.js %>script.js",
     ],
     dest: "<%= destFolder %><%= config.buildFolders.js %>script.js",

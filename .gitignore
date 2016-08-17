@@ -70,8 +70,9 @@ src/config/.kss-dest
 # visual test results screenshots
 tests/visual/results
 
-# temporary babel files, we keep them around for inspection should something go wrong, but they have no place in version control
-.babel-build/
+# compiled babel files
+*.es5.js
+*.es5.js.map
 
 # eslint cache file
 .eslintcache

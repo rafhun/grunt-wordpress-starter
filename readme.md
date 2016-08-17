@@ -96,6 +96,14 @@ To start on your own just copy all PHP files to the dedicated PHP folder and sta
 ### Javascript
 Generally you should add JS dependencies through Bower if they are available. Simply add their name and version information to the `bower.json` file and then execute `grunt setupUpdate`. Add all other vendor scripts to the `plugins.js` file in the source scripts folder and your own to the `scripts.js` one. Should you have created molecules that depend on a certain script add this to the molecules folder within the JS one. Again you can find and adapt all relevant folder names in the `Gruntconfig.yml`.
 
+### ES6 Syntax
+The starter contains configuration for babel which means that you are able to use ES6 syntax, while being certain, that the code will run perfectly in older browsers that only support ES5 syntax. To use ES6 just change the file extension to `.es6.js` in your JS folder. These files will be run through Babel and then also be automatically concatenated into the main script file.
+
+### ES-Lint
+All Javascript is run through ES-Lint to check for code quality, common mistakes and script style guidelines. The default grunt task will also automatically fix stuff for you, that can automatically be fixed (like quotes, indentation, spacing, commas). If you see a lot of errors in one of your script files, run `grunt eslint` to make sure, the linter fixes all it can, then check the rest. Also make sure to quickly look over your code after running ES-Lint (through any of the default tasks, or by running the eslint task by itself).
+
+A specific coding style for our application is reflected through the rules. Adapt them to your personal or company preferences or make use of it as it is.
+
 ## Deployment
 For deployment two task are ready to be used depending on your server access. We provide automated grunt deployment through SSH and rsync (which is preferred) and alternatively a grunt deployment via FTP (should you not be able to get SSH access to your hosting). The boilerplate comes prepared for two different remote areas (staging and production) as well as one local one. However more can easily be added by extending/adjusting the relevant tasks.
 

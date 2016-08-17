@@ -3,10 +3,10 @@ module.exports = {
   dist: {
     files: [{
       expand: true,
-      cwd: "<%= config.srcFolders.js %><%= config.srcFolders.jsBabel %>",
-      src: ["**/*.js"],
-      dest: "<%= config.srcFolders.jsBabelBuild %>",
-      ext: ".js",
+      cwd: "<%= config.srcFolders.js %>",
+      src: ["**/*.es6.js"],
+      dest: "<%= config.srcFolders.js %>",
+      ext: ".es5.js",
     }],
   },
 };
