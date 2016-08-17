@@ -80,12 +80,14 @@ body {
   line-height: $body-copy-line-height;
 
   #{$fonts-loaded-class} & {
-    font-family: $body-copy-font-family;
+    @if $body-copy-font-family != $body-copy-font-family-fallback {
+      font-family: $body-copy-font-family;
+    }
   }
 }
 
 p {
-  margin-bottom: $paragraph-margin-bottom;
+  margin-bottom: 1em;
 
   &:last-child {
     margin-bottom: 0;
@@ -96,12 +98,16 @@ p {
 /// This placeholder contains all base styles for the headings. Any heading we define from here on out can extend this placeholder.
 %heading-base {
   color: $headings-font-color;
-  font-family: $headings-font-family-fallback;
+  @if $headings-font-family-fallback != $body-copy-font-family-fallback {
+    font-family: $headings-font-family-fallback;
+  }
   font-weight: $headings-font-weight;
   text-rendering: $headings-text-rendering;
 
   #{$fonts-loaded-class} & {
-    font-family: $headings-font-family;
+    @if $headings-font-family != $headings-font-family-fallback {
+      font-family: $headings-font-family;
+    }
   }
 }
 
@@ -111,7 +117,9 @@ h1,
   font-size: $h1-max-mobile-font;
 
   @include susy-media(font-desktop) {
-    font-size: $h1-font-size;
+    @if $h1-font-size != $h1-max-mobile-font {
+      font-size: $h1-font-size;
+    }
   }
 }
 
@@ -121,7 +129,9 @@ h2,
   font-size: $h2-max-mobile-font;
 
   @include susy-media(font-desktop) {
-    font-size: $h2-font-size;
+    @if $h2-font-size != $h2-max-mobile-font {
+      font-size: $h2-font-size;
+    }
   }
 }
 
@@ -131,7 +141,9 @@ h3,
   font-size: $h3-max-mobile-font;
 
   @include susy-media(font-desktop) {
-    font-size: $h3-font-size;
+    @if $h3-font-size != $h3-max-mobile-font {
+      font-size: $h3-font-size;
+    }
   }
 }
 
@@ -144,7 +156,12 @@ a {
   &:hover,
   &:active,
   &:focus {
-    color: $anchor-color-font-hover;
-    text-decoration: $anchor-text-decoration-hover;
+    @if $anchor-color-font-hover != $anchor-color-font {
+      color: $anchor-color-font-hover;
+    }
+
+    @if $anchor-text-decoration-hover != $anchor-text-decoration {
+      text-decoration: $anchor-text-decoration-hover;
+    }
   }
 }
