@@ -1,3 +1,24 @@
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.9.1...v1.10.0) (2016-08-17)
+
+
+### Bug Fixes
+
+* **grunt:** also rename the default pot file upon themeName init([217ec0b](https://github.com/rafhun/grunt-wordpress-starter/commit/217ec0b))
+* **grunt:** change es6 api slightly([ae1cf82](https://github.com/rafhun/grunt-wordpress-starter/commit/ae1cf82))
+* **grunt:** fix typo in eslint config([71ae7b8](https://github.com/rafhun/grunt-wordpress-starter/commit/71ae7b8))
+* **js:** reformat grunt config files to new js linting rules([02c57fa](https://github.com/rafhun/grunt-wordpress-starter/commit/02c57fa))
+* **sass:** allow hyphenated bem for sass variable names([879ed29](https://github.com/rafhun/grunt-wordpress-starter/commit/879ed29))
+
+
+### Features
+
+* **grunt:** add babel back more controlled([56ca810](https://github.com/rafhun/grunt-wordpress-starter/commit/56ca810))
+* **grunt:** externalize babel config to babelrc([d296b8c](https://github.com/rafhun/grunt-wordpress-starter/commit/d296b8c))
+* **js:** replace jshint with eslint([33c2286](https://github.com/rafhun/grunt-wordpress-starter/commit/33c2286))
+
+
+
 <a name="1.9.1"></a>
 ## [1.9.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.9.0...v1.9.1) (2016-08-03)
 
