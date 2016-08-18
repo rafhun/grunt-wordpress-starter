@@ -1,3 +1,14 @@
+<a name="1.10.1"></a>
+## [1.10.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.10.0...v1.10.1) (2016-08-18)
+
+
+### Bug Fixes
+
+* **scss:** less css bloat from typo definitions([75447e7](https://github.com/rafhun/grunt-wordpress-starter/commit/75447e7))
+* **scss:** update default sans font families for system fonts([9747742](https://github.com/rafhun/grunt-wordpress-starter/commit/9747742))
+
+
+
 <a name="1.10.0"></a>
 # [1.10.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.9.1...v1.10.0) (2016-08-17)
 
