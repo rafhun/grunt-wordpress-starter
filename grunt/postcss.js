@@ -6,7 +6,13 @@ module.exports = {
     },
 
     processors: [
-      require( "autoprefixer" )( { browsers: "last 3 versions" } ),
+      require( "postcss-cssnext" )( {
+        browserslist: ["last 3 versions"],
+        features: {
+          customProperties: { preserve: true },
+          selectorMatches: { lineBreak: true },
+        },
+      } ),
     ],
   },
   main: {
