@@ -13,6 +13,7 @@ module.exports = {
           selectorMatches: { lineBreak: true },
         },
       } ),
+      require( "lost" ),
     ],
   },
   main: {
