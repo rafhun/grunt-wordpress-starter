@@ -19,6 +19,9 @@ The CSS minifier we use `grunt-contrib-cssmin` has a dependency of `clean-css`. 
 ### Lost
 As a further step to start a move away from Sass the Lost grid framework is linked up as another Post-CSS plugin. This means that you can start defining your grids with rules like `lost-column: 1/3;`. Make sure to check out the [documentation](https://github.com/peterramsing/lost#getting-started). Our goal is to start to drop Susy completely in favor of Lost.
 
+### Rucksack
+This library gives superpowers to your CSS (by its own claim) and can definitely ease CSS development. Check out their [documentation](http://simplaio.github.io/rucksack/docs/) and start using the shortcuts (for things like responsive typography, positioning shorthands, and many more) this framework offers.
+
 ## Documentation
 There are two types of documentation available within our Sass code. For one we can document our Sass itself through Sassdoc, on the other hand a styleguide can be generated directly from the source code.
 

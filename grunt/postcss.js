@@ -6,6 +6,8 @@ module.exports = {
     },
 
     processors: [
+      require( "lost" ),
+      require( "rucksack-css" ),
       require( "postcss-cssnext" )( {
         browserslist: ["last 3 versions"],
         features: {
@@ -13,7 +15,6 @@ module.exports = {
           selectorMatches: { lineBreak: true },
         },
       } ),
-      require( "lost" ),
     ],
   },
   main: {
