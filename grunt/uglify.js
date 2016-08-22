@@ -7,7 +7,16 @@ module.exports = {
     screwIE8: true,
   },
   build: {
-    src: "<%= concat.dist.dest %>",
-    dest: "<%= destFolder %><%= config.buildFolders.js %>script.min.js",
+    files: [{
+      expand: true,
+      flatten: true,
+      src: [
+        "<%= concat.dist.dest %>",
+        "<%= config.srcFolders.jsNoConcat %>**/*.js",
+        "!<%= config.srcFolders.jsNoConcat %>**/*.es6.js",
+      ],
+      dest: "<%= destFolder %><%= config.buildFolders.js %>",
+      ext: ".min.js",
+    }],
   },
 };
