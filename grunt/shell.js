@@ -10,7 +10,7 @@ module.exports = {
   getKeys: "sh getKeys.sh keys.php",
   getVersion: 'grep wp_version <%= config.rootFolder %>wp-includes/version.php | egrep -o "([0-9]{1,}\.)+[0-9]{1,}"',
   getWP: "sh getWP.sh <%= config.rootFolder %> <%= config.wordpress.version %> <%= config.wordpress.locale %>",
-  styleguide: "npm run styleguide --files <%= config.srcFolders.scss %>**/*.scss --target <%= config.rootFolder %><%= config.buildFolders.styleguide %> --template <%= config.srcFolders.config %>.nucleus/",
+  styleguide: "npm run styleguide -- --files <%= config.srcFolders.scss %>**/*.scss --target <%= config.rootFolder %><%= config.buildFolders.styleguide %> --template=<%= config.srcFolders.config %>.nucleus/",
   themeTextDomain: 'sed -i "" "s=\'themeName\'=\'<%= config.themeName %>\'=g" <%= config.srcFolders.php %>**/*.php && mv <%= config.srcFolders.languages %>werbelinie.pot <%= config.srcFolders.languages %><%= config.themeName %>.pot',
   updateRootPath: 'sed -i "" "s=wwwroot/=<%= config.rootFolder %>=g" composer.json wp-cli.yml .gitignore secrets.json secrets-template.json',
   updateSecretsRoot: 'sed -i "" "s=/www/sites/grunt-wordpress-starter=${PWD}=g" secrets.json secrets-template.json',
