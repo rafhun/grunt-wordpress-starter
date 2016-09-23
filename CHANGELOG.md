@@ -1,3 +1,28 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.10.1...v2.0.0) (2016-09-23)
+
+
+### Bug Fixes
+
+* **grunt:** completely remove sassdoc references([466533e](https://github.com/rafhun/grunt-wordpress-starter/commit/466533e))
+* **grunt:** correct nucleus config([b5712d4](https://github.com/rafhun/grunt-wordpress-starter/commit/b5712d4))
+* **grunt:** remove sassdoc([c3c731e](https://github.com/rafhun/grunt-wordpress-starter/commit/c3c731e))
+* **scss:** add font-loader script to styleguide template([03e80ba](https://github.com/rafhun/grunt-wordpress-starter/commit/03e80ba))
+* **scss:** correctly import atom partials([ea2cf09](https://github.com/rafhun/grunt-wordpress-starter/commit/ea2cf09))
+
+
+### Features
+
+* **grunt:** add cssnext postcss plugin([4c91dcc](https://github.com/rafhun/grunt-wordpress-starter/commit/4c91dcc))
+* **js:** allow standalone scripts([94d7958](https://github.com/rafhun/grunt-wordpress-starter/commit/94d7958))
+* **php:** replace some plugins and some new([4a31496](https://github.com/rafhun/grunt-wordpress-starter/commit/4a31496))
+* **post-css:** add the lost post-css plugin([766ff7a](https://github.com/rafhun/grunt-wordpress-starter/commit/766ff7a))
+* **post-css:** add the rucksack-css plugin for some magic([c0ff40b](https://github.com/rafhun/grunt-wordpress-starter/commit/c0ff40b))
+* **scss:** reorganize styles structure for new styleguide([ebc5fc0](https://github.com/rafhun/grunt-wordpress-starter/commit/ebc5fc0))
+* **scss:** replace kss with nucleus([a8df6fb](https://github.com/rafhun/grunt-wordpress-starter/commit/a8df6fb))
+
+
+
 <a name="1.10.1"></a>
 ## [1.10.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v1.10.0...v1.10.1) (2016-08-18)
 
