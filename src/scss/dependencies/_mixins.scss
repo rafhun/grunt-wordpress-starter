@@ -1,14 +1,3 @@
-////
-/// @author Raphael Hüni
-///
-/// @group General
-////
-
-
-/// This is the micro clearfix mixin used to clear floats. As we no longer need to support very old browsers we can leave out the zoom option. Also using `display: block;` instead of `display: table;` gives us nicer collapsing margins.
-///
-/// @author Nicolas Gallagher
-
 /**
  * Apply the micro clearfix to an element
  *
@@ -25,12 +14,9 @@
   }
 }
 
-/// Applies all the styles needed to get a CSS ellipsis if the text overflows its container. Can only be used on single lines of text (therefore we set the white-space to nowrap). Mostly used for teasers and similar.
-///
-/// @since 0.1.0
 /**
  * Apply text overflow ellipsis and its necessary styles.
- *@mixin
+ * @mixin
  * @section Mixins
  * @example
  *  @include text-ellipsis;
@@ -41,23 +27,9 @@
   overflow: hidden;
 }
 
-/// This mixin automatically puts a separator between list items (or basically any items the mixin is applied to) by adding content to the `::after` pseudoelement and positioning it with margins and paddings.
-///
-/// @param {Number} $margins [rem-calc(6)]      - Margin from item to separator
-/// @param {Color} $separator-color [inherit]   - How the separator should be colorized
-/// @param {String} $separator ['|']            - Symbol to be used as separator (must be valid for the `content` property)
-/// @param {Number} $font-size [inherit]        - Font-size of the separator
-/// @param {Boolean} $inline-block-fix [true]   - Should the inline block fix (to remove added white-space) be applied or not
-///
-/// @require {function} rem-calc
-///
-/// @since 0.1.0
-///
-/// @todo replace dependency on inline-block display method, since a hack is needed to fix alignment. What other possibilities for this layout exist?
-
 /**
  * Put separator between any items this mixin is applied to (usually li's) by addingt content to the `::after` pseudo-element and positioning it with margins and paddings.
- *@mixin
+ * @mixin
  * @section Mixins
  * @param $margins 6px by default, the margin between element and separator
  * @param $separator-color Color of the text, defaults to `inherit`
@@ -102,57 +74,24 @@
   }
 }
 
-/// Creates a triangle on one of the edges of an element. Bases on the idea of Eduardo Boucas and has been extended by Raphael Hüni to  make more configuration options available for the mixin.
-///
-/// A base configuration is given through preset values to make use of the mixin and it's options clearer.
-///
-/// Added parameters for height and color of the triangle. Sometimes we want to be able to have more influence over the color of the triangle which is why we are making it a configurable option. The standard value still is the previously given `currentColor` but can now be changed according to the design wishes. Also an additional height variable is available. This defines the height of the triangle while the width describes the width of the base of the triangle. This enables us to easily add a triangle over the whole width of an element (like an off-canvas link's height) while keeping seperate control over the height.
-///
-/// If we use the triangle on a box with `::before` or `::after` pseudo-elements we might need to adjust the center offset to account for these areas. This is why the `$center-offset` variable is introduced additionally. Its default value is `null` which means no shift at all however both positive and negative numbers can be assigned to the variable. Its value will be added to the `$offset` variable meaning a positive one will push the triangle while a negative value will pull it.
-///
-/// @author Eduardo Boucas, Raphael Hüni
-///
-/// @param {String} $pos ['left'] - Which edge to create the triangle on (allowed are `'top'`, `'right'`, `'bottom'` or `'left'`.)
-/// @param {Number} $offset [0] - The offset from the origin (top or left) on the edge
-/// @param {Number} $center-offset [null] - Adjust center for use with before of after pseudo-elements (negative or positive values allowed, negatives pull, positives push further)
-/// @param {String} $direction ['out'] - Direction of the triangle (`'in'` or `'out'`)
-/// @param {Number} $width [1rem] - Length of the triangle's base
-/// @param {Number} $height [$width] - Height of the triangle
-/// @param {Color} $color [currentColor] - Color of the triangle
-/// @param {String} $type ['after'] - Type of the pseudo-element the triangle gets created with (`'before'` or `'after'`)
-///
-/// @example scss - A triangle on the left edge of the parent, 15px from the top, pointing out with a width of 30px
-///   @include triangle('left', 15px, 'out', 30px);
-///
-/// @example scss - A triangle on the bottom edge of the parent, 220px from the left, pointing out, width a width of 60px and using a :before
-///   @include triangle('bottom', 220px, 'out', 60px, 'before');
 /**
  * Create a triangle, very configurable.
- *@mixin
+ * @mixin
  * @section Mixins
- * @param $pos:           'left'        Which edge to create the triangle on (allowed are `'top'`, `'right'`, `'bottom'` or `'left'`.)
- * @param $offset:        0             The offset from the origin (top or left) on the edge
- * @param $center-offset: null          Adjust center for use with before of after pseudo-elements (negative or positive values allowed, negatives pull, posish further)
- * @param $direction:     'out'         Direction of the triangle (`'in'` or `'out'`)
- * @param $width:         1rem          Length of the triangle's base
- * @param $height:        $width        Height of the triangle
- * @param $color:         currentColor  Color of the triangle
- * @param $type:          'after'       Type of the pseudo-element the triangle gets created with (`'before'` or `'after'`)
+ * @param $pos Which edge to create the triangle on (allowed are `'top'`, `'right'`, `'bottom'` or `'left'`.)
+ * @param $offset The offset from the origin (top or left) on the edge
+ * @param $center-offset Adjust center for use with before of after pseudo-elements (negative or positive values allowed, negatives pull, posish further)
+ * @param $direction Direction of the triangle (`'in'` or `'out'`)
+ * @param $width Length of the triangle's base
+ * @param $height Height of the triangle
+ * @param $color Color of the triangle
+ * @param $type Type of the pseudo-element the triangle gets created with (`'before'` or `'after'`)
  *
  * @example
  *  @include triangle('right', 50%);
  *  @include triangle($direction: 'in');
  */
-@mixin triangle(
-  $pos: 'left',
-  $offset: 0,
-  $center-offset: null,
-  $direction: 'out',
-  $width: 1rem, // defines how wide the triangles base is
-  $height: $width, // describes the height of the triangle
-  $color: currentColor,
-  $type: 'after'
-) {
+@mixin triangle($pos: 'left', $offset: 0, $center-offset: null, $direction: 'out', $width: 1rem, $height: $width, $color: currentColor, $type: 'after') {
   @if($center-offset) {
     $center-adjust: $width / 2 + $center-offset;
   } @else {
@@ -233,21 +172,12 @@
   }
 }
 
-/// Use flexbox to center children. Make sure you do not have to support IE9 or lower since this would break for that. If you can afford only supporting newer browsers, feel free to use this mixin. By default the children will be centered vertically and horizontally, however this can be configured by setting the booleans on the two parameters respectively.
-///
-/// @author Raphael Hüni
-///
-/// @section Mixins
-/// @param {Boolean} $vertical [true]    - Should the child be centered vertically?
-/// @param {Boolean} $horizontal [true]  - Should the child be centered horizontally?
-///
-/// @since 1.0.0
 /**
  * Use flexbox to center an elements children
- *@mixin
+ * @mixin
  * @section Mixins
- * @param $vertical:   true          [description]
- * @param $horizontal: true          [description]
+ * @param $vertical Boolean, center vertically?
+ * @param $horizontal Boolean, center horizontally?
  */
 @mixin flex-center-children($vertical: true, $horizontal: true) {
   display: flex;
@@ -260,35 +190,17 @@
   }
 }
 
-/// Allows you to easily apply hover transitions on certain elements. All transition settings are available through the mixin, thus it is possible to set them exactly to your liking. However, and probably most importantly, some sensible defaults have been set.
-/// The mixin does not use the shorthand property, therefore multiple properties can be transitioned, by using lists instead of strings as parameters.
-///
-/// @author Raphael Hüni
-///
-/// @param {String|List} $property [background-color]
-/// @param {Number|List} $duration [.3s]
-/// @param {String|List} $timing-function ['ease-in']
-/// @param {String|List} $timing-function-hover ['ease-out']
-/// @param {Number|List} $delay [null]
-///
-/// @since 1.10.0
 /**
  * Some cool hover transitions
- *@mixin
+ * @mixin
  * @section Mixins
- * @param $property:              'background-color' [description]
- * @param $duration:              .3s                [description]
- * @param $timing-function:       'ease-in'          [description]
- * @param $timing-function-hover: 'ease-out'         [description]
- * @param $delay:                 null               [description]
+ * @param $property The property you want to transition
+ * @param $duration Transition duration
+ * @param $timing-function Timing function
+ * @param $timing-function-hover Timing function on hover
+ * @param $delay Transition delay
  */
-@mixin hover-transition(
-  $property: 'background-color',
-  $duration: .3s,
-  $timing-function: 'ease-in',
-  $timing-function-hover: 'ease-out',
-  $delay: null
-) {
+@mixin hover-transition($property: 'background-color', $duration: .3s, $timing-function: 'ease-in', $timing-function-hover: 'ease-out', $delay: null) {
   transition-duration: #{$duration};
   transition-property: #{$property};
   transition-timing-function: #{$timing-function};

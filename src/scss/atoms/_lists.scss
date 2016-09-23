@@ -1,0 +1,97 @@
+$default-list-style-position: inside !default;
+
+/**
+ * Creates lists with custom list symbols, inserted as content in the before pseudo element.
+ *
+ * @mixin List
+ * @section Atom Mixins
+ *
+ * @param $selector The selector for the list to style, use a tag or class
+ * @param $list-style Set this to the relevant value to use a default list style, otherwise leave it as is, since it defaults to none.
+ * @param $list-style-position Only relevant if you set a list style, give it the valid list-style value.
+ * @param $has-custom-symbol Boolean, should a custom symbol be used?
+ * @param $custom-symbol What symbol is to be used? Defaults to the dash (-)
+ * @param $symbol-color Coloring of the symbol
+ * @param $list-indent how far the list items should be indented. Leave enough space for the symbol
+ * @param $list-spacing How much spacing is below the list?
+ * @param $nested-margin-factor By what factor do we multiply nested list's paddings?
+ * @param $nested-list-margin How far nested lists should be indented
+ * @param $pass-on-styles Should styles be passed on to nested lists?
+ *
+ * @example
+ *  @include list;
+ *  @include list($custom-symbol: '+');
+ */
+@mixin list($selector: '.list', $list-style: none, $list-style-position: $default-list-style-position, $has-custom-symbol: true, $custom-symbol: '–', $symbol-color: currentColor, $list-indent: rem-calc(4), $list-spacing: rem-calc(20), $nested-margin-factor: 1, $nested-list-margin: rem-calc(12), $pass-on-styles: false) {
+  #{$selector} {
+    margin-bottom: $list-spacing;
+
+    list-style: $list-style;
+
+    @if $list-style != none {
+      list-style-position: $list-style-position;
+    }
+
+    @if $has-custom-symbol {
+      $item-selector: if($pass-on-styles, 'li', '> li');
+
+      #{$item-selector} {
+        position: relative;
+        padding: $list-indent;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          color: $symbol-color;
+
+          content: $custom-symbol;
+        }
+
+        ul,
+        ol {
+          margin-left: $nested-margin-factor * $nested-list-margin;
+        }
+      }
+    }
+  }
+}
+
+ul,
+ol {
+  list-style-position: $default-list-style-position;
+}
+
+// our dash ul's should be prepended by the default setting
+/**
+ * @atom Dash List
+ * @section Lists
+ * @markup
+ *  <ul class="dash-list">
+ *    <li>@{lipsum:3:words}</li>
+ *    <li>@{lipsum:3:words}</li>
+ *    <li>@{lipsum:3:words}</li>
+ *    <li>@{lipsum:3:words}</li>
+ *  </ul>
+ */
+@include list(
+  $selector: '.dash-list'
+);
+
+/**
+ * @atom Plus List
+ * @section Lists
+ * @markup
+ *  <ul class="plus-list">
+ *    <li>@{lipsum:3:words}</li>
+ *    <li>@{lipsum:3:words}</li>
+ *    <li>@{lipsum:3:words}</li>
+ *    <li>@{lipsum:3:words}</li>
+ *  </ul>
+ */
+@include list(
+  $selector: '.plus-list',
+  $custom-symbol: '+',
+  $pass-on-styles: true
+);

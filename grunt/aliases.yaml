@@ -149,7 +149,6 @@ build:
 
 docs:
   - 'shell:styleguide'
-  - 'sassdoc'
   # - 'phantomcss'
 
 translations:

@@ -1,32 +1,9 @@
-////
-/// @author Raphael Hüni
-///
-/// @group General
-////
-
-// Layout
-//
-// This file defines the global layout options of the website. The values herein are to be understood symbolically since they are not really needed within a style/component library. Yet to make the whole structure easily portable and since components might depend on some of the variables they are included.
-//
-// Several Susy configuration variables like the main `$susy` map and the breakpoints are set up here. Also global elements such as a global border radius or vertical spacing variables can be set up here. Again make sure `!default` flags are set to enable themeability.
-//
-// Also look over the variables when you have finished the styling and remove everything that is not necessarily needed.
-//
-// Style guide: dependencies.layout
-//
-// Weight: 4
-
 $fonts-loaded-class: '.wl-fonts-loaded';
 
-/// This variable sets up the max container width that will be used in the Susy layout configuration
-/// @type Number
 $container-width: rem-calc(1200) !default;
-
-/// The number of columns in your layout (used by Susy)
-/// @type Number
 $layout-columns: 12 !default;
 
-// susy configuration
+// Susy Configuration
 $susy: (
   container: $container-width,
   gutter-position: after,
@@ -49,33 +26,12 @@ $susy: (
   )
 );
 
-// breakpoints
+// Breakpoints
+// These should only be used for global configuration. Usually you will want to define finer grained breakpoints on a per component basis to style these components to look their best, independent of device widths.
 $susy-media: (
-  xs: 20em,
-  sm: 45em,
-  md: 60em,
-  lg: 80em,
-  max-xs: max-width 19.9375em,
-  max-sm: max-width 44.9375em,
-  max-md: max-width 59.9375em,
-  xs-sm: 20em 44.9375em,
-  sm-md: 45em 59.9375em,
-  md-lg: 60em 79.9375em,
-  go-desktop: 895px,
-  max-mobile: max-width 894px,
-  font-desktop: 30em
+  md: 40em,
+  lg: 64em,
+  to-md: max-width 39.9375em,
+  to-lg: max-width 63.9375em,
+  md-lg: 40em 63.9375em
 );
-
-// global spacing and sizing variables
-$header-height: rem-calc(54) !default;
-$footer-height: rem-calc(54) !default;
-
-$base-bottom-margin: rem-calc(12) !default;
-$base-bottom-margin-desktop: rem-calc(24) !default;
-$base-container-padding: $base-bottom-margin-desktop / 2 !default;
-
-$vertical-spacing: gutter() !default;
-$vertical-spacing-lg: 2 * $vertical-spacing !default;
-$vertical-spacing-xl: 4 * $vertical-spacing !default;
-
-$border-radius: rem-calc(4) !default;

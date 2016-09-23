@@ -1,71 +1,39 @@
-////
-/// @group General
-/// @since 1.0.0
-/// @author Raphael Hüni
-////
-
-// Typography
-//
-// Sets the default styles for all text. Also the default typography variables are set in this file which means we now can find all things related to type in this file.
-//
-// Hint: it is strongly recommended to use unitless values for the lineheight since they translate well in inheritance instances as they are font size dependent.
-//
-// Markup: type.html
-//
-// Style guide: atoms.typography
-
-/// Font families for sans font types
-/// @type List
 $sans-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Oxygen-Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
-
 $sans-custom: 'Lato';
 
-/// Font families for serif font types
-/// @type List
 $serif: Georgia, Utopia, Palatino, 'Palatino Linotype', serif !default;
-
 $serif-custom: 'Roboto Slab';
 
-/// Font families for code font types
-/// @type List
 $code: Consolas, 'Courier New', Courier, monospace !default;
 
 $font-smoothing: antialiased !default;
 
-
-// type configuration
-// here comes the basic body text configuration
-
-/// Defines the default font family used for the body copy.
+// Defines the default font family used for the body copy.
 $body-copy-font-family-fallback: $sans-default !default;
 $body-copy-font-family: prepend($sans-default, $sans-custom) !default;
 
-/// Defines the default font size of the body copy.
+// Defines the default font size of the body copy.
 $body-copy-font-size: rem-calc(18) !default;
 
-/// Defines the default line height of the body copy.
+// Defines the default line height of the body copy.
 $body-copy-line-height: 1.35 !default;
 
-/// Default margin bottom applied to paragraphs (equal to the body font size by default)
-/// @type Number
-$paragraph-margin-bottom: $body-copy-font-size !default;
-
-// now come the headings
+// Headings
 $headings-font-color: $color-primary !default;
 $headings-font-family-fallback: $serif !default;
 $headings-font-family: prepend($serif, $serif-custom) !default;
 $headings-font-weight: bold !default;
 $headings-text-rendering: optimizeLegibility !default;
 
-$h1-font-size: 1.9 * $body-copy-font-size !default;
-$h2-font-size: 1.4 * $body-copy-font-size !default;
-$h3-font-size: 1.2 * $body-copy-font-size !default;
+$h1-font-size: 1.9em !default;
+$h2-font-size: 1.4em !default;
+$h3-font-size: 1.2em !default;
 
 $h1-max-mobile-font: rem-calc(24) !default;
 $h2-max-mobile-font: rem-calc(21) !default;
 $h3-max-mobile-font: rem-calc(18) !default;
 
-// anchors at last
+// Anchors
 $anchor-color-font: $color-primary !default;
 $anchor-color-font-hover: $anchor-color-font !default;
 $anchor-font-style: normal !default;
