@@ -156,7 +156,7 @@ module.exports = {
         },
       ],
     },
-    src: "<%= config.srcFolders.config %>kss/template/index.html",
-    dest: "<%= config.srcFolders.config %>kss/template/index.html",
+    src: "<%= config.srcFolders.config %>nucleus/common/layout.pug",
+    dest: "<%= config.srcFolders.config %>nucleus/common/layout.pug",
   },
 };

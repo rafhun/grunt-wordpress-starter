@@ -8,7 +8,7 @@ module.exports = {
   hashedJs: ["<%= destFolder %><%= config.buildFolders.js %>script.min.*.js"],
   html: ["<%= destFolder %>*.html"],
   images: ["<%= destFolder %><%= config.buildFolders.img %>"],
-  kssConfig: ["<%= config.srcFolders.config %><%= config.srcFolders.kssTemp %>"],
   minSvg: ["<%= config.srcFolders.iconsMin %>*.svg"],
+  nucleus: ["<%= config.srcFolders.config %>.nucleus/"],
   unhashed: ["<%= destFolder %>{style.min.css,script.min.js}"],
 };

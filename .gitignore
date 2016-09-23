@@ -64,8 +64,8 @@ vendor/
 src/languages/*.mo
 src/languages/*.po~
 
-# generated kss template
-src/config/.kss-dest
+# generated nucleus template
+src/config/.nucleus
 
 # visual test results screenshots
 tests/visual/results

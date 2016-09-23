@@ -9,6 +9,14 @@
 ///
 /// @author Nicolas Gallagher
 
+/**
+ * Apply the micro clearfix to an element
+ *
+ * @mixin
+ * @section Mixins
+ * @example
+ *  @include clearfix;
+ */
 @mixin clearfix {
   &::after {
     display: block;
@@ -20,6 +28,13 @@
 /// Applies all the styles needed to get a CSS ellipsis if the text overflows its container. Can only be used on single lines of text (therefore we set the white-space to nowrap). Mostly used for teasers and similar.
 ///
 /// @since 0.1.0
+/**
+ * Apply text overflow ellipsis and its necessary styles.
+ *@mixin
+ * @section Mixins
+ * @example
+ *  @include text-ellipsis;
+ */
 @mixin text-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -40,6 +55,20 @@
 ///
 /// @todo replace dependency on inline-block display method, since a hack is needed to fix alignment. What other possibilities for this layout exist?
 
+/**
+ * Put separator between any items this mixin is applied to (usually li's) by addingt content to the `::after` pseudo-element and positioning it with margins and paddings.
+ *@mixin
+ * @section Mixins
+ * @param $margins 6px by default, the margin between element and separator
+ * @param $separator-color Color of the text, defaults to `inherit`
+ * @param $separator The separator that is added, defaults to `|`
+ * @param $font-size How large the separator should be, defaults to `inherit`
+ * @param $inline-block-fix Boolean to decide whether the inline block fix needs to be applied, defaults to `true`
+ *
+ * @example
+ *  @include separator;
+ *  @include separator($separator: '+', $font-size: 1.25em);
+ */
 @mixin separator($margins: rem-calc(6), $separator-color: inherit, $separator: '|', $font-size: inherit, $inline-block-fix: true) {
   display: inline-block;
 
@@ -97,7 +126,23 @@
 ///
 /// @example scss - A triangle on the bottom edge of the parent, 220px from the left, pointing out, width a width of 60px and using a :before
 ///   @include triangle('bottom', 220px, 'out', 60px, 'before');
-
+/**
+ * Create a triangle, very configurable.
+ *@mixin
+ * @section Mixins
+ * @param $pos:           'left'        Which edge to create the triangle on (allowed are `'top'`, `'right'`, `'bottom'` or `'left'`.)
+ * @param $offset:        0             The offset from the origin (top or left) on the edge
+ * @param $center-offset: null          Adjust center for use with before of after pseudo-elements (negative or positive values allowed, negatives pull, posish further)
+ * @param $direction:     'out'         Direction of the triangle (`'in'` or `'out'`)
+ * @param $width:         1rem          Length of the triangle's base
+ * @param $height:        $width        Height of the triangle
+ * @param $color:         currentColor  Color of the triangle
+ * @param $type:          'after'       Type of the pseudo-element the triangle gets created with (`'before'` or `'after'`)
+ *
+ * @example
+ *  @include triangle('right', 50%);
+ *  @include triangle($direction: 'in');
+ */
 @mixin triangle(
   $pos: 'left',
   $offset: 0,
@@ -192,10 +237,18 @@
 ///
 /// @author Raphael Hüni
 ///
+/// @section Mixins
 /// @param {Boolean} $vertical [true]    - Should the child be centered vertically?
 /// @param {Boolean} $horizontal [true]  - Should the child be centered horizontally?
 ///
 /// @since 1.0.0
+/**
+ * Use flexbox to center an elements children
+ *@mixin
+ * @section Mixins
+ * @param $vertical:   true          [description]
+ * @param $horizontal: true          [description]
+ */
 @mixin flex-center-children($vertical: true, $horizontal: true) {
   display: flex;
   @if ($vertical) {
@@ -219,6 +272,16 @@
 /// @param {Number|List} $delay [null]
 ///
 /// @since 1.10.0
+/**
+ * Some cool hover transitions
+ *@mixin
+ * @section Mixins
+ * @param $property:              'background-color' [description]
+ * @param $duration:              .3s                [description]
+ * @param $timing-function:       'ease-in'          [description]
+ * @param $timing-function-hover: 'ease-out'         [description]
+ * @param $delay:                 null               [description]
+ */
 @mixin hover-transition(
   $property: 'background-color',
   $duration: .3s,

@@ -35,7 +35,6 @@ srcFolders:
   jsBuild: src/js/.build/
   jsMolecules: src/js/molecules/
   jsNoConcat: src/js/no-concat/
-  kssTemp: .kss-dest/
   languages: src/languages/
   php: src/php/
   scss: src/scss/

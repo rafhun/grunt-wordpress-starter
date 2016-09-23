@@ -23,7 +23,7 @@ module.exports = {
       "cssmin",
       "copy:functions",
       "hashres",
-      "kss",
+      "shell:styleguide",
     ],
   },
   styles: {
@@ -34,7 +34,7 @@ module.exports = {
       "uglify",
       "copy:functions",
       "hashres",
-      "kss",
+      "shell:styleguide",
     ],
   },
   images: {
@@ -45,14 +45,14 @@ module.exports = {
     files: ["<%= config.srcFolders.icons %>*.svg"],
     tasks: [
       "clean:hashedIcons",
-      "clean:kssConfig",
+      "clean:nucleus",
       "svgmin",
       "grunticon",
       "copy:header",
       "copy:icons",
-      "copy:kssConfig",
+      "copy:nucleus",
       "hashres",
-      "kss",
+      "shell:styleguide",
     ],
   },
   languages: {
@@ -70,35 +70,28 @@ module.exports = {
       "cssmin",
       "uglify",
       "hashres",
-      "kss",
+      "shell:styleguide",
     ],
   },
   phpHeader: {
     files: ["<%= config.srcFolders.php %>header.php"],
     tasks: [
       "clean:hashedIcons",
-      "clean:kssConfig",
+      "clean:nucleus",
       "copy:header",
       "copy:icons",
-      "copy:kssConfig",
+      "copy:nucleus",
       "hashres",
-      "kss",
+      "shell:styleguide",
     ],
   },
-  kss: {
-    files: [
-      "<%= config.srcFolders.scss %>readme.md",
-      "<%= config.srcFolders.scss %>**/*.{html,hbs}",
-    ],
-    tasks: ["kss"],
-  },
-  kssConfig: {
-    files: ["<%= config.srcFolders.config %>kss/template/**"],
+  nucleus: {
+    files: ["<%= config.srcFolders.config %>nucleus/**"],
     tasks: [
-      "clean:kssConfig",
-      "copy:kssConfig",
+      "clean:nucleus",
+      "copy:nucleus",
       "hashres",
-      "kss",
+      "shell:styleguide",
     ],
   },
   composer: {
