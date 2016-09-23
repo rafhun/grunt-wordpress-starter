@@ -1,34 +1,18 @@
 // the main manifest file that imports all necessary ressources
 
-/// Some of our styling might have to be different for the CMS editor in order for everything to be visible in there (especially for content components like accordions, …). This variable can be set to true to change the behavior of those components
-/// @type Boolean
+// generate editor styles or not?
 $_editor-styles: false;
 
 // import susy
 @import 'susy/sass/susy';
 
 // Dependencies
-//
-// This section will not produce any code but just set up the projects settings and provide some basic global functionality through mixins and functions
-//
-// Style guide: dependencies
-//
-// Weight: 1
-//
 @import 'dependencies/functions';
 @import 'dependencies/color';
 @import 'dependencies/layout';
 @import 'dependencies/mixins';
 
 // Atoms
-//
-// We want to load the font face definitions before everything else, maybe we should even consider adding it right before normalize as kind of a vendor sheet.
-//
-// For everything else we consider the scope of the styles contained, from wide to narrow.
-//
-// Style guide: atoms
-//
-// Weight: 2
 @import 'atoms/webfonts';
 
 // import normalize.css by Nicolas Gallagher for a smart 'reset'
@@ -38,40 +22,15 @@ $_editor-styles: false;
 @import 'atoms/typography'; // all typography and text styles
 @import 'atoms/media'; // above all responsive images
 
-@import 'atoms/manifest';
+@import 'accessibility';
+@import 'alignments';
+@import 'code';
+@import 'forms';
+@import 'lists';
+@import 'tables';
 
 // Molecules
-//
-// Molecules are the smallest ui components we define. They usually just add styling to one element respectively. Since there are several files to import from subfolders we use a manifest file for molecules to keep the main stylesheet clean.
-//
-// Style guide: molecules
-//
-// Weight: 3
-@import 'molecules/manifest';
 
 // Organisms
-//
-// Organisms are built from several molecules and make larger parts of the page often already containing some layout decisions.
-//
-// Style guide: organisms
-//
-// Weight: 4
-@import 'organisms/manifest';
 
-// Templates
-//
-// Templates bring organisms together into a context.
-//
-// Style guide: templates
-//
-// Weight: 5
-@import 'templates/manifest';
-
-// Pages
-//
-// Whole page previews. Next to no styles will be applied here, this mainly serves as master preview for the finished pages.
-//
-// Style guide: pages
-//
-// Weight: 6
-@import 'pages/manifest';
+// Utilities

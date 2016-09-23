@@ -3,6 +3,7 @@ figure {
 }
 
 // make images responsive -> expand to their container but max 100%
+// Also remove gap below images if inserted as inline-block elements
 img {
   max-width: 100%;
   height: auto;
@@ -10,6 +11,7 @@ img {
   vertical-align: middle;
 }
 
+// helps with some older IE versions
 svg {
   max-width: 100%;
   max-height: 100%;
