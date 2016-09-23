@@ -86,6 +86,13 @@ body {
   }
 }
 
+/**
+ * @atom Base Paragraph Style
+ * @section Typography > Base Styles
+ * @markup
+ *  <p>@{lipsum:2:paragraphs}</p>
+ *  <p>@{lipsum:3:paragraphs}</p>
+ */
 p {
   margin-bottom: 1em;
 
@@ -111,6 +118,13 @@ p {
   }
 }
 
+/**
+ * @atom Heading 1
+ * @section Typography > Headings
+ * @markup
+ *  <h1>@{lipsum:2:words}</h1>
+ *  <span class="h1">@{lipsum:5:words}</span>
+ */
 h1,
 .h1 {
   @extend %heading-base;
@@ -123,6 +137,13 @@ h1,
   }
 }
 
+/**
+ * @atom Heading 2
+ * @section Typography > Headings
+ * @markup
+ *  <h2>@{lipsum:2:words}</h2>
+ *  <span class="h2">@{lipsum:5:words}</span>
+ */
 h2,
 .h2 {
   @extend %heading-base;
@@ -148,6 +169,12 @@ h3,
 }
 
 // anchors
+/**
+ * @atom Anchors
+ * @section Typography > Base Styles
+ * @markup
+ *  <a href="#0">@{lipsum:2:words}</a>
+ */
 a {
   color: $anchor-color-font;
   font-style: $anchor-font-style;

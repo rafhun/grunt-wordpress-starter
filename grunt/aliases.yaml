@@ -105,12 +105,12 @@ fileMgm:
   - 'clean:dest'
   - 'clean:minSvg'
   - 'clean:favicon'
-  - 'clean:kssConfig'
+  - 'clean:nucleus'
   - 'copy:editorStyles'
   - 'copy:fonts'
   - 'copy:customPlugins'
   - 'copy:customThemes'
-  - 'copy:kssConfig'
+  - 'copy:nucleus'
 
 scripts:
   - 'eslint'
@@ -148,7 +148,7 @@ build:
   - 'docs'
 
 docs:
-  - 'kss'
+  - 'shell:styleguide'
   - 'sassdoc'
   # - 'phantomcss'
 

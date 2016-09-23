@@ -13,22 +13,57 @@
 
 
 // colors (no defaults here, as variable name describes color)
+/**
+ * The primary color used in this theme
+ *
+ * @color
+ * @section Colors
+ */
 $golden-bell: #EB8714;
+
+/**
+ * The theme's secondary color
+ *
+ * @color
+ * @section Colors
+ */
 $coffee: #73695A;
 
 // greys
+/**
+ * Main font color
+ *
+ * @color
+ * @section Colors
+ */
 $dove-grey: #6F6F6F;
+
+/**
+ * Secondary font color
+ *
+ * @color
+ * @section Colors
+ */
 $mercury: #E5E5E5;
+
 $seashell: #F1F1F1;
+
+/** @color Solid white */
 $white: #FFF;
+
+/** @color  Solid black */
 $black: #000;
 
+/** @color Darken slightly */
 $darken: rgba(0, 0, 0, .1);
+
+/** @color Lighten slightly */
 $lighten: rgba(255, 255, 255, .1);
 
 // stylesheet variables
 /// Defines the primary color of the design
 /// @type Color
+
 $color-primary: $golden-bell !default;
 /// Defines a possible secondary color of the design, set to `$primary-color` if no secondary one is used.
 /// @type Color

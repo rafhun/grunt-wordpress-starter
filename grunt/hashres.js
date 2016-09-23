@@ -15,7 +15,7 @@ module.exports = {
     dest: [
       "<%=destFolder %>functions.php",
       "<%= destFolder %>header.php",
-      "<%= config.srcFolders.config %><%= config.srcFolders.kssTemp %>/template/index.html",
+      "<%= config.srcFolders.config %>.nucleus/common/layout.pug",
       "<%= destFolder %>inc/editor.php",
     ],
   },

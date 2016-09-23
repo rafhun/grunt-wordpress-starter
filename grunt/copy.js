@@ -49,16 +49,6 @@ module.exports = {
       dest: "<%= destFolder %><%= config.buildFolders.icons %>",
     }],
   },
-  kssConfig: {
-    files: [
-      {
-        expand: true,
-        cwd: "<%= config.srcFolders.config %>kss",
-        src: ["**"],
-        dest: "<%= config.srcFolders.config %><%= config.srcFolders.kssTemp %>",
-      },
-    ],
-  },
   languages: {
     files: [{
       expand: true,
@@ -66,6 +56,16 @@ module.exports = {
       src: ["**"],
       dest: "<%= destFolder %><%= config.buildFolders.languages %>",
     }],
+  },
+  nucleus: {
+    files: [
+      {
+        expand: true,
+        cwd: "<%= config.srcFolders.config %>nucleus/",
+        src: ["**"],
+        dest: "<%= config.srcFolders.config %>.nucleus/",
+      },
+    ],
   },
   php: {
     files: [
