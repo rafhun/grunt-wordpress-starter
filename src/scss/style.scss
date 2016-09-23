@@ -22,15 +22,18 @@ $_editor-styles: false;
 @import 'atoms/typography'; // all typography and text styles
 @import 'atoms/media'; // above all responsive images
 
-@import 'accessibility';
-@import 'alignments';
-@import 'code';
-@import 'forms';
-@import 'lists';
-@import 'tables';
+@import 'atoms/accessibility';
+@import 'atoms/alignments';
+@import 'atoms/code';
+@import 'atoms/forms';
+@import 'atoms/lists';
+@import 'atoms/tables';
 
 // Molecules
+// @import 'molecules/';
 
 // Organisms
+// @import 'organisms/';
 
 // Utilities
+// @import 'utilities/';
