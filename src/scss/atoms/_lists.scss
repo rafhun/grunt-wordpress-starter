@@ -22,7 +22,7 @@ $default-list-style-position: inside !default;
  *  @include list;
  *  @include list($custom-symbol: '+');
  */
-@mixin list($selector: '.list', $list-style: none, $list-style-position: $default-list-style-position, $has-custom-symbol: true, $custom-symbol: '–', $symbol-color: currentColor, $list-indent: rem-calc(4), $list-spacing: rem-calc(20), $nested-margin-factor: 1, $nested-list-margin: rem-calc(12), $pass-on-styles: false) {
+@mixin list($selector: '.list', $list-style: none, $list-style-position: $default-list-style-position, $has-custom-symbol: true, $custom-symbol: '–', $symbol-color: currentColor, $list-indent: 1.25em, $list-spacing: rem-calc(20), $nested-margin-factor: 1, $nested-list-margin: rem-calc(12), $pass-on-styles: false) {
   #{$selector} {
     margin-bottom: $list-spacing;
 
@@ -37,7 +37,7 @@ $default-list-style-position: inside !default;
 
       #{$item-selector} {
         position: relative;
-        padding: $list-indent;
+        padding-left: $list-indent;
 
         &::before {
           position: absolute;
