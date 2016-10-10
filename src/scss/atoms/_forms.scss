@@ -1,0 +1,9 @@
+// correctly inherit font properties for form elements
+// overrides a Normalize.css specification that does not play nicely with how typography is defined in our projects
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
