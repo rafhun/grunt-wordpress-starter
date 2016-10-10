@@ -70,12 +70,13 @@ $darken: rgba(0, 0, 0, .1);
 $lighten: rgba(255, 255, 255, .1);
 
 
-$color-primary: $golden-bell !default;
-$color-secondary: $coffee !default;
+$color-primary: $golden-bell;
+$color-secondary: $coffee;
 
-$color-text: $dove-grey !default;
-$color-text-secondary: $mercury !default;
+$color-text: $dove-grey;
+$color-text-secondary: $mercury;
 
-$color-background-secondary: $mercury !default;
+$color-background: $white;
+$color-background-secondary: $mercury;
 
-$color-lines: $darken !default;
+$color-lines: $darken;
