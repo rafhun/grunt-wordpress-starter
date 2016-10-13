@@ -1,3 +1,16 @@
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.0.1...v2.0.2) (2016-10-13)
+
+
+### Bug Fixes
+
+* **nucleus:** add user scripts.js to template([eb8f970](https://github.com/rafhun/grunt-wordpress-starter/commit/eb8f970))
+* **nucleus:** use themeName placeholder in styleguide link([3c9e529](https://github.com/rafhun/grunt-wordpress-starter/commit/3c9e529))
+* **scss:** add missing default color variable([92ace28](https://github.com/rafhun/grunt-wordpress-starter/commit/92ace28))
+* **scss:** reset normalized font styles for input elements([ca7f212](https://github.com/rafhun/grunt-wordpress-starter/commit/ca7f212))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.0.0...v2.0.1) (2016-09-30)
 
