@@ -76,3 +76,6 @@ tests/visual/results
 
 # eslint cache file
 .eslintcache
+
+# persistant storage of your local db
+.db

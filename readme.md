@@ -25,7 +25,29 @@ Also make note of the bash completion package they offer.
 ### CMS / Server
 Wordpress requires PHP and a MySQL database on your server. However if you are only concerned about styling and do not need to work on the CMS itself you can do that as the generated styleguide is a simple static site that you can access directly.
 
-If you are running on Mac OS X there are many great tutorials about setting up a development environment, [this one](http://codepen.io/rafhun/blog/setting-up-a-devenv-on-a-mac) is recommended and reflected in the default config.
+This repo comes with a Docker configuration that provides you with the necessary server environment. Make sure that you have Docker installed on your machine ([instruction here](https://www.docker.com/products/overview)). You can find the default configuration in the `docker-compose.yml` file (inlcuding the mapped ports, volumes and MySQL credentials).
+
+By default we are mapping port 80 of the container to port 8080 of the host. If this port is already occupied on the host you will get an error when spinning up the container and will need to adjust this number as well as other references to it.
+
+The `secrets-template.json` file already contains the necessary credentials for connecting to the Docker database. However if you adjust the `docker-compose.yml` file, make sure to also change your `secrets.json` file.
+
+Start up the server by running
+
+```shell
+docker-compose up -d
+```
+
+This starts up the containers in the background. To confirm that everything is running, use the command `docker ps` which will show you all active containers. If you get an error when starting up, read the error message and make sure the port you are mapping to is not already in use.
+
+Once you are finished with working on this project remember to shut down the containers, since you can only map one container at a time to port 8080. This is done by running
+
+```shell
+docker-compose down
+```
+
+The MySQL data is mapped to your local machine, so you will not lose any data when shutting down the container.
+
+If you do not want or cannot run Docker and are running on Mac OS X there are many great tutorials about setting up a development environment, [this one](http://codepen.io/rafhun/blog/setting-up-a-devenv-on-a-mac) is recommended.
 
 ## Initialize a New Project
 

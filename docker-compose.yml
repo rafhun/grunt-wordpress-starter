@@ -1,0 +1,27 @@
+version: '2'
+services:
+  php:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./wwwroot:/var/www/html
+    networks:
+      - werbelinie
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: secret
+    volumes:
+      - ./.db:/var/lib/mysql
+    networks:
+      - werbelinie
+networks:
+  werbelinie:
+    driver: "bridge"
+volumes:
+  data:
+    driver: "local"

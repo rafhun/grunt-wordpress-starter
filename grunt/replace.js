@@ -117,6 +117,10 @@ module.exports = {
           match: "acfProKey",
           replacement: "<%= secrets.acfProKey %>",
         },
+        {
+          match: "themeName",
+          replacement: "<%= config.themeName %>",
+        },
       ],
     },
     src: "composer.json",
