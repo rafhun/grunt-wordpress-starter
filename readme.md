@@ -3,16 +3,16 @@ Version: 2.0.2
 # Compatibility
 Tested up to and used with **Node v5.11** (not yet compatible with Node v6.0). Also fully compatible with **Grunt v1.0**. The project contains an NVM configuration file, should you use that, to manage your Node versions. This will usually be updated to reflect the latest compatible version the starter can be used with. Run `nvm use` to load the version referenced in the `.nvmrc` file.
 
-# Grunt Wordpress Starter
+# Grunt WordPress Starter
 
-This framework's goal is to ease Wordpress theme development by making it available with some useful automation. It comes with preconfigured and easily adaptable Grunt tasks that make the most important development steps easier for you. The framework only needs a Node.js installation to work properly and includes tasks for Sass compiling, Javascript linting, concatenation and uglification but also for image optimization, icon creation as well as more administrative tasks such as an automated version bump and changelog generation. Also if you are working with a production and/or staging environment with SSH access you can easily deploy your builds through rsync.
+This framework's goal is to ease WordPress theme development by making it available with some useful automation. It comes with preconfigured and easily adaptable Grunt tasks that make the most important development steps easier for you. The framework only needs a Node.js installation to work properly and includes tasks for Sass compiling, Javascript linting, concatenation and uglification but also for image optimization, icon creation as well as more administrative tasks such as an automated version bump and changelog generation. Also if you are working with a production and/or staging environment with SSH access you can easily deploy your builds through rsync.
 
 Some additional documentation about the different tasks can be found in the [docs](https://github.com/rafhun/grunt-wordpress-starter/tree/master/docs) folder.
 
 ## Prerequisites
 
 ### Framework
-As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the Wordpress setup process require `wget` or `curl`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell (that can execute `.sh` scripts) and also that you track your progress with git.
+As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the WordPress setup process require `wget` or `curl`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell (that can execute `.sh` scripts) and also that you track your progress with git.
 
 For ease of use and some custom functionality it is recommended that you install the [WP-CLI](http://wp-cli.org/). Install via Homebrew or see the instructions on the website:
 
@@ -23,7 +23,7 @@ brew install homebrew/php/wp-cli
 Also make note of the bash completion package they offer.
 
 ### CMS / Server
-Wordpress requires PHP and a MySQL database on your server. However if you are only concerned about styling and do not need to work on the CMS itself you can do that as the generated styleguide is a simple static site that you can access directly.
+WordPress requires PHP and a MySQL database on your server. However if you are only concerned about styling and do not need to work on the CMS itself you can do that as the generated styleguide is a simple static site that you can access directly.
 
 This repo comes with a Docker configuration that provides you with the necessary server environment. Make sure that you have Docker installed on your machine ([instruction here](https://www.docker.com/products/overview)). You can find the default configuration in the `docker-compose.yml` file (inlcuding the mapped ports, volumes and MySQL credentials).
 
@@ -71,7 +71,7 @@ After the installation it is recommended to set up your database and add the cre
 ### Secrets
 All configuration data for your `wp-config.php` file should be put into the `secrets.json` file. This is ignored by Git by default to make sure you do not end up posting sensitive access data to your online repo. The basic boilerplate allows for the configuration of three different environments (local, staging, production), however this can easily be extended by adjusting the corresponding grunt tasks (esp. `grunt/replace.js`, `grunt/ftp_push.js` and `grunt/rsync.js`). Within this file you also have the opportunity to configure your SSH or FTP access for remote servers.
 
-### Wordpress
+### WordPress
 You are now ready to start developing your theme. Just run
 
 ```
@@ -90,7 +90,7 @@ To change your theme's name change `themeName` in `Gruntconfig.yml`. This automa
 Requirements on your machine or virtual development environment:
 
 * Node
-* wget or curl (if you want to use the automatic Wordpress key generator)
+* wget or curl (if you want to use the automatic WordPress key generator)
 * Composer
 
 If you are working on OS X the use of Homebrew is strongly recommended. Follow [these instructions](http://brew.sh).
