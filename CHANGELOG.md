@@ -1,3 +1,13 @@
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.0.2...v2.1.0) (2016-10-17)
+
+
+### Features
+
+* add development server environment with Docker([3f2ce61](https://github.com/rafhun/grunt-wordpress-starter/commit/3f2ce61))
+
+
+
 <a name="2.0.2"></a>
 ## [2.0.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.0.1...v2.0.2) (2016-10-13)
 
