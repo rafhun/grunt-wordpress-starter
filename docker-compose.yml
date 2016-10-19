@@ -22,6 +22,3 @@ services:
 networks:
   werbelinie:
     driver: "bridge"
-volumes:
-  data:
-    driver: "local"
