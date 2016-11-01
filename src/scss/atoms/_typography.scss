@@ -75,9 +75,7 @@ p {
 /// This placeholder contains all base styles for the headings. Any heading we define from here on out can extend this placeholder.
 %heading-base {
   color: $headings-font-color;
-  @if $headings-font-family-fallback != $body-copy-font-family-fallback {
-    font-family: $headings-font-family-fallback;
-  }
+  font-family: $headings-font-family-fallback;
   font-weight: $headings-font-weight;
   text-rendering: $headings-text-rendering;
 
