@@ -13,7 +13,8 @@ $body-copy-font-family-fallback: $sans-default !default;
 $body-copy-font-family: prepend($sans-default, $sans-custom) !default;
 
 // Defines the default font size of the body copy.
-$body-copy-font-size: rem-calc(18) !default;
+$body-copy-font-size-min: rem-calc(16) !default;
+$body-copy-font-size-max: rem-calc(18) !default;
 
 // Defines the default line height of the body copy.
 $body-copy-line-height: 1.35 !default;
@@ -42,9 +43,10 @@ $anchor-text-decoration-hover: underline !default;
 
 // basic font styles for body
 body {
+  // fluid typography
+  @include fluid-type('font-size', 25em, 50em, $body-copy-font-size-min, $body-copy-font-size-max);
   color: $color-text;
   font-family: $body-copy-font-family-fallback;
-  font-size: $body-copy-font-size;
   line-height: $body-copy-line-height;
 
   #{$fonts-loaded-class} & {

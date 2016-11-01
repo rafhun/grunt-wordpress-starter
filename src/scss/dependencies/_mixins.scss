@@ -217,3 +217,34 @@
     }
   }
 }
+
+/**
+ * Fluid typography. Go from your mobile font size to the desktop font size fluidly. Let it grow by the power of viewport units.
+ * @mixin
+ * @section Mixins
+ * @param $properties All properties you want to assign these values to
+ * @param $min-vw     The min-width for fluid type (scale from screens above this width)
+ * @param $max-vw     The max-width for fluid type (stop growing when this width is reached)
+ * @param $min-value  The minimum value assinged
+ * @param $max-value  The maximum value assigned
+ */
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  @each $property in $properties {
+    // set the base minimum value
+    #{$property}: $min-value;
+  }
+
+  @media screen and (min-width: $min-vw) {
+    // here we are fluid
+    @each $property in $properties {
+      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+    }
+  }
+
+  @media screen and (min-width: $max-vw) {
+    // fixed max value here
+    @each $property in $properties {
+      #{$property}: $max-value;
+    }
+  }
+}
