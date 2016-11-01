@@ -1,3 +1,19 @@
+<a name="2.1.1"></a>
+## [2.1.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.1.0...v2.1.1) (2016-11-01)
+
+
+### Bug Fixes
+
+* **docker:** remove volume configuration([9958a97](https://github.com/rafhun/grunt-wordpress-starter/commit/9958a97))
+* **grunt:** exclude wp readme files from upload([0b24505](https://github.com/rafhun/grunt-wordpress-starter/commit/0b24505))
+
+
+### Features
+
+* **scss:** add fluid responsive type([0797ced](https://github.com/rafhun/grunt-wordpress-starter/commit/0797ced))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.0.2...v2.1.0) (2016-10-17)
 
