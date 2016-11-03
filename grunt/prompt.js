@@ -9,6 +9,12 @@ module.exports = {
           default: "werbelinie",
         },
         {
+          config: "prompt.dockerName",
+          type: "input",
+          message: "Docker Name (just one word, no spaces, dashes, underscores etc allowed): ",
+          default: "werbelinie",
+        },
+        {
           config: "prompt.rootFolder",
           type: "input",
           message: "Root Folder: ",

@@ -134,6 +134,10 @@ module.exports = {
           replacement: '<%= grunt.config( "prompt.themeName" ) %>',
         },
         {
+          match: "dockerNamePlaceholder",
+          replacement: '<%= grunt.config( "prompt.dockerName" ) %>',
+        },
+        {
           match: "wwwroot/",
           replacement: '<%= grunt.config( "prompt.rootFolder" ) %>',
         },

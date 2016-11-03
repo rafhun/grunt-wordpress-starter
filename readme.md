@@ -34,10 +34,10 @@ The `secrets-template.json` file already contains the necessary credentials for 
 Start up the server by running
 
 ```shell
-docker-compose up -d
+grunt shell:up
 ```
 
-This starts up the containers in the background. To confirm that everything is running, use the command `docker ps` which will show you all active containers. If you get an error when starting up, read the error message and make sure the port you are mapping to is not already in use.
+This names the containers appropriately and starts them up in the background (naming is important for the version check tasks to run and will allow us to run WP CLI inside of the Docker container). To confirm that everything is running, use the command `docker ps` which will show you all active containers. If you get an error when starting up, read the error message and make sure the port you are mapping to is not already in use.
 
 Once you are finished with working on this project remember to shut down the containers, since you can only map one container at a time to port 8080. This is done by running
 

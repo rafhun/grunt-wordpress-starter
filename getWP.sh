@@ -1,9 +1,9 @@
 #!/bin/bash
-if wp core download --version=$2 --locale=$3 ; then
+if docker exec -i $4_php_1 wp core download --version=$2 --locale=$3 --allow-root ; then
   echo "Installed version $2 through WP CLI with language $3"
-elif wp core download --version=$2 ; then
+elif docker exec -i $4_php_1 wp core download --version=$2 --allow-root ; then
   echo "Installed version $2 through WP CLI."
-elif wp core download ; then
+elif docker exec -i $4_php_1 wp core download --allow-root ; then
   echo "Installed latest version through WP CLI. Please update your Gruntconfig with the necessary values (version and language code)."
 else
   if [[ $(type -t wget) ]]; then wget https://wordpress.org/latest.tar.gz && tar zxvf latest.tar.gz
