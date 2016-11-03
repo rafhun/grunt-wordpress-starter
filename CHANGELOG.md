@@ -1,3 +1,18 @@
+<a name="2.1.2"></a>
+## [2.1.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.1.1...v2.1.2) (2016-11-03)
+
+
+### Bug Fixes
+
+* **scss:** remove wrong if check on heading base font family([a1e1639](https://github.com/rafhun/grunt-wordpress-starter/commit/a1e1639))
+
+
+### Features
+
+* **Docker:** use our own image from Docker([140832f](https://github.com/rafhun/grunt-wordpress-starter/commit/140832f))
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.1.0...v2.1.1) (2016-11-01)
 
