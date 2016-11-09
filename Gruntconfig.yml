@@ -1,6 +1,6 @@
 themeName: themeNamePlaceholder
 dockerName: themeNamePlaceholder
-devUrl: http://grunt-wordpress-starter.dev/
+devUrl: http://localhost:8080/
 dbDump: db/
 rootFolder: wwwroot/
 
