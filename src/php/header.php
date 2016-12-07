@@ -23,12 +23,12 @@
 
 
     grunticon([
-      "<?php echo get_template_directory_uri();?>/icons/icons.data.svg.css",
-      "<?php echo get_template_directory_uri();?>/icons/icons.data.png.css",
-      "<?php echo get_template_directory_uri();?>/icons/icons.fallback.css"],
+      "<?php echo get_theme_file_uri();?>/icons/icons.data.svg.css",
+      "<?php echo get_theme_file_uri();?>/icons/icons.data.png.css",
+      "<?php echo get_theme_file_uri();?>/icons/icons.fallback.css"],
     grunticon.svgLoadedCallback );
   </script>
-  <noscript><link href="<?php echo get_template_directory_uri(); ?>/icons/icons.fallback.css" rel="stylesheet"></noscript>
+  <noscript><link href="<?php echo get_theme_file_uri(); ?>/icons/icons.fallback.css" rel="stylesheet"></noscript>
 
   <?php wp_head(); ?>
 

@@ -2,6 +2,9 @@
 /**
  * werbelinie functions and definitions
  *
+ * get_theme_file_uri() and get_theme_file_path are introduced in WordPress 4.7 and replace get_template_directory_uri() and get_template_directory() respectively. If you want to make sure that even if a child theme to this one is defined, the parent theme file is referenced use get_parent_theme_file_uri() and get_parent_theme_file_path() respectively.
+ *
+ *
  * @package grunt-wordpress-starter
  */
 
@@ -28,7 +31,7 @@ function werbelinie_setup() {
    * If you're building a theme based on werbelinie, use a find and replace
    * to change 'themeName' to the name of your theme in all the template files
    */
-  load_theme_textdomain( 'themeName', get_template_directory() . '/languages' );
+  load_theme_textdomain( 'themeName', get_theme_file_path() . '/languages' );
 
   // Add default posts and comments RSS feed links to head.
   add_theme_support( 'automatic-feed-links' );
@@ -120,9 +123,9 @@ add_action( 'widgets_init', 'werbelinie_widgets_init' );
  * Enqueue scripts and styles.
  */
 function werbelinie_scripts() {
-  wp_enqueue_style( 'werbelinie-style', get_template_directory_uri() . '/style.min.css', array(), null );
+  wp_enqueue_style( 'werbelinie-style', get_theme_file_uri() . '/style.min.css', array(), null );
 
-  wp_enqueue_script( 'werbelinie-script', get_template_directory_uri() . '/js/script.min.js', array(), null, true);
+  wp_enqueue_script( 'werbelinie-script', get_theme_file_uri() . '/js/script.min.js', array(), null, true);
 
   // with this you can add translatable strings to your JS
   /*
@@ -153,34 +156,34 @@ add_action( 'wp_enqueue_scripts', 'werbelinie_scripts' );
 /**
  * Load Custom Editor Functionality (custom stylesheets and style select)
  */
-require get_template_directory() . '/inc/editor.php';
+require get_theme_file_path() . '/inc/editor.php';
 
 /**
  * Template Tags (to be used within the loop)
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_theme_file_path() . '/inc/template-tags.php';
 
 /**
  * Load Custom Off Canvas Walker Function
  */
-// require get_template_directory() . '/inc/off-canvas-walker.php';
+// require get_theme_file_path() . '/inc/off-canvas-walker.php';
 
 /**
  * Load Custom One Pager Walker Function
  */
-// require get_template_directory() . '/inc/one-pager-nav-walker.php';
+// require get_theme_file_path() . '/inc/one-pager-nav-walker.php';
 
 /**
  * Load some essential helper functions
  */
-// require get_template_directory() . '/inc/helpers.php';
+// require get_theme_file_path() . '/inc/helpers.php';
 
 /**
  * Load custom gallery shortcode output
  */
-// require get_template_directory() . '/inc/custom-gallery.php';
+// require get_theme_file_path() . '/inc/custom-gallery.php';
 
 /**
  * Custom Font Loader
  */
-require get_template_directory() . '/inc/font-loader.php';
+require get_theme_file_path() . '/inc/font-loader.php';
