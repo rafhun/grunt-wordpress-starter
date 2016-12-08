@@ -1,3 +1,18 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.1.3...v2.2.0) (2016-12-08)
+
+
+### Bug Fixes
+
+* **grunt:** correctly set devUrl in config for docker([5d3d583](https://github.com/rafhun/grunt-wordpress-starter/commit/5d3d583))
+
+
+### Features
+
+* **php:** use new file uri/path functions available in 4.7([87b5351](https://github.com/rafhun/grunt-wordpress-starter/commit/87b5351))
+
+
+
 <a name="2.1.3"></a>
 ## [2.1.3](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.1.2...v2.1.3) (2016-11-03)
 
