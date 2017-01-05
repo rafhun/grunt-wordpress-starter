@@ -1,3 +1,13 @@
+<a name="2.2.1"></a>
+## [2.2.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.2.0...v2.2.1) (2017-01-05)
+
+
+### Bug Fixes
+
+* ignore mo files of wl plugins([5e6e2db](https://github.com/rafhun/grunt-wordpress-starter/commit/5e6e2db))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.1.3...v2.2.0) (2016-12-08)
 
