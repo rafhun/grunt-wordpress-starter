@@ -10,7 +10,7 @@ $font-smoothing: antialiased !default;
 
 // Defines the default font family used for the body copy.
 $body-copy-font-family-fallback: $sans-default !default;
-$body-copy-font-family: prepend($sans-default, $sans-custom) !default;
+$body-copy-font-family: $sans-custom !default;
 
 // Defines the default font size of the body copy.
 $body-copy-font-size-min: rem-calc(16) !default;
@@ -22,7 +22,7 @@ $body-copy-line-height: 1.35 !default;
 // Headings
 $headings-font-color: $color-primary !default;
 $headings-font-family-fallback: $serif !default;
-$headings-font-family: prepend($serif, $serif-custom) !default;
+$headings-font-family: $serif-custom !default;
 $headings-font-weight: bold !default;
 
 $h1-font-size: 1.9em !default;

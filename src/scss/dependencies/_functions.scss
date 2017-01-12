@@ -21,7 +21,3 @@ $rem-base: 16px !default;
   }
   @return $rem-values;
 }
-
-@function prepend($list, $value) {
-  @return join($value, $list);
-}
