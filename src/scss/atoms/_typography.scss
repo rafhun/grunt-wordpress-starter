@@ -46,6 +46,9 @@ body {
   @include fluid-type('font-size', 25em, 50em, $body-copy-font-size-min, $body-copy-font-size-max);
   color: $color-text;
   font-family: $body-copy-font-family-fallback;
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+  -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+  letter-spacing: .02em;
   line-height: $body-copy-line-height;
 
   #{$fonts-loaded-class} & {
