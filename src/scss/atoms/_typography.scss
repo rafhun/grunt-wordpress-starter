@@ -8,6 +8,10 @@ $code: Consolas, 'Courier New', Courier, monospace !default;
 
 $font-smoothing: antialiased !default;
 
+// define the font breakpoints
+$min-font-width: 25em;
+$max-font-width: 50em;
+
 // Defines the default font family used for the body copy.
 $body-copy-font-family-fallback: $sans-default !default;
 $body-copy-font-family: $sans-custom !default;
@@ -25,13 +29,14 @@ $headings-font-family-fallback: $serif !default;
 $headings-font-family: $serif-custom !default;
 $headings-font-weight: bold !default;
 
-$h1-font-size: 1.9em !default;
-$h2-font-size: 1.4em !default;
-$h3-font-size: 1.2em !default;
+// work with these fonts and the mixin or even easier work with em's which means you can leave out the mixin, however this will depend on the design
+$h1-font-size-min: rem-calc(30) !default;
+$h2-font-size-min: rem-calc(25) !default;
+$h3-font-size-min: rem-calc(20) !default;
 
-$h1-max-mobile-font: rem-calc(24) !default;
-$h2-max-mobile-font: rem-calc(21) !default;
-$h3-max-mobile-font: rem-calc(18) !default;
+$h1-font-size-max: rem-calc(36) !default;
+$h2-font-size-max: rem-calc(30) !default;
+$h3-font-size-max: rem-calc(25) !default;
 
 // Anchors
 $anchor-color-font: $color-primary !default;
@@ -43,7 +48,7 @@ $anchor-text-decoration-hover: underline !default;
 // basic font styles for body
 body {
   // fluid typography
-  @include fluid-type('font-size', 25em, 50em, $body-copy-font-size-min, $body-copy-font-size-max);
+  @include fluid-type('font-size', $min-font-width, $max-font-width, $body-copy-font-size-min, $body-copy-font-size-max);
   color: $color-text;
   font-family: $body-copy-font-family-fallback;
   -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
@@ -97,13 +102,7 @@ p {
 h1,
 .h1 {
   @extend %heading-base;
-  font-size: $h1-max-mobile-font;
-
-  @include susy-media(font-desktop) {
-    @if $h1-font-size != $h1-max-mobile-font {
-      font-size: $h1-font-size;
-    }
-  }
+  @include fluid-type('font-size', $min-font-width, $max-font-width, $h1-font-size-min, $h1-font-size-max);
 }
 
 /**
@@ -116,25 +115,13 @@ h1,
 h2,
 .h2 {
   @extend %heading-base;
-  font-size: $h2-max-mobile-font;
-
-  @include susy-media(font-desktop) {
-    @if $h2-font-size != $h2-max-mobile-font {
-      font-size: $h2-font-size;
-    }
-  }
+  @include fluid-type('font-size', $min-font-width, $max-font-width, $h2-font-size-min, $h2-font-size-max);
 }
 
 h3,
 .h3 {
   @extend %heading-base;
-  font-size: $h3-max-mobile-font;
-
-  @include susy-media(font-desktop) {
-    @if $h3-font-size != $h3-max-mobile-font {
-      font-size: $h3-font-size;
-    }
-  }
+  @include fluid-type('font-size', $min-font-width, $max-font-width, $h3-font-size-min, $h3-font-size-max);
 }
 
 // anchors
