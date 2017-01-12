@@ -24,7 +24,6 @@ $headings-font-color: $color-primary !default;
 $headings-font-family-fallback: $serif !default;
 $headings-font-family: prepend($serif, $serif-custom) !default;
 $headings-font-weight: bold !default;
-$headings-text-rendering: optimizeLegibility !default;
 
 $h1-font-size: 1.9em !default;
 $h2-font-size: 1.4em !default;
@@ -77,7 +76,6 @@ p {
   color: $headings-font-color;
   font-family: $headings-font-family-fallback;
   font-weight: $headings-font-weight;
-  text-rendering: $headings-text-rendering;
 
   #{$fonts-loaded-class} & {
     @if $headings-font-family != $headings-font-family-fallback {
