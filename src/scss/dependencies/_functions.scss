@@ -6,7 +6,7 @@ $rem-base: 16px !default;
 
 @function convert-to-rem($value, $base-value: $rem-base) {
   $value: strip-unit($value) / strip-unit($base-value) * 1rem;
-  @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
+  @if ($value == 0rem) { $value: 0; } // sass-lint:disable-line zero-unit
   @return $value;
  }
 
