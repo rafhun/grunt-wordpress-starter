@@ -2,7 +2,6 @@ default:
   - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccess'
-  - 'replace:keysDev'
   - 'replace:local'
   - 'build'
   - 'browserSync'
@@ -12,7 +11,6 @@ local:
   - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccess'
-  - 'replace:keysDev'
   - 'replace:local'
   - 'build'
 
@@ -20,7 +18,6 @@ staging:
   - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccessProduction'
-  - 'replace:keysDev'
   - 'replace:staging'
   - 'build'
 
@@ -28,7 +25,6 @@ production:
   - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccessProduction'
-  - 'replace:keys'
   - 'replace:production'
   - 'build'
 
@@ -36,7 +32,7 @@ multi:
   - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccessMulti'
-  - 'replace:keysDevMulti'
+  - 'replace:keysMulti'
   - 'replace:local'
   - 'build'
   - 'browserSync'
@@ -46,7 +42,7 @@ localMulti:
   - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccessMulti'
-  - 'replace:keysDevMulti'
+  - 'replace:keysMulti'
   - 'replace:local'
   - 'build'
 
@@ -54,7 +50,7 @@ stagingMulti:
   - 'versionCheck'
   - 'fileMgm'
   - 'copy:htaccessProductionMulti'
-  - 'replace:keysDevMulti'
+  - 'replace:keysMulti'
   - 'replace:staging'
   - 'build'
 
@@ -88,6 +84,7 @@ setupUpdate:
   - 'shell:themeTextDomain'
   - 'shell:composerUpdate'
   - 'replace:acfProKey'
+  - 'replace:keys'
   - 'shell:bowerUpdate'
   - 'bower_concat'
   - 'concat'
