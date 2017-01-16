@@ -1,3 +1,21 @@
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.0.0...v3.0.1) (2017-01-16)
+
+
+### Bug Fixes
+
+* **grunt:** no default name for dockerName prompt([1f3a784](https://github.com/rafhun/grunt-wordpress-starter/commit/1f3a784))
+* **grunt:** no longer replace the devUrl since this is fixed for our Docker env([6666fef](https://github.com/rafhun/grunt-wordpress-starter/commit/6666fef))
+* **grunt:** update task definitions for new secrets configuration([627f4c1](https://github.com/rafhun/grunt-wordpress-starter/commit/627f4c1))
+* **grunt:** use correct local root path for docker([99a739b](https://github.com/rafhun/grunt-wordpress-starter/commit/99a739b))
+
+
+### Features
+
+* **grunt:** make wp-config better configurable([6cc7bea](https://github.com/rafhun/grunt-wordpress-starter/commit/6cc7bea))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.2.1...v3.0.0) (2017-01-16)
 
