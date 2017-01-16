@@ -16,22 +16,16 @@ Some additional documentation about the different tasks can be found in the [doc
 ### Framework
 As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the WordPress setup process require `wget` or `curl`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell (that can execute `.sh` scripts) and also that you track your progress with git.
 
-For ease of use and some custom functionality it is recommended that you install the [WP-CLI](http://wp-cli.org/). Install via Homebrew or see the instructions on the website:
-
-```bash
-brew install homebrew/php/wp-cli
-```
-
-Also make note of the bash completion package they offer.
-
 ### CMS / Server
 WordPress requires PHP and a MySQL database on your server. However if you are only concerned about styling and do not need to work on the CMS itself you can do that as the generated styleguide is a simple static site that you can access directly.
 
-This repo comes with a Docker configuration that provides you with the necessary server environment. Make sure that you have Docker installed on your machine ([instruction here](https://www.docker.com/products/overview)). You can find the default configuration in the `docker-compose.yml` file (inlcuding the mapped ports, volumes and MySQL credentials).
+This repository comes with a Docker configuration that provides you with the necessary server environment. Make sure that you have Docker installed on your machine ([instruction here](https://www.docker.com/products/overview)). You can find the default configuration in the `docker-compose.yml` file (inlcuding the mapped ports, volumes and MySQL credentials).
 
 By default we are mapping port 80 of the container to port 8080 of the host. If this port is already occupied on the host you will get an error when spinning up the container and will need to adjust this number as well as other references to it.
 
 The `secrets-template.json` file already contains the necessary credentials for connecting to the Docker database. However if you adjust the `docker-compose.yml` file, make sure to also change your `secrets.json` file.
+
+The PHP container also contains WP CLI which we use to do the usual chores coming with the CMS (updates, DB migrations).
 
 Start up the server by running
 
@@ -39,7 +33,9 @@ Start up the server by running
 grunt shell:up
 ```
 
-This names the containers appropriately and starts them up in the background (naming is important for the version check tasks to run and will allow us to run WP CLI inside of the Docker container). To confirm that everything is running, use the command `docker ps` which will show you all active containers. If you get an error when starting up, read the error message and make sure the port you are mapping to is not already in use.
+Please be advised that this command stops all running containers to make sure you do not get a port is already in use error when starting up. If you have containers running that should not be stopped, please edit the command in `grunt/shell.js` under the `up` key.
+
+This names the containers appropriately and starts them up in the background (naming is important for the version check tasks to run and will allow us to run WP CLI inside of the Docker container). To confirm that everything is running, use the command `docker ps` which will show you all active containers.
 
 Once you are finished with working on this project remember to shut down the containers, since you can only map one container at a time to port 8080. This is done by running
 
@@ -53,22 +49,28 @@ If you do not want or cannot run Docker and are running on Mac OS X there are ma
 
 ## Initialize a New Project
 
-Adjust the `Gruntconfig.yml` file according to your personal preferences (also see "Folder Structure" below). Settings include the theme name you would like to use, as well as all source and destination paths you wish to use. When changing source paths make sure to adjust the sources coming with this project accordingly so you will not run into unexpected errors later on. You are completely free to remove everything in the `src/` folder and start your theme development from scratch. Once the `Gruntconfig.yml` is according to your wishes you are ready to set up the project.
+Adjust the `Gruntconfig.yml` file according to your personal preferences (also see "Folder Structure" below). Settings include the theme name as well as all source and destination paths you wish to use. When changing source paths make sure to adjust the sources coming with this project accordingly so you will not run into unexpected errors later on. You are completely free to remove everything in the `src/` folder and start your theme development from scratch. Once the `Gruntconfig.yml` is according to your wishes you are ready to set up the project.
 
 Run
+
+```
+yarn
+```
+
+(recommeded for speed and a lock file) or
 
 ```
 npm install
 ```
 
-which in a first step pulls down all node dependencies defined in `package.json` and afterwards runs the setup script. This script will automatically create a `secrets.json` file for you (should it not yet exist) and ask for your ACF Pro Key. If you enter it, this will be copied to the `secrets.json` file, however if you do not possess a license for ACF Pro and do not enter a key, the dependency in `composer.json` will be changed to the basic version of the plugin. Now a custom bash script will download the latest WordPress version for you either through the WP-CLI, `wget` or `curl`, depending on what is available. Next all Composer and Bower dependencies are downloaded and stored to their appropriate folders.
+which in a first step pulls down all Node.js dependencies defined in `package.json` and afterwards runs the setup script. This script will automatically create a `secrets.json` file for you (should it not yet exist) and ask for your ACF Pro Key. If you enter it, this will be copied to the `secrets.json` file, however if you do not possess a license for ACF Pro and do not enter a key, the dependency in `composer.json` will be changed to the basic version of the plugin. Now a custom bash script will download the latest WordPress version for you either through the WP-CLI, `wget` or `curl`, depending on what is available. Next all Composer and Bower dependencies are downloaded and stored to their appropriate folders.
 
 During the installation process you will be prompted for several customizable options such as the name of your destination folder, the name of the theme you want to develop and the locale for which WordPress will be downloaded. The locale will fall back to the default `en_US` should the one you have entered not exist. Also this option is only of relevance if you have the WP-CLI installed. Should this not be the case the `en_US` version will be downloaded by default and you will have to change languages later manually.
 
 **Hint**: If you run into an error during the composer install process which essentially reads `Server certificate verification failed: issuer is not trusted` you might need to run `svn list https://plugins.svn.wordpress.org` and accept the certificate permanently by confirming with `p`. This adds the certificate as valid and you will no longer get this error upon installation. To finish the setup after getting that error, run `grunt setup`.
 
 ### MySQL
-After the installation it is recommended to set up your database and add the credentials to the `secrets.json` file, that was created for you in the above step. Do not forget to adjust the prefix according to your wishes.
+Your database and its credentials are set for you in `docker-compose.yml`. The default values are already available in `secrets.json`. Adjust them if you made changes to `docker-compose.yml`. Also do not forget to adjust the prefix according to your wishes (it is recommdended to change it from the default `wp_`.
 
 ### Secrets
 All configuration data for your `wp-config.php` file should be put into the `secrets.json` file. This is ignored by Git by default to make sure you do not end up posting sensitive access data to your online repo. The basic boilerplate allows for the configuration of three different environments (local, staging, production), however this can easily be extended by adjusting the corresponding grunt tasks (esp. `grunt/replace.js`, `grunt/ftp_push.js` and `grunt/rsync.js`). Within this file you also have the opportunity to configure your SSH or FTP access for remote servers.
@@ -82,7 +84,7 @@ grunt
 
 and everything will be set up for you. Should you wish to customize your theme's name or the basic folder setup you can edit the `Gruntconfig.yml` (see also the paragraph Folder Structure below).
 
-NOTE: it is recommended to install WordPress from your local development URL not from the `localhost:3000` default BrowserSync address that will be opened when running the default grunt task. Therefore once the browser opens change the address to your local development URL and then do the famous 5-minute install.
+NOTE: it is recommended to install WordPress from your local development URL (`http://localhost:8080` for Docker) not from the `localhost:3000` default BrowserSync address that will be opened when running the default grunt task. Therefore once the browser opens change the address to your local development URL and then do the famous 5-minute install.
 
 ## Folder Structure
 The basic folder structure is defined respectively mirrored within `Gruntconfig.yml` file. All paths needed in grunt are defined therein to make it easy for you to adapt the structure to your needs. Folder paths within grunt configuration files are all given by referencing these variables so make sure you follow the given folder structure or change your `Gruntconfig.yml`.
