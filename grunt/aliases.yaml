@@ -75,7 +75,6 @@ setup:
   - 'replace:themeName'
   - 'shell:updateRootPath'
   - 'shell:updateSecretsRoot'
-  - 'shell:updateUrl'
   - 'shell:themeTextDomain'
   - 'shell:up'
   - 'shell:getWP'
@@ -86,7 +85,6 @@ setup:
 
 setupUpdate:
   - 'versionCheck'
-  - 'shell:updateUrl'
   - 'shell:themeTextDomain'
   - 'shell:composerUpdate'
   - 'replace:acfProKey'

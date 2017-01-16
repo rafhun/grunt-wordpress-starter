@@ -1,6 +1,6 @@
 themeName: themeNamePlaceholder
 dockerName: themeNamePlaceholder
-devUrl: http://localhost:8080/
+devUrl: http://localhost:8080
 dbDump: db/
 rootFolder: wwwroot/
 

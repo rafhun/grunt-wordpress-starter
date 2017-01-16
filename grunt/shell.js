@@ -15,5 +15,4 @@ module.exports = {
   up: "docker stop $(docker ps -q); docker-compose -p <%= config.dockerName %> up -d",
   updateRootPath: 'sed -i "" "s=wwwroot/=<%= config.rootFolder %>=g" composer.json wp-cli.yml .gitignore secrets.json secrets-template.json',
   updateSecretsRoot: 'sed -i "" "s=/www/sites/grunt-wordpress-starter=${PWD}=g" secrets.json secrets-template.json',
-  updateUrl: 'sed -i "" "s=<%= config.devUrl %>=http://${PWD##*/}.dev/=g" Gruntconfig.yml secrets.json',
 };

@@ -3,7 +3,7 @@ module.exports = {
     bsFiles: { src: [ "<%= destFolder %>*.{css,php,js}", "<%= config.rootFolder %><%= config.buildFolders.styleguide %>*.html" ] },
     options: {
       watchTask: true,
-      proxy: "localhost:8080", // this is the port mapped by docker-compose.yml
+      proxy: "http://localhost:8080", // this is the port mapped by docker-compose.yml
       startPath: "<%= config.buildFolders.styleguide %>",
 
       // enable if you encounter any problems with browserSync
