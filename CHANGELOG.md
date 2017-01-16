@@ -1,3 +1,24 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.2.1...v3.0.0) (2017-01-16)
+
+
+### Bug Fixes
+
+* **grunt:** handle failing but not critical shell errors better([48f1423](https://github.com/rafhun/grunt-wordpress-starter/commit/48f1423))
+* **php:** remove unnecessary closing php tag([47378d9](https://github.com/rafhun/grunt-wordpress-starter/commit/47378d9))
+* **scss:** adjust sasslint rules for current workflow([37f4fb1](https://github.com/rafhun/grunt-wordpress-starter/commit/37f4fb1))
+* **scss:** remove optimizeLegibility for performance concerns([6ccab2e](https://github.com/rafhun/grunt-wordpress-starter/commit/6ccab2e))
+* **scss:** smarter font family definition for loaded fonts([ad0e11a](https://github.com/rafhun/grunt-wordpress-starter/commit/ad0e11a))
+
+
+### Features
+
+* **js:** remove jquery as default dependency([1fe0bc1](https://github.com/rafhun/grunt-wordpress-starter/commit/1fe0bc1))
+* **scss:** better basic typography rules([53b1e08](https://github.com/rafhun/grunt-wordpress-starter/commit/53b1e08))
+* **scss:** use fluid type for headings as well([a6ef883](https://github.com/rafhun/grunt-wordpress-starter/commit/a6ef883))
+
+
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v2.2.0...v2.2.1) (2017-01-05)
 
