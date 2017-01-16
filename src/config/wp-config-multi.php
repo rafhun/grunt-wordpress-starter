@@ -32,18 +32,18 @@ $table_prefix  = '@@db_prefix';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define( 'WP_DEBUG', true );
-define( 'SAVEQUERIES', true );
+define( 'WP_DEBUG', @@wp_debug );
+define( 'SAVEQUERIES', @@savequeries );
 
 /**
  * Disallow File Mods
  * Since plugins and themes are managed through composer we can and should disable this in the backend.
  * This additionally serves to harden WordPress by making life harder for hackers. However security has to be managed manually!?
  */
-define( 'DISALLOW_FILE_MODS', false );
+define( 'DISALLOW_FILE_MODS', @@disallow_file_mods );
 
 /* Multisite */
-define ( 'WP_ALLOW_MULTISITE', true );
+define ( 'WP_ALLOW_MULTISITE', @@wp_allow_multisite );
 
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', false );

@@ -71,19 +71,7 @@ module.exports = {
         },
       ],
     },
-    src: "<%= config.srcFolders.config %>wp-config-prod.php",
-    dest: "<%= config.srcFolders.config %>wp-config.php",
-  },
-  keysDev: {
-    options: {
-      patterns: [
-        {
-          match: "include",
-          replacement: '<%= grunt.file.read("keys.php") %>',
-        },
-      ],
-    },
-    src: "<%= config.srcFolders.config %>wp-config-dev.php",
+    src: "<%= config.srcFolders.config %>wp-config-single.php",
     dest: "<%= config.srcFolders.config %>wp-config.php",
   },
   keysMulti: {
@@ -95,19 +83,7 @@ module.exports = {
         },
       ],
     },
-    src: "<%= config.srcFolders.config %>wp-config-multi-prod.php",
-    dest: "<%= config.srcFolders.config %>wp-config.php",
-  },
-  keysDevMulti: {
-    options: {
-      patterns: [
-        {
-          match: "include",
-          replacement: '<%= grunt.file.read("keys.php") %>',
-        },
-      ],
-    },
-    src: "<%= config.srcFolders.config %>wp-config-multi-dev.php",
+    src: "<%= config.srcFolders.config %>wp-config-multi.php",
     dest: "<%= config.srcFolders.config %>wp-config.php",
   },
   acfProKey: {
