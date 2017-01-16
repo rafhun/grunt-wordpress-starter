@@ -12,7 +12,13 @@ module.exports = {
           config: "prompt.dockerName",
           type: "input",
           message: "Docker Name (just one word, no spaces, dashes, underscores etc allowed): ",
-          default: "werbelinie",
+          validate: function( value ) {
+            if ( value.length ) {
+              return true;
+            } else {
+              return "This field is required. It is recommended to use the directory name.";
+            }
+          },
         },
         {
           config: "prompt.rootFolder",
