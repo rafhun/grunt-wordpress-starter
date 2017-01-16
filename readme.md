@@ -118,6 +118,15 @@ To start on your own just copy all PHP files to the dedicated PHP folder and sta
 ### Javascript
 Generally you should add JS dependencies through Bower if they are available. Simply add their name and version information to the `bower.json` file and then execute `grunt setupUpdate`. Add all other vendor scripts to the `plugins.js` file in the source scripts folder and your own to the `scripts.js` one. Should you have created molecules that depend on a certain script add this to the molecules folder within the JS one. Again you can find and adapt all relevant folder names in the `Gruntconfig.yml`.
 
+We do not provide any additional scripts through bower by default. Since we need jQuery less and less, it has been removed from the default dependencies. To quickly add it run `bower install jquery --save` or paste the following into your `bower.json` file (obviously properly comma separated and in an acceptable place):
+
+```json
+,
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+```
+
 ### ES6 Syntax
 The starter contains configuration for babel which means that you are able to use ES6 syntax, while being certain, that the code will run perfectly in older browsers that only support ES5 syntax. To use ES6 just change the file extension to `.es6.js` in your JS folder. These files will be run through Babel and then also be automatically concatenated into the main script file.
 
