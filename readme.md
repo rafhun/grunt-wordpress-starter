@@ -1,7 +1,9 @@
 Version: 2.2.1
 
 # Compatibility
-Tested up to and used with **Node v5.11** (not yet compatible with Node v6.0). Also fully compatible with **Grunt v1.0**. The project contains an NVM configuration file, should you use that, to manage your Node versions. This will usually be updated to reflect the latest compatible version the starter can be used with. Run `nvm use` to load the version referenced in the `.nvmrc` file.
+Tested up to and used with **Node v7.4**. Also fully compatible with **Grunt v1.0**. The project contains an NVM configuration file, should you use that, to manage your Node versions. This will usually be updated to reflect the latest compatible version the starter can be used with. Run `nvm use` to load the version referenced in the `.nvmrc` file.
+
+Fully compatible and in use on macOS. This starter unfortunately does not yet support Windows as I do not have the resources or opportunity to test and / or develop on it. Compatibility with Linux based systems is very likely but not tested thoroughly.
 
 # Grunt WordPress Starter
 
