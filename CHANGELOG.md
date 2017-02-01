@@ -1,3 +1,13 @@
+<a name="3.0.2"></a>
+## [3.0.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.0.1...v3.0.2) (2017-02-01)
+
+
+### Features
+
+* **js:** update font-face observer ([fe66e99](https://github.com/rafhun/grunt-wordpress-starter/commit/fe66e99))
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.0.0...v3.0.1) (2017-01-16)
 
