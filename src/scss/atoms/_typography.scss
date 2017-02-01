@@ -45,7 +45,7 @@ $anchor-text-decoration-hover: underline !default;
 
 // basic font styles for body
 body,
-.WL {
+.WL { // sass-lint:disable-line class-name-format
   // fluid typography
   @include fluid-type('font-size', $min-font-width, $max-font-width, $body-copy-font-size-min, $body-copy-font-size-max);
   color: $color-text;
