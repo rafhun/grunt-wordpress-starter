@@ -1,12 +1,10 @@
 $sans-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Oxygen-Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 $sans-custom: 'Lato';
 
-$serif: Georgia, Utopia, Palatino, 'Palatino Linotype', serif !default;
+$serif-default: Georgia, Utopia, Palatino, 'Palatino Linotype', serif !default;
 $serif-custom: 'Roboto Slab';
 
 $code: Consolas, 'Courier New', Courier, monospace !default;
-
-$font-smoothing: antialiased !default;
 
 // define the font breakpoints
 $min-font-width: 25em;
@@ -25,7 +23,7 @@ $body-copy-line-height: 1.35 !default;
 
 // Headings
 $headings-font-color: $color-primary !default;
-$headings-font-family-fallback: $serif !default;
+$headings-font-family-fallback: $serif-default !default;
 $headings-font-family: $serif-custom !default;
 $headings-font-weight: bold !default;
 
@@ -46,7 +44,8 @@ $anchor-text-decoration: none !default;
 $anchor-text-decoration-hover: underline !default;
 
 // basic font styles for body
-body {
+body,
+.WL {
   // fluid typography
   @include fluid-type('font-size', $min-font-width, $max-font-width, $body-copy-font-size-min, $body-copy-font-size-max);
   color: $color-text;
@@ -65,8 +64,14 @@ body {
 
 /**
  * @atom Base Paragraph Style
- * @section Typography > Base Styles
+ * @section Typography
  * @markup
+ *  <h1>This is a title</h1>
+ *  <p>This is a test paragraph displaying all possible text styles within one nicely defined section. This means that here we can show off <strong>strong emphasis</strong>, we can test out our <em>italic styles</em> whether faux or real ones, we can also test <a href="#0">inline links</a>, how discernable they are and <a href="#0">how longer linktexts that might wrap lines are behaving and how they look on hover, this is a test</a>.</p>
+ *  <h2>A subtitle</h2>
+ *  <p>@{lipsum:2:paragraphs}</p>
+ *  <p>@{lipsum:3:paragraphs}</p>
+ *  <h2>A very long subtitle between some paragraphs of text, hopefully wrapping to demonstrate the h2 line-height and space distribution between sections and their headings.</h2>
  *  <p>@{lipsum:2:paragraphs}</p>
  *  <p>@{lipsum:3:paragraphs}</p>
  */
@@ -90,14 +95,19 @@ p {
       font-family: $headings-font-family;
     }
   }
+
+  * + & {
+    margin-top: 1em;
+  }
 }
 
 /**
  * @atom Heading 1
- * @section Typography > Headings
+ * @section Typography
  * @markup
- *  <h1>@{lipsum:2:words}</h1>
- *  <span class="h1">@{lipsum:5:words}</span>
+ *  <h1>A Short Title</h1>
+ *  <h1>A very long title with many words explaining what the text below this title is all about and what one can expect from the lecture of the article.</h1>
+ *  <span class="h1">Some text looking like an h1</span>
  */
 h1,
 .h1 {
@@ -107,9 +117,10 @@ h1,
 
 /**
  * @atom Heading 2
- * @section Typography > Headings
+ * @section Typography
  * @markup
- *  <h2>@{lipsum:2:words}</h2>
+ *  <h2>A Short Subtitle</h2>
+ *  <h2>A very long subtitle with many words explaining what the text below this title is all about and what one can expect from the lecture of the article.</h2>
  *  <span class="h2">@{lipsum:5:words}</span>
  */
 h2,
@@ -118,6 +129,14 @@ h2,
   @include fluid-type('font-size', $min-font-width, $max-font-width, $h2-font-size-min, $h2-font-size-max);
 }
 
+/**
+ * @atom Heading 3
+ * @section Typography
+ * @markup
+ *  <h3>A Short Subtitle</h3>
+ *  <h3>A very long subtitle with many words explaining what the text below this title is all about and what one can expect from the lecture of the article.</h3>
+ *  <span class="h3">@{lipsum:5:words}</span>
+ */
 h3,
 .h3 {
   @extend %heading-base;
@@ -127,7 +146,7 @@ h3,
 // anchors
 /**
  * @atom Anchors
- * @section Typography > Base Styles
+ * @section Typography
  * @markup
  *  <a href="#0">@{lipsum:2:words}</a>
  */
