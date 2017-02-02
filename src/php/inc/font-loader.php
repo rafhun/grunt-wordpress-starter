@@ -26,14 +26,20 @@ if ( ! function_exists( 'werbelinie_font_loader' ) ) :
         function H(){if((new Date).getTime()-G>=D)d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)g=f.a.offsetWidth,h=p.a.offsetWidth,k=q.a.offsetWidth,e();r=setTimeout(H,50)}}var f=new t(l),p=new t(l),q=new t(l),g=-1,h=-1,k=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(f,J(c,"sans-serif"));x(p,J(c,"serif"));x(q,J(c,"monospace"));d.appendChild(f.a);d.appendChild(p.a);d.appendChild(q.a);document.body.appendChild(d);u=f.a.offsetWidth;v=p.a.offsetWidth;
         w=q.a.offsetWidth;H();z(f,function(a){g=a;e()});x(f,J(c,'"'+c.family+'",sans-serif'));z(p,function(a){h=a;e()});x(p,J(c,'"'+c.family+'",serif'));z(q,function(a){k=a;e()});x(q,J(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
 
-        var fontA = new FontFaceObserver( "Lato" );
+        var fontA = new FontFaceObserver( "Lato", {
+          weight: 400
+        } );
 
-        Promise.all( [fontA.load()] ).then( function() {
+        var fontB = new FontFaceObserver( "Lato", {
+          weight: 700
+        } );
+
+        Promise.all( [fontA.load(), fontB.load()] ).then( function() {
           document.documentElement.className += " wl-fonts-loaded";
 
           // optimization for repeat views
           sessionStorage.wlFontsLoaded = true;
-        } ); // promise fontA
+        } ); // promise fontA, fontB
       } )();
     </script>
     <?php
