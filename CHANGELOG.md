@@ -1,3 +1,18 @@
+<a name="3.0.3"></a>
+## [3.0.3](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.0.2...v3.0.3) (2017-02-02)
+
+
+### Bug Fixes
+
+* **scss:** better default typography rules and docs ([4b81cb7](https://github.com/rafhun/grunt-wordpress-starter/commit/4b81cb7))
+
+
+### Features
+
+* **php:** better examples for the font loader ([3a391d1](https://github.com/rafhun/grunt-wordpress-starter/commit/3a391d1))
+
+
+
 <a name="3.0.2"></a>
 ## [3.0.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.0.1...v3.0.2) (2017-02-01)
 
