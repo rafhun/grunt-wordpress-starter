@@ -8,11 +8,11 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.5.5",
+        "version": "5.5.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.5.5&k=@@acfProKey"
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.5.7&k=@@acfProKey"
         }
       }
     }
