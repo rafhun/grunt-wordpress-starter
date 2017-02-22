@@ -176,7 +176,7 @@ require get_theme_file_path() . '/inc/template-tags.php';
 /**
  * Load some essential helper functions
  */
-// require get_theme_file_path() . '/inc/helpers.php';
+require get_theme_file_path() . '/inc/helpers.php';
 
 /**
  * Load custom gallery shortcode output

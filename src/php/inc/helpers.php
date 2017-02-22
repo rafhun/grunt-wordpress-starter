@@ -87,21 +87,32 @@ if ( ! function_exists( 'werbelinie_archive_title' ) ) {
  * In: werbelinie.ch/agentur/team/ (generated link by wordpress i. e. in menus or via the_permalink() function)
  * Out: werbelinie.ch/agentur/#team
  */
- function werbelinie_permalink_to_onepager( $link ) {
-   // keep reference to link that was entered in case something goes wrong during the conversion
-   $old_link = $link;
+function werbelinie_permalink_to_onepager( $link ) {
+  // keep reference to link that was entered in case something goes wrong during the conversion
+  $old_link = $link;
 
-   if ( substr( $link, -1 ) === '/' ) {
-     $link = substr( $link, 0, -1 );
+  if ( substr( $link, -1 ) === '/' ) {
+    $link = substr( $link, 0, -1 );
+  }
+
+  $position = strrpos( $link, '/' );
+
+  if ( $position ) {
+    $link = substr_replace( $link, '/#', $position, 1 );
+  } else {
+    $link = $old_link;
+  }
+
+  return $link;
+}
+
+ /**
+  * Adds a wrapper around all content that comes straight from the editor, which helps with controlling styles.
+  */
+ if ( ! function_exists( 'werbelinie_the_content_filter' ) ) :
+   function werbelinie_the_content_filter( $content ) {
+     return '<div class="wp-editor">' . $content . '</div>';
    }
+ endif;
 
-   $position = strrpos( $link, '/' );
-
-   if ( $position ) {
-     $link = substr_replace( $link, '/#', $position, 1 );
-   } else {
-     $link = $old_link;
-   }
-
-   return $link;
- }
+ add_filter( 'the_content', 'werbelinie_the_content_filter' );
