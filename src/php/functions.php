@@ -184,6 +184,11 @@ require get_theme_file_path() . '/inc/helpers.php';
 // require get_theme_file_path() . '/inc/custom-gallery.php';
 
 /**
+ * Customize the excerpts
+ */
+// require get_theme_file_path() . '/inc/excerpt.php';
+
+/**
  * Custom Font Loader
  */
 require get_theme_file_path() . '/inc/font-loader.php';
