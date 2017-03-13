@@ -1,3 +1,21 @@
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.0.3...v3.1.0) (2017-03-13)
+
+
+### Bug Fixes
+
+* **grunt:** ignore compiled es6 files when linting ([143a119](https://github.com/rafhun/grunt-wordpress-starter/commit/143a119))
+* **grunt:** remove the composer watch task ([d07ea87](https://github.com/rafhun/grunt-wordpress-starter/commit/d07ea87))
+
+
+### Features
+
+* **grunt:** update db export scripts to use docker ([001aff6](https://github.com/rafhun/grunt-wordpress-starter/commit/001aff6))
+* **php:** add excerpt customization functions as option ([e49fd0c](https://github.com/rafhun/grunt-wordpress-starter/commit/e49fd0c))
+* **php:** include helpers by default and add content wrapper filter ([109b1c0](https://github.com/rafhun/grunt-wordpress-starter/commit/109b1c0))
+
+
+
 <a name="3.0.3"></a>
 ## [3.0.3](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.0.2...v3.0.3) (2017-02-02)
 
