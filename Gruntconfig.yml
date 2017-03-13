@@ -6,7 +6,7 @@ rootFolder: wwwroot/
 
 wordpress:
   locale: de_CH
-  version: 4.7.2
+  version: 4.7.3
 
 buildFolders:
   documentation: documentation/
