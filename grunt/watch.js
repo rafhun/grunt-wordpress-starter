@@ -12,6 +12,7 @@ module.exports = {
     files: [
       "<%= config.srcFolders.js %>script.js",
       "<%= config.srcFolders.jsMolecules %>**/*.js",
+      "!<%= config.srcFolders.js %>**/*.es5.js",
     ],
     tasks: ["eslint"],
   },
@@ -93,13 +94,6 @@ module.exports = {
       "hashres",
       "shell:styleguide",
     ],
-  },
-  composer: {
-    files: [
-      "composer.json",
-      "composer.lock",
-    ],
-    tasks: ["shell:composerUpdate"],
   },
   htaccess: {
     files: ["<%= config.srcFolders.config %>.htaccess"],
