@@ -8,7 +8,7 @@ module.exports = {
     // before pushing wp-config.php changes anew make sure to copy down all online changes into your src/config folder
     exclude: [ ".git", ".hg", ".svn", ".DS_Store", "._*", "Thumbs.db", "/wp-content/backupwordpress*", ".map", "readme.html", "liesmich.html" ],
 
-    // exclude: [".git", ".hg", ".svn", ".DS_Store", "._*", "Thumbs.db", "/wp-content/uploads/**", "/wp-config.php", "/wp-content/backupwordpress*", ".map", "readme.html", "liesmich.html"],
+    // exclude: [ ".git", ".hg", ".svn", ".DS_Store", "._*", "Thumbs.db", "/wp-content/uploads/**", "/wp-config.php", "/wp-content/backupwordpress*", ".map", "readme.html", "liesmich.html" ],
     compareMode: "checksum",
   },
   staging: {
