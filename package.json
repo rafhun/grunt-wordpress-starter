@@ -14,7 +14,7 @@
     "susy",
     "BrowserSync"
   ],
-  "author": "rafhun",
+  "author": "werbelinie",
   "license": "GPL-3.0",
   "scripts": {
     "grunt": "grunt",
