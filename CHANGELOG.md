@@ -1,3 +1,14 @@
+<a name="3.1.1"></a>
+## [3.1.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.0...v3.1.1) (2017-03-16)
+
+
+### Bug Fixes
+
+* correctly set the dockerName in the Gruntconfig ([7b1b903](https://github.com/rafhun/grunt-wordpress-starter/commit/7b1b903))
+* update authorship of the project ([2a8d170](https://github.com/rafhun/grunt-wordpress-starter/commit/2a8d170))
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.0.3...v3.1.0) (2017-03-13)
 
