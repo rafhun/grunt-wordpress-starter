@@ -1,3 +1,13 @@
+<a name="3.1.2"></a>
+## [3.1.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.1...v3.1.2) (2017-03-16)
+
+
+### Bug Fixes
+
+* reintroduce mistakenly deleted install script ([f485ea1](https://github.com/rafhun/grunt-wordpress-starter/commit/f485ea1))
+
+
+
 <a name="3.1.1"></a>
 ## [3.1.1](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.0...v3.1.1) (2017-03-16)
 
