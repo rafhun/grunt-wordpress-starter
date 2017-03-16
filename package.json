@@ -17,6 +17,7 @@
   "author": "werbelinie",
   "license": "GPL-3.0",
   "scripts": {
+    "install": "sh ./setup.sh",
     "grunt": "grunt",
     "styleguide": "nucleus"
   },
