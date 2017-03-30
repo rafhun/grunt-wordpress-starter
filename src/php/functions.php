@@ -189,6 +189,7 @@ require get_theme_file_path() . '/inc/helpers.php';
 // require get_theme_file_path() . '/inc/excerpt.php';
 
 /**
- * Custom Font Loader
+ * wp_head Scripts and Cleanup
+ * At this time this contains the grunticon loader and the font loader
  */
-require get_theme_file_path() . '/inc/font-loader.php';
+require get_theme_file_path() . '/inc/wp-head.php';
