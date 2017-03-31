@@ -1,6 +1,9 @@
 <?php
 /**
-  * This file handles actions that go into the wp_head hook. First we add some JS loader scripts to correctly determine and load fonts and our grunticons, below we clean up some unnecessary WordPress stuff like removing the generator tag, or emoji scripts
+ * This file handles actions that go into the wp_head hook. First we add some JS loader scripts to correctly determine and load fonts and our grunticons, below we clean up some unnecessary WordPress stuff like removing the generator tag, or emoji scripts
+ *
+ * @package grunt-wordpress-starter
+ * @since grunt-wordpress-starter 3.2.0
 **/
 
 // this js font loader is added through the wp_head action hook

@@ -1,6 +1,9 @@
 <?php
 /**
-  * This file adds some commonly used elements, when using the WPML plugin to make a page multilingual. This includes a custom language switcher.
+ * This file adds some commonly used elements, when using the WPML plugin to make a page multilingual. This includes a custom language switcher.
+ *
+ * @package grunt-wordpress-starter
+ * @since grunt-wordpress-starter 3.2.0
 **/
 
 // check whether wpml is active, if so we add our functions
