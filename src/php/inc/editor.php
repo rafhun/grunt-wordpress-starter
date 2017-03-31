@@ -1,4 +1,12 @@
 <?php
+/**
+ * This files improves and customizes the editor experience in the WordPress backend. We can do a multitude of things here, like loading our styles into the editor, define the styles to appear in the styles dropdown and can hide dangerous buttons in the editor for non administrators.
+ *
+ * @package grunt-wordpress-starter
+ * @since grunt-wordpress-starter 1.0.0
+ * @version 1.0
+ */
+
 // editor styles
 if ( ! function_exists( 'werbelinie_editor_styles' ) ) {
   function werbelinie_editor_styles() {
@@ -98,3 +106,14 @@ if ( ! function_exists( 'werbelinie_editor_mce_before_init_insert_formats' ) ) {
 }
 
 add_filter( 'tiny_mce_before_init', 'werbelinie_editor_mce_before_init_insert_formats' );
+
+// set up the block formats that should actually show up in the dropdown, i. e. since we set the article title to the h1 and only one h1 per page should be used, we hide the h1 block format. Also if we do not set up styles for i. e. h4 through h6, we leave those out as well. The following is a customary setting which can easily be adapted to your needs.
+if ( ! function_exists( 'werbelinie_tiny_mce_block_formats' ) ) :
+  function werbelinie_tiny_mce_block_formats( $settings ) {
+    $settings['block_formats'] = __( 'Paragraph', 'werbelinie' ) . '=p;' . __( 'Heading', 'werbelinie' ) . '=h2;' . __( 'Subheading', 'werbelinie' ) . '=h3;';
+
+    return $settings;
+  }
+endif;
+
+add_filter( 'tiny_mce_before_init', 'werbelinie_tiny_mce_block_formats' );

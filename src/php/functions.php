@@ -193,3 +193,8 @@ require get_theme_file_path() . '/inc/helpers.php';
  * At this time this contains the grunticon loader and the font loader
  */
 require get_theme_file_path() . '/inc/wp-head.php';
+
+/**
+ * WPML functions
+**/
+// require get_theme_file_path() . '/inc/wpml.php';
