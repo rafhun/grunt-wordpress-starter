@@ -129,7 +129,7 @@ function werbelinie_scripts() {
 
   // with this you can add translatable strings to your JS
   /*
-  wp_localize_script( 'werbelinie-screenReaderText', 'screenReaderText', array(
+  wp_localize_script( 'werbelinie-script', 'screenReaderText', array(
     'offCanvasBack' => _x( 'Back', 'Off-Canvas-Back Button Text', 'werbelinie' )
   ) );
   */
@@ -137,7 +137,7 @@ function werbelinie_scripts() {
   // needed for ajax loading
   /*
   global $wp_query;
-  wp_localize_script( 'werbelinie-localized-script', 'ajaxpagination', array(
+  wp_localize_script( 'werbelinie-script', 'ajaxpagination', array(
     'ajaxurl' => admin_url( 'admin-ajax.php' ),
     'query_vars' => json_encode( $wp_query->query )
   ));
