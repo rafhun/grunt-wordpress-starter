@@ -1,3 +1,20 @@
+<a name="3.1.3"></a>
+## [3.1.3](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.2...v3.1.3) (2017-04-21)
+
+
+### Bug Fixes
+
+* **php:** correctly link up the localized script to the enqueued script id ([4252cf7](https://github.com/rafhun/grunt-wordpress-starter/commit/4252cf7))
+
+
+### Features
+
+* **php:** add custom block formats for the editor ([1715a84](https://github.com/rafhun/grunt-wordpress-starter/commit/1715a84))
+* **php:** optimize and cleanup the header ([3633aae](https://github.com/rafhun/grunt-wordpress-starter/commit/3633aae))
+* **scss:** bump normalize and adjust our default rules accordingly ([b8760b4](https://github.com/rafhun/grunt-wordpress-starter/commit/b8760b4))
+
+
+
 <a name="3.1.2"></a>
 ## [3.1.2](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.1...v3.1.2) (2017-03-16)
 
