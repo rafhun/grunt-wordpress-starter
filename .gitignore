@@ -59,6 +59,9 @@ wwwroot/
 
 # Composer Files
 vendor/
+# keep composer files in plugins and themes subfolders as they might be necessary and included there (i.e. wpml plugins)
+!src/plugins/*/vendor
+!src/themes/*/vendor
 
 # generated translation files
 src/languages/*.mo
