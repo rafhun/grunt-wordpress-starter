@@ -16,7 +16,7 @@ $_editor-styles: false;
 @import 'atoms/webfonts';
 
 // import normalize.css by Nicolas Gallagher for a smart 'reset'
-@import 'normalize.css/normalize';
+@import 'atoms/normalize';
 
 @import 'atoms/site'; // mainly html and body elements
 @import 'atoms/typography'; // all typography and text styles

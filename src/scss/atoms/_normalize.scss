@@ -1,0 +1,245 @@
+// This partial is based upon the popular normalize.css and intends to unify default browser settings and reset some styles
+// Since normalize.css is turning towards a direction I don't necessarily like for this project (opinionated styles), we implement our own normalization
+
+html {
+  // correct line height for all browsers
+  line-height: 1.15;
+
+  // prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOs.
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  // remove margin in all browsers
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main,
+details,
+menu {
+  // correct display for IE9-
+  display: block;
+}
+
+hr {
+  // correct box sizing in Firefox
+  height: 0;
+  box-sizing: content-box;
+  // show the overflow in Edge and IE
+  overflow: visible;
+}
+
+pre,
+code,
+kbd,
+samp {
+  // correctly set default font-family
+  font-family: monospace;
+  // correct sizing
+  font-size: 1em;
+}
+
+a {
+  // remove gaps in links underline in iOS 8+ and Safari 8+
+  -webkit-text-decoration-skip: objects;
+
+  &:active {
+    // remove the gray background on active links in IE 10
+    background-color: transparent;
+  }
+}
+
+abbr[title] {
+  // remove the bottom border in Chrome 57- and Firefox 39-.
+  border-bottom: 0;
+  // add the correct text decoration in Chrome, Edge, IE, Opera, Safari
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+b,
+strong {
+  // add the correct font weight
+  font-weight: bold;
+}
+
+dfn {
+  // correct font style in Android 4.3-
+  font-style: italic;
+}
+
+mark {
+  // add the correct background and color in IE 9-.
+  background-color: #FF0;
+  color: $black;
+}
+
+small {
+  // add the correct font size in all browsers
+  font-size: 80%;
+}
+
+sub,
+sup {
+  // prevent `sub` and `sup` elements from affecting the line height in all browsers
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio,
+video,
+canvas {
+  // correct display in IE 9-
+  display: inline-block;
+}
+
+img {
+  // remove the border on images inside links in IE 10-
+  border-style: none;
+}
+
+svg:not(:root) {
+  // hide the overflow in IE
+  overflow: hidden;
+}
+
+input,
+textarea,
+select,
+button {
+  // remove the margins in Firefox and Safari
+  margin: 0;
+  // reset user agent stylesheet font definitions
+  font: inherit;
+}
+
+button,
+input {
+  // show the overflow in Edge
+  overflow: visible;
+}
+
+button,
+select {
+  // remove the inheritance of text transform in Edge, Firefox, and IE.
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  // prevent a WebKit bug where 2 destroys native `audio` and `video` controls in Android 4
+  // 2 correct the inability to style clickable types in iOS and Safari
+  -webkit-appearance: button;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  &:-moz-focusring {
+    // restore the focus styles unset by the previous rule
+    outline: 1px dotted ButtonText;
+  }
+}
+
+fieldset {
+  // correct the padding in Firefox
+  padding: .35em .75em .625em;
+}
+
+legend {
+  // correct the text wrapping in Edge and IE
+  display: table;
+  max-width: 100%;
+  box-sizing: border-box;
+  // remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers
+  padding: 0;
+  // correct the color inheritance from `fieldset` elements in IE
+  color: inherit;
+  // correct the text wrapping in Edge and IE
+  white-space: normal;
+}
+
+progress {
+  // add correct display in IE9-
+  display: inline-block;
+  // add correct vertical alignment in Chrome, Firefox, and Opera
+  vertical-align: baseline;
+}
+
+textarea {
+  // remove the default vertical scrollbar in IE
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  // add the correct box sizing in IE 10-
+  box-sizing: border-box;
+  // remove the padding in IE10-
+  padding: 0;
+}
+
+[type="number"] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    // correct the cursor style of increment and decrement buttons in Chrome
+    height: auto;
+  }
+}
+
+[type="search"] {
+  // correct the outline style in Safari
+  outline-offset: -2px;
+  // correct the odd appearance in Chrome and Safari
+  -webkit-appearance: textfield;
+
+  &:-webkit-search-cancel-button,
+  &:-webkit-search-decoration {
+    // remove the inner padding and cancel buttons in Chrome and Safari on macOS
+    -webkit-appearance: none;
+  }
+}
+
+::-webkit-file-upload-button {
+  // change font properties to `inherit` in Safari
+  font: inherit;
+  // correct the inability to style clickable types in iOS and Safari
+  -webkit-appearance: button;
+}
+
+summary {
+  // correct display in all browser
+  display: list-item;
+}
+
+template {
+  // correct display in IE
+  display: none;
+}
+
+[hidden] {
+  // correct display in IE 10-
+  display: none;
+}
