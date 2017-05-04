@@ -1,3 +1,18 @@
+<a name="3.1.4"></a>
+## [3.1.4](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.3...v3.1.4) (2017-05-04)
+
+
+### Bug Fixes
+
+* do not ignore vendor folders in plugins ([82aab30](https://github.com/rafhun/grunt-wordpress-starter/commit/82aab30))
+
+
+### Features
+
+* **scss:** replace normalize dependency with our own version ([63d0f85](https://github.com/rafhun/grunt-wordpress-starter/commit/63d0f85))
+
+
+
 <a name="3.1.3"></a>
 ## [3.1.3](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.2...v3.1.3) (2017-04-21)
 
