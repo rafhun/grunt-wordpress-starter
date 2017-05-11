@@ -20,6 +20,7 @@ module.exports = {
     files: ["<%= config.srcFolders.js %>**/*.js"],
     tasks: [
       "clean:hashedJs",
+      "clean:babelizedJs",
       "scripts",
       "cssmin",
       "copy:functions",

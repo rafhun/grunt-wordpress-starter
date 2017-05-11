@@ -102,6 +102,7 @@ fileMgm:
   - 'clean:minSvg'
   - 'clean:favicon'
   - 'clean:nucleus'
+  - 'clean:babelizedJs'
   - 'copy:editorStyles'
   - 'copy:fonts'
   - 'copy:customPlugins'

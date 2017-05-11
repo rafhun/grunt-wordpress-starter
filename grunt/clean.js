@@ -1,4 +1,5 @@
 module.exports = {
+  babelizedJs: ["<%= config.srcFolders.js %>**/*.es5.js*"],
   dest: ["<%= destFolder %>"],
   editorStyles: ["<%= destFolder %>editor-styles.css"],
   favicon: ["<%= config.srcFolders.jade %>favicons.html"],
