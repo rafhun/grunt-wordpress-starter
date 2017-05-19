@@ -114,7 +114,7 @@ if ( is_plugin_active( 'sitepress-multilingual-cms/sitepress.php' ) ) :
             $nav .= '<span class="screen-reader-text">' . sprintf( __( 'Change language to %s', 'werbelinie' ), $language['translated_name'] ) . '</span>';
           } else {
             // we just indicate the current language for screenreaders
-            $nav .= '<span class="screen-reader-text">' . sprintf( __( 'Current language: $s', 'werbelinie' ), $language['translated_name'] ) . '</span>';
+            $nav .= '<span class="screen-reader-text">' . sprintf( __( 'Current language: %s', 'werbelinie' ), $language['translated_name'] ) . '</span>';
           }
 
           // display the actual language use either $language['language_code'] for a short indication like de, en, fr or $language['native_name'] for written out languages like Deutsch, English, Français. Alternatively you can also use $language['translated_name'] to have the languages translated to the current language, like English, French, German
