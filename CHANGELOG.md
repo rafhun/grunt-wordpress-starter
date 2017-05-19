@@ -1,3 +1,14 @@
+<a name="3.1.5"></a>
+## [3.1.5](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.4...v3.1.5) (2017-05-19)
+
+
+### Bug Fixes
+
+* **js:** correctly apply es5 cleaner in tasks ([b3c68ff](https://github.com/rafhun/grunt-wordpress-starter/commit/b3c68ff))
+* **php:** correctly use variables in translations ([5e6454b](https://github.com/rafhun/grunt-wordpress-starter/commit/5e6454b))
+
+
+
 <a name="3.1.4"></a>
 ## [3.1.4](https://github.com/rafhun/grunt-wordpress-starter/compare/v3.1.3...v3.1.4) (2017-05-04)
 
