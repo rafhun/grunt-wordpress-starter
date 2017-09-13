@@ -5,33 +5,31 @@ $layout-columns: 12 !default;
 
 // Susy Configuration
 $susy: (
-  container: $container-width,
-  gutter-position: after,
   columns: $layout-columns,
   gutters: .316,
-  global-box-sizing: border-box,
-  last-flow: to,
-  debug: (
-    image: hide,
-    color: rgba(#66F, .25),
-    output: background,
-    toggle: top right,
-  ),
-  use-custom: (
-    background-image: true,
-    background-options: false,
-    box-sizing: false,
-    clearfix: true,
-    rem: false,
-  )
+  spread: narrow,
+  container-spread: narrow,
 );
 
 // Breakpoints
 // These should only be used for global configuration. Usually you will want to define finer grained breakpoints on a per component basis to style these components to look their best, independent of device widths.
-$susy-media: (
-  md: 40em,
-  lg: 64em,
-  to-md: max-width 39.9375em,
-  to-lg: max-width 63.9375em,
-  md-lg: 40em 63.9375em
+$mq-breakpoints: (
+  // main breakpoints
+  sm: 30em, // 480px
+  md: 40em, // 640px
+  lg: 64em, // 1024px
+  // tweak points follow below
+  twoCols: 33.75em, // 540px
+  threeCols: 60em, // 960px
+  sidebar: 45em, // 720px
+  mediaBlockMin: 20em // 320px
 );
+
+@mixin container($container-width: $container-width) {
+  @include clearfix;
+
+  width: 100%;
+  max-width: $container-width;
+  margin-right: auto;
+  margin-left: auto;
+}

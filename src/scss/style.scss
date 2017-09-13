@@ -6,6 +6,9 @@ $_editor-styles: false;
 // import susy
 @import 'susy/sass/susy';
 
+// import sass-mq (media query handling)
+@import 'sass-mq/mq';
+
 // Dependencies
 @import 'dependencies/functions';
 @import 'dependencies/color';

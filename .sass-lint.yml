@@ -20,7 +20,7 @@ rules:
     - 2
     -
       exclude:
-        - susy-media
+        - mq
 
   # Line Spacing
   one-declaration-per-line: 1
