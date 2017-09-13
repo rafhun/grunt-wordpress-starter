@@ -1,7 +1,11 @@
 Version: 3.1.5
 
+# Notice
+The current version of `grunt-grunticon` (2.3.2) or rather its dependency `svg-to-png` (3.1.2) does not seem to work on macOS (at least not in our configuration). Therefore `svg-to-png` has been set as manual devDependency and is set up fixed at version 3.1.1. Keep an eye on updates to `svg-to-png` and test once newer versions come out.
+
+
 # Compatibility
-Tested up to and used with **Node v7.4**. Also fully compatible with **Grunt v1.0**. The project contains an NVM configuration file, should you use that, to manage your Node versions. This will usually be updated to reflect the latest compatible version the starter can be used with. Run `nvm use` to load the version referenced in the `.nvmrc` file.
+Tested up to and used with **Node v8.4**. Also fully compatible with **Grunt v1.0**. The project contains an NVM configuration file, should you use that, to manage your Node versions. This will usually be updated to reflect the latest compatible version the starter can be used with. Run `nvm use` to load the version referenced in the `.nvmrc` file.
 
 Fully compatible and in use on macOS. This starter unfortunately does not yet support Windows as I do not have the resources or opportunity to test and / or develop on it. Compatibility with Linux based systems is very likely but not tested thoroughly.
 
@@ -15,6 +19,8 @@ Some additional documentation about the different tasks can be found in the [doc
 
 ### Framework
 As mentioned before the only dependency is a working Node.js installation on your system. Some secondary tasks concerned with the WordPress setup process require `wget` or `curl`. Furthermore it is assumed that you are working on a Linux based system with a bash or similar shell (that can execute `.sh` scripts) and also that you track your progress with git.
+
+The use of the `yarn` package manager is recommended for performance gains. A `yarn.lock` file has been implemented to give you the latest working configuration.
 
 ### CMS / Server
 WordPress requires PHP and a MySQL database on your server. However if you are only concerned about styling and do not need to work on the CMS itself you can do that as the generated styleguide is a simple static site that you can access directly.

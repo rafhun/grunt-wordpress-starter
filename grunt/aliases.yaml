@@ -146,7 +146,6 @@ build:
 
 docs:
   - 'shell:styleguide'
-  # - 'phantomcss'
 
 translations:
   - 'potomo'

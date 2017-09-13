@@ -6,10 +6,9 @@ rootFolder: wwwroot/
 
 wordpress:
   locale: de_CH
-  version: 4.8
+  version: 4.8.1
 
 buildFolders:
-  documentation: documentation/
   fonts: fonts/
   icons: icons/
   images: images/
@@ -20,7 +19,6 @@ buildFolders:
   themes: wp-content/themes/
 
 srcFolders:
-  bower: src/bower_components/
   config: src/config/
   css: src/css/
   customPlugins: src/plugins/
@@ -33,15 +31,8 @@ srcFolders:
   imagesUpload: src/uploads/
   imagesToUpload: src/uploads/dist/
   js: src/js/
-  jsBuild: src/js/.build/
   jsMolecules: src/js/molecules/
   jsNoConcat: src/js/no-concat/
   languages: src/languages/
   php: src/php/
   scss: src/scss/
-
-testing:
-  base: tests/
-  visual: visual/
-  screenshots: screenshots/
-  results: results/
